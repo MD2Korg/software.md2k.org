@@ -1759,6 +1759,12 @@ fieldset[disabled] .btn-template-primary.active {
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
+.bar.background-video {
+  /*background: url('../img/texture-bw.png') center center repeat;*/
+  background: #fff;
+  border-top: solid 1px #999999;
+  border-bottom: solid 1px #999999;
+}
 .bar.background-gray {
   background: #eeeeee;
 }
