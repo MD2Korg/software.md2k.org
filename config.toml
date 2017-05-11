@@ -135,11 +135,13 @@ paginate = 10
 
 [params.see_more]
     enable = true
-    icon = "fa fa-file-code-o"
+    icon = "fa fa-info"
     title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
+    subtitle = "Learn more about mCererbrum and Cerebral Cortex"
+    link_url = "under-the-hood"
+    link_text = "Explore under the hood"
+    link_url2 = "howto"
+    link_text2 = "Start using the systems"
 
 [params.clients]
     enable = true
