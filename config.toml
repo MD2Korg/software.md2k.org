@@ -119,6 +119,14 @@ paginate = 10
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
 
+[params.video]
+    enable = true
+    title = "Sense-Analyze-Act"
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/video'.
+    # For more informtion take a look at the README.
+
+
 [params.features]
     enable = true
     # All features are defined in their own files. You can find example items
