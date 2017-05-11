@@ -2,7 +2,14 @@ weight: 2
 site: "Rice"
 targets: "Smoking"
 # icon: "fa fa-lightbulb-o"
-description: "Fifth abundantly made Give sixth hath. Cattle creature i be don't them behold green moved fowl Moved life us beast good yielding. Have bring."
+description: "This study examines smoking cessation in a population of African American smokers who are attempting to quit. Racial minority groups experience disparately
+high levels of smoking and smoking-related morbidity and mortality than do white smokers. However, research is limited in the mechanisms of how smoking cessation and
+this population interact. Evidence from this study will inform the tailoring of policies and interventions targeted at reducing the profound smoking-related disparities
+experienced by the African American population. This study is guided by an overarching conceptual framework derived from models of the social determinants of health,
+social cognitive theories, and previous empirical findings. Participants will be assessed using real-time, field-based, state of the science methodologies consisting of
+mobile physiological sensing, ecological momentary assessment (EMA), and geographic positioning system (GPS). This study is designed to examine how demographics, social
+history, contextual and environmental influences, biobehavioral/psychosocial predispositions, and acute momentary precipitants are associated with smoking lapse and
+abstinence among 300 African American smokers attempting to quit."
 users: "300"
 persondays: "4,200"
 samples: "182"

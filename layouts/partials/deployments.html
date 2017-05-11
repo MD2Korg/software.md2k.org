@@ -14,17 +14,17 @@
                             {{ slicestr .site 0 1}}
                         </div>
                         <h3>{{ $element.site }}</h3>
-                        <h5>{{ $element.targets }}</h5>
-                        <p>{{ $element.description | markdownify }}</p>
+                        <h4>Target: {{ $element.targets }}</h4>
+                        <p style="text-align: justify">{{ $element.description | markdownify }}</p>
                         <div class="row">
                           <div class="col-md-4">
-                            <p>Users: {{ $element.users }}</p>
+                            <h5>Users: {{ $element.users }}</h5>
                           </div>
                           <div class="col-md-4">
-                            <p>Person-Days: {{ $element.persondays }}</p>
+                            <h5>Person-Days: {{ $element.persondays }}</h5>
                           </div>
                           <div class="col-md-4">
-                            <p>Samples: {{ $element.samples }} billion</p>
+                            <h5>Samples: {{ $element.samples }} billion</h5>
                           </div>
                         </div>
                     </div>
