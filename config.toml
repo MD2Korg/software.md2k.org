@@ -1,0 +1,155 @@
+baseurl = "http://software.md2k.org/"
+title = "Software@MD2K"
+theme = "hugo-universal-theme"
+languageCode = "en-us"
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "en"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+# Define the number of posts per page
+paginate = 10
+
+[menu]
+
+[[menu.main]]
+    name = "Tour"
+    url  = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Under the Hood"
+    identifier = "underthehood"
+    url  = "/under-the-hood/"
+    weight = 2
+
+[[menu.main]]
+    name = "How To"
+    identifier = "howto"
+    url  = "/howto/"
+    weight = 3
+
+[[menu.main]]
+    name = "Deployments"
+    url  = "/deployments/"
+    weight = 4
+
+[[menu.main]]
+    name = "Contests"
+    url  = "/contests/"
+    weight = 5
+
+# [[menu.main]]
+#     name = "Testimonials"
+#     url  = "/testimonials/"
+#     weight = 6
+
+[[menu.main]]
+    name = "Contributors"
+    url  = "/contributors/"
+    weight = 7
+
+[[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 8
+
+
+[params]
+    viewMorePostLink = "/blog/"
+    author = "MD2K"
+    defaultKeywords = ["md2k", "mHealth", "mCerebrum", "Cerebral Cortex"]
+    defaultDescription = "Site template made by devcows using hugo"
+
+    # Google Maps API key (if not set will default to not passing a key.)
+    googleMapsApiKey = ""
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "md2k"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io email
+    email = "info@md2k.org"
+
+    about_us = "<p>MD2K is supported by the National Institutes of Health Big Data to Knowledge Initiative Grant #1U54EB020404<br><br>Team: Cornell Tech, GA Tech, U Memphis, Northwestern, Ohio State, Open mHealth, UCLA, UCSD, UCSF, Harvard, U Mass, U Michigan, Utah, WVU</p>"
+    copyright = "Copyright (c) 2017, MD2K; all rights reserved."
+
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
+
+    logo = "img/logo.png"
+    address = """<p><strong>MD2K Center</strong>
+        <br>Fedex Institute of Technology
+        <br>Suite 335
+        <br>University of Memphis
+        <br>365 Innovation Drive
+        <br>Memphis, TN  38152-3115
+        <br>
+        <strong>United States</strong>
+      </p>
+      """
+    latitude = "35.121678"
+    longitude = "-89.940009"
+
+[Permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+
+[params.carousel]
+    enable = true
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more informtion take a look at the README.
+
+[params.features]
+    enable = true
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.
+
+[params.testimonials]
+    enable = false
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more informtion take a look at the README.
+    title = "Testimonials"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+[params.see_more]
+    enable = true
+    icon = "fa fa-file-code-o"
+    title = "Do you want to see more?"
+    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url = "#"
+    link_text = "Check other homepages"
+
+[params.clients]
+    enable = true
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title = "Institutions using our platform"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = false
+    title = "From our blog"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
