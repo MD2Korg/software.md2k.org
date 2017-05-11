@@ -14,7 +14,20 @@
               </div>
               <div class="col-md-8">
                   <h3>{{ .name }}</h3>
-                  <h5>{{ .position }}</h5>
+                  <h5>{{ .position }}
+                    {{ if .institution }}
+                      :
+                      {{ .institution }}
+                    {{ end }}
+                  </h5>
+
+
+                  {{ if .github }}
+                    {{ .github }}
+                  {{ end }}
+                  {{ if .homepage }}
+                    {{ .homepage }}
+                  {{ end }}
               </div>
             </div>
 

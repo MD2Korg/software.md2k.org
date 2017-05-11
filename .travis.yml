@@ -2,6 +2,7 @@ language: go
 install: go get -v github.com/spf13/hugo
 
 script:
+- git clone https://github.com/devcows/hugo-universal-theme themes/hugo-universal-theme
 - hugo build
 
 after_success:
@@ -10,5 +11,11 @@ after_success:
 - git remote add gh-token "https://${GH_TOKEN}@github.com/MD2Korg/software.md2k.org.git";
 - git fetch gh-token
 - git checkout gh-token/dev
-- mkdocs gh-deploy -v --clean --remote-name gh-token -b master -m "Travis CI deployed
-  to master with build $TRAVIS_BUILD_NUMBER"
+- hugo build
+- git checkout gh-token/master
+- rm -rf themes
+- cp -r public/* ./
+- rm -rf public
+- git add -f .
+- git commit -am "Travis CI deployed to master with build $TRAVIS_BUILD_NUMBER"
+- git push -f
