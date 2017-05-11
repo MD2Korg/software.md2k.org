@@ -13,21 +13,35 @@
                   </div>
               </div>
               <div class="col-md-8">
+
                   <h3>{{ .name }}</h3>
-                  <h5>{{ .position }}
-                    {{ if .institution }}
-                      :
-                      {{ .institution }}
-                    {{ end }}
-                  </h5>
+                  <div class="row">
 
+                    <div class="col-md-10">
+                      <h5>{{ .position }}
+                        {{ if .institution }}
+                          :
+                          {{ .institution }}
+                        {{ end }}
+                      </h5>
+                    </div>
 
-                  {{ if .github }}
-                    {{ .github }}
-                  {{ end }}
-                  {{ if .homepage }}
-                    {{ .homepage }}
-                  {{ end }}
+                    <div class="col-md-1">
+                      {{ if .github }}
+                        <a href={{ .github }}>
+                          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                      {{ end }}
+                    </div>
+                    <div class="col-md-1">
+                      {{ if .homepage }}
+                        <a href={{ .homepage }}>
+                          <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                        </a>
+                      {{ end }}
+                    </div>
+
+                </div>
               </div>
             </div>
 
