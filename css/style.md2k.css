@@ -1762,9 +1762,14 @@ fieldset[disabled] .btn-template-primary.active {
 .bar.background-video {
   /*background: url('../img/texture-bw.png') center center repeat;*/
   background: #fff;
-  border-top: solid 1px #999999;
+  /*border-top: solid 1px #999999;*/
   border-bottom: solid 1px #999999;
+
 }
+.bar.background-video h1 {
+  margin-top: -60px;
+}
+
 .bar.background-gray {
   background: #eeeeee;
 }
