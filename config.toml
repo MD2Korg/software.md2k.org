@@ -121,6 +121,7 @@ paginate = 10
 
 [params.video]
     enable = true
+    url = "https://www.youtube.com/embed/uSQn2puExxM"
     title = "Sense-Analyze-Act"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/video'.

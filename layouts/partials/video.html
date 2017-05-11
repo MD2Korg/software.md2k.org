@@ -8,13 +8,15 @@
           <h1 class="text-uppercase text-center">{{ .Site.Params.video.title }}</h1>
           <!-- <p class="lead">{{ .Site.Params.title.subtitle }}</p> -->
         </div>
-      </div>
 
-      <!-- 16:9 aspect ratio -->
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/uSQn2puExxM"></iframe>
-      </div>
+        <div class="row">
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src={{ .Site.Params.video.url }}></iframe>
+          </div>
 
+        </div>
+      </div>
 
     </div>
 </section>
