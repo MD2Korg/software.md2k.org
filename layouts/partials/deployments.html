@@ -11,14 +11,22 @@
 				<div class="col-md-4">
                     <div class="box-simple">
                         <div class="icon">
-                            <i class="{{ .icon }}"></i>
+                            {{ slicestr .site 0 1}}
                         </div>
                         <h3>{{ $element.site }}</h3>
                         <h5>{{ $element.targets }}</h5>
                         <p>{{ $element.description | markdownify }}</p>
-                        <p>Users: {{ $element.users }}</p>
-                        <p>Person-Days: {{ $element.persondays }}</p>
-                        <p>Samples: {{ $element.samples }} billion</p>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <p>Users: {{ $element.users }}</p>
+                          </div>
+                          <div class="col-md-4">
+                            <p>Person-Days: {{ $element.persondays }}</p>
+                          </div>
+                          <div class="col-md-4">
+                            <p>Samples: {{ $element.samples }} billion</p>
+                          </div>
+                        </div>
                     </div>
                 </div>
 		{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.features) 1 )) }}
