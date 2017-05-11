@@ -1,4 +1,4 @@
-baseurl = "http://software.md2k.org/"
+baseurl = "http://http://docs.md2k.org/software.md2k.org/"
 title = "Software@MD2K"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
