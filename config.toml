@@ -1,6 +1,6 @@
 baseurl = "http://software.md2k.org/"
 title = "Software@MD2K"
-theme = "md2k-hugo-universal-theme"
+theme = "hugo-universal-theme"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
