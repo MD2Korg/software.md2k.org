@@ -1,0 +1,4 @@
+weight: 1
+name: "Sensors"
+icon: "fa fa-desktop"
+description: "Custom (AutoSense, MotionSenseHRV, EasySense) and commercial (Oral-B, Omron, Smartphone, Microsoft Band, Android Wear, etc...) support"
