@@ -4,6 +4,13 @@ description = "Details about the software architecture, design, and developer-or
 keywords = []
 +++
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+MD2K supports key contributors through its ongoing outreach program.
 
-## 1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER?
+## Health Science Grand Prize
+MD2K will provide consulting and cloud resources value at greater than $100,000?? to the winning
+research project submission. Something about the contest here...  Investigators should not have
+funding or other support.
+
+## Data Science and Developer Challenge
+MD2K will donate a copy of MotionSenseHRV, our state-of-the-art high-frequency data collection
+band to individuals who make significant contributions to the software platforms.  Limited to ...
