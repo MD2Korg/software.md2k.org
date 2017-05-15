@@ -187,6 +187,12 @@
 
 <p></div></p>
 
+<!-- 
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/GR3pahhXp4U?" 
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+</div> -->
+
 <p>Activity trackers and smartwatches that provide daily activity and calorie expenditure biomarkers and geoexposures from GPS are being incorporated in various research studies. They have advanced health research and led to novel interventions to improve health and wellness. Given the tremendous potential of mobile sensors to monitor a wide variety of daily exposures, behaviors, symptoms, and health outcomes[1], several new digital mobile health (mHealth) biomarkers are emerging. They include the detection of eating, smoking, stress, craving, depression, seizures, among others.</p>
 
 <p>Development and validation of any new mHealth biomarker, however, requires conducting research studies in lab and field settings and collecting raw sensor data with appropriate labels (e.g., self-reports). Raw sensor data is of increasing interest to research studies as it significantly increases the useful life of the information collected. Similar to biomedical studies that often archive biospecimens in biobanks so that they can be reprocessed to take advantage of future improvements in assays and support biomedical discoveries not possible at the time of data collection, raw sensor data can be used to obtain new digital biomarkers that were not available at the time of data collection. Doing so, however, requires a mobile phone software platform that can be used to collect both high-rate raw sensor data and associated labels in field.</p>
@@ -205,10 +211,24 @@
 <li>It needs to carefully control interruptions to study participants from various sources (e.g., self-report, ecological momentary assessment (EMA) and interventions (EMI), fixing sensor attachments) limiting user burden and cognitive overload, while satisfying the numerous study requirements.</li>
 </ol>
 
-<p>Commercially-available software platforms for conducting research studies such as ResearchKit[2] and HealthKit[3] are optimized to collect self-reports and digital biomarkers (e.g., calories, steps, blood pressure, glucose level) and are not suitable for collecting high-rate sensor data. Several research groups have developed their own versions of such software platforms, but these are often specific to target biomarkers and not easily extensible.</p>
 
-<p><img src="../../img/mcerebrum/frameworks.png" alt="framework comparison" />
-Several such platforms and their shortcomings.</p>
+<figure >
+    
+        <img src="../../img/mcerebrum/frameworks.png" alt="Commercially-available software platforms for conducting research studies such as ResearchKit[2] and HealthKit[3] are optimized to collect self-reports and digital biomarkers (e.g., calories, steps, blood pressure, glucose level) and are not suitable for collecting high-rate sensor data. Several research groups have developed their own versions of such software platforms, but these are often specific to target biomarkers and not easily extensible." />
+    
+    
+    <figcaption>
+        <h4>Framework comparisions</h4>
+        <p>
+        Commercially-available software platforms for conducting research studies such as ResearchKit[2] and HealthKit[3] are optimized to collect self-reports and digital biomarkers (e.g., calories, steps, blood pressure, glucose level) and are not suitable for collecting high-rate sensor data. Several research groups have developed their own versions of such software platforms, but these are often specific to target biomarkers and not easily extensible.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p><em>mCerebrum</em> is an open-source, generalizable, and reusable platform that meets all the above requirements. It is deployed in ten research studies with unique study designs and for multiple health targets. It comes with out-of-the-box support for wrist-worn inertial sensors, physiological sensors worn on the chest, sensors in a smartphone (e.g. GPS), weight and blood pressure monitors, and smart toothbrushes, and provides software interfaces to let developers easily incorporate additional ones. mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform. Because it must work in resource-poor settings (several of current studies are with low-income participants), mCerebrum is built to operate the entire sensor-analyze-act pipeline locally, without a constant data connections. It continuously assesses data quality to quickly identify and resolve issues by correcting sensor detachment or misplacements on the body. It supports high-rate streaming data collection from multiple sensors, real-time computation of several multi-sensor biomarkers, sensor-triggered interventions, as well as collection of self-reports prompted by real-time biomarkers computations (e.g., confirm/refute). Several biomarkers computed in real-time on the phone (e.g., stress, smoking) trigger Just-in-Time Adaptive Interventions (JITAI)[4].</p>
 
