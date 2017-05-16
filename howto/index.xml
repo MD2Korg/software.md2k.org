@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Md2K Software How-To on Software@MD2K</title>
+    <link>http://docs.md2k.org/software.md2k.org/howto/</link>
+    <description>Recent content in Md2K Software How-To on Software@MD2K</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017, MD2K; all rights reserved.</copyright>
+    
+	<atom:link href="http://docs.md2k.org/software.md2k.org/howto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
