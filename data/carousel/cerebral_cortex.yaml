@@ -2,9 +2,9 @@ weight: 3
 title: "Cerebral Cortex"
 description: >
   <ul class="list-style-none">
-    <li>Clean and elegant design</li>
-    <li>Full width and boxed mode</li>
-    <li>Easily readable Roboto font and awesome icons</li>
-    <li>7 preprepared colour variations</li>
+    <li>Designed to facilitate mobile health data analytics and interventions</li>
+    <li>Built on industry standards including Apache Spark, Cassandra, and MySQL</li>
+    <li>Near real-time analytics dashboard</li>
+    <li>Population-scale model development</li>
   </ul>
 image: "img/carousel/cerebral_cortex.png"
