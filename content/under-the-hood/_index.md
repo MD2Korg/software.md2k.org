@@ -11,6 +11,14 @@ We present, mCerebrum, a general-purpose mobile software platform for conducting
 With a modular design spanning 23+ apps, mCerebrum provides a complete ecosystem of system services and utility apps.
 The design of mCerebrum is informed by its concurrent use in field studies at ten sites spanning 106,806 person days.
 
+<div class="row">
+  <!-- 16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ENngs9eL4VQ?controls=2&showinfo=0"></iframe>
+  </div>
+
+</div>
+
 [More Information](mcerebrum)
 
 
