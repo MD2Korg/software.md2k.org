@@ -15,7 +15,6 @@
                         </div>
                         <h3>{{ $element.site }}</h3>
                         <h4>Target: {{ $element.targets }}</h4>
-                        <p style="text-align: justify">{{ $element.description | markdownify }}</p>
 
                         <table class="table">
                           <tr>
@@ -24,6 +23,9 @@
                             <td>Samples: <br>{{ $element.samples }} billion</td>
                           </tr>
                         </table>
+                        <p style="text-align: justify">{{ $element.description | markdownify }}</p>
+
+
                     </div>
                 </div>
 		{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.features) 1 )) }}

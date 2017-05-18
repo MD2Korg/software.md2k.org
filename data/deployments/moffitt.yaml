@@ -2,7 +2,8 @@ weight: 5
 site: "Moffitt"
 targets: "Smoking and Stress"
 # icon: "fa fa-lightbulb-o"
-description: ""
+description: "Applying mHealth to Tobacco-related Health Disparities: Enhancing Aspects of Resiliency to Aid Cessation Efforts.
+This feasibility study examines the effects of delivering mindfulness strategies via smartphones on key mechanisms underlying smoking cessation among 24 low socioeconomic status, racially/ethnically diverse smokers. Mindfulness is linked to underlying mechanisms associated with smoking abstinence, including decreased negative affect, increased positive affect, increased self-efficacy, lower craving, and higher self-regulatory capacity. This study will examine mindfulness as a moderator of these underlying mechanisms of smoking abstinence, using real-time, in the field measurements of physiological sensing, ecological momentary assessment (EMA), and geographic context (GPS). Data from this study will be used to evaluate preliminary associations between these mechanisms and to inform future research of mHealth strategies designed to aid smoking cessation efforts."
 users: "24"
 persondays: "336"
 samples: "15"
