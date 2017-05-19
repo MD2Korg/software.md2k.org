@@ -6,7 +6,7 @@ keywords = []
 
 MD2K is
 
-## Health Science Challenge
+## Adoptor Challenge
 
 
 ### How to compete
@@ -54,7 +54,7 @@ The winner will be determine by relevant MD2K personel that could include the fo
 - Shahin Samiei
 
 
-## Data Science and Developer Challenge
+## Contributor Challenge
 MD2K will donate a copy of MotionSenseHRV, our state-of-the-art high-frequency data collection
 band to individuals who make significant contributions to the software platforms.  Limited to ...
 

@@ -26,7 +26,7 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
-    name = "How To"
+    name = "How-to"
     identifier = "howto"
     url  = "/howto/"
     weight = 3
@@ -122,7 +122,7 @@ paginate = 10
 [params.video]
     enable = true
     url = "https://www.youtube.com/embed/uSQn2puExxM?controls=2&showinfo=0"
-    title = "Sense-Analyze-Act"
+    title = "Overview"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/video'.
     # For more informtion take a look at the README.
@@ -145,7 +145,7 @@ paginate = 10
 [params.see_more]
     enable = true
     icon = "fa fa-info"
-    title = "Do you want to see more?"
+    title = "Want to see more?"
     subtitle = "Learn more about mCererbrum and Cerebral Cortex"
     link_url = "under-the-hood"
     link_text = "Explore under the hood"
@@ -157,7 +157,7 @@ paginate = 10
     # All clients are defined in their own files. You can find example items
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
-    title = "Institutions using our platform"
+    title = "Current Deployments"
     subtitle = ""
 
 [params.recent_posts]

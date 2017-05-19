@@ -1,7 +1,6 @@
 weight: 9
 site: "Dartmouth"
 targets: "Behavior Change"
-# icon: "fa fa-lightbulb-o"
 description: "Applying novel technologies and methods to inform the ontology of self-regulation.
 This study examines mechanisms of self-regulatory function via both passive physiological sensing and ecological momentary assessment (EMA) both within and outside of laboratory settings. Self-regulation is a behavior change target that holds promise for the development of health behavior interventions, including those influencing chronic conditions related to poor diet, physical inactivity, smoking, and other substance use. Participants will be assessed in real-time using mobile platforms to examine the extent to which self-regulatory domains can be measured and engaged in real world conditions. Data from this study will be used to evaluate the efficacy of behavior change interventions and inform future research of this type leveraged via mobile platforms in individuals’ naturalistic field settings."
 users: "100"
