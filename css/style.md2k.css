@@ -1455,6 +1455,25 @@ fieldset[disabled] .btn-template-primary.active {
 .team-member-detail .social a.email {
   background-color: #4a7f45;
 }
+
+
+.characteristic {
+  text-align: center;
+  color: #fff;
+
+  padding: 2px 7px;
+
+  background-color: #BB4C38;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 60%;
+  margin: 2px;
+  top: -4px;
+  position: relative;
+
+}
+
+
 .box-simple {
   text-align: center;
   margin-bottom: 40px;
