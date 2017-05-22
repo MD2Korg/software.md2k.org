@@ -6,6 +6,7 @@ keywords = []
 
 MD2K is
 
+---
 ## Adoptor Challenge
 
 
@@ -54,6 +55,7 @@ The winner will be determine by relevant MD2K personel that could include the fo
 - Shahin Samiei
 
 
+---
 ## Contributor Challenge
 MD2K will donate a copy of MotionSenseHRV, our state-of-the-art high-frequency data collection
 band to individuals who make significant contributions to the software platforms.  Limited to ...
