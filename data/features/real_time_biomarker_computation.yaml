@@ -1,4 +1,4 @@
 weight: 6
 name: "Real-time biomarker computation"
 icon: "fa fa-cogs"
-description: "mC"
+description: "mCerebrum is architecturally scalable to support concurrent computation of a large number of biomarkers (each of which requires complex processing) without saturating the computational capacity or battery life of a mobile phone."

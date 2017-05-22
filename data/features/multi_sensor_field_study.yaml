@@ -1,4 +1,4 @@
 weight: 2
 name: "Multi-sensor field studies"
 icon: "fa fa-user-circle-o"
-description: "w/Remote monitoring through Cerebral Cortex"
+description: "mCerebrum supports seamless sharing of streaming data from multiple sensors to enable computation of multi-sensor biomarkers (e.g., stress, smoking, eating) which can be remotely monitored through Cerebral Cortex."
