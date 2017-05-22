@@ -5,12 +5,8 @@ targets: "Congestive Heart Failure"
 description: "This study is
 designed to evaluate the efficacy of the novel EasySense wireless, contactless system in
 assessing pulmonary congestion via measurements of thoracic impedance and cardiac and lung
-motion in patients with congestive heart failure (CHF) during hospitalization and post-discharge.
-Patients will also be assessed for diuretic medication adherence using a suite of smartphone
-applications, called mCerebrum. In addition, we will seek to evaluate patient-reported outcomes
-related to quality of life, participation satisfaction, and will assess other measurements of
-functional physical health using wearable wristband sensors and wireless blood pressure and
-weight scale devices."
+motion in patients with congestive heart failure (CHF) during hospitalization and post-discharge."
 users: "225"
 persondays: "6,750"
 samples: "224"
+pi: William Abraham

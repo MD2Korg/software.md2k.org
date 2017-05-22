@@ -2,16 +2,10 @@ weight: 7
 site: "UCLA"
 targets: "Oral Health"
 # icon: "fa fa-lightbulb-o"
-description: "– This three-stage project is designed to assess oral health behaviors via mHealth technologies. In stage 1, we will develop the
-Remote Oral Behaviors Assessment System (ROBAS) by integrating a multimodal sensing platform (smart toothbrush and wrist sensors) with the
+description: "This study develops the Remote Oral Behaviors Assessment System (ROBAS) by integrating a multimodal sensing platform (smart toothbrush and wrist sensors) with the
 mCerebrum software platform (physiological and EMA data logging, transmission, and activity/behavior inference system) for the testing and
-iterative refinement via laboratory simulators and test subjects. In stage 2, ROBAS will be pilot tested in healthy subjects to optimize its
-performance and usability in naturalistic settings across objective (precision, validity, reliability), subjective (user satisfaction, acceptability),
-and user performance (amount of missing data) parameters. In stage 3, we will employ a randomized, controlled, crossover study to examine at-risk
-(substance using) individuals with sociodemographically comparable control subjects to evaluate ROBAS’s capacity for longitudinal assessment of oral
-health behaviors in naturalistic settings and verify its clinical utility and incremental validity over traditional self-reports. The associations
-between sociobehavioral determinants, oral health behaviors (as assessed via self-reports and ROBAS), and dental disease indicators (gingivitis and
-dental plaque) will be investigated across subjects with different levels of risk."
+iterative refinement via laboratory simulators and test subjects."
 users: "162"
 persondays: "29,160"
 samples: "968"
+pi: Vivek Shetty

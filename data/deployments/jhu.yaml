@@ -2,14 +2,9 @@ weight: 8
 site: "Johns Hopkins"
 targets: "Cocaine Use"
 # icon: "fa fa-lightbulb-o"
-description: "•	This study is designed to extend previous work in the development of methods to automatically detect the timing of cocaine use
-from cardiac interbeat interval and physical activity data derived from wearable, unobtrusive mobile sensor technologies. This study will examine
-under which conditions high quality continuous interbeat interval data and physical activity data can be obtained from a specially developed
-smartwatch device in the natural field setting among a population of cocaine users. In addition to identifying common failure scenarios and
-understanding wearability/usage patterns when collecting interbeat interval from smartwatches, this study will extend our previous work in the
-detection of cocaine use via interbeat interval and physical activity data that were previously obtained via wearable chestband sensors. Information
-from this study will contribute toward the adaptation of our existing computational model for detecting cocaine for use in wearable, less obtrusive
-smartwatch devices."
+description: "This study is designed to extend previous work in the development of methods to automatically detect the timing of cocaine use
+from cardiac interbeat interval and physical activity data derived from wearable, unobtrusive mobile sensor technologies."
 users: "25"
 persondays: "350"
 samples: "18"
+pi: August Holtyn

@@ -2,12 +2,9 @@ weight: 1
 site: "Northwestern"
 targets: "Smoking and Eating"
 # icon: "fa fa-lightbulb-o"
-description: "This study has been
-designed (1) to develop the decision rules and evaluate the feasibility of a just-in-time
-intervention to delay or prevent smoking relapse in smokers attempting to quit (2) to predict
-the timing of lapses following a quit attempt (3) to develop a model to detect smoking puffs and
-episodes of smoking using wrist-worn inertial sensors (4) to develop a model of eating detection
-using wrist-worn inertial sensors."
+description: "This study evaluates the feasibility of a just-in-time
+intervention to delay or prevent smoking relapse in smokers attempting to quit."
 users: "225"
 persondays: "3,150"
 samples: "136"
+pi: Bonnie Spring

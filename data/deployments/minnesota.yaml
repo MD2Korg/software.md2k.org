@@ -1,8 +1,8 @@
 weight: 10
 site: "Minnesota"
 targets: "Workplace Performance"
-# icon: "fa fa-lightbulb-o"
-description: ""
+description: "This study utilizes wearable sensors to objectively assess everyday job performance for employers."
 users: "800"
 persondays: "56,000"
 samples: "2,891"
+pi: Deniz Ones

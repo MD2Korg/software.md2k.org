@@ -1,40 +1,35 @@
-{{ if isset .Site.Params "features" }}
-{{ if .Site.Params.features.enable }}
-{{ if gt (len .Site.Data.features) 0 }}
+{{ if gt (len .Site.Data.deployments) 0 }}
 <section class="bar background-white">
     <div class="container">
         {{ range $index, $element := sort .Site.Data.deployments "weight" }}
-		{{ if eq (mod $index 3) 0 }}
-		<div class="col-md-12">
-            <div class="row">
-		{{ end }}
-				<div class="col-md-4">
-                    <div class="box-simple">
-                        <div class="icon" style="font-size: 300%">
-                            {{ slicestr .site 0 1}}
+    		{{ if eq (mod $index 3) 0 }}
+    		<div class="col-md-12">
+                <div class="row">
+    		{{ end }}
+    				<div class="col-md-4">
+                        <div class="box-simple">
+                            <div class="icon" style="font-size: 300%">
+                                {{ slicestr .site 0 1}}
+                            </div>
+                            <h3>{{ $element.site }}</h3>
+                            <h4>{{ $element.pi }}</h4>
+                            <h5>{{ $element.targets }}</h5>
+
+                            <table class="table">
+                              <tr>
+                                <td>Users: <br>{{ $element.users }}</td>
+                                <td>Person-Days: <br>{{ $element.persondays }}</td>
+                                <td>Samples: <br>{{ $element.samples }} billion</td>
+                              </tr>
+                            </table>
+                            <p style="text-align: justify">{{ $element.description | markdownify }}</p>
                         </div>
-                        <h3>{{ $element.site }}</h3>
-                        <h4>Target: {{ $element.targets }}</h4>
-
-                        <table class="table">
-                          <tr>
-                            <td>Users: <br>{{ $element.users }}</td>
-                            <td>Person-Days: <br>{{ $element.persondays }}</td>
-                            <td>Samples: <br>{{ $element.samples }} billion</td>
-                          </tr>
-                        </table>
-                        <p style="text-align: justify">{{ $element.description | markdownify }}</p>
-
-
                     </div>
-                </div>
-		{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.features) 1 )) }}
-			</div>
-		</div>
-		{{ end }}
+    		    {{ if (eq (mod $index 3) 2)  }}
+    			</div>
+        </div>
+        {{ end }}
         {{ end }}
     </div>
 </section>
-{{ end }}
-{{ end }}
 {{ end }}

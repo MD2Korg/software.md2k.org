@@ -3,12 +3,8 @@ site: "Utah"
 targets: "Smoking"
 # icon: "fa fa-lightbulb-o"
 description: "This study examines the influence of socioeconomic status, social history, contextual and environmental influences, biobehavioral/psychosocial
-predispositions, and acute momentary precipitants on stress, smoking lapse, and abstinence among 300 smokers attempting to quit. Additionally, this study
-will examine 75 Sexual and Gender Minorities to supplant gaps in empirical evidence concerning the key sources of health disparities found in this population.
-Evidence from this study will inform the tailoring of policies and interventions targeted at reducing the profound smoking-related disparities experienced
-by individuals with low socioeconomic status and sexual and gender minorities. This study is guided by an overarching conceptual framework derived from models
-of the social determinants of health, social cognitive theories, and previous empirical findings. Participants will be assessed using real-time, field-based,
-state of the science methodologies consisting of mobile physiological sensing, ecological momentary assessment (EMA), and geographic positioning system (GPS)."
+predispositions, and acute momentary precipitants on stress, smoking lapse, and abstinence among 300 smokers attempting to quit."
 users: "300"
 persondays: "4,200"
 samples: "182"
+pi: David Wetter
