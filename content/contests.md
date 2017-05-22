@@ -7,7 +7,7 @@ keywords = []
 MD2K is
 
 ---
-## Adoptor Challenge
+## Adopter Challenge
 
 
 ### How to compete
