@@ -7,7 +7,7 @@ keywords = []
 <div class="row">
   <!-- 16:9 aspect ratio -->
   <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GR3pahhXp4U?controls=2&showinfo=0"></iframe>
+    <iframe allowFullScreen='allowFullScreen' class="embed-responsive-item" src="https://www.youtube.com/embed/GR3pahhXp4U?controls=2&showinfo=0"></iframe>
   </div>
 
 </div>
