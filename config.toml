@@ -56,6 +56,97 @@ paginate = 10
     url  = "/contact/"
     weight = 8
 
+[[menu.main]]
+    name = "MD2K"
+    url  = "https://md2k.org/"
+    weight = 9
+
+
+
+[[menu.submenu]]
+  name = "mCerebrum"
+  url = "/under-the-hood/mcerebrum"
+
+  [[menu.submenu]]
+    name = "Architecture"
+    url = "/under-the-hood/mcerebrum/architecture"
+    parent = "mCerebrum"
+
+  [[menu.submenu]]
+    name = "Getting Started"
+    url = "/under-the-hood/mcerebrum/getting-started"
+    parent = "mCerebrum"
+
+  [[menu.submenu]]
+    name = "Configuration"
+    url = "/under-the-hood/mcerebrum/configuration"
+    parent = "mCerebrum"
+
+  [[menu.submenu]]
+    name = "Troubleshooting"
+    url = "/under-the-hood/mcerebrum/"
+    parent = "mCerebrum"
+
+
+
+
+[[menu.submenu]]
+  name = "Cerebral Cortex"
+  url = "/under-the-hood/cerebral-cortex"
+  identifier = "cerebral_cortex"
+
+  [[menu.submenu]]
+    name = "Architecuture"
+    url = "/under-the-hood/cerebral-cortex/architecture"
+    parent = "cerebral_cortex"
+
+  [[menu.submenu]]
+    name = "Docker"
+    url = "/under-the-hood/cerebral-cortex/docker"
+    parent = "cerebral_cortex"
+
+  [[menu.submenu]]
+    name = "Getting Started"
+    url = "/under-the-hood/cerebral-cortex/getting-started"
+    parent = "cerebral_cortex"
+
+  [[menu.submenu]]
+    name = "API"
+    url = "/under-the-hood/cerebral-cortex/api"
+    parent = "cerebral_cortex"
+
+  [[menu.submenu]]
+    name = "Configuration"
+    url = "/under-the-hood/cerebral-cortex/configuration"
+    parent = "cerebral_cortex"
+
+
+[[menu.submenu]]
+  name = "Bug Reports and Feature Requests"
+  url = "/under-the-hood/feedback"
+
+[[menu.submenu]]
+  name = "Software License"
+  url = "/under-the-hood/license"
+
+[[menu.submenu]]
+  name = "Contributing"
+  url = "/under-the-hood/contributing"
+
+[[menu.submenu]]
+  name = "References"
+  url = "/under-the-hood/references"
+
+
+[[menu.submenu]]
+  name = "How-to"
+  identifier = "how-to"
+  url = "/howto"
+
+  [[menu.submenu]]
+    name = "Getting Started"
+    url = "/howto/getting-started"
+    parent = "how-to"
 
 [params]
     viewMorePostLink = "/blog/"
@@ -112,6 +203,7 @@ paginate = 10
     categories = true
     tags = true
     search = true
+    submenu = true
 
 [params.carousel]
     enable = true
