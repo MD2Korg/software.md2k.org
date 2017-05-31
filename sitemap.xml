@@ -20,6 +20,10 @@
   </url>
   
   <url>
+    <loc>http://docs.md2k.org/software.md2k.org/under-the-hood/contributing/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.md2k.org/software.md2k.org/contributors/</loc>
   </url>
   
@@ -28,7 +32,23 @@
   </url>
   
   <url>
+    <loc>http://docs.md2k.org/software.md2k.org/under-the-hood/feedback/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.md2k.org/software.md2k.org/howto/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.md2k.org/software.md2k.org/under-the-hood/references/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.md2k.org/software.md2k.org/under-the-hood/license/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.md2k.org/software.md2k.org/under-the-hood/release-schedule/</loc>
   </url>
   
   <url>
