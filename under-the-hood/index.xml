@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Under the Hood on Software@MD2K</title>
-    <link>http://docs.md2k.org/software.md2k.org/under-the-hood/</link>
-    <description>Recent content in Under the Hood on Software@MD2K</description>
+    <title>Under the Hood on MD2K::software</title>
+    <link>http://software.md2k.org/under-the-hood/</link>
+    <description>Recent content in Under the Hood on MD2K::software</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017, MD2K; all rights reserved.</copyright>
     
-	<atom:link href="http://docs.md2k.org/software.md2k.org/under-the-hood/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://software.md2k.org/under-the-hood/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Contributing to the Software</title>
-      <link>http://docs.md2k.org/software.md2k.org/under-the-hood/contributing/</link>
+      <link>http://software.md2k.org/under-the-hood/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.md2k.org/software.md2k.org/under-the-hood/contributing/</guid>
+      <guid>http://software.md2k.org/under-the-hood/contributing/</guid>
       <description>Contributing guidelines Thank you for your interest in helping us with the MD2K software platforms. We always welcome new contributions in any form including:
  Bug reports regarding the software, documentation, website, etc&amp;hellip; Documentation improvements, tutorials, examples Code patches and new features  Getting started Please join and explore our discussion board. This is all our discussions occur regarding the MD2K software projects.
 What can I help with We try to keep all open issues for MD2K software on Pivotal Tracker but please ask on the discussion board before starting work on any issues.</description>
@@ -24,10 +24,10 @@ What can I help with We try to keep all open issues for MD2K software on Pivotal
     
     <item>
       <title>Feature Requests and Bug Reports</title>
-      <link>http://docs.md2k.org/software.md2k.org/under-the-hood/feedback/</link>
+      <link>http://software.md2k.org/under-the-hood/feedback/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.md2k.org/software.md2k.org/under-the-hood/feedback/</guid>
+      <guid>http://software.md2k.org/under-the-hood/feedback/</guid>
       <description>Please provide as many details as possible when reporting bugs or other feedback.
 For a list of current activities and all outstanding issues please see the issue tracker
  Feedback Form Choose the type of feedback you are submitting Bug Report   Feature Request     Short Description   Details    Submitter    Submit Feedback     
@@ -36,29 +36,29 @@ For a list of current activities and all outstanding issues please see the issue
     
     <item>
       <title>Relevant Paper References</title>
-      <link>http://docs.md2k.org/software.md2k.org/under-the-hood/references/</link>
+      <link>http://software.md2k.org/under-the-hood/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.md2k.org/software.md2k.org/under-the-hood/references/</guid>
+      <guid>http://software.md2k.org/under-the-hood/references/</guid>
       <description>References  Sarker, H., Tyburski, M., Rahman, M., Hovsepian, K., Sharmin, M., Epstein, D., Preston, K., Furr-Holden, D., Nahum-Shani, I., al’Absi, M., and Kumar, S. Finding Significant Stress Episodes in a Discontinuous Time-series of Rapidly Varying Mobile Sensor Data. ACM Conference on Human Computer Interaction (CHI 2016).
  Moushumi Sharmin, Andrew Raij, David Epstein, Inbal Nahum-Shani, J Gayle Beck, Sudip Vhaduri, Kenzie Preston, and Santosh Kumar. Visualization of Time-Series Sensor Data to Inform the Design of Just-In-Time Adaptive Stress Interventions, ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2015).</description>
     </item>
     
     <item>
       <title>Software License: BSD 2-Clause</title>
-      <link>http://docs.md2k.org/software.md2k.org/under-the-hood/license/</link>
+      <link>http://software.md2k.org/under-the-hood/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.md2k.org/software.md2k.org/under-the-hood/license/</guid>
+      <guid>http://software.md2k.org/under-the-hood/license/</guid>
       <description>Copyright 2017 MD2K Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</description>
     </item>
     
     <item>
       <title>Software Releases</title>
-      <link>http://docs.md2k.org/software.md2k.org/under-the-hood/release-schedule/</link>
+      <link>http://software.md2k.org/under-the-hood/release-schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.md2k.org/software.md2k.org/under-the-hood/release-schedule/</guid>
+      <guid>http://software.md2k.org/under-the-hood/release-schedule/</guid>
       <description>Software Release Information Schedule MD2K software is released based on a monthly development and testing cycle. Typically, we allocate 3 1-week sprints for development activities followed by a single 1-week sprint dedicated towards testing.
  Major X.0.0 software updates will occur approximately every year Minor/Feature 1.X.0 updates will occur each month on the 3rd Wednesday Critical bug fixes 1.2.X will be released immediately     Year Month Release Day     2016 September 2016/09/14 (Wed)   2016 October 2016/10/19 (Wed)   2016 November 2016/11/16 (Wed)   2016 December 2016/12/21 (Wed)   2017 January 2017/01/18 (Wed)   2017 February 2017/02/15 (Wed)   2017 March 2017/03/15 (Wed)   2017 April 2017/04/19 (Wed)   2017 May 2017/05/17 (Wed)    !</description>
     </item>
