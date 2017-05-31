@@ -177,83 +177,103 @@
 
 
         <div id="content">
-            <div class="container">
+            
 
-                <div class="row">
+              <div class="container" id="contact">
 
-                    
+    <div class="row">
+        <div class="col-md-8">
 
-                    <div class="col-md-9" id="blog-post">
+            <section>
 
-                        
+                
 
-                        <div id="post-content">
-                          
+                
+
+                <div class="heading">
+                  <h3>Contact form</h3>
+                </div>
+
+                <div id="contact-message"></div>
+
+                <form class="contact-form" method="post" action="https://formspree.io/info@md2k.org">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                              <label for="name">Your Name</label>
+                                <input type="text" class="form-control" name="name" id="name" required>
+                            </div>
                         </div>
-                        
-                        
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="text" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">Your Message</label>
+                                <textarea id="message" class="form-control" name="message" required></textarea>
+                            </div>
+                        </div>
 
+                        <div class="col-sm-12 text-center">
+                          <button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i>Send Message</button>
+
+                        </div>
                     </div>
                     
+                </form>
 
-                    
+                
 
-                    
+            </section>
 
-                    <div class="col-md-3">
+        </div>
 
-                        
+        <div class="col-md-4">
 
-                        
+            
+            <section>
 
-<div class="panel panel-default sidebar-menu">
+              <h3 class="text-uppercase"> Address</h3>
 
-    <div class="panel-heading">
-      <h3 class="panel-title">Search</h3>
+                <p><strong>MD2K Center</strong>
+        <br>Fedex Institute of Technology
+        <br>Suite 335
+        <br>University of Memphis
+        <br>365 Innovation Drive
+        <br>Memphis, TN  38152-3115
+        <br>
+        <strong>United States</strong>
+      </p>
+      
+
+            </section>
+
+            
+
+        </div>
+
     </div>
-
-    <div class="panel-body">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
-            <div class="input-group">
-                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
-                <input type="hidden" name="q" value="site:http://software.md2k.org/">
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-                </span>
-            </div>
-        </form>
-    </div>
+    
 </div>
 
 
+  
+      <div class="hidden">
+        <input id="gmap-lat" value="35.121678" />
+        <input id="gmap-lng" value="-89.940009" />
+        
+          <input id="gmap-dir" value="35.121678,-89.940009" />
+        
+      </div>
+      <div id="map" />
+  
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        
-
-                    </div>
-                    
-
-                    
-
-                </div>
-                
-
-            </div>
             
         </div>
         
