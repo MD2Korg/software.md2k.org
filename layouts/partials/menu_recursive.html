@@ -3,7 +3,7 @@
 {{ $site := .site }}
 <ul>
 <!-- Menu items sorted alphabetically by name -->
-{{ range .menu }}
+{{ range .menu.ByWeight }}
   {{ $is := $page.IsMenuCurrent "main" . }}
   {{ $has := $page.HasMenuCurrent "main" . }}
   {{ if .HasChildren }}

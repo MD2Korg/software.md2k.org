@@ -67,74 +67,89 @@ paginate = 10
 [[menu.underthehood]]
   name = "mCerebrum"
   url = "/under-the-hood/mcerebrum"
+  weight = 10
 
   [[menu.underthehood]]
     name = "Architecture"
     url = "/under-the-hood/mcerebrum/architecture"
     parent = "mCerebrum"
+    weight = 20
 
   [[menu.underthehood]]
     name = "Getting Started"
     url = "/under-the-hood/mcerebrum/getting-started"
     parent = "mCerebrum"
+    weight = 30
 
   [[menu.underthehood]]
     name = "Configuration"
     url = "/under-the-hood/mcerebrum/configuration"
     parent = "mCerebrum"
+    weight = 40
 
   [[menu.underthehood]]
     name = "Troubleshooting"
-    url = "/under-the-hood/mcerebrum/"
+    url = "/under-the-hood/mcerebrum/troubleshooting/"
     parent = "mCerebrum"
+    weight = 50
 
 
 [[menu.underthehood]]
   name = "Cerebral Cortex"
   url = "/under-the-hood/cerebral-cortex"
-  identifier = "cerebral_cortex"
+  identifier = "uth-cc"
+  weight = 100
 
   [[menu.underthehood]]
     name = "Architecuture"
     url = "/under-the-hood/cerebral-cortex/architecture"
-    parent = "cerebral_cortex"
+    parent = "uth-cc"
+    weight = 110
 
   [[menu.underthehood]]
     name = "Docker"
     url = "/under-the-hood/cerebral-cortex/docker"
-    parent = "cerebral_cortex"
+    parent = "uth-cc"
+    weight = 120
 
   [[menu.underthehood]]
     name = "Getting Started"
     url = "/under-the-hood/cerebral-cortex/getting-started"
-    parent = "cerebral_cortex"
+    parent = "uth-cc"
+    weight = 130
 
   [[menu.underthehood]]
     name = "API"
     url = "/under-the-hood/cerebral-cortex/api"
-    parent = "cerebral_cortex"
+    parent = "uth-cc"
+    weight = 140
 
   [[menu.underthehood]]
     name = "Configuration"
     url = "/under-the-hood/cerebral-cortex/configuration"
-    parent = "cerebral_cortex"
+    parent = "uth-cc"
+    weight = 150
 
 
 [[menu.underthehood]]
   name = "Bug Reports and Feature Requests"
   url = "/under-the-hood/feedback"
+  weight = 1000
 
 [[menu.underthehood]]
   name = "Software License"
   url = "/under-the-hood/license"
+  weight = 2000
 
 [[menu.underthehood]]
   name = "Contributing"
   url = "/under-the-hood/contributing"
+  weight = 3000
 
 [[menu.underthehood]]
   name = "References"
   url = "/under-the-hood/references"
+  weight = 4000
 
 
 ################################################################################
