@@ -66,31 +66,36 @@ paginate = 10
 
 [[menu.underthehood]]
   name = "mCerebrum"
+  identifier = "uth-mc"
   url = "/under-the-hood/mcerebrum"
   weight = 10
 
   [[menu.underthehood]]
     name = "Architecture"
+    identifier = "uth-mc-arch"
     url = "/under-the-hood/mcerebrum/architecture"
-    parent = "mCerebrum"
+    parent = "uth-mc"
     weight = 20
 
   [[menu.underthehood]]
     name = "Getting Started"
+    identifier = "uth-mc-gs"
     url = "/under-the-hood/mcerebrum/getting-started"
-    parent = "mCerebrum"
+    parent = "uth-mc"
     weight = 30
 
   [[menu.underthehood]]
     name = "Configuration"
+    identifier = "uth-mc-config"
     url = "/under-the-hood/mcerebrum/configuration"
-    parent = "mCerebrum"
+    parent = "uth-mc"
     weight = 40
 
   [[menu.underthehood]]
     name = "Troubleshooting"
+    identifier = "uth-mc-trouble"
     url = "/under-the-hood/mcerebrum/troubleshooting/"
-    parent = "mCerebrum"
+    parent = "uth-mc"
     weight = 50
 
 
@@ -102,30 +107,35 @@ paginate = 10
 
   [[menu.underthehood]]
     name = "Architecuture"
+    identifier = "uth-cc-arch"
     url = "/under-the-hood/cerebral-cortex/architecture"
     parent = "uth-cc"
     weight = 110
 
   [[menu.underthehood]]
     name = "Docker"
+    identifier = "uth-cc-docker"
     url = "/under-the-hood/cerebral-cortex/docker"
     parent = "uth-cc"
     weight = 120
 
   [[menu.underthehood]]
     name = "Getting Started"
+    identifier = "uth-cc-gs"
     url = "/under-the-hood/cerebral-cortex/getting-started"
     parent = "uth-cc"
     weight = 130
 
   [[menu.underthehood]]
     name = "API"
+    identifier = "uth-cc-api"
     url = "/under-the-hood/cerebral-cortex/api"
     parent = "uth-cc"
     weight = 140
 
   [[menu.underthehood]]
     name = "Configuration"
+    identifier = "uth-cc-config"
     url = "/under-the-hood/cerebral-cortex/configuration"
     parent = "uth-cc"
     weight = 150
