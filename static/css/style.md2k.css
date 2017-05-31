@@ -34,6 +34,11 @@
 }
 
 
+figure img {
+  max-width: 850px;
+}
+
+
 .feedback {
   bottom:5px;
   right: 5px;
