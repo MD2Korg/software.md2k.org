@@ -61,92 +61,100 @@ paginate = 10
     url  = "https://md2k.org/"
     weight = 9
 
+################################################################################
+# Under the Hood Menu
 
-
-[[menu.submenu]]
+[[menu.underthehood]]
   name = "mCerebrum"
   url = "/under-the-hood/mcerebrum"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Architecture"
     url = "/under-the-hood/mcerebrum/architecture"
     parent = "mCerebrum"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Getting Started"
     url = "/under-the-hood/mcerebrum/getting-started"
     parent = "mCerebrum"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Configuration"
     url = "/under-the-hood/mcerebrum/configuration"
     parent = "mCerebrum"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Troubleshooting"
     url = "/under-the-hood/mcerebrum/"
     parent = "mCerebrum"
 
 
-
-
-[[menu.submenu]]
+[[menu.underthehood]]
   name = "Cerebral Cortex"
   url = "/under-the-hood/cerebral-cortex"
   identifier = "cerebral_cortex"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Architecuture"
     url = "/under-the-hood/cerebral-cortex/architecture"
     parent = "cerebral_cortex"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Docker"
     url = "/under-the-hood/cerebral-cortex/docker"
     parent = "cerebral_cortex"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Getting Started"
     url = "/under-the-hood/cerebral-cortex/getting-started"
     parent = "cerebral_cortex"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "API"
     url = "/under-the-hood/cerebral-cortex/api"
     parent = "cerebral_cortex"
 
-  [[menu.submenu]]
+  [[menu.underthehood]]
     name = "Configuration"
     url = "/under-the-hood/cerebral-cortex/configuration"
     parent = "cerebral_cortex"
 
 
-[[menu.submenu]]
+[[menu.underthehood]]
   name = "Bug Reports and Feature Requests"
   url = "/under-the-hood/feedback"
 
-[[menu.submenu]]
+[[menu.underthehood]]
   name = "Software License"
   url = "/under-the-hood/license"
 
-[[menu.submenu]]
+[[menu.underthehood]]
   name = "Contributing"
   url = "/under-the-hood/contributing"
 
-[[menu.submenu]]
+[[menu.underthehood]]
   name = "References"
   url = "/under-the-hood/references"
 
 
-[[menu.submenu]]
+################################################################################
+# How-to
+
+[[menu.howto]]
   name = "How-to"
   identifier = "how-to"
   url = "/howto"
 
-  [[menu.submenu]]
-    name = "Getting Started"
-    url = "/howto/getting-started"
-    parent = "how-to"
+[[menu.howto]]
+  name = "Getting Started"
+  url = "/howto/getting-started"
+
+
+
+
+
+
+
 
 [params]
     viewMorePostLink = "/blog/"
