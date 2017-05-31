@@ -1,5 +1,5 @@
-baseurl = "http://docs.md2k.org/software.md2k.org/"
-title = "Software@MD2K"
+baseurl = "http://software.md2k.org/"
+title = "MD2K::software"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
