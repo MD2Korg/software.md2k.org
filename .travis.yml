@@ -4,7 +4,6 @@ language: go
 install: go get -v github.com/spf13/hugo
 script:
   - git clone https://github.com/devcows/hugo-universal-theme themes/hugo-universal-theme
-  - hugo
   - git subtree add --prefix=public git@github.com:MD2Korg/software.md2k.org.git gh-pages --squash
   - hugo
   - git add -A
