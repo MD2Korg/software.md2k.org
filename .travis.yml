@@ -3,20 +3,21 @@ sudo: required
 language: go
 install: go get -v github.com/spf13/hugo
 script:
-- git clone https://github.com/devcows/hugo-universal-theme themes/hugo-universal-theme
-- hugo
+  - git clone https://github.com/devcows/hugo-universal-theme themes/hugo-universal-theme
+  - hugo
+  - git subtree add --prefix=public git@github.com:MD2Korg/software.md2k.org.git gh-pages --squash
+  - hugo
+  - git add -A
+  - git commit -m "Updating Site"
+
 after_success:
   - eval `ssh-agent -s`
   - ssh-add id_rsa_software.md2k.org
   - git config user.name "Travis CI"
   - git config user.email "dev@md2k.org"
   # - ./_scripts/publish_toghpages.sh
-  - rm -rf public
-  - git subtree add --prefix=public git@github.com:MD2Korg/software.md2k.org.git gh-pages --squash
-  - hugo
-  - git add -A
-  - git commit -m "Updating Site"
   - git subtree push --prefix=public git@github.com:MD2Korg/software.md2k.org.git gh-pages
+
 before_install:
   - openssl aes-256-cbc -K $encrypted_c79eb7350bf3_key -iv $encrypted_c79eb7350bf3_iv -in id_rsa_software.md2k.org.enc -out id_rsa_software.md2k.org -d
   - chmod 600 id_rsa_software.md2k.org
