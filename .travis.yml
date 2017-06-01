@@ -11,9 +11,9 @@ after_success:
   - git config user.email "dev@md2k.org"
   - git branch -r
   - ./_scripts/publish_toghpages.sh
+  - git worktree list
   - eval `ssh-agent -s`
   - ssh-add id_rsa_software.md2k.org
-  - git push --set-upstream origin gh-pages  
   - git push origin gh-pages
 before_install:
   - openssl aes-256-cbc -K $encrypted_c79eb7350bf3_key -iv $encrypted_c79eb7350bf3_iv -in id_rsa_software.md2k.org.enc -out id_rsa_software.md2k.org -d
