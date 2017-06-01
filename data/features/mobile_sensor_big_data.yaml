@@ -1,5 +1,0 @@
-weight: 8
-name: "Mobile sensor big-data "
-icon: "fa fa-database"
-description: "mCerebrum allows for high-frequency raw sensor data collection (800+ Hz for 70+ million samples/day),
-processing, and storage (~2GB/day) and is coupled with Cerebral Cortex which scales to 1,000s of concurrent mCerebrum instances and 100s of terabytes of data."

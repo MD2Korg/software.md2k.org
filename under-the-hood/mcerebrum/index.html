@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mCerebrum</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="md2k, mHealth, mCerebrum, Cerebral Cortex">	
+  
+
+  
+  <meta name="description" content="Details about the software architecture, design, and developer-oriented interfaces">
+  
+
+  <meta name="generator" content="Hugo 0.21" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="http://software.md2k.org/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="http://software.md2k.org/css/style.md2k.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="http://software.md2k.org/css/custom.css" rel="stylesheet">
+
+  
+    
+
+  
+  <link rel="shortcut icon" href="http://software.md2k.org/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="http://software.md2k.org/img/apple-touch-icon.png" />
+  
+
+  <link href="http://software.md2k.org/css/owl.carousel.css" rel="stylesheet">
+  <link href="http://software.md2k.org/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
+
+  
+  <meta property="og:title" content="mCerebrum" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/under-the-hood/mcerebrum//" />
+  <meta property="og:image" content="img/logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="http://software.md2k.org/">
+                    <img src="http://software.md2k.org/img/logo.png" alt="mCerebrum logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="mCerebrum logo" class="visible-xs visible-sm">
+                    <span class="sr-only">mCerebrum - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Tour</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/under-the-hood/">Under the Hood</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/howto/">How-to</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/deployments/">Deployments</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contributors/">Contributors</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://md2k.org/">MD2K</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+<div class="affix feedback">
+  <a href="https://discuss.md2k.org/">Feedback and Questions</a>
+</div>
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>mCerebrum</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    
+
+                    <div class="col-md-9">
+
+                      <div class="row">
+  <!-- 16:9 aspect ratio -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe allowFullScreen='allowFullScreen' class="embed-responsive-item" src="https://www.youtube.com/embed/GR3pahhXp4U?controls=2&showinfo=0"></iframe>
+  </div>
+
+<p></div></p>
+
+<!-- 
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/GR3pahhXp4U?" 
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+</div> -->
+
+<p>Activity trackers and smartwatches that provide daily activity and calorie expenditure biomarkers and geoexposures from GPS are being incorporated in various research studies. They have advanced health research and led to novel interventions to improve health and wellness. Given the tremendous potential of mobile sensors to monitor a wide variety of daily exposures, behaviors, symptoms, and health outcomes[1], several new digital mobile health (mHealth) biomarkers are emerging. They include the detection of eating, smoking, stress, craving, depression, seizures, among others.</p>
+
+<p>Development and validation of any new mHealth biomarker, however, requires conducting research studies in lab and field settings and collecting raw sensor data with appropriate labels (e.g., self-reports). Raw sensor data is of increasing interest to research studies as it significantly increases the useful life of the information collected. Similar to biomedical studies that often archive biospecimens in biobanks so that they can be reprocessed to take advantage of future improvements in assays and support biomedical discoveries not possible at the time of data collection, raw sensor data can be used to obtain new digital biomarkers that were not available at the time of data collection. Doing so, however, requires a mobile phone software platform that can be used to collect both high-rate raw sensor data and associated labels in field.</p>
+
+<p>A general-purpose software platform that can enable such data collection needs several attributes.</p>
+
+<ol>
+<li>It must support concurrent connections to a wide variety of high-rate wearable sensors with an ability to plug-in new sensors.</li>
+<li>It must ingest the large volume of rapidly arriving data for which native support does not yet exist in the smartphone hardware or operating system without falling behind and losing data.</li>
+<li>It needs to support reliable storage of quickly growing volume of sensor data, whose archival is critical to development and validation of new biomarkers.</li>
+<li>It is desirable to quickly analyze incoming data to monitor data quality so any errors in sensor attachment or placement can be fixed quickly to maximize data yield.</li>
+<li>It needs to support the sense-analyze-act pipeline for high-rate streaming sensor data. This is necessary to prompt self-reports (for collection of labels) as well as confirm/refute prompts for validation of new biomarkers in the field. Sense-analyze-act support is also needed to aid development and evaluation of sensor-triggered interventions.</li>
+<li>It needs seamless sharing of streaming data from multiple sensors to enable computation of multi-sensor biomarkers (e.g., stress, smoking, eating).</li>
+<li>The platform needs to be general-purpose and extensible to support a wide variety of sensors, biomarkers, and study designs.</li>
+<li>It needs to be architecturally scalable so that it can support concurrent computation of a large number of biomarkers (each of which requires complex processing) without saturating the computational capacity or battery life of the mobile phone.</li>
+<li>It needs to carefully control interruptions to study participants from various sources (e.g., self-report, ecological momentary assessment (EMA) and interventions (EMI), fixing sensor attachments) limiting user burden and cognitive overload, while satisfying the numerous study requirements.</li>
+</ol>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/frameworks.png" alt="Commercially-available software platforms for conducting research studies such as ResearchKit[2] and HealthKit[3] are optimized to collect self-reports and digital biomarkers (e.g., calories, steps, blood pressure, glucose level) and are not suitable for collecting high-rate sensor data. Several research groups have developed their own versions of such software platforms, but these are often specific to target biomarkers and not easily extensible." />
+    
+    
+    <figcaption>
+        <h4>Framework comparisions</h4>
+        <p>
+        Commercially-available software platforms for conducting research studies such as ResearchKit[2] and HealthKit[3] are optimized to collect self-reports and digital biomarkers (e.g., calories, steps, blood pressure, glucose level) and are not suitable for collecting high-rate sensor data. Several research groups have developed their own versions of such software platforms, but these are often specific to target biomarkers and not easily extensible.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p><em>mCerebrum</em> is an open-source, generalizable, and reusable platform that meets all the above requirements. It is deployed in ten research studies with unique study designs and for multiple health targets. It comes with out-of-the-box support for wrist-worn inertial sensors, physiological sensors worn on the chest, sensors in a smartphone (e.g. GPS), weight and blood pressure monitors, and smart toothbrushes, and provides software interfaces to let developers easily incorporate additional ones. mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform. Because it must work in resource-poor settings (several of current studies are with low-income participants), mCerebrum is built to operate the entire sensor-analyze-act pipeline locally, without a constant data connections. It continuously assesses data quality to quickly identify and resolve issues by correcting sensor detachment or misplacements on the body. It supports high-rate streaming data collection from multiple sensors, real-time computation of several multi-sensor biomarkers, sensor-triggered interventions, as well as collection of self-reports prompted by real-time biomarkers computations (e.g., confirm/refute). Several biomarkers computed in real-time on the phone (e.g., stress, smoking) trigger Just-in-Time Adaptive Interventions (JITAI)[4].</p>
+
+<hr />
+
+<p>Add link to these citations</p>
+
+<blockquote>
+<ol>
+<li>Santosh Kumar, Wendy Nilsen, Misha Pavel, and Mani Srivastava. 2013. Mobile health: Revolutionizing healthcare through transdisciplinary research. Computer 46, 1 (2013), 28–35.</li>
+<li>Apple’s ResearchKit. 2017. Online at <a href="http://www.researchkit.org/">http://www.researchkit.org/</a>. , visited April (2017).</li>
+<li>Ari Y Benbasat and Joseph A Paradiso. 2007. A framework for the automated generation of power-efficient classifers for embedded sensor nodes. In Proceedings of the 5th international conference on Embedded networked sensor systems. ACM, 219–232.</li>
+<li>Inbal Nahum-Shani, Shawna N Smith, Ambuj Tewari, Katie Witkiewitz, Linda M Collins, Bonnie Spring, and S Murphy. 2014. Just in time adaptive interventions (jitais): An organizing framework for ongoing health behavior support. Methodology Center technical report 14-126 (2014).</li>
+</ol>
+</blockquote>
+
+
+                    </div>
+                    
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
+                <input type="hidden" name="q" value="site:http://software.md2k.org/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Menu</h3>
+    </div>
+
+    
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/mcerebrum" class="">
+        mCerebrum
+        
+        »
+      </a>
+      
+      
+        
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/mcerebrum/architecture" class="">Architecture</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/mcerebrum/getting-started" class="">Getting Started</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/mcerebrum/configuration" class="">Configuration</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/mcerebrum/troubleshooting/" class="">Troubleshooting</a>
+    </li>
+  
+
+</ul>
+
+      
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex" class="">
+        Cerebral Cortex
+        
+        »
+      </a>
+      
+      
+        
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/architecture" class="">Architecuture</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/docker" class="">Docker</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/getting-started" class="">Getting Started</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/api" class="">API</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/configuration" class="">Configuration</a>
+    </li>
+  
+
+</ul>
+
+      
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/feedback" class="">Bug Reports and Feature Requests</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/license" class="">Software License</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/contributing" class="">Contributing</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/references" class="">References</a>
+    </li>
+  
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            MD2K is supported by the National Institutes of Health Big Data to Knowledge Initiative Grant #1U54EB020404<br><br>Team: Cornell Tech, GA Tech, U Memphis, Northwestern, Ohio State, Open mHealth, UCLA, UCSD, UCSF, Harvard, U Mass, U Michigan, Utah, WVU
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong>MD2K Center</strong>
+        <br>Fedex Institute of Technology
+        <br>Suite 335
+        <br>University of Memphis
+        <br>365 Innovation Drive
+        <br>Memphis, TN  38152-3115
+        <br>
+        <strong>United States</strong>
+      </p>
+      
+
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2017, MD2K; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100215287-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="http://software.md2k.org/js/hpneo.gmaps.js"></script>
+<script src="http://software.md2k.org/js/gmaps.init.js"></script>
+<script src="http://software.md2k.org/js/front.js"></script>
+
+
+<script src="http://software.md2k.org/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>
