@@ -9,6 +9,7 @@ after_success:
   - git version
   - git config user.name "Travis CI"
   - git config user.email "dev@md2k.org"
+  - git branch -r
   - ./_scripts/publish_toghpages.sh
   - eval `ssh-agent -s`
   - ssh-add id_rsa_software.md2k.org
