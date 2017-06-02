@@ -70,8 +70,7 @@ For a list of current activities and all outstanding issues please see the issue
       
       <guid>http://software.md2k.org/under-the-hood/mcerebrum/architecture/</guid>
       <description>To achieve our goal of high-rate streaming data collection, logging, real-time processing, and intervention, we built a flexible, layered architecture.
- Architecture Overview  mCerebrum overview illustrating how high-frequency data, 800&amp;#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.   The architecture is composed of five layers:
- Communication interfaces which include support for both smartphone sensors and wearable sensors Data sources that provide an interface between devices and the rest of the mCerebrum platform Storage and routing interface, which provides persistent data storage and routing of intermediate results among the various components and is subject to the rules of a privacy controller A signal processing layer provides the necessary support for long-running applications to receive and process data from elsewhere in the system The participant interface layer that implements all interactions with the participants.</description>
+  Architecture Overview  mCerebrum overview illustrating how high-frequency data, 800&amp;#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.   mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform.</description>
     </item>
     
   </channel>
