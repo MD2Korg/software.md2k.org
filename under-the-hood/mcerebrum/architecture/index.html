@@ -162,6 +162,10 @@
   <a href="https://discuss.md2k.org/">Feedback and Questions</a>
 </div>
 
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 
         </header>
 
@@ -393,22 +397,35 @@ A data point value can be composed of any of the following: <em>boolean</em>, <e
 
 <p>Smartphone resource constraints make communication efficiency crucial to handling high-frequency data.  Android runs applications as separate processes for security and quality-of-service reasons; however, this introduces the need for inter-process communication (IPC) which is provided through three different mechanisms: <em>Intents</em>, which are implemented as a message forwarding system but suffers from performance issues with high-frequency data due to high resource utilization and latency; <em>anonymous shared memory</em>, is only suitable for sharing small amounts of data due to its dependence on mutually accessible RAM; and <em>Binder</em>, is a Remote Procedure Call (RPC) mechanism that allows for callback methods to be defined and is utilized by mCerebrum.  The Binder mechanism has a shared system transaction buffer of 1MB and it is critical that serialization, processing, and communications related to the Binder mechanism be as efficient as possible to ensure the buffer does not overflow.  An initial attempt at utilizing RPC to route data through the system resulted in an overflow of this buffer due to too many outstanding transactions when we sent unique requests for each data point. To resolve this overflow, a data buffer was introduced for high-frequency data streams inside DataKitAPI to ensure that each application receives data in the correct order and it automatically buffers data as appropriate to meet performance requirements.</p>
 
-<!-- \begin{figure}
-    \centering
-    \includegraphics[width=1.0\columnwidth]{img/flexibility.eps}
-    \caption{Each platform is represented by an arrow illustrating the bandwidth of the platform and extending right showing flexibility of data representation starting at the number of core data types supported.}
-    \label{fig:comparison}
-    \vspace{-9pt}
-\end{figure} -->
 
-<p>We evaluated the performance of mCerebrum for high-rate data handling and compared it with Google Fit~\cite{googlefit}, AWARE~\cite{ferreira2015aware}, and HealthKit~\cite{healthKit} (see \Cref{fig:comparison}). For Google Fit and AWARE, we used a Samsung S5 running Android 5.1.1 and for HealthKit, we used an iPhone 5s running iOS 10.2.1. In all cases, a sample application was written to generate synthetic data and store it within the frameworks with varying buffer sizes.</p>
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/flexibility.png" alt="Each platform is represented by an arrow illustrating the bandwidth of the platform and extending right showing flexibility of data representation starting at the number of core data types supported." />
+    
+    
+    <figcaption>
+        <h4>Comparison of different platforms</h4>
+        <p>
+        Each platform is represented by an arrow illustrating the bandwidth of the platform and extending right showing flexibility of data representation starting at the number of core data types supported.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>We evaluated the performance of mCerebrum for high-rate data handling and compared it with Google Fit[1], AWARE[2], and HealthKit[3]. For Google Fit and AWARE, we used a Samsung S5 running Android 5.1.1 and for HealthKit, we used an iPhone 5s running iOS 10.2.1. In all cases, a sample application was written to generate synthetic data and store it within the frameworks with varying buffer sizes.</p>
 
 <p>The buffer size and data rate were both increased until failure. Google Fit yielded 1,560 samples per second with HealthKit maxing out at 1,100 samples per second. The AWARE framework suffers from a lack of built-in support for batch operations, resulting in a maximum throughput of 260 samples per second. mCerebrum, in contrast, achieves 4,500 samples per second.</p>
 
-<p>Query performance degraded similarly in existing platforms due to their reliance on SQLite as a primary storage container for the data. We discuss this in more detail in~\Cref{sec:storage}.
+<p>Query performance degraded similarly in existing platforms due to their reliance on SQLite as a primary storage container for the data. We discuss this in more detail in the <a href="/under-the-hood/mcerebrum/architecture/#scalable-storage-of-high-rate-sensor-data">storage section</a>.
 In summary, mCerebrum provides data representations that result in both high-throughput and flexibility by allowing varying storage abstractions giving the platform high performance and flexibility.</p>
 
 <h4 id="handling-data-representation-diversity">Handling data representation diversity</h4>
+
+<p>Wearable sensors are still in early stages of data standardization. Some commercial devices such as Microsoft Band or Zephyr Bioharness provide APIs to send and receive data in well-understood formats. However, in other cases, devices send raw data directly from the sensors and require further interpretation based on their specifications. Depending upon the radio technology and API implementation, data could arrive in blocks associated with a single timestamp or samples cold be timestamped individually.</p>
 
 
 <figure >
@@ -429,10 +446,27 @@ In summary, mCerebrum provides data representations that result in both high-thr
 </figure>
 
 
-<p>Wearable sensors are still in early stages of data standardization. Some commercial devices such as Microsoft Band or Zephyr Bioharness provide APIs to send and receive data in well-understood formats. However, in other cases, devices send raw data directly from the sensors and require further interpretation based on their specifications. Depending upon the radio technology and API implementation, data could arrive in blocks associated with a single timestamp or samples cold be timestamped individually.</p>
-
 <p>Data is reformatted by mCerebrum applications to a common data point abstraction to support the wide variability in current and future data sources.
-mCerebrum supports a variety of external and internal sensors as illustrated in~\Cref{fig:DataSources}: \textit{Electrocardiogram (ECG), Respiration, Accelerometers, Gyroscopes, Magnetometers, Heart Rate, RR-Interval, Galvanic Skin Response (GSR), Barometer, Location (GPS), Ambient and UV Light, Ultra-wideband RF, Sound and Video}. Self-report and EMA are represented as JASON documents.</p>
+mCerebrum supports a variety of external and internal sensors including:</p>
+
+<ol>
+<li>Electrocardiogram (ECG)</li>
+<li>Respiration</li>
+<li>Accelerometers</li>
+<li>Gyroscopes</li>
+<li>Magnetometers</li>
+<li>Heart Rate</li>
+<li>RR-Interval</li>
+<li>Galvanic Skin Response (GSR)</li>
+<li>Barometer</li>
+<li>Location (GPS)</li>
+<li>Ambient and UV Light</li>
+<li>Ultra-wideband RF</li>
+<li>Sound</li>
+<li>Video</li>
+</ol>
+
+<p>Self-report and EMA are represented as JSON documents.</p>
 
 <h4 id="resilient-communication-management">Resilient Communication management</h4>
 
@@ -452,15 +486,40 @@ mCerebrum supports a variety of external and internal sensors as illustrated in~
 
 <p>SQLite is the de facto datastore layer on mobile devices including Android and iOS, but it is unsuitable for storing high-frequency raw sensor data streams. Such workloads, including our own, store data that is seldom deleted or updated (e.g., sensor samples), and are often small in (record) size e.g., a single message record could be a few hundred bytes, mCerebrum records 12 bytes, on average.</p>
 
-<p>Writing data streams to SQLite can be prohibitively expensive due to SQLite database journaling and its update-in-place semantics i.e., records reside at a particular location in stable storage, and updates mutate the record directly. Furthermore, flash memory (the dominant stable storage medium in mobile devices) is page-oriented, which means that each record write corresponds to an entire read and write of a page~\cite{Oh:2015:SOP:2824032.2824044}; common page sizes for NAND Flash memory chips today are around 8KB, which further increases write amplification\footnote{Write amplification refers to the actual amount of data that is rewritten for a given record e.g., if records are stored in 8KB pages, then writing a 12 byte record results in writing at least an 8KB page.} for small records that many applications (including our own) exhibit. In general, a single record inserted into a table with $k$ indexes translates into $2~\times~(k+1)$ pages written under SQLite~\cite{Oh:2015:SOP:2824032.2824044}.</p>
+<p>Writing data streams to SQLite can be prohibitively expensive due to SQLite database journaling and its update-in-place semantics i.e., records reside at a particular location in stable storage, and updates mutate the record directly. Furthermore, flash memory (the dominant stable storage medium in mobile devices) is page-oriented, which means that each record write corresponds to an entire read and write of a page[4]; common page sizes for NAND Flash memory chips today are around 8KB, which further increases write amplification</p>
+
+<blockquote>
+<p>Write amplification refers to the actual amount of data that is rewritten for a given record e.g., if records are stored in 8KB pages, then writing a 12 byte record results in writing at least an 8KB page.</p>
+</blockquote>
+
+<p>for small records that many applications (including our own) exhibit. In general, a single record inserted into a table with $k$ indexes translates into $$2~\times~(k+1)$$ pages written under SQLite[5].</p>
 
 <p>Consequently, when using SQLite to store raw sensor data, as data size grows, the query performance begins to degrade and fall behind the rate necessary for real-time computation of biomarkers. After about 8 hours of data collection, biomarker computations begin to timeout due to growing query response time.</p>
 
-<p>Log-structured storage systems under development, such as RocksDB \cite{rocksdb}, may provide an alternative to SQLite; however, RocksDB aims to support general RDBMS workloads and lacks data sync capabilities between the mobile device and the cloud platform, which is a key requirement in mCerebrum.</p>
+<p>Log-structured storage systems under development, such as RocksDB[6], may provide an alternative to SQLite; however, RocksDB aims to support general RDBMS workloads and lacks data sync capabilities between the mobile device and the cloud platform, which is a key requirement in mCerebrum.</p>
 
-<p>To address the specific requirements of mobile sensor data workloads, we have developed a custom log-structured storage layer called \textit{Pebbles}, which is optimized for high-frequency append-only writes of data arriving in batch or record streams. Pebbles also provides transparent data sync, allowing applications to offload data to the cloud for further processing and data archive. On the mobile device, data is stored in a circular log to maximize the throughput of flash memory. To support fast queries, Pebbles maintains a lightweight index on a logical timestamp and topic, which is used to identify data streams.</p>
+<p>To address the specific requirements of mobile sensor data workloads, we have developed a custom log-structured storage layer called <em>Pebbles</em>, which is optimized for high-frequency append-only writes of data arriving in batch or record streams. Pebbles also provides transparent data sync, allowing applications to offload data to the cloud for further processing and data archive. On the mobile device, data is stored in a circular log to maximize the throughput of flash memory. To support fast queries, Pebbles maintains a lightweight index on a logical timestamp and topic, which is used to identify data streams.</p>
 
-<p>\Cref{fig:Pebbles} shows the max write throughput of Pebbles versus SQLite by varying data write sizes. This benchmark was performed on the internal flash memory of a Samsung Galaxy Tab S2 \ignore{SM-T713}. Each system was configured with an 8MB in-memory buffer and performed a total of 4GB writes. The optimal throughput of 72 MBps was determined by performing one large consecutive write to the internal memory.</p>
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/pebbles.png" alt="Maximum write throughput of SQLite and Pebbles when varying the write size." />
+    
+    
+    <figcaption>
+        <h4>Write performance</h4>
+        <p>
+        Maximum write throughput of SQLite and Pebbles when varying the write size.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>This figure shows the max write throughput of Pebbles versus SQLite by varying data write sizes. This benchmark was performed on the internal flash memory of a Samsung Galaxy Tab S2. Each system was configured with an 8MB in-memory buffer and performed a total of 4GB writes. The optimal throughput of 72 MBps was determined by performing one large consecutive write to the internal memory.</p>
 
 <p>At lower data write sizes, such as those exhibited by typical mCerebrum applications, Pebbles outperforms SQLite by more than 20x. The performance gain of Pebbles is directly related to the lower write amplification relative to SQLite. In the lower data write sizes, the CPU becomes the bottleneck, preventing Pebbles from saturating maximum storage bandwidth. Nevertheless, the achieved throughput is sufficient for mCerebrum.</p>
 
@@ -470,7 +529,7 @@ mCerebrum supports a variety of external and internal sensors as illustrated in~
 
 <p>The second tenet, <em>analyze</em>, is principally responsible for processing the collected high-rate sensor data to compute features and biomarkers that can be used by multiple apps throughout the whole system. The main challenge is to screen the data for acceptable quality, clean the data, compute hundreds of features, and then apply the machine-learning models of all biomarkers, all in real-time, without falling behind the incoming data rate and without saturating the CPU and memory of resource constrained phones. One key approach to making this feasible is to facilitate efficient sharing of intermediate results (e.g., features) so computation can be reused.</p>
 
-<p>We first describe in Section~\ref{sec:reuse} how data and computation can be reused to scale the analytics. Next, \Cref{sec:overload} explores and evaluates the techniques to manage system overload so as to manage Android&rsquo;s quality of service system to support continuous high-frequency sensor data analysis. Finally, \Cref{sec:biomarker} describes Stream Processor that implements real-time computation and sharing of features and biomarkers throughout mCerebrum. We also analyze the impact of such sharing on improving CPU and memory efficiency.</p>
+<p>We first describe in the <a href="#data-and-computation-reuse">data and computation reuse</a> section how data and computation can be reused to scale the analytics. Next, <a href="#handling-system-overload">handling system overload</a> explores and evaluates the techniques to manage system overload so as to manage Android&rsquo;s quality of service system to support continuous high-frequency sensor data analysis. Finally, <a href="#stream-processor-real-time-computation-and-sharing-of-features-and-biomarkers">real-time computation and sharing of features and biomarkers</a> describes Stream Processor that implements real-time computation and sharing of features and biomarkers throughout mCerebrum. We also analyze the impact of such sharing on improving CPU and memory efficiency.</p>
 
 <h3 id="data-and-computation-reuse">Data and Computation Reuse</h3>
 
@@ -487,7 +546,7 @@ mCerebrum supports a variety of external and internal sensors as illustrated in~
 <p>The Android operating system is based on the Linux kernel and applications are run as self-contained processes.  This allows Android to manage the Quality-of-Service (QoS) it provides to the user; however, this QoS is designed for regular consumer use and not configurable for long-running background applications such as the ones we utilize to provide a continuously running pipeline of sense-analyze-act.  Android selectively kills, and subsequently removes from memory, applications as the system begins to run out of resources.</p>
 
 <p>To determine which processes should be killed when low on memory, Android places each process into an importance hierarchy based on the components running in them and the state of those components. The process types are (in order of importance): <em>foreground</em>, <em>visible</em>, <em>service</em>, and <em>cached</em>.
-Due to the QoS constraints from the OS, we find that our applications are the typical ones removed due to their <em>service</em> process state and worse, the OS sends a \textit{SIGNAL_KILL} command instead of a signal that can be trapped by our applications for a graceful shutdown.  This forces our applications to have a second watchdog application that can restart an application if the OS decided to remove it.</p>
+Due to the QoS constraints from the OS, we find that our applications are the typical ones removed due to their <em>service</em> process state and worse, the OS sends a <code>SIGNAL_KILL</code> command instead of a signal that can be trapped by our applications for a graceful shutdown.  This forces our applications to have a second watchdog application that can restart an application if the OS decided to remove it.</p>
 
 <p>mCerebrum adopts three separate mechanisms to combat the overload introduced and subsequent semi-random application closing.  First, the core service in critical applications is declared as a <em>foreground process</em>, which is a way to request that the OS not remove this application from a running state.  This is especially critical for applications that interact with the participant through a user interface or a scheduling algorithm.  Second, the mCerebrum kernel acts like a watchdog system for the rest of the application services.  It periodically checks (every 30 seconds) to ensure that the list of services it expects to be running are operational.  In the event that a service is not functional, it utilizes an exponential back-off mechanism to quickly restart a service and in the event of continued failure, it will slow attempts to restart processes.  Finally, every service must maintain a persistent copy of internal state on the internal phone memory and be able to resume when restarted. In addition, we adopt several optimizations (described below) to limit system overload and avoid application removal by the OS.</p>
 
@@ -495,12 +554,24 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 
 <p>Sharing and processing data as they arrive in real-time increases both the system and communication load due to the maximum bandwidth and maximum buffer size limits for Inter-Process Communication (IPC) that are used to share data and intermediate results among the data sources and requesting applications.</p>
 
-<p>\begin{figure}
-    \centering
-    \includegraphics[width=1.0\columnwidth]{img/freq_cpu_new.eps}
-    \caption{The effect of micro-batch latency on DataKit&rsquo;s communication bandwidth and CPU usage. We observe that with no latency, communication bandwidth is limited by bandwidth limits of IPC, while at higher latency, bandwidth is limited by the buffer size limits of IPC.}
-    \label{fig:overloading_memory}
-\end{figure}</p>
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/freq_cpu_new.png" alt="The effect of micro-batch latency on DataKit&#39;s communication bandwidth and CPU usage. We observe that with no latency, communication bandwidth is limited by bandwidth limits of IPC, while at higher latency, bandwidth is limited by the buffer size limits of IPC." />
+    
+    
+    <figcaption>
+        <h4>Micro-batch systems evaluation</h4>
+        <p>
+        The effect of micro-batch latency on DataKit&#39;s communication bandwidth and CPU usage. We observe that with no latency, communication bandwidth is limited by bandwidth limits of IPC, while at higher latency, bandwidth is limited by the buffer size limits of IPC.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
 
 <p>Our initial implementation serialized measurements from sensors into individual messages before sending them through DataKit; however, once the data rate exceeded 150 hertz (on a Samsung S4), the system queues overflowed and the system began losing data. We adopt a micro-batching design where data is shared for computation in small batches that introduces a small latency, but significantly reduces system overload.</p>
 
@@ -633,6 +704,17 @@ In addition, our design supports dynamic adaptation to use the user response (or
 <h2 id="conclusion">Conclusion</h2>
 
 <p>Interest and activity in developing new biomarkers and interventions from mobile sensor data is rapidly expanding. But, assembling a reliable software platform to support the collection of raw sensor data from a wide variety of sensors combined with the real-time computation of biomarkers on the phone to trigger notification and intervention requires significant time, effort, resource, and multidisciplinary experience. This paper presents an end-to-end system, consisting of 23 applications, that has evolved from rich experiences over the last half a decade. It is being adopted in multiple concurrent field studies and is now openly available for the community to use and grow as an open-source platform. With growing adoption and convergence on a common platform, native support in the commercial devices and operating systems may grow, making it easier to use and more efficient to run on participants&rsquo; personal phones. This may further accelerate data science and health research by allowing reuse of code and models among the community.</p>
+
+<hr />
+
+<ol>
+<li>~\cite{googlefit}</li>
+<li>~\cite{ferreira2015aware}</li>
+<li>~\cite{healthKit}</li>
+<li>~\cite{Oh:2015:SOP:2824032.2824044}</li>
+<li>~\cite{Oh:2015:SOP:2824032.2824044}</li>
+<li>\cite{rocksdb}</li>
+</ol>
 
                         </div>
                         

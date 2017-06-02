@@ -33,9 +33,21 @@
   visibility: hidden;
 }
 
+figure {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 90%;
+  border: 1px dotted #38a7bb;
+  padding: 10px;
+  text-align: center;
+}
+
+figure figcaption p{
+  text-align: left;
+}
 
 figure img {
-  max-width: 850px;
+  max-width: 720px;
 }
 
 
