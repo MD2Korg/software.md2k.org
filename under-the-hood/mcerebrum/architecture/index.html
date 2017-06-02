@@ -225,137 +225,134 @@
 <li>The <strong>participant interface</strong> layer that implements all interactions with the participants.</li>
 </ol>
 
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/mCerebrum_paper.png" alt="mCerebrum&#39;s architecture consists of 5 layers: (1) Communication, (2) Data Sources, (3) Storage, (4) Signal Processing, and (4) Participant Interaction, all connected through a data router. The colors indicate different categorizations of applications with red for high-rate and orange for low-rate sensors, blue indicates core components of mSense, cyan for system services, and green represents participant-centric applications." />
+    
+    
+    <figcaption>
+        <h4>Architecture</h4>
+        <p>
+        mCerebrum&#39;s architecture consists of 5 layers: (1) Communication, (2) Data Sources, (3) Storage, (4) Signal Processing, and (4) Participant Interaction, all connected through a data router. The colors indicate different categorizations of applications with red for high-rate and orange for low-rate sensors, blue indicates core components of mSense, cyan for system services, and green represents participant-centric applications.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
 <p>Together, they represent 23+  applications across our currently supported studies.</p>
 
-<table>
-<thead>
-<tr>
-<th>Application</th>
-<th>Description</th>
-</tr>
-</thead>
+<table class="table table-hover">
+    <thead>
+        <th>Application</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">DataKit</th>
+            <td>Handles routing, privacy, and storage</td>
+        </tr>
+        <tr>
+            <th scope="row">DataKitAPI</th>
+            <td>API library for apps to use DataKit</td>
+        </tr>
+        <tr>
+            <th scope="row">Plotter</th>
+            <td>Real-time data visualizer</td>
+        </tr>
+        <tr>
+            <th scope="row">Privacy Controller</th>
+            <td>Allows the participant to suspend data collection and EMA prompting</td>
+        </tr>
+        <tr>
+            <th scope="row">Utilities</th>
+            <td>Common helper functions for mCerebrum</td>
+        </tr>
 
-<tbody>
-<tr>
-<td>DataKit</td>
-<td>Handles routing, privacy, and storage</td>
-</tr>
+        <tr>
+            <th scope="row">Phone</th>
+            <td>Integrates the smartphone sensors</td>
+        </tr>
+        <tr>
+            <th scope="row">Chestband (AutoSense)</th>
+            <td>Data collection from ANT+ sensor suite</td>
+        </tr>
+        <tr>
+            <th scope="row">Wrist (MotionSense, MotionSenseHRV)</th>
+            <td>BLE wrist-worn motion capture device</td>
+        </tr>
+        <tr>
+            <th scope="row">iCO</th>
+            <td>Carbon Monoxide sensor for in-the-field validation</td>
+        </tr>
+        <tr>
+            <th scope="row">Smartwatch (Microsoft Band, Android Wear)</th>
+            <td>Bluetooth 4 connected watch</td>
+        </tr>
+        <tr>
+            <th scope="row">UWB RF (EasySense)</th>
+            <td>BLE chest sensor for measuring heart function and lung fluid</td>
+        </tr>
+        <tr>
+            <th scope="row">Blood Pressure (Omron)</th>
+            <td>BLE-connected blood pressure cuff</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight (Omron)</th>
+            <td>BLE-connected weight scale</td>
+        </tr>
+        <tr>
+            <th scope="row">Smart Toothbrush (Oral-B)</th>
+            <td>BLE-connected smart toothbrush</td>
+        </tr>
 
-<tr>
-<td>DataKitAPI</td>
-<td>API library for apps to use DataKit</td>
-</tr>
+        <tr>
+            <th scope="row">Stream Processor</th>
+            <td>Provides real-time computation of biomarkers (e.g. stress, smoking, activity, etc...)</td>
+        </tr>
 
-<tr>
-<td>Plotter</td>
-<td>Real-time data visualizer</td>
-</tr>
+        <tr>
+            <th scope="row">Mood Surfing</th>
+            <td>A custom built stress reduction app</td>
+        </tr>
+        <tr>
+            <th scope="row">Thought Shakeup</th>
+            <td>A custom built stress reduction app</td>
+        </tr>
+        <tr>
+            <th scope="row">Medication</th>
+            <td>Medication adherence compliance app and reminder system</td>
+        </tr>
+        <tr>
+            <th scope="row">Self Report</th>
+            <td>Customizable self-report prompts</td>
+        </tr>
+        <tr>
+            <th scope="row">EMA</th>
+            <td>Customizable survey (EMA) delivery application</td>
+        </tr>
 
-<tr>
-<td>Privacy Controller</td>
-<td>Allows the participant to suspend data collection and EMA prompting</td>
-</tr>
-
-<tr>
-<td>Utilities</td>
-<td>Common helper functions for mCerebrum</td>
-</tr>
-
-<tr>
-<td>Phone</td>
-<td>Integrates the smartphone sensors</td>
-</tr>
-
-<tr>
-<td>Chestband</td>
-<td>Data collection from ANT+ sensor suite</td>
-</tr>
-
-<tr>
-<td>Wrist</td>
-<td>BLE wrist-worn motion capture device</td>
-</tr>
-
-<tr>
-<td>iCO</td>
-<td>Carbon Monoxide sensor for in-the-field validation</td>
-</tr>
-
-<tr>
-<td>Smartwatch</td>
-<td>Bluetooth 4 connected watch</td>
-</tr>
-
-<tr>
-<td>UWB RF</td>
-<td>BLE chest sensor for measuring heart function and lung fluid</td>
-</tr>
-
-<tr>
-<td>Blood Pressure</td>
-<td>BLE-connected blood pressure cuff</td>
-</tr>
-
-<tr>
-<td>Weight</td>
-<td>BLE-connected weight scale</td>
-</tr>
-
-<tr>
-<td>Smart Toothbrush</td>
-<td>BLE-connected smart toothbrush</td>
-</tr>
-
-<tr>
-<td>Stream Processor</td>
-<td>Provides real-time computation of biomarkers (e.g. stress, smoking, activity, etc&hellip;)</td>
-</tr>
-
-<tr>
-<td>Mood Surfing</td>
-<td>A custom built stress reduction app</td>
-</tr>
-
-<tr>
-<td>Thought Shakeup</td>
-<td>A custom built stress reduction app</td>
-</tr>
-
-<tr>
-<td>Medication</td>
-<td>Medication adherence compliance app and reminder system</td>
-</tr>
-
-<tr>
-<td>Self Report</td>
-<td>Customizable self-report prompts</td>
-</tr>
-
-<tr>
-<td>EMA</td>
-<td>Customizable survey (EMA) delivery application</td>
-</tr>
-
-<tr>
-<td>Study</td>
-<td>Main study interface; provides an application management framework for the rest of the applications</td>
-</tr>
-
-<tr>
-<td>EMA/EMI Scheduler</td>
-<td>Customizable scheduling system for delivering prompts to a participant based on biomarker and other inputs</td>
-</tr>
-
-<tr>
-<td>Adherence Reminder</td>
-<td>A custom variant of EMA/EMI scheduler to remind data collection from episodic sensors</td>
-</tr>
-
-<tr>
-<td>Notification Manager</td>
-<td>Acts as the gatekeeper for all user prompts to manage user burden</td>
-</tr>
-</tbody>
+        <tr>
+            <th scope="row">Study</th>
+            <td>Main study interface; provides an application management framework for the rest of the applications</td>
+        </tr>
+        <tr>
+            <th scope="row">Scheduler</th>
+            <td>Customizable scheduling system for delivering prompts to a participant based on biomarker and other inputs</td>
+        </tr>
+        <tr>
+            <th scope="row">Adherence Reminder</th>
+            <td>A custom variant of EMA/EMI scheduler to remind data collection from episodic sensors</td>
+        </tr>
+        <tr>
+            <th scope="row">Notification Manager</th>
+            <td>Acts as the gatekeeper for all user prompts to manage user burden</td>
+        </tr>
+    </tbody>
 </table>
 
 <h2 id="real-life-deployments">Real-Life Deployments</h2>
@@ -384,7 +381,7 @@
 
 <p>mCerebrum&rsquo;s DataKit is designed to collect high-rate sensor data from multiple concurrent sources and allow efficient many-to-many sharing of data between data sources and sinks. Because data sources will grow in diversity of data types and likewise recipients may accept different formats of data from double values to complex JSON encoded Ecological Momentary Assessments (EMAs), DataKit provides a flexible structure to handle data representations and transport within the system. Additionally, by providing a fast and efficient communication mechanism, computation can be reused by transmitting intermediate results through DataKit for other processes to utilize instead of requiring each application to compute values as needed.</p>
 
-<p>DataKit is implemented as a data router instead of utilizing a common database for storage due to two key limitations.  First, SQLite, the de facto standard for Android, is unable to efficiently scale (\Cref{sec:storage}) to the data rates mCerebrum requires. Second, having a central controller allows for better control over security and privacy of data streams, restricting which information is persisted and stored through dedicated APIs.</p>
+<p>DataKit is implemented as a data router instead of utilizing a common database for storage due to two key limitations.  First, SQLite, the de facto standard for Android, is unable to <a href="#scalable-storage-of-high-rate-sensor-data">efficiently scale</a>  to the data rates mCerebrum requires. Second, having a central controller allows for better control over security and privacy of data streams, restricting which information is persisted and stored through dedicated APIs.</p>
 
 <h4 id="data-representations">Data representations</h4>
 
@@ -420,7 +417,7 @@ A data point value can be composed of any of the following: <em>boolean</em>, <e
 
 <p>The buffer size and data rate were both increased until failure. Google Fit yielded 1,560 samples per second with HealthKit maxing out at 1,100 samples per second. The AWARE framework suffers from a lack of built-in support for batch operations, resulting in a maximum throughput of 260 samples per second. mCerebrum, in contrast, achieves 4,500 samples per second.</p>
 
-<p>Query performance degraded similarly in existing platforms due to their reliance on SQLite as a primary storage container for the data. We discuss this in more detail in the <a href="/under-the-hood/mcerebrum/architecture/#scalable-storage-of-high-rate-sensor-data">storage section</a>.
+<p>Query performance degraded similarly in existing platforms due to their reliance on SQLite as a primary storage container for the data. We discuss this in more detail in the <a href="#scalable-storage-of-high-rate-sensor-data">storage section</a>.
 In summary, mCerebrum provides data representations that result in both high-throughput and flexibility by allowing varying storage abstractions giving the platform high performance and flexibility.</p>
 
 <h4 id="handling-data-representation-diversity">Handling data representation diversity</h4>
@@ -575,7 +572,7 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 
 <p>Our initial implementation serialized measurements from sensors into individual messages before sending them through DataKit; however, once the data rate exceeded 150 hertz (on a Samsung S4), the system queues overflowed and the system began losing data. We adopt a micro-batching design where data is shared for computation in small batches that introduces a small latency, but significantly reduces system overload.</p>
 
-<p>\Cref{fig:overloading_memory} shows the effects of various choices of micro-batching latency on the frequency of data the system can process and the CPU cost associated with it. We note that the IPC communication buffer size is limited to 1 MB. While introducing micro-batching helps reduce system load, it affects applications that need real-time data. Among them, the most delay sensitive is the Plotter for visualizing sensor data such as ECG, accelerometers, and gyroscopes. We choose a latency of one second that provides a bandwidth of 450 hertz for a CPU load of 17 percent. There is a noticeable delay in rendering the plots of sensor data in visualization, but it is acceptable for most purposes.</p>
+<p>This figure shows the effects of various choices of micro-batching latency on the frequency of data the system can process and the CPU cost associated with it. We note that the IPC communication buffer size is limited to 1 MB. While introducing micro-batching helps reduce system load, it affects applications that need real-time data. Among them, the most delay sensitive is the Plotter for visualizing sensor data such as ECG, accelerometers, and gyroscopes. We choose a latency of one second that provides a bandwidth of 450 hertz for a CPU load of 17 percent. There is a noticeable delay in rendering the plots of sensor data in visualization, but it is acceptable for most purposes.</p>
 
 <h4 id="effects-of-buffer-size-on-system-load">Effects of Buffer Size on System Load</h4>
 
@@ -612,7 +609,7 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 
 <p>Stream Processor is also responsible for generating a feature vector from the various computed data streams and evaluating a learned model for biomarker generation that is trained from existing annotated data sets.  These models are currently based on a support vector machine (SVM); however, any model that is efficiently evaluated is capable of being run.</p>
 
-<p>Despite efficient design, 14.87 &plusmn; 4.12 seconds each minute on average is spent running the signal processing algorithms and results in a 13 percent reduction in total expected system lifetime (see~\Cref{table:combinedPower}). This will only grow as more biomarkers are included for real-time local computation. Future work is needed to investigate methods to limit CPU load, e.g., explore cloud offloads for biomarker computation from raw sensor data.</p>
+<p>Despite efficient design, 14.87 &plusmn; 4.12 seconds each minute on average is spent running the signal processing algorithms and results in a 13 percent reduction in total expected system lifetime. This will only grow as more biomarkers are included for real-time local computation. Future work is needed to investigate methods to limit CPU load, e.g., explore cloud offloads for biomarker computation from raw sensor data.</p>
 
 <h3 id="quantifying-the-benefits-of-computation-reuse-a-case-study">Quantifying the Benefits of Computation Reuse &mdash; A Case Study</h3>
 
@@ -635,15 +632,28 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 </figure>
 
 
-<p>\begin{figure}
-    \centering
-    \includegraphics[width=1.0\columnwidth]{img/time_mem.pdf}
-    \caption{The effects of computation reuse on CPU and memory efficiency.  The first columns show the CPU time and memory usage when computing four biomarkers, Smoking, Stress, Eating, and Activity, independently without sharing computation between the algorithms. For this example, a reduction of 27\% CPU time and 47\% memory is achieved through this reuse, as shown in the second columns.}
-    \label{fig:reuse}
-    \vspace{-9pt}
-\end{figure}</p>
+<p>To analyze the effect of computation reuse, we created a single app for detecting smoking, stress, activity, and eating, and additional apps isolating the individual biomarker computations. The applications were run simultaneously to measure CPU and memory load and once again with computation sharing enabled. This figure shows the features that are shared among these four biomarker computations. For example, respiration data is used for both smoking detection and stress detection, allowing preprocessing and many feature calculations to be shared resulting in lower CPU and memory utilization.</p>
 
-<p>To analyze the effect of computation reuse, we created a single app for detecting smoking, stress, activity, and eating, and additional apps isolating the individual biomarker computations. The applications were run simultaneously to measure CPU and memory load and once again with computation sharing enabled. This figure shows the features that are shared among these four biomarker computations. For example, respiration data is used for both smoking detection and stress detection, allowing preprocessing and many feature calculations to be shared resulting in lower CPU and memory utilization.  \Cref{fig:reuse} show 27 percent reduction in CPU time and 47 percent reduction in memory achieved by computation reuse.</p>
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/time_mem.png" alt="The effects of computation reuse on CPU and memory efficiency.  The first columns show the CPU time and memory usage when computing four biomarkers, Smoking, Stress, Eating, and Activity, independently without sharing computation between the algorithms. For this example, a reduction of 27% CPU time and 47% memory is achieved through this reuse, as shown in the second columns." />
+    
+    
+    <figcaption>
+        <h4>Shared Computation</h4>
+        <p>
+        The effects of computation reuse on CPU and memory efficiency.  The first columns show the CPU time and memory usage when computing four biomarkers, Smoking, Stress, Eating, and Activity, independently without sharing computation between the algorithms. For this example, a reduction of 27% CPU time and 47% memory is achieved through this reuse, as shown in the second columns.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>This figure shows a 27 percent reduction in CPU time and 47 percent reduction in memory achieved by computation reuse.</p>
 
 <h2 id="act-burden-and-context-aware-interactions-with-participants">Act: Burden- and Context-Aware Interactions with participants</h2>
 
