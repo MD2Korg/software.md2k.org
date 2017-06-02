@@ -7,6 +7,20 @@ keywords = []
 To achieve our goal of high-rate streaming data collection, logging, real-time processing, and intervention, we built a flexible, layered architecture.
 
 {{< figure src="/img/under-the-hood/mcerebrum/mc_overview.png" title="Architecture Overview" caption="mCerebrum overview illustrating how high-frequency data, 800+ Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.">}}
+mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform. Because it must work in resource-poor settings (several of current studies are with low-income participants), mCerebrum is built to operate the entire sensor-analyze-act pipeline locally, without a constant data connections. To meet these needs, mCerebrum has nine key capabilities:
+
+1. Concurrent connection to a wide variety of high-rate wearable sensors with an ability to add new sensors
+2. Ingest a large volume of rapidly arriving data for which native support does not yet exist in the smartphone hardware or operating system
+3. Quickly analyze incoming data to monitor for data quality problems so that errors can be corrected
+Reliable storage of quickly growing volume of sensor data, whose archival is critical to the development and validation of new biomarkers
+4. Control interruption to study participants (Self-report, Ecological Momentary assessments (EMA), and interventions (EMI)) limiting burden and cognitive overload while satisfying the numerous study requirements.
+5. Support a Sense-Analyze-Act pipeline for high-rate streaming sensor data
+		1. self-report and confirm/refute prompts
+		2. Development and evaluation of sensor-triggered interventions
+6. Seamless sharing of streaming data from multiple sensors to enable computation of multi-sensor biomarkers (stress, smoking, eating)
+7. Architecturally scalable to support concurrent computations of a large number of biomarkers without saturating the computation capacity or battery life of the mobile phone
+8. General-purpose and extensible to support a wide variety of sensors, biomarkers, and study designs
+
 
 
 The architecture is composed of five layers:
