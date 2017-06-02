@@ -146,11 +146,11 @@ Writing data streams to SQLite can be prohibitively expensive due to SQLite data
 
 > Write amplification refers to the actual amount of data that is rewritten for a given record e.g., if records are stored in 8KB pages, then writing a 12 byte record results in writing at least an 8KB page.
 
-for small records that many applications (including our own) exhibit. In general, a single record inserted into a table with $k$ indexes translates into $$2~\times~(k+1)$$ pages written under SQLite[5].
+for small records that many applications (including our own) exhibit. In general, a single record inserted into a table with $k$ indexes translates into $$2~\times~(k+1)$$ pages written under SQLite[4].
 
 Consequently, when using SQLite to store raw sensor data, as data size grows, the query performance begins to degrade and fall behind the rate necessary for real-time computation of biomarkers. After about 8 hours of data collection, biomarker computations begin to timeout due to growing query response time.
 
-Log-structured storage systems under development, such as RocksDB[6], may provide an alternative to SQLite; however, RocksDB aims to support general RDBMS workloads and lacks data sync capabilities between the mobile device and the cloud platform, which is a key requirement in mCerebrum.
+Log-structured storage systems under development, such as RocksDB[5], may provide an alternative to SQLite; however, RocksDB aims to support general RDBMS workloads and lacks data sync capabilities between the mobile device and the cloud platform, which is a key requirement in mCerebrum.
 
 To address the specific requirements of mobile sensor data workloads, we have developed a custom log-structured storage layer called _Pebbles_, which is optimized for high-frequency append-only writes of data arriving in batch or record streams. Pebbles also provides transparent data sync, allowing applications to offload data to the cloud for further processing and data archive. On the mobile device, data is stored in a circular log to maximize the throughput of flash memory. To support fast queries, Pebbles maintains a lightweight index on a logical timestamp and topic, which is used to identify data streams.
 
@@ -198,23 +198,9 @@ Our initial implementation serialized measurements from sensors into individual 
 
 #### Effects of Buffer Size on System Load
 
+{{< figure src="/img/under-the-hood/mcerebrum/table_batch_size.png" title="Effect on CPU utilization" caption="Measurements (seconds) normalized to  60 second iterations for CPU time decrease as the buffer size is increased from 30 to 300 seconds.  0.34 seconds (17%) can be saved through buffering; however, it comes with an increase in memory load (156%). ">}}
 
-\begin{table}
-	\centering
-	\begin{tabular}{r|r|r|r|r|r|}
-    \cline{2-5}
-        & \multicolumn{4}{c|}{**Iteration time**} \\ \cline{2-5}
-                           & **30s** & **60s** & **120s** & **300s** \\ \hline
-\multicolumn{1}{|c|}{\textbf{Computation time (s/min)}}   & 2.67       & 2.48     & 2.33       & 2.23      \\ \hline
-% Peak CPU load (\%)     & 17.14 & 34.5        & 53.5        & 91.63      \\ \hline
-\multicolumn{1}{|c|}{\textbf{Memory load (MB)}} & 64.26 & 73.71 & 80.49 & 100.38 \\ \hline
-    \end{tabular}
-    \caption{Measurements (seconds) normalized to  60 second iterations for CPU time decrease as the buffer size is increased from 30 t0 300 seconds.  0.34 seconds (17\%) can be saved through buffering; however, it comes with an increase in memory load (156\%). }
-    \label{table:batchsizes}
-    \vspace{-18pt}
-\end{table}
-
-\Cref{table:batchsizes} illustrates the trade-off between buffering data and the computational and memory loads on the system.  This experiment runs our biomarker computation pipeline and varies the amount of data buffered between 30 and 300 seconds. The memory status of the smart phone is recorded by executing \texttt{adb shell dumpsys meminfo} command at two hertz. Applications also logged the starting time and computation time of each iteration. We ran each experiment for 20 minutes and the mean computation time and mean memory usage are computed. Complex biomarkers such as stress, smoking or eating, benefit from the additional buffer size which allows them to produce more accurate results; however, this comes at the expense of memory utilization. A biomarker's utility can be a function of it's temporal locality to the measuring event, such as the case with stress, where a five minute delay places any potential intervention outside of the episode, thereby reducing overall effectiveness. Additionally, buffering too much data increases the computational time and resources needed thus resulting in Android stopping certain data collection and processing application rendering the this platform unusable.  Computations on large buffer sizes effectively cause a CPU utilization spike which is interpreted by Android as a resource demanding application, and the application becomes a candidate for shutting down.
+This figure illustrates the trade-off between buffering data and the computational and memory loads on the system.  This experiment runs our biomarker computation pipeline and varies the amount of data buffered between 30 and 300 seconds. The memory status of the smart phone is recorded by executing `adb shell dumpsys meminfo` command at two hertz. Applications also logged the starting time and computation time of each iteration. We ran each experiment for 20 minutes and the mean computation time and mean memory usage are computed. Complex biomarkers such as stress, smoking or eating, benefit from the additional buffer size which allows them to produce more accurate results; however, this comes at the expense of memory utilization. A biomarker's utility can be a function of it's temporal locality to the measuring event, such as the case with stress, where a five minute delay places any potential intervention outside of the episode, thereby reducing overall effectiveness. Additionally, buffering too much data increases the computational time and resources needed thus resulting in Android stopping certain data collection and processing application rendering the this platform unusable.  Computations on large buffer sizes effectively cause a CPU utilization spike which is interpreted by Android as a resource demanding application, and the application becomes a candidate for shutting down.
 
 We currently use an operating point of one minute that provides acceptable latency while limiting system overload. Improvements in the computational model and hardware profile of the phone will change these operating points. Dynamic selection of the best operating points given a biomarker model and hardware profile is a subject of future work.
 
@@ -225,11 +211,11 @@ The majority of high-frequency signal processing occurs under the _Stream Proces
 
 _Stream Processor_ includes a number of design trade-offs that improve processing performance or constrain resource utilization so as not to adversely affect mCerebrum's system performance.  First, data is processed with a _batching_ mechanism where all algorithm pipelines receive data every 60 seconds as a way to allow the smartphone CPU to operate in burst mode for better energy efficiency and to limit the amount of reprocessing of data that must occur if a sliding window or smaller windows were to be utilized.  Second, data is kept in RAM only for the current window of computation unless the developer explicitly configures historic state preservation.
 
-Third, algorithms are usually implemented as pipelines since they gain significant computation reuse by sharing originating sensor sources.  For example, both stress~\cite{hovsepian2015cstress,sarker2016finding}, an algorithm designed to compute physiological arousal from ECG and respiration to estimate stressful episodes, and smoking~\cite{saleheen2015puffmarker}, combines respiration and wrist motion information to determine when a cigarette puff occurs, share common respiration features and the smoking algorithm takes advantage of existing computation and augments the processing with its new features.
+Third, algorithms are usually implemented as pipelines since they gain significant computation reuse by sharing originating sensor sources.  For example, both stress[6,7], an algorithm designed to compute physiological arousal from ECG and respiration to estimate stressful episodes, and smoking[8], combines respiration and wrist motion information to determine when a cigarette puff occurs, share common respiration features and the smoking algorithm takes advantage of existing computation and augments the processing with its new features.
 
 Stream Processor is also responsible for generating a feature vector from the various computed data streams and evaluating a learned model for biomarker generation that is trained from existing annotated data sets.  These models are currently based on a support vector machine (SVM); however, any model that is efficiently evaluated is capable of being run.
 
-Despite efficient design, $14.87 \pm 4.12$ seconds each minute on average is spent running the signal processing algorithms and results in a 13 percent reduction in total expected system lifetime (see~\Cref{table:combinedPower}). This will only grow as more biomarkers are included for real-time local computation. Future work is needed to investigate methods to limit CPU load, e.g., explore cloud offloads for biomarker computation from raw sensor data.
+Despite efficient design, 14.87 &plusmn; 4.12 seconds each minute on average is spent running the signal processing algorithms and results in a 13 percent reduction in total expected system lifetime (see~\Cref{table:combinedPower}). This will only grow as more biomarkers are included for real-time local computation. Future work is needed to investigate methods to limit CPU load, e.g., explore cloud offloads for biomarker computation from raw sensor data.
 
 ### Quantifying the Benefits of Computation Reuse --- A Case Study
 
@@ -243,25 +229,23 @@ Despite efficient design, $14.87 \pm 4.12$ seconds each minute on average is spe
     \vspace{-9pt}
 \end{figure}
 
-To analyze the effect of computation reuse, we created a single app for detecting smoking, stress, activity, and eating, and additional apps isolating the individual biomarker computations. The applications were run simultaneously to measure CPU and memory load and once again with computation sharing enabled. \Cref{fig:Venn} shows the features that are shared among these four biomarker computations. For example, respiration data is used for both smoking detection and stress detection, allowing preprocessing and many feature calculations to be shared resulting in lower CPU and memory utilization.  \Cref{fig:reuse} show 27 percent reduction in CPU time and 47 percent reduction in memory achieved by computation reuse.
+To analyze the effect of computation reuse, we created a single app for detecting smoking, stress, activity, and eating, and additional apps isolating the individual biomarker computations. The applications were run simultaneously to measure CPU and memory load and once again with computation sharing enabled. This figure shows the features that are shared among these four biomarker computations. For example, respiration data is used for both smoking detection and stress detection, allowing preprocessing and many feature calculations to be shared resulting in lower CPU and memory utilization.  \Cref{fig:reuse} show 27 percent reduction in CPU time and 47 percent reduction in memory achieved by computation reuse.
 
 
 ## Act: Burden- and Context-Aware Interactions with participants
 
 
 The final tenet of our platform, _act_, combines both _sense_ and _analyze_ outputs to engage with a participant during his/her study period. Together with sensor data, direct inputs from participants are also collected in research studies. Participant interaction is generally grouped into three categories: _voluntary_, _prompted_, and _glanceable_. Voluntary inputs can be provided through self-report buttons. Prompted interactions allow the system to obtain information from a participant through an EMA mechanism or to provide an intervention (EMI). Prompts are also generated to ask participants to collect episodic data from some devices or to remind them to take medications. Finally, glanceable interactions are implemented by updating the graphical user interface. For example, real-time data quality assessment is displayed on the home screen.
-%as shown in~\Cref{fig:userinterfaces}.
 Of these, prompted inputs and interventions represent interruptions to the participant and hence must be carefully coordinated to limit user burden.
 
-There are several new challenges in the design of scheduling EMA and EMI prompts in research studies collecting both streaming sensor data with sense-analyze-act capability and EMAs and EMIs. First, prompts should be coordinated from all sources, including those generated by biomarkers, to limit burden on participants while satisfying all study requirements. This includes using sensor-inferred contexts and deliver prompts or interventions only when the participant is available. The second challenge is to incorporate sensor data quality in prompt generation so that good quality sensor data is available preceding self-reports. In the following, we describe study requirements (\Cref{sec:interruption}) and our design of participant interaction manager that is both burden- and context-aware (\Cref{sec:scheduling}).
+There are several new challenges in the design of scheduling EMA and EMI prompts in research studies collecting both streaming sensor data with sense-analyze-act capability and EMAs and EMIs. First, prompts should be coordinated from all sources, including those generated by biomarkers, to limit burden on participants while satisfying all study requirements. This includes using sensor-inferred contexts and deliver prompts or interventions only when the participant is available. The second challenge is to incorporate sensor data quality in prompt generation so that good quality sensor data is available preceding self-reports. In the following, we describe [study requirements]({{< relref "#ema-emi-scheduling-requirements" >}}) and our design of [participant interaction manager that is both burden- and context-aware]({{< relref "#burden-and-context-aware-ema-emi-scheduling" >}}).
 
 
 ### EMA/EMI Scheduling Requirements
 
 Ecological Momentary Assessments (EMAs) are a cornerstone for biomedical studies because of their ability to obtain a participant response in the moment. They can be prompted randomly (to obtain unbiased daily estimates), based on time of day (to ensure coverage), based on self-reported events (to obtain context surrounding a self-reported event such as smoking lapse), and now also based on events detected by sensors (e.g., elevated stress). In addition, participants can also be prompted to engage in an intervention (e.g., stress relaxation), to collect episodic data from devices (e.g., blood pressure), and to remind them to take medications. Each prompt involves its specific constraints and irrespective of the source, each prompt represents an interruption and burden on the participant.
 
-Each study has a unique protocol (i.e., usually part of their innovation), requiring the EMA scheduler to work in conjunction with study-specific configuration% (described in~\Cref{sec:reuse})
-that implements the rules of the study protocol. Studies may involve:
+Each study has a unique protocol (i.e., usually part of their innovation), requiring the EMA scheduler to work in conjunction with study-specific configuration that implements the rules of the study protocol. Studies may involve:
 
 1. scheduled assessments, such as the beginning of the day, the end of the day, or at specific times,
 2. random assessment, where the time of this assessment is randomly generated within a specified window,
@@ -278,23 +262,27 @@ Third, the last EMA or EMI triggering time can be used to ensure that subsequent
 
 ### Burden- and Context-aware EMA/EMI Scheduling
 
-mCerebrum uses a bipartite-graph design (see Figure~\ref{fig:Bipartite}) that fulfills all of the above requirements and is thus able to satisfy the requirements of all ten studies listed in Table~\ref{table:deployments}.
-In addition, our design supports dynamic adaptation to use the user response (or lack of) to meet study requirements with gradual relaxation of constraints (see feedback loop in \Cref{fig:Bipartite}).
+{{< figure src="/img/under-the-hood/mcerebrum/Bipartite.png" title="EMA/EMI Scheduler" caption="A bipartite graph design of EMA/EMI scheduler. Boxes on left side show the inputs to the actions/controllers on the right, which prompt the participants. Feedback is accomplished by examining the conditions surrounding the participant response and passed back to key input blocks.">}}
+
+mCerebrum uses a bipartite-graph design that fulfills all of the above requirements and is thus able to satisfy the requirements of all [ten studies](/deployments).
+In addition, our design supports dynamic adaptation to use the user response (or lack of) to meet study requirements with gradual relaxation of constraints through a feedback loop.
 
 The inputs column (left-side) enumerates many current choices available in mCerebrum and include: burden constraints, random and event-triggered inputs, restrictions on actions through privacy constraints, start and end of day, and various time operations, user context, and data quality and battery assessments. These inputs can be mapped in arbitrary ways to a set of actions or controllers (right-side) and is defined as constraints across multiple applications as part of a study protocol. Ultimately, the output of an action or controller results in feedback information being incorporated back into the input side. These feedback loops allow mCerebrum to adapt to changing burden, personal preferences, or to gradually escalate the prompting to become more aggressive in requesting an action from a participant (to meet study requirements).
 
 For random and time based assessments, the EMA scheduler estimates the time of when it should be triggered. Due to the dynamic nature of self-reported event and event-triggered assessment, the EMA scheduler schedules it preemptively based on their appearance. There might be a case when multiple assessments may appear at the same time. To handle this issue, the EMA scheduler takes each of these events one by one as in a FIFO queue and checks all of the constraints for this event and deliver the EMA. After completion of an EMA, it returns back to process the next event. This approach also ensures that multiple EMAs are not triggered simultaneously. For random assessments, if it fails to deliver due to the constraints or conflicts with another assessment, it is rescheduled. Before delivering the EMA, the EMA scheduler checks constraints and if all constraints are successfully passed, the user is notified to the availability of an EMA assessment and the response is then used to the measure burden and constraints. In several studies, the EMA/EMI scheduler attempts an average of 55 prompt deliveries per day with an average processing time of 0.18 seconds each, negligible when compared to the CPU execution time of a stress or smoking biomarker.
 
-{{< figure src="/img/under-the-hood/mcerebrum/Bipartite.png" title="EMA/EMI Scheduler" caption="A bipartite graph design of EMA/EMI scheduler. Boxes on left side show the inputs to the actions/controllers on the right, which prompt the participants. Feedback is accomplished by examining the conditions surrounding the participant response and passed back to key input blocks.">}}
+
 
 ## Conclusion
 Interest and activity in developing new biomarkers and interventions from mobile sensor data is rapidly expanding. But, assembling a reliable software platform to support the collection of raw sensor data from a wide variety of sensors combined with the real-time computation of biomarkers on the phone to trigger notification and intervention requires significant time, effort, resource, and multidisciplinary experience. This paper presents an end-to-end system, consisting of 23 applications, that has evolved from rich experiences over the last half a decade. It is being adopted in multiple concurrent field studies and is now openly available for the community to use and grow as an open-source platform. With growing adoption and convergence on a common platform, native support in the commercial devices and operating systems may grow, making it easier to use and more efficient to run on participants' personal phones. This may further accelerate data science and health research by allowing reuse of code and models among the community.
 
 ---
 
-1. ~\cite{googlefit}
-1. ~\cite{ferreira2015aware}
-3. ~\cite{healthKit}
-4. ~\cite{Oh:2015:SOP:2824032.2824044}
-5. ~\cite{Oh:2015:SOP:2824032.2824044}
-6. \cite{rocksdb}
+1. Google’s FIT. 2017. Online at https://www.google.com/. visited April (2017).
+2. Denzil Ferreira, Vassilis Kostakos, and Anind K Dey. 2015. AWARE: mobile context instrumentation framework. Frontiers in ICT 2 (2015), 6.
+3. Apple’s HealthKit. 2017. Online at https://developer.apple.com/healthkit/. visited April (2017).
+4. Gihwan Oh, Sangchul Kim, Sang-Won Lee, and Bongki Moon. 2015. SQLite Optimization with Phase Change Memory for Mobile Applications. Proc. VLDB Endow. 8, 12 (Aug. 2015), 1454–1465. DOI:https://doi.org/10.14778/2824032.2824044
+5. RocksDB. 2017. Online at http://rocksdb.org/. visited April (2017).
+6. Karen Hovsepian, Mustafa al’Absi, Emre Ertin, Thomas Kamarck, Motohiro Nakajima, and Santosh Kumar. 2015. cStress: towards a gold standard for continuous stress assessment in the mobile environment. In Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM, 493–504.
+7. Hillol Sarker, Matthew Tyburski, Md Mahbubur Rahman, Karen Hovsepian, Moushumi Sharmin, David H Epstein, Kenzie L Preston, C Debra Furr-Holden, Adam Milam, Inbal Nahum-Shani, and others. 2016. Finding Significant Stress Episodes in a Discontinuous Time Series of Rapidly Varying Mobile Sensor Data. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems. ACM, 4489–4501.
+8. Nazir Saleheen, Amin Ahsan Ali, Syed Monowar Hossain, Hillol Sarker, Soujanya Chatterjee, Benjamin Marlin, Emre Ertin, Mustafa al’Absi, and Santosh Kumar. 2015. puffMarker: A multi-sensor approach for pinpointing the timing of  rst lapse in smoking cessation. In Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM, 999–1010.
