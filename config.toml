@@ -76,27 +76,27 @@ paginate = 10
     url = "/under-the-hood/mcerebrum/architecture"
     parent = "uth-mc"
     weight = 20
-
-  [[menu.underthehood]]
-    name = "Getting Started"
-    identifier = "uth-mc-gs"
-    url = "/under-the-hood/mcerebrum/getting-started"
-    parent = "uth-mc"
-    weight = 30
-
-  [[menu.underthehood]]
-    name = "Configuration"
-    identifier = "uth-mc-config"
-    url = "/under-the-hood/mcerebrum/configuration"
-    parent = "uth-mc"
-    weight = 40
-
-  [[menu.underthehood]]
-    name = "Troubleshooting"
-    identifier = "uth-mc-trouble"
-    url = "/under-the-hood/mcerebrum/troubleshooting/"
-    parent = "uth-mc"
-    weight = 50
+  # 
+  # [[menu.underthehood]]
+  #   name = "Getting Started"
+  #   identifier = "uth-mc-gs"
+  #   url = "/under-the-hood/mcerebrum/getting-started"
+  #   parent = "uth-mc"
+  #   weight = 30
+  #
+  # [[menu.underthehood]]
+  #   name = "Configuration"
+  #   identifier = "uth-mc-config"
+  #   url = "/under-the-hood/mcerebrum/configuration"
+  #   parent = "uth-mc"
+  #   weight = 40
+  #
+  # [[menu.underthehood]]
+  #   name = "Troubleshooting"
+  #   identifier = "uth-mc-trouble"
+  #   url = "/under-the-hood/mcerebrum/troubleshooting/"
+  #   parent = "uth-mc"
+  #   weight = 50
 
 
 [[menu.underthehood]]
@@ -127,18 +127,18 @@ paginate = 10
     weight = 130
 
   [[menu.underthehood]]
-    name = "API"
-    identifier = "uth-cc-api"
-    url = "/under-the-hood/cerebral-cortex/api"
+    name = "Working with Cerebral Cortex"
+    identifier = "uth-cc-working-with"
+    url = "/under-the-hood/cerebral-cortex/working-with-cerebral-cortex"
     parent = "uth-cc"
     weight = 140
 
-  [[menu.underthehood]]
-    name = "Configuration"
-    identifier = "uth-cc-config"
-    url = "/under-the-hood/cerebral-cortex/configuration"
-    parent = "uth-cc"
-    weight = 150
+  # [[menu.underthehood]]
+  #   name = "Configuration"
+  #   identifier = "uth-cc-config"
+  #   url = "/under-the-hood/cerebral-cortex/configuration"
+  #   parent = "uth-cc"
+  #   weight = 150
 
 
 [[menu.underthehood]]

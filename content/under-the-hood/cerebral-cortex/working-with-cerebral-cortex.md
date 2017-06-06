@@ -1,7 +1,11 @@
 +++
-title = "Cerebral Cortex"
+title = "Cerebral Cortex::Working With the Tools"
 description = "Details about the software architecture, design, and developer-oriented interfaces"
 keywords = []
 +++
 
-Intro/motivation here
+# Jupyter Notebooks
+
+# Grafana
+
+# Logging
