@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Software Releases</title>
+  <title>Cerebral Cortex::Getting Started</title>
   <meta name="author" content="" />
 
   
@@ -14,7 +14,7 @@
   
 
   
-  <meta name="description" content="Site template made by devcows using hugo">	
+  <meta name="description" content="Details about the software architecture, design, and developer-oriented interfaces">
   
 
   <meta name="generator" content="Hugo 0.22-DEV" />
@@ -51,9 +51,9 @@
   <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
 
   
-  <meta property="og:title" content="Software Releases" />
+  <meta property="og:title" content="Cerebral Cortex::Getting Started" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/under-the-hood/release-schedule//" />
+  <meta property="og:url" content="/under-the-hood/cerebral-cortex/getting-started//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -72,9 +72,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://software.md2k.org/">
-                    <img src="http://software.md2k.org/img/logo.png" alt="Software Releases logo" class="hidden-xs hidden-sm">
-                    <img src="http://software.md2k.org/img/logo-small.png" alt="Software Releases logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Software Releases - go to homepage</span>
+                    <img src="http://software.md2k.org/img/logo.png" alt="Cerebral Cortex::Getting Started logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="Cerebral Cortex::Getting Started logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Cerebral Cortex::Getting Started - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -173,7 +173,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Software Releases</h1>
+                <h1>Cerebral Cortex::Getting Started</h1>
             </div>
         </div>
     </div>
@@ -194,182 +194,46 @@
                         <div id="post-content">
                           
 
-<h1 id="software-release-information">Software Release Information</h1>
+<p>In order to start utilizing Cerebral Cortex, some dependencies are necessary to install and configure. Docker containers are utilized to minimize installation efforts both for development and production usage.</p>
 
-<h2 id="schedule">Schedule</h2>
-
-<p>MD2K software is released based on a monthly development and testing cycle.  Typically, we allocate <strong>3 1-week sprints</strong> for development activities followed by a <strong>single 1-week sprint</strong> dedicated towards testing.</p>
+<h1 id="prerequisites">Prerequisites</h1>
 
 <ul>
-<li>Major <code>X.0.0</code> software updates will occur approximately every year</li>
-<li>Minor/Feature <code>1.X.0</code> updates will occur each month on the 3rd Wednesday</li>
-<li>Critical bug fixes <code>1.2.X</code> will be released immediately</li>
+<li>Download and install <a href="https://docs.docker.com/engine/installation/">Docker</a></li>
+<li>Install <a href="https://docs.docker.com/compose/install/">docker-compose</a></li>
+<li>Download <a href="http://spark.apache.org/downloads.html">Apache Spark 2.1.x</a></li>
+<li>Clone <a href="https://github.com/MD2Korg/CerebralCortex-DockerCompose">https://github.com/MD2Korg/CerebralCortex-DockerCompose</a></li>
+<li>Run <code>docker-compose up</code> to initialize the containers before proceeding with the next steps</li>
 </ul>
 
-<table>
-<thead>
-<tr>
-<th>Year</th>
-<th>Month</th>
-<th>Release Day</th>
-</tr>
-</thead>
+<h1 id="cerebral-cortex-codebase">Cerebral Cortex codebase</h1>
 
-<tbody>
-<tr>
-<td>2016</td>
-<td>September</td>
-<td>2016/09/14  (Wed)</td>
-</tr>
+<ul>
+<li>Clone <a href="https://github.com/MD2Korg/CerebralCortex">https://github.com/MD2Korg/CerebralCortex</a> (IntelliJ preferred)</li>
+<li>Follow README.md instructions to configure the project and get everything up and running.</li>
+</ul>
 
-<tr>
-<td>2016</td>
-<td>October</td>
-<td>2016/10/19  (Wed)</td>
-</tr>
+<h1 id="data-files">Data files</h1>
 
-<tr>
-<td>2016</td>
-<td>November</td>
-<td>2016/11/16  (Wed)</td>
-</tr>
+<p>Download and extract the zip file from the example data here <a href="https://mhealth.md2k.org/datasets/">https://mhealth.md2k.org/datasets/</a></p>
 
-<tr>
-<td>2016</td>
-<td>December</td>
-<td>2016/12/21  (Wed)</td>
-</tr>
+<h1 id="data-import">Data import</h1>
 
-<tr>
-<td>2017</td>
-<td>January</td>
-<td>2017/01/18  (Wed)</td>
-</tr>
+<p>By running the following commands, you can import data into the databases through Cerebral Cortex&rsquo;s methods. This only needs run once for each data set you wish to import and interact with.</p>
 
-<tr>
-<td>2017</td>
-<td>February</td>
-<td>2017/02/15  (Wed)</td>
-</tr>
+<pre><code>python3&gt; from cerebralcortex.data_migrator.main import migrate
+python3&gt; migrate(&quot;/home/ali/IdeaProjects/MD2K_DATA/Site/8be4f601-70ce-3e13-a321-b85ee84b37ce&quot;, 64900)
+</code></pre>
 
-<tr>
-<td>2017</td>
-<td>March</td>
-<td>2017/03/15  (Wed)</td>
-</tr>
+<h1 id="interacting-with-data-streams">Interacting with data streams</h1>
 
-<tr>
-<td>2017</td>
-<td>April</td>
-<td>2017/04/19  (Wed)</td>
-</tr>
+<p>The data diagnostics routines are great examples for exploring Cerebral Cortex&rsquo;s syntax for interacting with data streams</p>
 
-<tr>
-<td>2017</td>
-<td>May</td>
-<td>2017/05/17  (Wed)</td>
-</tr>
-</tbody>
-</table>
+<h1 id="running-cstress">Running cStress</h1>
 
-<p>!!! warning &ldquo;Feature Requests&rdquo;
-All feature requests should be submitted prior to the scheduled release day of the prior month.  For example, for a feature request to be considered for the September 2016 release, it should be submitted to the <a href="feedback">JIRA</a> tracker before the August release day <code>2016/08/17</code>.  This will allow the software engineers sufficient time to plan and execute the upcoming activities.</p>
+<p>cStress is the first of many biomarker computations that will be incorporated into the system and this repository will continue to be updated with new capabilities. <code>cStress.py</code> provides an example of how we write signal processing code based on the Spark programming abstraction.</p>
 
-<h2 id="download">Download</h2>
-
-<h3 id="mcerebrum-instructions">mCerebrum instructions</h3>
-
-<p>mCerebrum is a suite of several Android applications that are combined with a
-set of configuration files.  These instructions will guide you in downloading,
-installing, and configuring the mCerebrum software suite.  All source code is
-available in the <a href="https://github.com/MD2Korg">MD2K&rsquo;s GitHub organization</a>.</p>
-
-<ol>
-<li>Download the latest version of mCerebrum (<a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest release</a> ) and install the APK file on and Android 5.0+ device.</li>
-<li>mCerebrum will run and the <code>Settings</code> button will be highlighted in red, press it.</li>
-<li>A prompt will be shown asking you to enter a filename of a configuration file to download, enter <code>default</code> and press <code>OK</code>.</li>
-<li>Once a configuration file is successfully downloaded and installed, you will be prompted with an Admin password screen.  The default password is <code>1234</code>.</li>
-<li>Congratulations, you have successfully installed the main mCerebrum application.  Please follow the instructions <a href="https://md2k.org/wp-content/uploads/2016/05/M0003.pdf">here</a> for configuring the platform</li>
-</ol>
-
-<h2 id="list-of-mcerebrum-apps">List of mCerebrum Apps</h2>
-
-<table>
-<thead>
-<tr>
-<th>Applications</th>
-<th>Download</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-AutoSense">AutoSense</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-AutoSense/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MicrosoftBand">Microsoft Band</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-PhoneSensor">Phone Sensor</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-StreamProcessor">Stream Processor</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MoodSurfing">Mood Surfing</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-ThoughtShakeup">Thought Shakeup</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMA">Ecological Momentary Assessment (EMA)</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMA/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMAScheduler">EMA Scheduler</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-NotificationManager">Notification Manager</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-NotificationManager/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Plotter">Data stream plotter</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Plotter/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-DataKit">DataKit</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-DataKit/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Study">mCerebrum (Study)</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest release</a></td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="supported-by">Supported by</h2>
-
-<p><img src="../img/GitHub_Logo.png" alt="GitHub" /> <a href="https://github.com">GitHub</a></p>
-
-<p><img src="../img/logo_JetBrains_4.png" alt="JetBrains" /> <a href="http://www.jetbrains.com/">JetBrains - IntelliJ IDEA</a></p>
+<p>For additional details, please visit our <a href="https://discuss.md2k.org/t/getting-started-with-cerebral-cortex/84">discussion forum</a>.</p>
 
                         </div>
                         

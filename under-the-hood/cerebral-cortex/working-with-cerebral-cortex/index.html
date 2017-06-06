@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Software Releases</title>
+  <title>Cerebral Cortex::Working With the Tools</title>
   <meta name="author" content="" />
 
   
@@ -14,7 +14,7 @@
   
 
   
-  <meta name="description" content="Site template made by devcows using hugo">	
+  <meta name="description" content="Details about the software architecture, design, and developer-oriented interfaces">
   
 
   <meta name="generator" content="Hugo 0.22-DEV" />
@@ -51,9 +51,9 @@
   <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
 
   
-  <meta property="og:title" content="Software Releases" />
+  <meta property="og:title" content="Cerebral Cortex::Working With the Tools" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/under-the-hood/release-schedule//" />
+  <meta property="og:url" content="/under-the-hood/cerebral-cortex/working-with-cerebral-cortex//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -72,9 +72,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://software.md2k.org/">
-                    <img src="http://software.md2k.org/img/logo.png" alt="Software Releases logo" class="hidden-xs hidden-sm">
-                    <img src="http://software.md2k.org/img/logo-small.png" alt="Software Releases logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Software Releases - go to homepage</span>
+                    <img src="http://software.md2k.org/img/logo.png" alt="Cerebral Cortex::Working With the Tools logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="Cerebral Cortex::Working With the Tools logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Cerebral Cortex::Working With the Tools - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -173,7 +173,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Software Releases</h1>
+                <h1>Cerebral Cortex::Working With the Tools</h1>
             </div>
         </div>
     </div>
@@ -194,182 +194,11 @@
                         <div id="post-content">
                           
 
-<h1 id="software-release-information">Software Release Information</h1>
+<h1 id="jupyter-notebooks">Jupyter Notebooks</h1>
 
-<h2 id="schedule">Schedule</h2>
+<h1 id="grafana">Grafana</h1>
 
-<p>MD2K software is released based on a monthly development and testing cycle.  Typically, we allocate <strong>3 1-week sprints</strong> for development activities followed by a <strong>single 1-week sprint</strong> dedicated towards testing.</p>
-
-<ul>
-<li>Major <code>X.0.0</code> software updates will occur approximately every year</li>
-<li>Minor/Feature <code>1.X.0</code> updates will occur each month on the 3rd Wednesday</li>
-<li>Critical bug fixes <code>1.2.X</code> will be released immediately</li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>Year</th>
-<th>Month</th>
-<th>Release Day</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>2016</td>
-<td>September</td>
-<td>2016/09/14  (Wed)</td>
-</tr>
-
-<tr>
-<td>2016</td>
-<td>October</td>
-<td>2016/10/19  (Wed)</td>
-</tr>
-
-<tr>
-<td>2016</td>
-<td>November</td>
-<td>2016/11/16  (Wed)</td>
-</tr>
-
-<tr>
-<td>2016</td>
-<td>December</td>
-<td>2016/12/21  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>January</td>
-<td>2017/01/18  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>February</td>
-<td>2017/02/15  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>March</td>
-<td>2017/03/15  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>April</td>
-<td>2017/04/19  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>May</td>
-<td>2017/05/17  (Wed)</td>
-</tr>
-</tbody>
-</table>
-
-<p>!!! warning &ldquo;Feature Requests&rdquo;
-All feature requests should be submitted prior to the scheduled release day of the prior month.  For example, for a feature request to be considered for the September 2016 release, it should be submitted to the <a href="feedback">JIRA</a> tracker before the August release day <code>2016/08/17</code>.  This will allow the software engineers sufficient time to plan and execute the upcoming activities.</p>
-
-<h2 id="download">Download</h2>
-
-<h3 id="mcerebrum-instructions">mCerebrum instructions</h3>
-
-<p>mCerebrum is a suite of several Android applications that are combined with a
-set of configuration files.  These instructions will guide you in downloading,
-installing, and configuring the mCerebrum software suite.  All source code is
-available in the <a href="https://github.com/MD2Korg">MD2K&rsquo;s GitHub organization</a>.</p>
-
-<ol>
-<li>Download the latest version of mCerebrum (<a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest release</a> ) and install the APK file on and Android 5.0+ device.</li>
-<li>mCerebrum will run and the <code>Settings</code> button will be highlighted in red, press it.</li>
-<li>A prompt will be shown asking you to enter a filename of a configuration file to download, enter <code>default</code> and press <code>OK</code>.</li>
-<li>Once a configuration file is successfully downloaded and installed, you will be prompted with an Admin password screen.  The default password is <code>1234</code>.</li>
-<li>Congratulations, you have successfully installed the main mCerebrum application.  Please follow the instructions <a href="https://md2k.org/wp-content/uploads/2016/05/M0003.pdf">here</a> for configuring the platform</li>
-</ol>
-
-<h2 id="list-of-mcerebrum-apps">List of mCerebrum Apps</h2>
-
-<table>
-<thead>
-<tr>
-<th>Applications</th>
-<th>Download</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-AutoSense">AutoSense</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-AutoSense/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MicrosoftBand">Microsoft Band</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-PhoneSensor">Phone Sensor</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-StreamProcessor">Stream Processor</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MoodSurfing">Mood Surfing</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-ThoughtShakeup">Thought Shakeup</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMA">Ecological Momentary Assessment (EMA)</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMA/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMAScheduler">EMA Scheduler</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-NotificationManager">Notification Manager</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-NotificationManager/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Plotter">Data stream plotter</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Plotter/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-DataKit">DataKit</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-DataKit/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Study">mCerebrum (Study)</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest release</a></td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="supported-by">Supported by</h2>
-
-<p><img src="../img/GitHub_Logo.png" alt="GitHub" /> <a href="https://github.com">GitHub</a></p>
-
-<p><img src="../img/logo_JetBrains_4.png" alt="JetBrains" /> <a href="http://www.jetbrains.com/">JetBrains - IntelliJ IDEA</a></p>
+<h1 id="logging">Logging</h1>
 
                         </div>
                         

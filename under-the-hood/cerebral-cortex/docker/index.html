@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Software Releases</title>
+  <title>Cerebral Cortex::Docker</title>
   <meta name="author" content="" />
 
   
@@ -14,7 +14,7 @@
   
 
   
-  <meta name="description" content="Site template made by devcows using hugo">	
+  <meta name="description" content="Details about the software architecture, design, and developer-oriented interfaces">
   
 
   <meta name="generator" content="Hugo 0.22-DEV" />
@@ -51,9 +51,9 @@
   <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
 
   
-  <meta property="og:title" content="Software Releases" />
+  <meta property="og:title" content="Cerebral Cortex::Docker" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/under-the-hood/release-schedule//" />
+  <meta property="og:url" content="/under-the-hood/cerebral-cortex/docker//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -72,9 +72,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://software.md2k.org/">
-                    <img src="http://software.md2k.org/img/logo.png" alt="Software Releases logo" class="hidden-xs hidden-sm">
-                    <img src="http://software.md2k.org/img/logo-small.png" alt="Software Releases logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Software Releases - go to homepage</span>
+                    <img src="http://software.md2k.org/img/logo.png" alt="Cerebral Cortex::Docker logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="Cerebral Cortex::Docker logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Cerebral Cortex::Docker - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -173,7 +173,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Software Releases</h1>
+                <h1>Cerebral Cortex::Docker</h1>
             </div>
         </div>
     </div>
@@ -194,182 +194,106 @@
                         <div id="post-content">
                           
 
-<h1 id="software-release-information">Software Release Information</h1>
+<h1 id="docker">Docker</h1>
 
-<h2 id="schedule">Schedule</h2>
+<p>Cerebral Cortex is built for development and production use based on <a href="https://docker.com/">Docker</a> technologies.</p>
 
-<p>MD2K software is released based on a monthly development and testing cycle.  Typically, we allocate <strong>3 1-week sprints</strong> for development activities followed by a <strong>single 1-week sprint</strong> dedicated towards testing.</p>
+<p>Container customizations and relevant docker-compose files are available in our GitHub <a href="https://github.com/MD2Korg/CerebralCortex-DockerCompose">repository</a>.
+This repository contains configurations relevant for both development and production usage.  As support is expanded for other cloud services, the GitHub page
+will reflect these additions.</p>
 
-<ul>
-<li>Major <code>X.0.0</code> software updates will occur approximately every year</li>
-<li>Minor/Feature <code>1.X.0</code> updates will occur each month on the 3rd Wednesday</li>
-<li>Critical bug fixes <code>1.2.X</code> will be released immediately</li>
-</ul>
+<h2 id="installation">Installation</h2>
 
-<table>
-<thead>
-<tr>
-<th>Year</th>
-<th>Month</th>
-<th>Release Day</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>2016</td>
-<td>September</td>
-<td>2016/09/14  (Wed)</td>
-</tr>
-
-<tr>
-<td>2016</td>
-<td>October</td>
-<td>2016/10/19  (Wed)</td>
-</tr>
-
-<tr>
-<td>2016</td>
-<td>November</td>
-<td>2016/11/16  (Wed)</td>
-</tr>
-
-<tr>
-<td>2016</td>
-<td>December</td>
-<td>2016/12/21  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>January</td>
-<td>2017/01/18  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>February</td>
-<td>2017/02/15  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>March</td>
-<td>2017/03/15  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>April</td>
-<td>2017/04/19  (Wed)</td>
-</tr>
-
-<tr>
-<td>2017</td>
-<td>May</td>
-<td>2017/05/17  (Wed)</td>
-</tr>
-</tbody>
-</table>
-
-<p>!!! warning &ldquo;Feature Requests&rdquo;
-All feature requests should be submitted prior to the scheduled release day of the prior month.  For example, for a feature request to be considered for the September 2016 release, it should be submitted to the <a href="feedback">JIRA</a> tracker before the August release day <code>2016/08/17</code>.  This will allow the software engineers sufficient time to plan and execute the upcoming activities.</p>
-
-<h2 id="download">Download</h2>
-
-<h3 id="mcerebrum-instructions">mCerebrum instructions</h3>
-
-<p>mCerebrum is a suite of several Android applications that are combined with a
-set of configuration files.  These instructions will guide you in downloading,
-installing, and configuring the mCerebrum software suite.  All source code is
-available in the <a href="https://github.com/MD2Korg">MD2K&rsquo;s GitHub organization</a>.</p>
+<p>Two things must be installed to utilize these Docker containers:</p>
 
 <ol>
-<li>Download the latest version of mCerebrum (<a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest release</a> ) and install the APK file on and Android 5.0+ device.</li>
-<li>mCerebrum will run and the <code>Settings</code> button will be highlighted in red, press it.</li>
-<li>A prompt will be shown asking you to enter a filename of a configuration file to download, enter <code>default</code> and press <code>OK</code>.</li>
-<li>Once a configuration file is successfully downloaded and installed, you will be prompted with an Admin password screen.  The default password is <code>1234</code>.</li>
-<li>Congratulations, you have successfully installed the main mCerebrum application.  Please follow the instructions <a href="https://md2k.org/wp-content/uploads/2016/05/M0003.pdf">here</a> for configuring the platform</li>
+<li><a href="https://www.docker.com/community-edition">Docker</a></li>
+<li><a href="https://docs.docker.com/compose/install/">Docker-compose</a></li>
 </ol>
 
-<h2 id="list-of-mcerebrum-apps">List of mCerebrum Apps</h2>
+<p>Once these dependencies have been installed, the commands on this page will function properly.</p>
 
-<table>
-<thead>
-<tr>
-<th>Applications</th>
-<th>Download</th>
-</tr>
-</thead>
+<h2 id="current-containers">Current Containers</h2>
 
-<tbody>
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-AutoSense">AutoSense</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-AutoSense/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MicrosoftBand">Microsoft Band</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MicrosoftBand/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-PhoneSensor">Phone Sensor</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-PhoneSensor/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-StreamProcessor">Stream Processor</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-StreamProcessor/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MoodSurfing">Mood Surfing</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-MoodSurfing/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-ThoughtShakeup">Thought Shakeup</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-ThoughtShakeup/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMA">Ecological Momentary Assessment (EMA)</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMA/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMAScheduler">EMA Scheduler</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-EMAScheduler/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-NotificationManager">Notification Manager</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-NotificationManager/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Plotter">Data stream plotter</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Plotter/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-DataKit">DataKit</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-DataKit/releases/latest">latest release</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Study">mCerebrum (Study)</a></td>
-<td><a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest release</a></td>
-</tr>
-</tbody>
+<table class="table table-hover">
+    <thead>
+        <th>Name</th>
+    <th>Container</th>
+    <th>Description</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">NGINX</th>
+            <td>Custom: nginx</td>
+      <td>Frontend web proxy for accessing services and providing TLS encryption</td>
+        </tr>
+    <tr>
+            <th scope="row">FluentD</th>
+            <td>Custom: fluentd</td>
+      <td>Open source data collector for unified logging layer</td>
+        </tr>
+    <tr>
+      <th scope="row">Elastic search</th>
+      <td>elasticsearch</td>
+      <td>A distributed, RESTful search and analytics engine</td>
+    </tr>
+    <tr>
+      <th scope="row">Kibana</th>
+      <td>kibana</td>
+      <td>Visualize your Elasticsearch data and navigate the Elastic Stack</td>
+    </tr>
+    <tr>
+      <th scope="row">Grafana</th>
+      <td>grafana/grafana</td>
+      <td>Time-series visualization tool for Cerebral Cortex datastreams</td>
+    </tr>
+    <tr>
+      <th scope="row">InfluxDB</th>
+      <td>influxdb:1.2</td>
+      <td>Time-series database designed for IoT monitoring and used by Grafana</td>
+    </tr>
+    <tr>
+      <th scope="row">Jupyter Notebook</th>
+      <td>Custom: md2k-spark-notebook</td>
+      <td>Jupyter Spark Python3 notebook for providing a web based UI into Cerebral Cortex</td>
+    </tr>
+    <tr>
+      <th scope="row">Kafka</th>
+      <td>wurstmeister/kafka</td>
+      <td>Apache Kafka is a distributed streaming platform used by Cerebral Cortex for handing data ingestion and routing</td>
+    </tr>
+    <tr>
+      <th scope="row">ZooKeeper</th>
+      <td>wurstmeister/zookeeper</td>
+      <td>ZooKeeper is a distributed, open-source coordination service for distributed applications and used by Kafka</td>
+    </tr>
+    <tr>
+      <th scope="row">Cassandra</th>
+      <td>Custom: cassandra:3.9</td>
+      <td>A distributed NoSQL database management system designed to handle large amounts of data across many commodity servers</td>
+    </tr>
+    <tr>
+      <th scope="row">MySQL</th>
+      <td>mysql:5.7</td>
+      <td>A relational database management system</td>
+    </tr>
+  </tbody>
 </table>
 
-<h2 id="supported-by">Supported by</h2>
+<h1 id="development">Development</h1>
 
-<p><img src="../img/GitHub_Logo.png" alt="GitHub" /> <a href="https://github.com">GitHub</a></p>
+<p>Cerebral Cortex can be run for development purposes by cloning this <a href="https://github.com/MD2Korg/CerebralCortex-DockerCompose">repository</a> and launching docker-compose.
+A machine with at least 16GB of memory is recommended to run all the containers.</p>
 
-<p><img src="../img/logo_JetBrains_4.png" alt="JetBrains" /> <a href="http://www.jetbrains.com/">JetBrains - IntelliJ IDEA</a></p>
+<pre><code>&gt; git clone https://github.com/MD2Korg/CerebralCortex-DockerCompose
+&gt; cd CerebralCortex-DockerCompose
+&gt; docker-compose up
+</code></pre>
+
+<p>This will tell Docker to download all dependencies and build the necessary local images before starting all the containers on your system.
+Once the system has started everything up, you can access Cerebral Cortex&rsquo;s capabilities with these <a href="/under-the-hood/cerebral-cortex/working-with-cerebral-cortex">instructions</a></p>
+
+<h1 id="production">Production</h1>
 
                         </div>
                         
