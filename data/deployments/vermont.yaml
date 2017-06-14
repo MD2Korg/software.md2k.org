@@ -4,8 +4,8 @@ targets: "Smoking and fMRI"
 # icon: "fa fa-lightbulb-o"
 description: "This study examines the multiple neurocognitive processes that have previously been implicated in relapse among smokers who are both
 successful and unsuccessful in maintaining smoking abstinence."
-users: "90"
-persondays: "1,260"
-samples: "55"
+users: 90
+persondays: 1260
+samples: 55
 pi: Hugh Garavan
 sensors: [AutoSense, MotionSense, Phone]

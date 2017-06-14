@@ -5,8 +5,8 @@ targets: "Oral Health"
 description: "This study develops the Remote Oral Behaviors Assessment System (ROBAS) by integrating a multimodal sensing platform (smart toothbrush and wrist sensors) with the
 mCerebrum software platform (physiological and EMA data logging, transmission, and activity/behavior inference system) for the testing and
 iterative refinement via laboratory simulators and test subjects."
-users: "162"
-persondays: "29,160"
-samples: "968"
+users: 162
+persondays: 29160
+samples: 968
 pi: Vivek Shetty
 sensors: [OralB Toothbrush, MotionSense, Phone]

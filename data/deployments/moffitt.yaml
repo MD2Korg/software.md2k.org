@@ -4,8 +4,8 @@ targets: "Smoking and Stress"
 # icon: "fa fa-lightbulb-o"
 description: "This feasibility study examines the effects of delivering mindfulness strategies via smartphones on key mechanisms underlying
 smoking cessation among low socioeconomic status, racially/ethnically diverse smokers."
-users: "24"
-persondays: "336"
-samples: "15"
+users: 24
+persondays: 336
+samples: 15
 pi: Christine Vinci
 sensors: [AutoSense, MotionSense, Phone]

@@ -46,9 +46,9 @@
             </div>
 
             <div class="col-md-2">
-              <h4>Users:</h4> {{ $element.users }}
-              <h4>Person-Days:</h4> {{ $element.persondays }}
-              <h4>Samples:</h4> {{ $element.samples }} billion
+              <h4>Users:</h4> {{ $element.users | lang.NumFmt 0}}
+              <h4>Person-Days:</h4> {{ $element.persondays | lang.NumFmt 0}}
+              <h4>Samples:</h4> {{ $element.samples | lang.NumFmt 0}} billion
 
             </div>
 
