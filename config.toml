@@ -76,7 +76,7 @@ paginate = 10
     url = "/under-the-hood/mcerebrum/architecture"
     parent = "uth-mc"
     weight = 20
-  # 
+  #
   # [[menu.underthehood]]
   #   name = "Getting Started"
   #   identifier = "uth-mc-gs"
@@ -185,7 +185,7 @@ paginate = 10
     viewMorePostLink = "/blog/"
     author = "MD2K"
     defaultKeywords = ["md2k", "mHealth", "mCerebrum", "Cerebral Cortex"]
-    defaultDescription = "Site template made by devcows using hugo"
+    defaultDescription = "MD2K Software Documentation Site"
 
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = ""
