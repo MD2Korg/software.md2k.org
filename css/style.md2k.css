@@ -51,6 +51,17 @@ figure img {
 }
 
 
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+ul.deployments > li {
+  margin-left: -16px;
+}
+
+
 .feedback {
   bottom:5px;
   right: 5px;

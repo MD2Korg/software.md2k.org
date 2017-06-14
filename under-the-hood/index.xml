@@ -12,46 +12,6 @@
     
     
     <item>
-      <title>Cerebral Cortex::Architecture</title>
-      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/architecture/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/architecture/</guid>
-      <description> Overview  Architecture Overview   </description>
-    </item>
-    
-    <item>
-      <title>Cerebral Cortex::Docker</title>
-      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/docker/</guid>
-      <description>Docker Cerebral Cortex is built for development and production use based on Docker technologies.
-Container customizations and relevant docker-compose files are available in our GitHub repository. This repository contains configurations relevant for both development and production usage. As support is expanded for other cloud services, the GitHub page will reflect these additions.
-Installation Two things must be installed to utilize these Docker containers:
- Docker Docker-compose  Once these dependencies have been installed, the commands on this page will function properly.</description>
-    </item>
-    
-    <item>
-      <title>Cerebral Cortex::Getting Started</title>
-      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/getting-started/</guid>
-      <description>In order to start utilizing Cerebral Cortex, some dependencies are necessary to install and configure. Docker containers are utilized to minimize installation efforts both for development and production usage.
-Prerequisites  Download and install Docker Install docker-compose Download Apache Spark 2.1.x Clone https://github.com/MD2Korg/CerebralCortex-DockerCompose Run docker-compose up to initialize the containers before proceeding with the next steps  Cerebral Cortex codebase  Clone https://github.com/MD2Korg/CerebralCortex (IntelliJ preferred) Follow README.md instructions to configure the project and get everything up and running.</description>
-    </item>
-    
-    <item>
-      <title>Cerebral Cortex::Working With the Tools</title>
-      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/working-with-cerebral-cortex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/working-with-cerebral-cortex/</guid>
-      <description> Jupyter Notebooks Grafana Logging </description>
-    </item>
-    
-    <item>
       <title>Contributing to the Software</title>
       <link>http://software.md2k.org/under-the-hood/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -101,16 +61,6 @@ For a list of current activities and all outstanding issues please see the issue
       <guid>http://software.md2k.org/under-the-hood/release-schedule/</guid>
       <description>Software Release Information Schedule MD2K software is released based on a monthly development and testing cycle. Typically, we allocate 3 1-week sprints for development activities followed by a single 1-week sprint dedicated towards testing.
  Major X.0.0 software updates will occur approximately every year Minor/Feature 1.X.0 updates will occur each month on the 3rd Wednesday Critical bug fixes 1.2.X will be released immediately     Year Month Release Day     2016 September 2016/09/14 (Wed)   2016 October 2016/10/19 (Wed)   2016 November 2016/11/16 (Wed)   2016 December 2016/12/21 (Wed)   2017 January 2017/01/18 (Wed)   2017 February 2017/02/15 (Wed)   2017 March 2017/03/15 (Wed)   2017 April 2017/04/19 (Wed)   2017 May 2017/05/17 (Wed)    !</description>
-    </item>
-    
-    <item>
-      <title>mCerebrum::Architecture</title>
-      <link>http://software.md2k.org/under-the-hood/mcerebrum/architecture/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://software.md2k.org/under-the-hood/mcerebrum/architecture/</guid>
-      <description>To achieve our goal of high-rate streaming data collection, logging, real-time processing, and intervention, we built a flexible, layered architecture.
-  Architecture Overview  mCerebrum overview illustrating how high-frequency data, 800&amp;#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.   mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform.</description>
     </item>
     
   </channel>
