@@ -8,3 +8,4 @@ users: "90"
 persondays: "1,260"
 samples: "55"
 pi: Hugh Garavan
+sensors: [AutoSense, MotionSense, Phone]

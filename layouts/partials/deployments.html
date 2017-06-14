@@ -1,35 +1,47 @@
 {{ if gt (len .Site.Data.deployments) 0 }}
 <section class="bar background-white">
     <div class="container">
+      <div class="col-md-12">
         {{ range $index, $element := sort .Site.Data.deployments "weight" }}
-    		{{ if eq (mod $index 3) 0 }}
-    		<div class="col-md-12">
-                <div class="row">
-    		{{ end }}
-    				<div class="col-md-4">
-                        <div class="box-simple">
-                            <div class="icon" style="font-size: 300%">
-                                {{ slicestr .site 0 1}}
-                            </div>
-                            <h3>{{ $element.site }}</h3>
-                            <h4>PI: {{ $element.pi }}</h4>
-                            <h5>{{ $element.targets }}</h5>
+          <div class="row equal">
 
-                            <table class="table">
-                              <tr>
-                                <td>Users: <br>{{ $element.users }}</td>
-                                <td>Person-Days: <br>{{ $element.persondays }}</td>
-                                <td>Samples: <br>{{ $element.samples }} billion</td>
-                              </tr>
-                            </table>
-                            <p style="text-align: justify">{{ $element.description | markdownify }}</p>
-                        </div>
-                    </div>
-    		    {{ if (eq (mod $index 3) 2)  }}
-    			</div>
-        </div>
+    				<div class="col-md-4 right-bar">
+              <div class="box-simple" style="margin-bottom: 0px;">
+                  <div class="icon" style="font-size: 300%">
+                      {{ slicestr .site 0 1}}
+                  </div>
+                  <h3>{{ $element.site }}</h3>
+                  <h4>PI: {{ $element.pi }}</h4>
+                  <h4>{{ $element.targets }}</h4>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <h4>By the Numbers</h4>
+              <h4>Users:</h4> {{ $element.users }}
+              <h4>Person-Days:</h4> {{ $element.persondays }}
+              <h4>Samples:</h4> {{ $element.samples }} billion
+
+            </div>
+
+            <div class="col-md-2">
+              <h4>Sensors</h4>
+              <ul class="deployments">
+              {{ range $element.sensors }}
+                <li> {{ . }} </li>
+              {{ end }}
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <h4>Description</h4>
+              <p style="text-align: justify">{{ $element.description | markdownify }}</p>
+            </div>
+
+		       </div>
+           <hr>
         {{ end }}
-        {{ end }}
+      </div>
     </div>
 </section>
 {{ end }}

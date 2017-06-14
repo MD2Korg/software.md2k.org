@@ -8,3 +8,4 @@ users: "25"
 persondays: "350"
 samples: "18"
 pi: August Holtyn
+sensors: [AutoSense, MotionSense, Phone]

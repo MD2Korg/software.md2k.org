@@ -10,3 +10,4 @@ users: "225"
 persondays: "6,750"
 samples: "224"
 pi: William Abraham
+sensors: [Microsoft Band, EasySense, Phone, Omron Scale, Omron Blood Pressure]

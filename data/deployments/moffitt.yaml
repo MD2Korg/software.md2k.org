@@ -8,3 +8,4 @@ users: "24"
 persondays: "336"
 samples: "15"
 pi: Christine Vinci
+sensors: [AutoSense, MotionSense, Phone]

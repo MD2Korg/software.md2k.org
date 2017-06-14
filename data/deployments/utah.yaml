@@ -8,3 +8,4 @@ users: "300"
 persondays: "4,200"
 samples: "182"
 pi: David Wetter
+sensors: [AutoSense, MotionSense, Phone]

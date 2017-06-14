@@ -8,3 +8,4 @@ users: "225"
 persondays: "3,150"
 samples: "136"
 pi: Bonnie Spring
+sensors: [AutoSense, MotionSense, Phone]

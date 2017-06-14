@@ -6,3 +6,4 @@ users: "800"
 persondays: "56,000"
 samples: "2,891"
 pi: Deniz Ones
+sensors: [AutoSense, MotionSenseHRV, Phone]

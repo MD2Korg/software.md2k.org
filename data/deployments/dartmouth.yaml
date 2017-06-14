@@ -7,3 +7,4 @@ users: "100"
 persondays: "1,400"
 samples: "58"
 pi: Lisa Marsch
+sensors: [AutoSense, MotionSense, Phone]
