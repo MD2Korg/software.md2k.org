@@ -197,6 +197,13 @@ paginate = 10
     parent = "howto-sensors"
     weight = 110
 
+  [[menu.howto]]
+    name = "Adding Sensors"
+    identifier = "howto-adding-sensors"
+    url = "/howto/sensors/adding-sensors"
+    parent = "howto-sensors"
+    weight = 120
+
 
 
 
