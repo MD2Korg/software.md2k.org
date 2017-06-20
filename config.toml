@@ -169,17 +169,25 @@ paginate = 10
   name = "How-to"
   identifier = "how-to"
   url = "/howto"
+  weight = 1
 
 [[menu.howto]]
   name = "Getting Started"
   url = "/howto/getting-started"
+  weight = 2
 
 [[menu.howto]]
   name = "Sensors"
   url = "/howto/sensors"
   identifier = "howto-sensors"
+  weight = 100
 
-
+  [[menu.howto]]
+    name = "Getting Started"
+    identifier = "uth-cc-gs"
+    url = "/howto/sensors/sensors-ts"
+    parent = "howto-sensors"
+    weight = 130
 
 
 
