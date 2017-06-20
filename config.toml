@@ -166,7 +166,7 @@ paginate = 10
 # How-to
 
 [[menu.howto]]
-  name = "How-to"
+  name = "How-to Homepage"
   identifier = "how-to"
   url = "/howto"
   weight = 1
