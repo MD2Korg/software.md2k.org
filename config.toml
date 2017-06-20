@@ -172,9 +172,17 @@ paginate = 10
   weight = 1
 
 [[menu.howto]]
-  name = "Getting Started"
-  url = "/howto/getting-started"
-  weight = 2
+  name = "Smartphone Software"
+  identifier = "howto-mCerebrum"
+  url = "/howto/mCerebrum"
+  weight = 10
+
+  [[menu.howto]]
+    name = "Getting Started"
+    identifier = "howto-mCerebrum-gettingstarted"
+    url = "/howto/mCerebrum/getting-started"
+    parent = "howto-mCerebrum"
+    weight = 11
 
 [[menu.howto]]
   name = "Supported Sensors"
