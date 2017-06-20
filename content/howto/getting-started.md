@@ -47,18 +47,18 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 2.	If prompted to start the day, tap the *Start* button to begin data collection.
 3.	Tap *Close* to exit the Settings screen. You should see the mCerebrum home screen below. Once you have tapped to start the day, data collection has begun.
 
-{{< figure src="../img/howto/mCerebrumHome.png" title="mCerebrum Home screen" caption="mCerebrum Home screen">}}
+{{< figure src="../img/howto/mCerebrumHome.png" title="mCerebrum Home screen">}}
 
 ## Visualize Real-Time Data
 1.	From the mCerebrum home screen, tap the *Plotter* button.
 2.	Select from the list of available sensors to visualize each set of data in real-time.
 
-{{< figure src="../img/howto/plotterButton.png" title="mCerebrum plotter button" caption="mCerebrum plotter button">}}
+{{< figure src="../img/howto/plotterButton.png" title="mCerebrum plotter button">}}
 
 ## Privacy
 Privacy Control allows users to turn off certain features for a limited period of time.
 
-{{< figure src="../img/howto/privacyActivate.png" title="mCerebrum privacy on" caption="mCerebrum privacy on">}}
+{{< figure src="../img/howto/privacyActivate.png" title="mCerebrum privacy on">}}
 
 1. From the mCerebrum home screen, tap the *Turn On* button under the Privacy heading.
 2. On the Privacy Control Settings screen, tap *Set Privacy Duration*. Select the amount of time for which you wish to disable the feature(s).
@@ -78,7 +78,7 @@ When you are ready to export the data you have collected, perform the following 
 6.	When the phone restarts, if the mCerebrum app opens, tap *Exit* to close it. (If mCerebrum does not open, skip this step.)
 7.	From the phone’s home screen, open the DataKit app and ensure it is INACTIVE.
 
-{{< figure src="../img/howto/DatakitINACTIVE.png" title="Datakit is inactive" caption="Datakit is inactive">}}
+{{< figure src="../img/howto/DatakitINACTIVE.png" title="Datakit is inactive">}}
 
 #### Save Data to a Computer
 1.	Connect the smartphone to a PC using the charging cable.
