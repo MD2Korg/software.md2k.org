@@ -1,6 +1,6 @@
 +++
-title = "MD2K Software How-To"
-description = "Details about the using the smartphone software and cloud"
+title = "MD2K Software How-To: mCerebrum Overview"
+description = "Details about the using the smartphone software"
 keywords = []
 +++
 
@@ -11,7 +11,7 @@ keywords = []
 
 <center><iframe src="https://www.youtube.com/embed/g_WC0vpn5rU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 
-Please visit our [Getting Started page](http://software.md2k.org/howto/getting-started/) to learn how to download our smartphone software and collect data using phone sensors with our default configuration. 
+Please visit our [Getting Started page](http://software.md2k.org/howto/getting-started/) to learn how to download our smartphone software and collect data using phone sensors with our default configuration.
 
 ## mCerebrum Overview
 
