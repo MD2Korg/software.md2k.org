@@ -25,8 +25,8 @@ These instructions will guide you in downloading, installing, and configuring th
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.
 
 1.	From the main Settings screen, tap *Configure Applications > Applications* then tap the Check Updates button at the bottom of the screen.
-2.	If any apps listed show a red X icon ![red X icon](../img/howto/redX.jpg), tap the app in the list then tap *Install*. If any apps listed show a yellow caution icon ![yellow caution icon](../img/howto/yellowcaution.jpg), tap the app in the list then tap *Update*. (Alternatively, you may tap the *Fix All* button at the bottom of the screen to begin the installation of all updates at once.)
-3.	When every app shows a green check mark ![green checkmark icon](../img/howto/greencheckmark.jpg), all apps are installed and up-to-date. Tap the *Close* button.
+2.	If any apps listed show a red X icon ![red X icon](/img/howto/redX.jpg), tap the app in the list then tap *Install*. If any apps listed show a yellow caution icon ![yellow caution icon](/img/howto/yellowcaution.jpg), tap the app in the list then tap *Update*. (Alternatively, you may tap the *Fix All* button at the bottom of the screen to begin the installation of all updates at once.)
+3.	When every app shows a green check mark ![green checkmark icon](/img/howto/greencheckmark.jpg), all apps are installed and up-to-date. Tap the *Close* button.
 
 ## Sensors Setup
 1.	From the main Settings screen, tap *Configure Applications > Settings > PhoneSensor*.
