@@ -17,7 +17,7 @@ Motionsense is a wearable wrist sensor that integrates accelerometer and gyrosco
 
 ## Motionsense HRV Wrist Sensor
 
-{{< figure src="/img/howto/MotionSenseWrist.png" title="Motionsense HRV Wrist Sensor" caption="">}}
+{{< figure src="/img/howto/MotionSenseHRV.png" title="Motionsense HRV Wrist Sensor" caption="">}}
 
 Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth. This sensor also measures heart rate using signals that are detected and classified into different classes of reliability, resulting in estimates of heart rate variability (HRV) and respective confidence levels.
 
