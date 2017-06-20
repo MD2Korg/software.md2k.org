@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mCerebrum::Architecture</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="md2k, mHealth, mCerebrum, Cerebral Cortex">	
+  
+
+  
+  <meta name="description" content="Details about the software architecture, design, and developer-oriented interfaces">
+  
+
+  <meta name="generator" content="Hugo 0.23-DEV" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="http://software.md2k.org/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="http://software.md2k.org/css/style.md2k.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="http://software.md2k.org/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="http://software.md2k.org/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="http://software.md2k.org/img/apple-touch-icon.png" />
+  
+
+  <link href="http://software.md2k.org/css/owl.carousel.css" rel="stylesheet">
+  <link href="http://software.md2k.org/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
+
+  
+  <meta property="og:title" content="mCerebrum::Architecture" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/under-the-hood/mcerebrum/architecture//" />
+  <meta property="og:image" content="img/logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="http://software.md2k.org/">
+                    <img src="http://software.md2k.org/img/logo.png" alt="mCerebrum::Architecture logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="mCerebrum::Architecture logo" class="visible-xs visible-sm">
+                    <span class="sr-only">mCerebrum::Architecture - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Tour</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/under-the-hood/">Under the Hood</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/howto/">How-to</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/deployments/">Deployments</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contributors/">Contributors</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://md2k.org/">MD2K</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+<div class="affix feedback">
+  <a href="https://discuss.md2k.org/">Feedback and Questions</a>
+</div>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>mCerebrum::Architecture</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+
+                        <div id="post-content">
+                          
+
+<p>To achieve our goal of high-rate streaming data collection, logging, real-time processing, and intervention, we built a flexible, layered architecture.</p>
+
+<p>
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/mc_overview.png" alt="mCerebrum overview illustrating how high-frequency data, 800&#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement." />
+    
+    
+    <figcaption>
+        <h4>Architecture Overview</h4>
+        <p>
+        mCerebrum overview illustrating how high-frequency data, 800&#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform. Because it must work in resource-poor settings (several of current studies are with low-income participants), mCerebrum is built to operate the entire sensor-analyze-act pipeline locally, without a constant data connections. To meet these needs, mCerebrum has nine key capabilities:</p>
+
+<ol>
+<li>Concurrent connection to a wide variety of high-rate wearable sensors with an ability to add new sensors</li>
+<li>Ingest a large volume of rapidly arriving data for which native support does not yet exist in the smartphone hardware or operating system</li>
+<li>Quickly analyze incoming data to monitor for data quality problems so that errors can be corrected
+Reliable storage of quickly growing volume of sensor data, whose archival is critical to the development and validation of new biomarkers</li>
+<li>Control interruption to study participants (Self-report, Ecological Momentary assessments (EMA), and interventions (EMI)) limiting burden and cognitive overload while satisfying the numerous study requirements.</li>
+<li>Support a Sense-Analyze-Act pipeline for high-rate streaming sensor data
+    1. self-report and confirm/refute prompts
+    2. Development and evaluation of sensor-triggered interventions</li>
+<li>Seamless sharing of streaming data from multiple sensors to enable computation of multi-sensor biomarkers (stress, smoking, eating)</li>
+<li>Architecturally scalable to support concurrent computations of a large number of biomarkers without saturating the computation capacity or battery life of the mobile phone</li>
+<li>General-purpose and extensible to support a wide variety of sensors, biomarkers, and study designs</li>
+</ol>
+
+<p>The architecture is composed of five layers:</p>
+
+<ol>
+<li><strong>Communication interfaces</strong> which include support for both smartphone sensors and wearable sensors</li>
+<li><strong>Data sources</strong> that provide an interface between devices and the rest of the mCerebrum platform</li>
+<li><strong>Storage and routing interface</strong>, which provides persistent data storage and routing of intermediate results among the various components and is subject to the rules of a privacy controller</li>
+<li>A <strong>signal processing</strong> layer provides the necessary support for long-running applications to receive and process data from elsewhere in the system</li>
+<li>The <strong>participant interface</strong> layer that implements all interactions with the participants.</li>
+</ol>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/mCerebrum_paper.png" alt="mCerebrum&#39;s architecture consists of 5 layers: (1) Communication, (2) Data Sources, (3) Storage, (4) Signal Processing, and (4) Participant Interaction, all connected through a data router. The colors indicate different categorizations of applications with red for high-rate and orange for low-rate sensors, blue indicates core components of mSense, cyan for system services, and green represents participant-centric applications." />
+    
+    
+    <figcaption>
+        <h4>Architecture</h4>
+        <p>
+        mCerebrum&#39;s architecture consists of 5 layers: (1) Communication, (2) Data Sources, (3) Storage, (4) Signal Processing, and (4) Participant Interaction, all connected through a data router. The colors indicate different categorizations of applications with red for high-rate and orange for low-rate sensors, blue indicates core components of mSense, cyan for system services, and green represents participant-centric applications.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>Together, they represent 23+  applications across our currently supported studies.</p>
+
+<table class="table table-hover">
+    <thead>
+        <th>Application</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">DataKit</th>
+            <td>Handles routing, privacy, and storage</td>
+        </tr>
+        <tr>
+            <th scope="row">DataKitAPI</th>
+            <td>API library for apps to use DataKit</td>
+        </tr>
+        <tr>
+            <th scope="row">Plotter</th>
+            <td>Real-time data visualizer</td>
+        </tr>
+        <tr>
+            <th scope="row">Privacy Controller</th>
+            <td>Allows the participant to suspend data collection and EMA prompting</td>
+        </tr>
+        <tr>
+            <th scope="row">Utilities</th>
+            <td>Common helper functions for mCerebrum</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Phone</th>
+            <td>Integrates the smartphone sensors</td>
+        </tr>
+        <tr>
+            <th scope="row">Chestband (AutoSense)</th>
+            <td>Data collection from ANT+ sensor suite</td>
+        </tr>
+        <tr>
+            <th scope="row">Wrist (MotionSense, MotionSenseHRV)</th>
+            <td>BLE wrist-worn motion capture device</td>
+        </tr>
+        <tr>
+            <th scope="row">iCO</th>
+            <td>Carbon Monoxide sensor for in-the-field validation</td>
+        </tr>
+        <tr>
+            <th scope="row">Smartwatch (Microsoft Band, Android Wear)</th>
+            <td>Bluetooth 4 connected watch</td>
+        </tr>
+        <tr>
+            <th scope="row">UWB RF (EasySense)</th>
+            <td>BLE chest sensor for measuring heart function and lung fluid</td>
+        </tr>
+        <tr>
+            <th scope="row">Blood Pressure (Omron)</th>
+            <td>BLE-connected blood pressure cuff</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight (Omron)</th>
+            <td>BLE-connected weight scale</td>
+        </tr>
+        <tr>
+            <th scope="row">Smart Toothbrush (Oral-B)</th>
+            <td>BLE-connected smart toothbrush</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Stream Processor</th>
+            <td>Provides real-time computation of biomarkers (e.g. stress, smoking, activity, etc...)</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Mood Surfing</th>
+            <td>A custom built stress reduction app</td>
+        </tr>
+        <tr>
+            <th scope="row">Thought Shakeup</th>
+            <td>A custom built stress reduction app</td>
+        </tr>
+        <tr>
+            <th scope="row">Medication</th>
+            <td>Medication adherence compliance app and reminder system</td>
+        </tr>
+        <tr>
+            <th scope="row">Self Report</th>
+            <td>Customizable self-report prompts</td>
+        </tr>
+        <tr>
+            <th scope="row">EMA</th>
+            <td>Customizable survey (EMA) delivery application</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Study</th>
+            <td>Main study interface; provides an application management framework for the rest of the applications</td>
+        </tr>
+        <tr>
+            <th scope="row">Scheduler</th>
+            <td>Customizable scheduling system for delivering prompts to a participant based on biomarker and other inputs</td>
+        </tr>
+        <tr>
+            <th scope="row">Adherence Reminder</th>
+            <td>A custom variant of EMA/EMI scheduler to remind data collection from episodic sensors</td>
+        </tr>
+        <tr>
+            <th scope="row">Notification Manager</th>
+            <td>Acts as the gatekeeper for all user prompts to manage user burden</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="real-life-deployments">Real-Life Deployments</h2>
+
+<p>The design of mCerebrum has emerged from half a decade of experience in supporting half a dozen completed field studies at independent sites. The current design of mCerebrum is in various stages of deployment in ten research studies at independent sites throughout the United States. These studies collectively span a total of 2,251 unique participants and 106,806 person-days (2.5 million hours) of high-frequency sensor data. We estimate the net data generated, processed, stored, and transmitted will be over 100TB and about 4.7 trillion data points based on our current data abstraction. Deployments are listed <a href="/deployments">here</a> and provide a breakdown of these studies. We briefly describe each study to show the diverse studies adequately served by mCerebrum.</p>
+
+<p>The smoking studies involve participants who want to quit smoking. They participate in the study for four days prior to quitting and 10 days after quitting while smoking, eating, stress, activity, and geoexposures are monitored.  The heart failure study tracks activity, eating, medication adherence, lung fluid change, blood pressure, and weight for 30 days. The cocaine study tracks cocaine use, stress, activity, and smoking activity for two weeks in a field setting. The oral health study tracks brushing and flossing behavior on a drug use population to predict their effect on plaque accumulation over six months. The behavior change study tracks stress, smoking, eating, sleep, and activity for smokers and obese participants for 14 days. The job performance study will monitor 800 employees on their task performance, citizenship, and counterproductive behaviors for ten weeks.</p>
+
+<p>All studies involve continuous data collection from two wrist sensors and smartphone sensors. The smoking studies, cocaine study, behavior change study, and the job performance study also involves continuous data collection from a chest band. All smoking studies involve computation of stress and smoking events on the phone which are used to launch stress intervention based on a micro-randomized trial design. In the pilot phase one study, smoking detection is used to prompt a confirm/refute question.</p>
+
+<p>All smoking studies involve generating EMA prompts based on random prompts and in response to detection of stress and smoking. One EMA of each type must be delivered within each four hour block of the day between start and end times of the day as selected by the participants. Since responding to an EMA results in an incentive payment, EMA prompts are to be generated only when the data quality from sensors are acceptable several minutes preceding the EMA prompt and the participant is not engaged in activities such as exercising or driving a vehicle. Also, successive EMA or EMI prompts are to be separated by a minimum time gap to limit burden. Finally, participants have an option to suspend data collection from specific sensors and suspend prompt generation for privacy purposes.</p>
+
+<p>In all studies, the majority of mCerebrum&rsquo;s components are reused and configuration files are the only thing that must be changed.  Sometimes study requirements necessitate the need for custom programmed logic and whenever possible, this is generalized and incorporated in the the main components for the benefit of other studies, both current and future.</p>
+
+<h3 id="key-features-of-mcerebrum">Key Features of mCerebrum</h3>
+
+<p>As the description of the ten studies shows, mCerebrum has been designed as a general-purpose platform that can support the development and validation of mHealth biomarkers and sensor-triggered interventions. It incorporates the complete pipeline of sense-analyze-act for high-rate streaming data from multiple sensors. Coupled with scalable storage, it supports concurrent real-time computation of data quality and several multi-sensor biomarkers, and manages burden- and context-aware interaction with participants to collect self-reports and deliver sensor-triggered interventions.</p>
+
+<h2 id="sense">Sense</h2>
+
+<p>The sensing layer is responsible for reliable collection, storage, and sharing of streaming sensor data from multiple sensors. The first major challenge is to provide high throughput to handle the incoming data rate from multiple concurrently connected sensors via multiple radios while providing flexible representations to accommodate current and future data types and their associated metadata. The second challenge is to allow efficient sharing of incoming data among multiple sources and recipients, while maintaining a high throughput. The third challenge is to provide storage support that maintains query responsiveness in the face of rapidly growing data.</p>
+
+<p>We first describe <em>DataKit</em> and how it provides computation and communication efficiencies that allow the handling of high-frequency data rates. Next, we describe our scalable storage design that addresses the capabilities necessary to maximize the amount of data collected and stored within the system.</p>
+
+<h3 id="datakit-efficient-collection-sharing-of-high-rate-sensor-datakit">DataKit: Efficient Collection &amp; Sharing of High-rate Sensor DataKit</h3>
+
+<p>mCerebrum&rsquo;s DataKit is designed to collect high-rate sensor data from multiple concurrent sources and allow efficient many-to-many sharing of data between data sources and sinks. Because data sources will grow in diversity of data types and likewise recipients may accept different formats of data from double values to complex JSON encoded Ecological Momentary Assessments (EMAs), DataKit provides a flexible structure to handle data representations and transport within the system. Additionally, by providing a fast and efficient communication mechanism, computation can be reused by transmitting intermediate results through DataKit for other processes to utilize instead of requiring each application to compute values as needed.</p>
+
+<p>DataKit is implemented as a data router instead of utilizing a common database for storage due to two key limitations.  First, SQLite, the de facto standard for Android, is unable to <a href="#scalable-storage-of-high-rate-sensor-data">efficiently scale</a>  to the data rates mCerebrum requires. Second, having a central controller allows for better control over security and privacy of data streams, restricting which information is persisted and stored through dedicated APIs.</p>
+
+<h4 id="data-representations">Data representations</h4>
+
+<p>mCerebrum&rsquo;s data model is built on two abstractions: (1) a <em>data point</em>, which is the tuple consisting of a timestamp and value and (2) a <em>data stream</em>, a uniquely identifiable collection of data points.
+A data point value can be composed of any of the following: <em>boolean</em>, <em>integer</em>, <em>long</em>, <em>double</em>, <em>string</em>, <em>JSON</em>, and all <em>array</em> variants.  By constraining most data to primitive types, we allow for efficient serialization and communication while allowing for complex data types through JSON encoding.</p>
+
+<h4 id="flexible-and-efficient-communication">Flexible and efficient communication</h4>
+
+<p>mCerebrum provides a simple, yet flexible and efficient, communication mechanism through DataKit and DataKitAPI.  The API implements functionality common to many publish-subscribe mechanisms with additional support for sending query commands through the interface. It allows an application to <em>connect</em> and <em>disconnect</em> from DataKit and provides a <em>subscribe</em> and <em>unsubscribe</em> mechanism.  In order to search for data streams, it provides a <em>find</em> method that allows for partial matching of the data stream based on included metadata.  <em>Subscribe</em> utilizes a callback mechanism which allows DataKit to directly route appropriate data through function callbacks.  Applications can <em>query</em> by the last $N$ samples and by time-range to retrieve information from DataKit.  In order to create a data stream and its associated metadata, <em>registration</em> and <em>unregistration</em> methods are provided.  Finally, an <em>insert</em> method is provided to send data to DataKit.  These basic building blocks allow for a variety of applications to be constructed and their simplicity keeps internal complexity down to ensure efficient data processing and routing.</p>
+
+<p>Smartphone resource constraints make communication efficiency crucial to handling high-frequency data.  Android runs applications as separate processes for security and quality-of-service reasons; however, this introduces the need for inter-process communication (IPC) which is provided through three different mechanisms: <em>Intents</em>, which are implemented as a message forwarding system but suffers from performance issues with high-frequency data due to high resource utilization and latency; <em>anonymous shared memory</em>, is only suitable for sharing small amounts of data due to its dependence on mutually accessible RAM; and <em>Binder</em>, is a Remote Procedure Call (RPC) mechanism that allows for callback methods to be defined and is utilized by mCerebrum.  The Binder mechanism has a shared system transaction buffer of 1MB and it is critical that serialization, processing, and communications related to the Binder mechanism be as efficient as possible to ensure the buffer does not overflow.  An initial attempt at utilizing RPC to route data through the system resulted in an overflow of this buffer due to too many outstanding transactions when we sent unique requests for each data point. To resolve this overflow, a data buffer was introduced for high-frequency data streams inside DataKitAPI to ensure that each application receives data in the correct order and it automatically buffers data as appropriate to meet performance requirements.</p>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/flexibility.png" alt="Each platform is represented by an arrow illustrating the bandwidth of the platform and extending right showing flexibility of data representation starting at the number of core data types supported." />
+    
+    
+    <figcaption>
+        <h4>Comparison of different platforms</h4>
+        <p>
+        Each platform is represented by an arrow illustrating the bandwidth of the platform and extending right showing flexibility of data representation starting at the number of core data types supported.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>We evaluated the performance of mCerebrum for high-rate data handling and compared it with Google Fit[1], AWARE[2], and HealthKit[3]. For Google Fit and AWARE, we used a Samsung S5 running Android 5.1.1 and for HealthKit, we used an iPhone 5s running iOS 10.2.1. In all cases, a sample application was written to generate synthetic data and store it within the frameworks with varying buffer sizes.</p>
+
+<p>The buffer size and data rate were both increased until failure. Google Fit yielded 1,560 samples per second with HealthKit maxing out at 1,100 samples per second. The AWARE framework suffers from a lack of built-in support for batch operations, resulting in a maximum throughput of 260 samples per second. mCerebrum, in contrast, achieves 4,500 samples per second.</p>
+
+<p>Query performance degraded similarly in existing platforms due to their reliance on SQLite as a primary storage container for the data. We discuss this in more detail in the <a href="#scalable-storage-of-high-rate-sensor-data">storage section</a>.
+In summary, mCerebrum provides data representations that result in both high-throughput and flexibility by allowing varying storage abstractions giving the platform high performance and flexibility.</p>
+
+<h4 id="handling-data-representation-diversity">Handling data representation diversity</h4>
+
+<p>Wearable sensors are still in early stages of data standardization. Some commercial devices such as Microsoft Band or Zephyr Bioharness provide APIs to send and receive data in well-understood formats. However, in other cases, devices send raw data directly from the sensors and require further interpretation based on their specifications. Depending upon the radio technology and API implementation, data could arrive in blocks associated with a single timestamp or samples cold be timestamped individually.</p>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/Data_Sources_paper.png" alt="mCerebrum supports sensors ranging from 2 samples/day to 300 Hz per device including: BLE (green), Bluetooth 4.0 (red), ANT&#43; (orange), and internal (yellow).  Additionally, it support short audio and video clips with a high data rate storage mechanism." />
+    
+    
+    <figcaption>
+        <h4>Currently Supported Data Sources</h4>
+        <p>
+        mCerebrum supports sensors ranging from 2 samples/day to 300 Hz per device including: BLE (green), Bluetooth 4.0 (red), ANT&#43; (orange), and internal (yellow).  Additionally, it support short audio and video clips with a high data rate storage mechanism.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>Data is reformatted by mCerebrum applications to a common data point abstraction to support the wide variability in current and future data sources.
+mCerebrum supports a variety of external and internal sensors including:</p>
+
+<ol>
+<li>Electrocardiogram (ECG)</li>
+<li>Respiration</li>
+<li>Accelerometers</li>
+<li>Gyroscopes</li>
+<li>Magnetometers</li>
+<li>Heart Rate</li>
+<li>RR-Interval</li>
+<li>Galvanic Skin Response (GSR)</li>
+<li>Barometer</li>
+<li>Location (GPS)</li>
+<li>Ambient and UV Light</li>
+<li>Ultra-wideband RF</li>
+<li>Sound</li>
+<li>Video</li>
+</ol>
+
+<p>Self-report and EMA are represented as JSON documents.</p>
+
+<h4 id="resilient-communication-management">Resilient Communication management</h4>
+
+<p>Sensor devices operate either in <em>batch</em> or <em>streaming</em> mode, with some supporting both, and the associated challenges differ.  Devices sending only biomarkers (e.g., Fitbit trackers) to a smartphone usually operate in batch-mode, where the smartphone needs to connect frequently enough to ensure that the necessary data or biomarkers are synced before any information is lost due to memory limitations. Devices collecting raw sensor data that require real-time processing on a smartphone for triggering notifications or interventions, are usually streamed continuously without local storage to compensate for battery depletion and is the scenario of usage considered here.</p>
+
+<p>In such streaming scenarios, even a brief disconnection can result in lost data; thus, it is critical that streaming sensors be able to maintain a persistent connection to the phone.  For example, a smoking algorithm utilizes up to five seconds of wrist movement data to aid detection of smoking behaviors and if communication with the band were to fail, a critical event could be missed.</p>
+
+<p>Radio disconnections between a streaming wearable and smartphone are another source of communication problem and may occur due to many reasons including the wearable and phone getting out of radio range due to physical separation, low battery, a user turning off the device, and radio frequency interference due to the environment or other devices in radio proximity.  mCerebrum utilizes a two-step approach to address disconnections. First, it attempts to auto reconnect with sensor devices utilizing a back-off mechanism where initially it retries every three seconds and incrementally slows to every 30 seconds after subsequent failures. Second, the user is notified that a particular device is not connected and supplied with guidelines such as to check the battery level, restart device, or reset the system to minimize data loss.</p>
+
+<h4 id="handling-large-data-objects">Handling Large Data Objects</h4>
+
+<p>Audio and video data are typically sampled at much higher rates than DataKit&rsquo;s 4.5 kHz limit. To allow collection and sharing of these two data types in DataKit, we consider two approaches to overcome Android&rsquo;s interprocess communication (IPC) limits. First, we split data into chunks and send individually to Datakit, where chunks are subsequently recombined, similar to the case of TCP packets. This approach requires 0.14 seconds to transfer 10 MB of binary data, sustaining 71 MBps of throughput.</p>
+
+<p>Second, a secure file sharing approach between an application and DataKit allows sharing though <em>FileProvider</em> which facilitates secure sharing of data by creating a <code>content://URI</code>, allowing a temporary grant of read and write access. DataKit can then directly access this file using the <code>URI</code>. This approach requires 0.11 seconds to transfer 10 MB of binary data at 90 MBps, resulting in slightly higher throughput and lower IPC load, making it a preferred mechanism for handling large data objects in DataKit.</p>
+
+<h4 id="scalable-storage-of-high-rate-sensor-data">Scalable Storage of High-Rate Sensor Data</h4>
+
+<p>SQLite is the de facto datastore layer on mobile devices including Android and iOS, but it is unsuitable for storing high-frequency raw sensor data streams. Such workloads, including our own, store data that is seldom deleted or updated (e.g., sensor samples), and are often small in (record) size e.g., a single message record could be a few hundred bytes, mCerebrum records 12 bytes, on average.</p>
+
+<p>Writing data streams to SQLite can be prohibitively expensive due to SQLite database journaling and its update-in-place semantics i.e., records reside at a particular location in stable storage, and updates mutate the record directly. Furthermore, flash memory (the dominant stable storage medium in mobile devices) is page-oriented, which means that each record write corresponds to an entire read and write of a page[4]; common page sizes for NAND Flash memory chips today are around 8KB, which further increases write amplification</p>
+
+<blockquote>
+<p>Write amplification refers to the actual amount of data that is rewritten for a given record e.g., if records are stored in 8KB pages, then writing a 12 byte record results in writing at least an 8KB page.</p>
+</blockquote>
+
+<p>for small records that many applications (including our own) exhibit. In general, a single record inserted into a table with $k$ indexes translates into $$2~\times~(k+1)$$ pages written under SQLite[4].</p>
+
+<p>Consequently, when using SQLite to store raw sensor data, as data size grows, the query performance begins to degrade and fall behind the rate necessary for real-time computation of biomarkers. After about 8 hours of data collection, biomarker computations begin to timeout due to growing query response time.</p>
+
+<p>Log-structured storage systems under development, such as RocksDB[5], may provide an alternative to SQLite; however, RocksDB aims to support general RDBMS workloads and lacks data sync capabilities between the mobile device and the cloud platform, which is a key requirement in mCerebrum.</p>
+
+<p>To address the specific requirements of mobile sensor data workloads, we have developed a custom log-structured storage layer called <em>Pebbles</em>, which is optimized for high-frequency append-only writes of data arriving in batch or record streams. Pebbles also provides transparent data sync, allowing applications to offload data to the cloud for further processing and data archive. On the mobile device, data is stored in a circular log to maximize the throughput of flash memory. To support fast queries, Pebbles maintains a lightweight index on a logical timestamp and topic, which is used to identify data streams.</p>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/pebbles.png" alt="Maximum write throughput of SQLite and Pebbles when varying the write size." />
+    
+    
+    <figcaption>
+        <h4>Write performance</h4>
+        <p>
+        Maximum write throughput of SQLite and Pebbles when varying the write size.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>This figure shows the max write throughput of Pebbles versus SQLite by varying data write sizes. This benchmark was performed on the internal flash memory of a Samsung Galaxy Tab S2. Each system was configured with an 8MB in-memory buffer and performed a total of 4GB writes. The optimal throughput of 72 MBps was determined by performing one large consecutive write to the internal memory.</p>
+
+<p>At lower data write sizes, such as those exhibited by typical mCerebrum applications, Pebbles outperforms SQLite by more than 20x. The performance gain of Pebbles is directly related to the lower write amplification relative to SQLite. In the lower data write sizes, the CPU becomes the bottleneck, preventing Pebbles from saturating maximum storage bandwidth. Nevertheless, the achieved throughput is sufficient for mCerebrum.</p>
+
+<p>At large data writes, such as those to be exhibited by the mCerebrum batch data workloads, Pebbles is able to saturate storage bandwidth and outperforms SQLite by more than 4x. SQLite is not capable of saturating the storage bandwidth at these large write sizes due to system overhead, including primary key constraints and index maintenance, which attribute to increased write amplification. In Pebbles, write amplification is minimized through the use of a circular log that is clustered with the primary index i.e., both are append-only on new data writes and garbage collection is performed, on both, sequentially with an optional cloud data sync.</p>
+
+<h2 id="analyze-concurrent-computation-of-multi-sensor-biomarkers">Analyze: Concurrent Computation of Multi-Sensor biomarkers</h2>
+
+<p>The second tenet, <em>analyze</em>, is principally responsible for processing the collected high-rate sensor data to compute features and biomarkers that can be used by multiple apps throughout the whole system. The main challenge is to screen the data for acceptable quality, clean the data, compute hundreds of features, and then apply the machine-learning models of all biomarkers, all in real-time, without falling behind the incoming data rate and without saturating the CPU and memory of resource constrained phones. One key approach to making this feasible is to facilitate efficient sharing of intermediate results (e.g., features) so computation can be reused.</p>
+
+<p>We first describe in the <a href="#data-and-computation-reuse">data and computation reuse</a> section how data and computation can be reused to scale the analytics. Next, <a href="#handling-system-overload">handling system overload</a> explores and evaluates the techniques to manage system overload so as to manage Android&rsquo;s quality of service system to support continuous high-frequency sensor data analysis. Finally, <a href="#stream-processor-real-time-computation-and-sharing-of-features-and-biomarkers">real-time computation and sharing of features and biomarkers</a> describes Stream Processor that implements real-time computation and sharing of features and biomarkers throughout mCerebrum. We also analyze the impact of such sharing on improving CPU and memory efficiency.</p>
+
+<h3 id="data-and-computation-reuse">Data and Computation Reuse</h3>
+
+<p>It is not enough to have communication efficiency in each app, the system needs to reuse as much data and computation as possible.  The modularization of mCerebrum allows sensor data to be collected once by a single application where it is published through DataKit for the rest of the system to receive.  This allows multiple applications to receive data concurrently by subscribing to data streams. Computation reuse occurs when various processing components of the platform compute intermediate results or resulting biomarkers that are placed on the DataKit bus where others can utilize these processed streams instead of recomputing from raw data.</p>
+
+<h4 id="supporting-onboard-sense-analyze-act">Supporting Onboard Sense-Analyze-Act</h4>
+
+<p>To enable the entire pipeline of sense-analyze-act locally on the phone, mCerebrum supports three different styles of data processing: micro-batch, batch, and on-demand. In each of these instances, the computation must not fall behind data arrival rate, i.e., meet a real-time constraint. Streaming operations, such as data quality or visualization, need to receive data from the system and process it almost immediately; they use a micro-batch latency of one second. On-demand computations or batch processing, such as biomarker computation, require the data be queried in blocks from DataKit. In our current implementation, for the purposes of computing various biomarkers such as stress and smoking, we use a batch latency of 60 seconds.</p>
+
+<p>Due to high load, computational complexity is a concern for all data processing operations within mCerebrum.  When possible, computationally efficient algorithms are preferred such as online algorithms, i.e. mean and variance. For computationally expensive operations such as computing percentiles, the algorithms are replaced with online approximations. In the case of convolution, the amount of data to be processed is limited to control CPU load.</p>
+
+<h3 id="handling-system-overload">Handling System Overload</h3>
+
+<p>The Android operating system is based on the Linux kernel and applications are run as self-contained processes.  This allows Android to manage the Quality-of-Service (QoS) it provides to the user; however, this QoS is designed for regular consumer use and not configurable for long-running background applications such as the ones we utilize to provide a continuously running pipeline of sense-analyze-act.  Android selectively kills, and subsequently removes from memory, applications as the system begins to run out of resources.</p>
+
+<p>To determine which processes should be killed when low on memory, Android places each process into an importance hierarchy based on the components running in them and the state of those components. The process types are (in order of importance): <em>foreground</em>, <em>visible</em>, <em>service</em>, and <em>cached</em>.
+Due to the QoS constraints from the OS, we find that our applications are the typical ones removed due to their <em>service</em> process state and worse, the OS sends a <code>SIGNAL_KILL</code> command instead of a signal that can be trapped by our applications for a graceful shutdown.  This forces our applications to have a second watchdog application that can restart an application if the OS decided to remove it.</p>
+
+<p>mCerebrum adopts three separate mechanisms to combat the overload introduced and subsequent semi-random application closing.  First, the core service in critical applications is declared as a <em>foreground process</em>, which is a way to request that the OS not remove this application from a running state.  This is especially critical for applications that interact with the participant through a user interface or a scheduling algorithm.  Second, the mCerebrum kernel acts like a watchdog system for the rest of the application services.  It periodically checks (every 30 seconds) to ensure that the list of services it expects to be running are operational.  In the event that a service is not functional, it utilizes an exponential back-off mechanism to quickly restart a service and in the event of continued failure, it will slow attempts to restart processes.  Finally, every service must maintain a persistent copy of internal state on the internal phone memory and be able to resume when restarted. In addition, we adopt several optimizations (described below) to limit system overload and avoid application removal by the OS.</p>
+
+<h4 id="micro-batching-to-control-communication-load">Micro-batching to Control Communication Load</h4>
+
+<p>Sharing and processing data as they arrive in real-time increases both the system and communication load due to the maximum bandwidth and maximum buffer size limits for Inter-Process Communication (IPC) that are used to share data and intermediate results among the data sources and requesting applications.</p>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/freq_cpu_new.png" alt="The effect of micro-batch latency on DataKit&#39;s communication bandwidth and CPU usage. We observe that with no latency, communication bandwidth is limited by bandwidth limits of IPC, while at higher latency, bandwidth is limited by the buffer size limits of IPC." />
+    
+    
+    <figcaption>
+        <h4>Micro-batch systems evaluation</h4>
+        <p>
+        The effect of micro-batch latency on DataKit&#39;s communication bandwidth and CPU usage. We observe that with no latency, communication bandwidth is limited by bandwidth limits of IPC, while at higher latency, bandwidth is limited by the buffer size limits of IPC.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>Our initial implementation serialized measurements from sensors into individual messages before sending them through DataKit; however, once the data rate exceeded 150 hertz (on a Samsung S4), the system queues overflowed and the system began losing data. We adopt a micro-batching design where data is shared for computation in small batches that introduces a small latency, but significantly reduces system overload.</p>
+
+<p>This figure shows the effects of various choices of micro-batching latency on the frequency of data the system can process and the CPU cost associated with it. We note that the IPC communication buffer size is limited to 1 MB. While introducing micro-batching helps reduce system load, it affects applications that need real-time data. Among them, the most delay sensitive is the Plotter for visualizing sensor data such as ECG, accelerometers, and gyroscopes. We choose a latency of one second that provides a bandwidth of 450 hertz for a CPU load of 17 percent. There is a noticeable delay in rendering the plots of sensor data in visualization, but it is acceptable for most purposes.</p>
+
+<h4 id="effects-of-buffer-size-on-system-load">Effects of Buffer Size on System Load</h4>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/table_batch_size.png" alt="Measurements (seconds) normalized to  60 second iterations for CPU time decrease as the buffer size is increased from 30 to 300 seconds.  0.34 seconds (17%) can be saved through buffering; however, it comes with an increase in memory load (156%). " />
+    
+    
+    <figcaption>
+        <h4>Effect on CPU utilization</h4>
+        <p>
+        Measurements (seconds) normalized to  60 second iterations for CPU time decrease as the buffer size is increased from 30 to 300 seconds.  0.34 seconds (17%) can be saved through buffering; however, it comes with an increase in memory load (156%). 
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>This figure illustrates the trade-off between buffering data and the computational and memory loads on the system.  This experiment runs our biomarker computation pipeline and varies the amount of data buffered between 30 and 300 seconds. The memory status of the smart phone is recorded by executing <code>adb shell dumpsys meminfo</code> command at two hertz. Applications also logged the starting time and computation time of each iteration. We ran each experiment for 20 minutes and the mean computation time and mean memory usage are computed. Complex biomarkers such as stress, smoking or eating, benefit from the additional buffer size which allows them to produce more accurate results; however, this comes at the expense of memory utilization. A biomarker&rsquo;s utility can be a function of it&rsquo;s temporal locality to the measuring event, such as the case with stress, where a five minute delay places any potential intervention outside of the episode, thereby reducing overall effectiveness. Additionally, buffering too much data increases the computational time and resources needed thus resulting in Android stopping certain data collection and processing application rendering the this platform unusable.  Computations on large buffer sizes effectively cause a CPU utilization spike which is interpreted by Android as a resource demanding application, and the application becomes a candidate for shutting down.</p>
+
+<p>We currently use an operating point of one minute that provides acceptable latency while limiting system overload. Improvements in the computational model and hardware profile of the phone will change these operating points. Dynamic selection of the best operating points given a biomarker model and hardware profile is a subject of future work.</p>
+
+<h3 id="stream-processor-real-time-computation-and-sharing-of-features-and-biomarkers">Stream Processor: Real-time Computation and Sharing of Features and Biomarkers</h3>
+
+<p>The majority of high-frequency signal processing occurs under the <em>Stream Processor</em> framework, which is designed to support real-time computation and sharing of features and biomarkers. It mirrors the data structure from mCerebrum and provides appropriate buffering and estimators for several windows-based signal processing pipelines.</p>
+
+<p><em>Stream Processor</em> includes a number of design trade-offs that improve processing performance or constrain resource utilization so as not to adversely affect mCerebrum&rsquo;s system performance.  First, data is processed with a <em>batching</em> mechanism where all algorithm pipelines receive data every 60 seconds as a way to allow the smartphone CPU to operate in burst mode for better energy efficiency and to limit the amount of reprocessing of data that must occur if a sliding window or smaller windows were to be utilized.  Second, data is kept in RAM only for the current window of computation unless the developer explicitly configures historic state preservation.</p>
+
+<p>Third, algorithms are usually implemented as pipelines since they gain significant computation reuse by sharing originating sensor sources.  For example, both stress[6,7], an algorithm designed to compute physiological arousal from ECG and respiration to estimate stressful episodes, and smoking[8], combines respiration and wrist motion information to determine when a cigarette puff occurs, share common respiration features and the smoking algorithm takes advantage of existing computation and augments the processing with its new features.</p>
+
+<p>Stream Processor is also responsible for generating a feature vector from the various computed data streams and evaluating a learned model for biomarker generation that is trained from existing annotated data sets.  These models are currently based on a support vector machine (SVM); however, any model that is efficiently evaluated is capable of being run.</p>
+
+<p>Despite efficient design, 14.87 &plusmn; 4.12 seconds each minute on average is spent running the signal processing algorithms and results in a 13 percent reduction in total expected system lifetime. This will only grow as more biomarkers are included for real-time local computation. Future work is needed to investigate methods to limit CPU load, e.g., explore cloud offloads for biomarker computation from raw sensor data.</p>
+
+<h3 id="quantifying-the-benefits-of-computation-reuse-a-case-study">Quantifying the Benefits of Computation Reuse &mdash; A Case Study</h3>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/Venn.png" alt="Features are shared among various biomarker computation algorithms, allowing for computation reuse." />
+    
+    
+    <figcaption>
+        <h4>Shared Computation Overview</h4>
+        <p>
+        Features are shared among various biomarker computation algorithms, allowing for computation reuse.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>To analyze the effect of computation reuse, we created a single app for detecting smoking, stress, activity, and eating, and additional apps isolating the individual biomarker computations. The applications were run simultaneously to measure CPU and memory load and once again with computation sharing enabled. This figure shows the features that are shared among these four biomarker computations. For example, respiration data is used for both smoking detection and stress detection, allowing preprocessing and many feature calculations to be shared resulting in lower CPU and memory utilization.</p>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/time_mem.png" alt="The effects of computation reuse on CPU and memory efficiency.  The first columns show the CPU time and memory usage when computing four biomarkers, Smoking, Stress, Eating, and Activity, independently without sharing computation between the algorithms. For this example, a reduction of 27% CPU time and 47% memory is achieved through this reuse, as shown in the second columns." />
+    
+    
+    <figcaption>
+        <h4>Shared Computation</h4>
+        <p>
+        The effects of computation reuse on CPU and memory efficiency.  The first columns show the CPU time and memory usage when computing four biomarkers, Smoking, Stress, Eating, and Activity, independently without sharing computation between the algorithms. For this example, a reduction of 27% CPU time and 47% memory is achieved through this reuse, as shown in the second columns.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>This figure shows a 27 percent reduction in CPU time and 47 percent reduction in memory achieved by computation reuse.</p>
+
+<h2 id="act-burden-and-context-aware-interactions-with-participants">Act: Burden- and Context-Aware Interactions with participants</h2>
+
+<p>The final tenet of our platform, <em>act</em>, combines both <em>sense</em> and <em>analyze</em> outputs to engage with a participant during his/her study period. Together with sensor data, direct inputs from participants are also collected in research studies. Participant interaction is generally grouped into three categories: <em>voluntary</em>, <em>prompted</em>, and <em>glanceable</em>. Voluntary inputs can be provided through self-report buttons. Prompted interactions allow the system to obtain information from a participant through an EMA mechanism or to provide an intervention (EMI). Prompts are also generated to ask participants to collect episodic data from some devices or to remind them to take medications. Finally, glanceable interactions are implemented by updating the graphical user interface. For example, real-time data quality assessment is displayed on the home screen.
+Of these, prompted inputs and interventions represent interruptions to the participant and hence must be carefully coordinated to limit user burden.</p>
+
+<p>There are several new challenges in the design of scheduling EMA and EMI prompts in research studies collecting both streaming sensor data with sense-analyze-act capability and EMAs and EMIs. First, prompts should be coordinated from all sources, including those generated by biomarkers, to limit burden on participants while satisfying all study requirements. This includes using sensor-inferred contexts and deliver prompts or interventions only when the participant is available. The second challenge is to incorporate sensor data quality in prompt generation so that good quality sensor data is available preceding self-reports. In the following, we describe <a href="#ema-emi-scheduling-requirements">study requirements</a> and our design of <a href="#burden-and-context-aware-ema-emi-scheduling">participant interaction manager that is both burden- and context-aware</a>.</p>
+
+<h3 id="ema-emi-scheduling-requirements">EMA/EMI Scheduling Requirements</h3>
+
+<p>Ecological Momentary Assessments (EMAs) are a cornerstone for biomedical studies because of their ability to obtain a participant response in the moment. They can be prompted randomly (to obtain unbiased daily estimates), based on time of day (to ensure coverage), based on self-reported events (to obtain context surrounding a self-reported event such as smoking lapse), and now also based on events detected by sensors (e.g., elevated stress). In addition, participants can also be prompted to engage in an intervention (e.g., stress relaxation), to collect episodic data from devices (e.g., blood pressure), and to remind them to take medications. Each prompt involves its specific constraints and irrespective of the source, each prompt represents an interruption and burden on the participant.</p>
+
+<p>Each study has a unique protocol (i.e., usually part of their innovation), requiring the EMA scheduler to work in conjunction with study-specific configuration that implements the rules of the study protocol. Studies may involve:</p>
+
+<ol>
+<li>scheduled assessments, such as the beginning of the day, the end of the day, or at specific times,</li>
+<li>random assessment, where the time of this assessment is randomly generated within a specified window,</li>
+<li>in response to self-reported events, and</li>
+<li>event-triggered assessment (e.g., in response to smoking or stress).</li>
+</ol>
+
+<p>Second, the EMA scheduler needs to support conditional operations based on computed data streams. Some of the conditions include:</p>
+
+<ol>
+<li>driving status, to ensure that an EMA is not delivered to a person in a moving vehicle,</li>
+<li>data quality, allows the system to verify that the sensors are worn properly before generating the assessment (to ensure labels and sensor data are both available together), and</li>
+<li>battery level, to ensure that assessments are happening either with sufficient battery or as a way to prompt a participant to charge a particular piece of the system.</li>
+</ol>
+
+<p>Third, the last EMA or EMI triggering time can be used to ensure that subsequent prompting or interventions do not occur in close proximity to each other. Fourth, the total number of prompts triggered are limited to a maximum (in each time block) to constrain the user burden according to study protocol rules. Fifth, the day may be divided into time blocks with minimum number of EMA&rsquo;s in each block to ensure sufficient temporal distribution of EMA&rsquo;s. Sixth, no prompts are to be delivered if privacy controls are exercised to suspend prompts. Finally, start and end of day can be provided so that no prompts will occur before or after these times.</p>
+
+<h3 id="burden-and-context-aware-ema-emi-scheduling">Burden- and Context-aware EMA/EMI Scheduling</h3>
+
+
+<figure >
+    
+        <img src="/img/under-the-hood/mcerebrum/Bipartite.png" alt="A bipartite graph design of EMA/EMI scheduler. Boxes on left side show the inputs to the actions/controllers on the right, which prompt the participants. Feedback is accomplished by examining the conditions surrounding the participant response and passed back to key input blocks." />
+    
+    
+    <figcaption>
+        <h4>EMA/EMI Scheduler</h4>
+        <p>
+        A bipartite graph design of EMA/EMI scheduler. Boxes on left side show the inputs to the actions/controllers on the right, which prompt the participants. Feedback is accomplished by examining the conditions surrounding the participant response and passed back to key input blocks.
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+
+<p>mCerebrum uses a bipartite-graph design that fulfills all of the above requirements and is thus able to satisfy the requirements of all <a href="/deployments">ten studies</a>.
+In addition, our design supports dynamic adaptation to use the user response (or lack of) to meet study requirements with gradual relaxation of constraints through a feedback loop.</p>
+
+<p>The inputs column (left-side) enumerates many current choices available in mCerebrum and include: burden constraints, random and event-triggered inputs, restrictions on actions through privacy constraints, start and end of day, and various time operations, user context, and data quality and battery assessments. These inputs can be mapped in arbitrary ways to a set of actions or controllers (right-side) and is defined as constraints across multiple applications as part of a study protocol. Ultimately, the output of an action or controller results in feedback information being incorporated back into the input side. These feedback loops allow mCerebrum to adapt to changing burden, personal preferences, or to gradually escalate the prompting to become more aggressive in requesting an action from a participant (to meet study requirements).</p>
+
+<p>For random and time based assessments, the EMA scheduler estimates the time of when it should be triggered. Due to the dynamic nature of self-reported event and event-triggered assessment, the EMA scheduler schedules it preemptively based on their appearance. There might be a case when multiple assessments may appear at the same time. To handle this issue, the EMA scheduler takes each of these events one by one as in a FIFO queue and checks all of the constraints for this event and deliver the EMA. After completion of an EMA, it returns back to process the next event. This approach also ensures that multiple EMAs are not triggered simultaneously. For random assessments, if it fails to deliver due to the constraints or conflicts with another assessment, it is rescheduled. Before delivering the EMA, the EMA scheduler checks constraints and if all constraints are successfully passed, the user is notified to the availability of an EMA assessment and the response is then used to the measure burden and constraints. In several studies, the EMA/EMI scheduler attempts an average of 55 prompt deliveries per day with an average processing time of 0.18 seconds each, negligible when compared to the CPU execution time of a stress or smoking biomarker.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Interest and activity in developing new biomarkers and interventions from mobile sensor data is rapidly expanding. But, assembling a reliable software platform to support the collection of raw sensor data from a wide variety of sensors combined with the real-time computation of biomarkers on the phone to trigger notification and intervention requires significant time, effort, resource, and multidisciplinary experience. This paper presents an end-to-end system, consisting of 23 applications, that has evolved from rich experiences over the last half a decade. It is being adopted in multiple concurrent field studies and is now openly available for the community to use and grow as an open-source platform. With growing adoption and convergence on a common platform, native support in the commercial devices and operating systems may grow, making it easier to use and more efficient to run on participants&rsquo; personal phones. This may further accelerate data science and health research by allowing reuse of code and models among the community.</p>
+
+<hr />
+
+<ol>
+<li>Google’s FIT. 2017. Online at <a href="https://www.google.com/">https://www.google.com/</a>. visited April (2017).</li>
+<li>Denzil Ferreira, Vassilis Kostakos, and Anind K Dey. 2015. AWARE: mobile context instrumentation framework. Frontiers in ICT 2 (2015), 6.</li>
+<li>Apple’s HealthKit. 2017. Online at <a href="https://developer.apple.com/healthkit/">https://developer.apple.com/healthkit/</a>. visited April (2017).</li>
+<li>Gihwan Oh, Sangchul Kim, Sang-Won Lee, and Bongki Moon. 2015. SQLite Optimization with Phase Change Memory for Mobile Applications. Proc. VLDB Endow. 8, 12 (Aug. 2015), 1454–1465. DOI:<a href="https://doi.org/10.14778/2824032.2824044">https://doi.org/10.14778/2824032.2824044</a></li>
+<li>RocksDB. 2017. Online at <a href="http://rocksdb.org/">http://rocksdb.org/</a>. visited April (2017).</li>
+<li>Karen Hovsepian, Mustafa al’Absi, Emre Ertin, Thomas Kamarck, Motohiro Nakajima, and Santosh Kumar. 2015. cStress: towards a gold standard for continuous stress assessment in the mobile environment. In Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM, 493–504.</li>
+<li>Hillol Sarker, Matthew Tyburski, Md Mahbubur Rahman, Karen Hovsepian, Moushumi Sharmin, David H Epstein, Kenzie L Preston, C Debra Furr-Holden, Adam Milam, Inbal Nahum-Shani, and others. 2016. Finding Significant Stress Episodes in a Discontinuous Time Series of Rapidly Varying Mobile Sensor Data. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems. ACM, 4489–4501.</li>
+<li>Nazir Saleheen, Amin Ahsan Ali, Syed Monowar Hossain, Hillol Sarker, Soujanya Chatterjee, Benjamin Marlin, Emre Ertin, Mustafa al’Absi, and Santosh Kumar. 2015. puffMarker: A multi-sensor approach for pinpointing the timing of  rst lapse in smoking cessation. In Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM, 999–1010.</li>
+</ol>
+
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
+                <input type="hidden" name="q" value="site:http://software.md2k.org/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Menu</h3>
+    </div>
+
+    
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/mcerebrum" class="">
+        mCerebrum
+        
+        »
+      </a>
+      
+      
+        
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/mcerebrum/architecture" class="">Architecture</a>
+    </li>
+  
+
+</ul>
+
+      
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex" class="">
+        Cerebral Cortex
+        
+        »
+      </a>
+      
+      
+        
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/architecture" class="">Architecuture</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/docker" class="">Docker</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/getting-started" class="">Getting Started</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/cerebral-cortex/working-with-cerebral-cortex" class="">Working with Cerebral Cortex</a>
+    </li>
+  
+
+</ul>
+
+      
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/feedback" class="">Bug Reports and Feature Requests</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/license" class="">Software License</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/contributing" class="">Contributing</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/under-the-hood/references" class="">References</a>
+    </li>
+  
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            MD2K is supported by the National Institutes of Health Big Data to Knowledge Initiative Grant #1U54EB020404<br><br>Team: Cornell Tech, GA Tech, U Memphis, Northwestern, Ohio State, Open mHealth, UCLA, UCSD, UCSF, Harvard, U Mass, U Michigan, Utah, WVU
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong>MD2K Center</strong>
+        <br>Fedex Institute of Technology
+        <br>Suite 335
+        <br>University of Memphis
+        <br>365 Innovation Drive
+        <br>Memphis, TN  38152-3115
+        <br>
+        <strong>United States</strong>
+      </p>
+      
+
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2017, MD2K; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100215287-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="http://software.md2k.org/js/hpneo.gmaps.js"></script>
+<script src="http://software.md2k.org/js/gmaps.init.js"></script>
+<script src="http://software.md2k.org/js/front.js"></script>
+
+
+<script src="http://software.md2k.org/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>
