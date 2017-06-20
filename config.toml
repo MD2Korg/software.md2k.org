@@ -177,17 +177,17 @@ paginate = 10
   weight = 2
 
 [[menu.howto]]
-  name = "Sensors"
+  name = " Supported Sensors"
   url = "/howto/sensors"
   identifier = "howto-sensors"
   weight = 100
 
   [[menu.howto]]
-    name = "Getting Started"
+    name = "Sensors Troubleshooting"
     identifier = "howto-sensors-ts"
     url = "/howto/sensors/sensors-ts"
     parent = "howto-sensors"
-    weight = 130
+    weight = 110
 
 
 
