@@ -1,5 +1,5 @@
 +++
-title = "MD2K Software How-To"
+title = "MD2K Software How-To: Getting Started"
 description = "Details about the using the smartphone software and cloud"
 keywords = []
 +++
