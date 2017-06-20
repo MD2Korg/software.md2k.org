@@ -60,6 +60,10 @@
   </url>
   
   <url>
+    <loc>http://software.md2k.org/howto/sensors/</loc>
+  </url>
+  
+  <url>
     <loc>http://software.md2k.org/</loc>
     <priority>0</priority>
   </url>

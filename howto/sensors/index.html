@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MD2K Software How-To</title>
+  <title>MD2K Software How-To: Sensors</title>
   <meta name="author" content="" />
 
   
@@ -14,7 +14,7 @@
   
 
   
-  <meta name="description" content="Details about the using the smartphone software and cloud">
+  <meta name="description" content="Details about MD2K Sensors">
   
 
   <meta name="generator" content="Hugo 0.24-DEV" />
@@ -56,9 +56,9 @@
   <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
 
   
-  <meta property="og:title" content="MD2K Software How-To" />
+  <meta property="og:title" content="MD2K Software How-To: Sensors" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/howto/getting-started//" />
+  <meta property="og:url" content="/howto/sensors//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -77,9 +77,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://software.md2k.org/">
-                    <img src="http://software.md2k.org/img/logo.png" alt="MD2K Software How-To logo" class="hidden-xs hidden-sm">
-                    <img src="http://software.md2k.org/img/logo-small.png" alt="MD2K Software How-To logo" class="visible-xs visible-sm">
-                    <span class="sr-only">MD2K Software How-To - go to homepage</span>
+                    <img src="http://software.md2k.org/img/logo.png" alt="MD2K Software How-To: Sensors logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="MD2K Software How-To: Sensors logo" class="visible-xs visible-sm">
+                    <span class="sr-only">MD2K Software How-To: Sensors - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -178,7 +178,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>MD2K Software How-To</h1>
+                <h1>MD2K Software How-To: Sensors</h1>
             </div>
         </div>
     </div>
@@ -187,201 +187,74 @@
 
         <div id="content">
             <div class="container">
-
                 <div class="row">
-
                     
 
-                    <div class="col-md-9" id="blog-post">
+                    <div class="col-md-9">
 
-                        
+                      
 
-                        <div id="post-content">
-                          
+<h1 id="sensors">Sensors</h1>
 
-<h1 id="getting-started">Getting Started</h1>
+<p>The MD2K software platform is configurable for a wide variety of mobile and wearable sensors. This page shows an overview of the sensors currently integrated with the MD2K software along with a brief description of how each sensor can be used.</p>
 
-<p>mCerebrum is a suite of several Android applications that are combined with a set of configuration files. All source code is available at <a href="https://github.com/MD2Korg">MD2K&rsquo;s GitHub organization</a>.</p>
+<h2 id="motionsense-wrist-sensor">Motionsense Wrist Sensor</h2>
 
-<p>These instructions will guide you in downloading, installing, and configuring the mCerebrum software suite using the default configuration to <strong>collect phone sensor data</strong>.</p>
+<p><img src="/img/MotionSenseWrist.png" alt="Motionsense" /></p>
 
-<h2 id="installation">Installation</h2>
+<p>Motionsense HRV is a wearable wrist sensor that integrates accelerometer and gyroscope measurements. These biomarkers can be used to track the speed and orientation of hand gestures to monitor activities such as smoking, eating, driving, brushing, and flossing.</p>
 
-<ol>
-<li>Download the <a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest version of mCerebrum</a> and install the APK file on an Android 5.0+ device.</li>
-<li>Follow the on-screen instructions on your Android device to complete the installation.</li>
-<li>When the installation is complete, open mCerebrum. You should see the home screen as shown here:</li>
-</ol>
+<h2 id="motionsense-hrv-wrist-sensor">Motionsense HRV Wrist Sensor</h2>
 
+<p><img src="/img/MotionSenseWrist.png" alt="Motionsense" /></p>
 
-<figure >
-    
-        <img src="/img/howto/mCerebrumSplashDefault.png" />
-    
-    
-    <figcaption>
-        <h4>mCerebrum Splash screen</h4>
-        
-    </figcaption>
-    
-</figure>
+<p>Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth. This sensor also measures heart rate using signals that are detected and classified into different classes of reliability, resulting in estimates of heart rate variability (HRV) and respective confidence levels.</p>
 
+<h2 id="autosense-chest-sensor">Autosense Chest Sensor</h2>
 
-<h2 id="configuration">Configuration</h2>
+<p><img src="/img/AutoSenseChest.png" alt="Autosense chest unit" />  <img src="/img/ASchestWorn.png" alt="Autosense chest worn" /></p>
 
-<ol>
-<li>Tap the Settings button (highlighted in red) to begin the setup process.</li>
-<li>If prompted to download a configuration file, enter “default” and tap OK to use the default mCerebrum configuration file. If you are not prompted, skip this step.</li>
-</ol>
+<p>Autosense chest sensor is a wearable unit with an elastic chestband and connector cables. The sensor is designed to track heart rate through ECG monitors and respiration patterns by measuring lung volume and respiratory effort. These biomarkers can be used by the mCerebrum software to monitor and predict behaviors such as stress, eating, speaking, and smoking.</p>
 
-<h2 id="install-update-apps">Install/Update Apps</h2>
+<h2 id="easysense-chest-sensor">Easysense Chest Sensor</h2>
 
-<p>mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.</p>
+<p><img src="/img/Easysense.png" alt="Easysense" /></p>
 
-<ol>
-<li>From the main Settings screen, tap <em>Configure Applications &gt; Applications</em> then tap the Check Updates button at the bottom of the screen.</li>
-<li>If any apps listed show a red X icon <img src="/img/howto/redX.jpg" alt="red X icon" />, tap the app in the list then tap <em>Install</em>. If any apps listed show a yellow caution icon <img src="/img/howto/yellowcaution.jpg" alt="yellow caution icon" />, tap the app in the list then tap <em>Update</em>. (Alternatively, you may tap the <em>Fix All</em> button at the bottom of the screen to begin the installation of all updates at once.)</li>
-<li>When every app shows a green check mark <img src="/img/howto/greencheckmark.jpg" alt="green checkmark icon" />, all apps are installed and up-to-date. Tap the <em>Close</em> button.</li>
-</ol>
+<p>Easysense is a radio-frequency (RF) sensor that tracks fine-grain internal measurements such as lung fluid and congestion. Rather than being wearable, the sensor is momentarily held to the chest to take quick measurements that penetrate clothing and tissue.</p>
 
-<h2 id="sensors-setup">Sensors Setup</h2>
+<h2 id="oral-b-bluetooth-toothbrush">Oral-B Bluetooth Toothbrush</h2>
 
-<ol>
-<li>From the main Settings screen, tap <em>Configure Applications &gt; Settings &gt; PhoneSensor</em>.</li>
-<li>You will see a list of all the available sensors included with your phone (Battery, Location, Accelerometer, etc.). Tap to toggle on each sensor that you wish to use to collect data.</li>
-<li>When you are finished, tap the <em>Save</em> button at the bottom of the screen.</li>
-</ol>
+<p><img src="/img/OralBbrush.png" alt="Oral-B toothbrush" /></p>
 
-<p><em>Note</em>: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum app).</p>
+<p>The Oral-B electric toothbrush with Bluetooth connectivity works with mCerebrum software to track a user’s brushing habits. The technology can monitor the amount of time brushed as well as the force with which brushing occurs, which can result in actionable feedback both long-term and in real-time.</p>
 
-<h2 id="study-setup">Study Setup</h2>
+<h2 id="omron-weight-scale">Omron Weight Scale</h2>
 
-<ol>
-<li>From the main Settings screen, tap <em>Configure Study</em>.</li>
-<li>Tap <em>User ID</em> and set your desired unique user ID for the participant.</li>
-<li>Tap <em>Wakeup Time</em> and select the time you expect data collection to begin each morning. The participant will receive a prompt to “start the day” at the time you select.</li>
-<li>Tap <em>Sleep Time</em> and select the time you expect data collection to conclude each day.</li>
-<li>If all items on the Study Settings screen show a green check mark beside them, study setup is complete.  Tap the <em>Save</em> button at the bottom of the screen.</li>
-</ol>
+<p><img src="/img/OmronScale.png" alt="Omron scale" /></p>
 
-<h2 id="start-study">Start Study</h2>
+<p>Omron Weight Scale is a digital scale to track a user’s weight. The sensor uses Bluetooth technology and is integrated with mCerebrum software to monitor weight measurements and maintain records of weights taken at any given intervals over a period of time.</p>
 
-<ol>
-<li>From the main Settings screen, once Configure Applications and Configure Study show a green checkmark, tap the <em>Start Study</em> button to begin the study.</li>
-<li>If prompted to start the day, tap the <em>Start</em> button to begin data collection.</li>
-<li>Tap <em>Close</em> to exit the Settings screen. You should see the mCerebrum home screen below. Once you have tapped to start the day, data collection has begun.</li>
-</ol>
+<h2 id="omron-blood-pressure-monitor">Omron Blood Pressure Monitor</h2>
 
+<p><img src="/img/OmronBP.png" alt="Omron blood pressure" /></p>
 
-<figure >
-    
-        <img src="/img/howto/mCerebrumHome.png" />
-    
-    
-    <figcaption>
-        <h4>mCerebrum Home screen</h4>
-        
-    </figcaption>
-    
-</figure>
+<p>Omron Blood Pressure Monitor measures highly-accurate blood pressure readings to monitor a user’s blood pressure. In conjunction with mCerebrum software, these blood pressure readings can be taken at home with the push of a button and can be easily tracked over a period of time to improve patient care.</p>
 
+<h2 id="microsoft-band">Microsoft Band</h2>
 
-<h2 id="visualize-real-time-data">Visualize Real-Time Data</h2>
+<p><img src="/img/MicrosoftBand.png" alt="Microsoft Band" /></p>
 
-<ol>
-<li>From the mCerebrum home screen, tap the <em>Plotter</em> button.</li>
-<li>Select from the list of available sensors to visualize each set of data in real-time.</li>
-</ol>
+<p>Microsoft Band is a wearable wrist sensor and fitness tracker that contains accelerometer and gyroscope sensors useful in tracking hand gestures and activity. The on-screen display allows for delivery of intervention and other prompts directly to the user&rsquo;s wrist unit.</p>
 
+<h2 id="phone-sensors">Phone Sensors</h2>
 
-<figure >
-    
-        <img src="/img/howto/plotterButton.png" />
-    
-    
-    <figcaption>
-        <h4>mCerebrum plotter button</h4>
-        
-    </figcaption>
-    
-</figure>
+<p><img src="/img/mCerebrumOnPhone.png" alt="mCerebrum Home Screen" /></p>
 
+<p>In addition to the sensors listed above, the mCerebrum software also utilizies many different sensors including in a smartphone itself. Each smartphone can provide valuable information through various sensors such as accelerometer, gyroscope, GPS, battery, and activity tracking.</p>
 
-<h2 id="privacy">Privacy</h2>
-
-<p>Privacy Control allows users to turn off certain features for a limited period of time.</p>
-
-
-<figure >
-    
-        <img src="/img/howto/privacyActivate.png" />
-    
-    
-    <figcaption>
-        <h4>mCerebrum privacy on</h4>
-        
-    </figcaption>
-    
-</figure>
-
-
-<ol>
-<li>From the mCerebrum home screen, tap the <em>Turn On</em> button under the Privacy heading.</li>
-<li>On the Privacy Control Settings screen, tap <em>Set Privacy Duration</em>. Select the amount of time for which you wish to disable the feature(s).</li>
-<li>Next, tap <em>Set Privacy Type</em>. Select each of the features you would like to temporarily disable. You will see a check mark appear to confirm the feature is selected. Tap <em>OK</em> when finished.</li>
-<li>Tap the <em>Start</em> button to begin the privacy timer.</li>
-<li>You will see a countdown timer under the Privacy Status heading to confirm the privacy settings are enabled. When you
-are finished, tap <em>Close</em>.</li>
-</ol>
-
-<h2 id="export-data">Export Data</h2>
-
-<p>When you are ready to export the data you have collected, perform the following steps to save your data to a computer:</p>
-
-<h4 id="shut-down-all-applications">Shut Down All Applications</h4>
-
-<ol>
-<li>Enter the main Settings screen by tapping the 3 dots in the upper-right-hand corner of the home screen, then tapping <em>Settings</em>.</li>
-<li>Tap the <em>Running Apps</em> button. (<em>Note</em>: the study must be started to access running apps.)</li>
-<li>Tap the <em>Stop All</em> button to stop all applications.</li>
-<li>Return to the previous screen and tap <em>Stop Study</em>.</li>
-<li>Restart the phone.</li>
-<li>When the phone restarts, if the mCerebrum app opens, tap <em>Exit</em> to close it. (If mCerebrum does not open, skip this step.)</li>
-<li>From the phone’s home screen, open the DataKit app and ensure it is INACTIVE.</li>
-</ol>
-
-
-<figure >
-    
-        <img src="/img/howto/DatakitINACTIVE.png" />
-    
-    
-    <figcaption>
-        <h4>Datakit is inactive</h4>
-        
-    </figcaption>
-    
-</figure>
-
-
-<h4 id="save-data-to-a-computer">Save Data to a Computer</h4>
-
-<ol>
-<li>Connect the smartphone to a PC using the charging cable.</li>
-<li>Create a new folder on your computer. (It may be helpful to use the participant’s user ID as the new folder name.)</li>
-<li>Using the computer, navigate to the phone’s org.md2k.datakit folder. <em>[Phone &gt; Android &gt; data &gt; org.md2k.datakit]</em></li>
-<li>Copy the org.md2k.datakit folder and paste it to the new folder you created on your computer.</li>
-<li>Navigate to the phone’s log folder. <em>[Phone &gt; log]</em></li>
-<li>Copy the log folder and paste it to the new folder you created.</li>
-</ol>
-
-<p>All data is now exported to the computer.</p>
-
-                        </div>
-                        
-                        
 
                     </div>
+                    
                     
 
                     
@@ -483,7 +356,6 @@ are finished, tap <em>Close</em>.</li>
 
                 </div>
                 
-
             </div>
             
         </div>
