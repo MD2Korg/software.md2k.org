@@ -184,7 +184,7 @@ paginate = 10
 
   [[menu.howto]]
     name = "Getting Started"
-    identifier = "uth-cc-gs"
+    identifier = "howto-sensors-ts"
     url = "/howto/sensors/sensors-ts"
     parent = "howto-sensors"
     weight = 130
