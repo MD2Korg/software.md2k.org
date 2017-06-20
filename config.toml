@@ -177,7 +177,7 @@ paginate = 10
   weight = 2
 
 [[menu.howto]]
-  name = " Supported Sensors"
+  name = "Supported Sensors"
   url = "/howto/sensors"
   identifier = "howto-sensors"
   weight = 100

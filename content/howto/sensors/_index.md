@@ -1,5 +1,5 @@
 +++
-title = "MD2K Software How-To: Sensors"
+title = "MD2K Software How-To: Supported Sensors"
 description = "Details about MD2K Sensors"
 keywords = []
 +++
