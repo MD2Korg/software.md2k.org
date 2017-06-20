@@ -115,6 +115,15 @@ For a list of current activities and all outstanding issues please see the issue
     </item>
     
     <item>
+      <title>MD2K Software How-To: Adding Sensors</title>
+      <link>http://software.md2k.org/howto/sensors/adding-sensors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/sensors/adding-sensors/</guid>
+      <description>Adding Sensors The MD2K software platform is open-source and welcomes contributions from anyone who is interested in improving mobile health. Developers are encouraged to add new sensors to our software platform. Please visit our MD2K GitHub organization and MD2K Under the Hood pages for more information.</description>
+    </item>
+    
+    <item>
       <title>MD2K Software How-To: Getting Started</title>
       <link>http://software.md2k.org/howto/mcerebrum/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
