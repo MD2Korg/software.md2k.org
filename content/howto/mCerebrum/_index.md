@@ -11,7 +11,7 @@ keywords = []
 
 <center><iframe src="https://www.youtube.com/embed/g_WC0vpn5rU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 
-**Please visit our [Getting Started page](http://software.md2k.org/howto/mcerebrum/getting-started/) to learn how to download our smartphone software and collect data using phone sensors with our default configuration.**
+**Please visit the [Getting Started page](http://software.md2k.org/howto/mcerebrum/getting-started/) to learn how to download our smartphone software and collect data using phone sensors with our default configuration.**
 
 ## mCerebrum Overview
 

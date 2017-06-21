@@ -9,7 +9,7 @@ keywords = []
 
 {{< figure src="../img/howto/bluemanGraphicSmall.png" title="" caption="">}}
 
-**Please visit our [Getting Started page](http://software.md2k.org/howto/mcerebrum/getting-started/) to learn how to download our smartphone software and collect data using phone sensors with our default configuration.**
+**Please visit the [Getting Started page](http://software.md2k.org/howto/mcerebrum/getting-started/) to learn how to download our smartphone software and collect data using phone sensors with our default configuration.**
 
 ## Introduction
 The MD2K software includes a smartphone platform called mCerebrum and a cloud counterpart called Cerebral Cortex.
