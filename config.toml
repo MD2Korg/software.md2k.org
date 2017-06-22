@@ -166,15 +166,43 @@ paginate = 10
 # How-to
 
 [[menu.howto]]
-  name = "How-to"
+  name = "How-to Homepage"
   identifier = "how-to"
   url = "/howto"
+  weight = 1
 
 [[menu.howto]]
-  name = "Getting Started"
-  url = "/howto/getting-started"
+  name = "Smartphone Software"
+  identifier = "howto-mCerebrum"
+  url = "/howto/mCerebrum"
+  weight = 10
 
+  [[menu.howto]]
+    name = "Getting Started"
+    identifier = "howto-mCerebrum-gettingstarted"
+    url = "/howto/mCerebrum/getting-started"
+    parent = "howto-mCerebrum"
+    weight = 11
 
+[[menu.howto]]
+  name = "Supported Sensors"
+  url = "/howto/sensors"
+  identifier = "howto-sensors"
+  weight = 100
+
+  [[menu.howto]]
+    name = "Sensors Troubleshooting"
+    identifier = "howto-sensors-ts"
+    url = "/howto/sensors/sensors-ts"
+    parent = "howto-sensors"
+    weight = 110
+
+  [[menu.howto]]
+    name = "Adding Sensors"
+    identifier = "howto-adding-sensors"
+    url = "/howto/sensors/adding-sensors"
+    parent = "howto-sensors"
+    weight = 120
 
 
 
