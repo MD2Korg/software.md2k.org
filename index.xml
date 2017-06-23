@@ -99,7 +99,7 @@ What can I help with We try to keep all open issues for MD2K software on Pivotal
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/deployments/</guid>
-      <description></description>
+      <description>var diameter = 760, radius = diameter / 2, innerRadius = radius - 150; var cluster = d3.cluster() .size([360, innerRadius]); var line = d3.radialLine() .curve(d3.curveBundle.beta(0.85)) .radius(function(d) { return d.y; }) .angle(function(d) { return d.x / 180 * Math.PI; }); var svg = d3.select(&#34;#graph_svg&#34;).append(&#34;svg&#34;) .attr(&#34;width&#34;, diameter) .attr(&#34;height&#34;, diameter) .append(&#34;g&#34;) .attr(&#34;transform&#34;, &#34;translate(&#34; + radius + &#34;,&#34; + radius + &#34;)&#34;); var link = svg.append(&#34;g&#34;).selectAll(&#34;.link&#34;), node = svg.append(&#34;g&#34;).selectAll(&#34;.node&#34;); d3.json(&#34;/js/deployment_dependency.js&#34;, function(error, classes) { if (error) throw error; var root = packageHierarchy(classes) .</description>
     </item>
     
     <item>
