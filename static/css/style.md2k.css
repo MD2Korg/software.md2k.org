@@ -33,6 +33,72 @@
   visibility: hidden;
 }
 
+.deployment_graphic {
+  margin-top: -100px;
+  text-align: center;
+}
+svg {
+  /*max-width: 500px;*/
+  display: block;
+  margin: 0 auto; /* poor attempt at centering */
+
+  height: auto !important; /* overrides inline */
+  width: auto !important; /* overrides inline */
+}
+
+
+.node {
+  font: 300 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #666;
+}
+
+.node:hover {
+  fill: #000;
+}
+
+.link {
+  stroke: steelblue;
+  stroke-opacity: 0.4;
+  fill: none;
+  pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+  font-weight: 700;
+}
+
+.node--source {
+  fill: #2ca02c;
+}
+
+.node--target {
+  fill: #d62728;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.link--source {
+  stroke: #d62728;
+}
+
+.link--target {
+  stroke: #2ca02c;
+}
+
+
+
+
+
+
+
+
+
 
 .deployments-box {
   border: 1px solid #38a7bb;

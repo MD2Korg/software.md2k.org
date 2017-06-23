@@ -11,6 +11,14 @@
   {{ $.Scratch.Add "dataPoints" (int (replace $element.samples "," "")) }}
 {{ end }}
 
+<div class="col-md-12 deployment_graphic" id="graph_svg">
+  <h2>Deployment-Interdependency Graph</h2>
+  <h5>Use your mouse to highlight the connections. </h5>
+  {{ .Content }}
+  <h4>The groups identify various software components, sensor platforms, study sites, health targets, and biomarkers</h4>
+  <br>
+</div>
+
 
       <div class="col-md-12">
 
