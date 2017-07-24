@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Under the Hood</title>
+  <title>Cerebral Cortex::API</title>
   <meta name="author" content="" />
 
   
@@ -14,7 +14,7 @@
   
 
   
-  <meta name="description" content="Details about the software architecture, design, and developer-oriented interfaces">
+  <meta name="description" content="MD2K Software Documentation Site">	
   
 
   <meta name="generator" content="Hugo 0.26-DEV" />
@@ -56,9 +56,9 @@
   <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
 
   
-  <meta property="og:title" content="Under the Hood" />
+  <meta property="og:title" content="Cerebral Cortex::API" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/under-the-hood//" />
+  <meta property="og:url" content="/under-the-hood/cerebral-cortex/api//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -77,9 +77,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://software.md2k.org/">
-                    <img src="http://software.md2k.org/img/logo.png" alt="Under the Hood logo" class="hidden-xs hidden-sm">
-                    <img src="http://software.md2k.org/img/logo-small.png" alt="Under the Hood logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Under the Hood - go to homepage</span>
+                    <img src="http://software.md2k.org/img/logo.png" alt="Cerebral Cortex::API logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="Cerebral Cortex::API logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Cerebral Cortex::API - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -178,7 +178,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Under the Hood</h1>
+                <h1>Cerebral Cortex::API</h1>
             </div>
         </div>
     </div>
@@ -187,79 +187,86 @@
 
         <div id="content">
             <div class="container">
+
                 <div class="row">
+
                     
 
-                    <div class="col-md-9">
+                    <div class="col-md-9" id="blog-post">
 
-                      
+                        
 
-<h1 id="motivation">Motivation</h1>
+                        <div id="post-content">
+                          
 
-<p>
-<figure >
-    
-        <img src="/img/under-the-hood/md2k_motivation.png" />
-    
-    
-    <figcaption>
-        <h4>Raw sensor data is required for the development of new mHealth biomarkers.</h4>
-        
-    </figcaption>
-    
-</figure>
+<h1 id="web-api">Web API</h1>
 
-The reason that commercial systems only provide biomarkers is that they have already gone through the Sense-Markers-Intervention process which allows them to only expose biomarker data.  This provides limited value for a biomedical researchers due to the reliance on generally proprietary algorithms that compute these biomarkers and the limited amount of data generated.</p>
+<h2 id="auth-login">Auth Login</h2>
 
-<p>The development and validation of any new mHealth biomarker, however, requires conducting research studies in lab and field settings and collecting raw sensor data with appropriate labels such as self-reports. Raw sensor data is of increasing interest to research studies as it significantly increases the useful life of the information collected. Similar to biomedical studies that often archive bio specimens in biobanks so that they can be reprocessed to take advantage of future improvements in assays and support biomedical discoveries not possible at the time of data collection, raw sensor data can be used to obtain new digital biomarkers that were not available at the time of data collection. Doing so, however, requires a mobile phone software platform that can be used to collect both high-rate raw sensor data and associated labels in the field.</p>
+<p>Returns a json object containing the server&rsquo;s response for an authentication request</p>
 
-<h2 id="system-overview">System Overview</h2>
+<ul>
+<li><p><strong>URL</strong></p>
 
+<p>/auth/login</p></li>
 
-<figure >
-    
-        <img src="/img/under-the-hood/use_case.png" alt="There are three core users of mCerebrum and Cerebral Cortex. (1) The user wearing sensors and interacting with mCerebrum which uploads data to Cerebral Cortex, (2) the health science researcher that conduct studies, visualize field data, run population-scale analysis, and (3) the data science researcher that constructs models through machine learning, runs interative analysis through web-based dashboards, and buils scalable data analytics across large populations." />
-    
-    
-    <figcaption>
-        <h4>System Overview</h4>
-        <p>
-        There are three core users of mCerebrum and Cerebral Cortex. (1) The user wearing sensors and interacting with mCerebrum which uploads data to Cerebral Cortex, (2) the health science researcher that conduct studies, visualize field data, run population-scale analysis, and (3) the data science researcher that constructs models through machine learning, runs interative analysis through web-based dashboards, and buils scalable data analytics across large populations.
-        
-            
-        
-        </p> 
-    </figcaption>
-    
-</figure>
+<li><p><strong>Method:</strong></p>
 
+<p><code>POST</code></p></li>
 
-<h1 id="mcerebrum-sense-analyze-act-for-mobile-high-frequency-wearable-sensors">mCerebrum: Sense-Analyze-Act for Mobile High Frequency Wearable Sensors</h1>
+<li><p><strong>URL Params</strong></p>
 
-<p><img src="/img/under-the-hood/mCerebrum.png" style="height: 200px; float: left;">
-The development and validation of new multisensory biomarkers and sensor-triggered interventions requires collecting raw sensor data and associated labels in the natural field environment. A software platform for such studies needs to not only support high-rate data ingestion, but also the entire sense-analyze-act pipeline at high-data rate.
-We present, mCerebrum, a general-purpose mobile software platform for conducting such studies. It supports raw data collections from multiple high-rate sensors and real-time assessment of data quality to ensure data fidelity. It includes a scalable storage architecture to ensure quick response despite rapidly growing data volume. It provides efficient sharing of sensor data among multiple sources and sinks with flexibility to represent current and future data types while ensuring a high throughput. It implements the entire sense-analyze-act pipeline for concurrent computation of several multi-sensor digital biomarkers at high data rate by efficient reuse of computations. Finally, it has a reconfigurable scheduler that manages all prompts to participants that is burden- and context-aware.
-With a modular design spanning 23+ apps, mCerebrum provides a complete ecosystem of system services and utility apps.
-The design of mCerebrum is informed by its concurrent use in field studies at ten sites spanning 106,806 person days.</p>
+<p><strong>Required:</strong></p>
 
-<div class="row">
-  <!-- 16:9 aspect ratio -->
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe allowFullScreen='allowFullScreen' class="embed-responsive-item" src="https://www.youtube.com/embed/ENngs9eL4VQ?controls=2&showinfo=0"></iframe>
-  </div>
+<p><code>username=[string]</code></p>
 
-<p></div></p>
+<p><code>password_hash=[string]</code></p></li>
 
-<p><a href="mcerebrum">More Information</a></p>
+<li><p><strong>Data Params</strong></p>
 
-<h1 id="cerebral-cortex-population-scale-model-learning-and-data-analytics">Cerebral Cortex: Population-scale Model Learning and Data Analytics</h1>
+<p>None</p></li>
 
-<p><img src="/img/under-the-hood/Cerebral Cortex.png" style="height: 200px; float: left;">
-Cerebral Cortex is the big data companion of mCerebrum designed to support population-scale data analysis, visualization, model development, and intervention design.  It is capable of scaling 1,000s of concurrent mCerebrum instances and supports machine learning model development on population-scale data sets and interoperable interfaces for aggregation of diverse data sources.  Currently Cerebral Cortex supports 10 concurrent <a href="/deployments">studies</a> combining 2,100+ partiicpants, 100,000+ person-days of data and 4.7 trillion data points (100+TB).</p>
+<li><p><strong>Success Response:</strong></p>
 
+<ul>
+<li><strong>Code:</strong> 200 <br />
+<strong>Content:</strong></li>
+</ul>
+
+<pre><code class="language-json">  {
+    token : auth_token
+  }
+</code></pre></li>
+
+<li><p><strong>Error Response:</strong></p>
+
+<ul>
+<li><strong>Code:</strong> 401 UNAUTHORIZED <br />
+<strong>Content:</strong> <code>{ error : &quot;Invalid authentication&quot; }</code></li>
+</ul>
+
+<p>OR</p>
+
+<ul>
+<li><strong>Code:</strong> 422 UNPROCESSABLE ENTRY <br />
+<strong>Content:</strong> <code>{ error : &quot;Email Invalid&quot; }</code></li>
+</ul></li>
+
+<li><p><strong>Sample Call:</strong></p>
+
+<pre><code class="language-json">{
+    something here
+}
+</code></pre></li>
+
+<li><p><strong>Notes</strong></p></li>
+</ul>
+
+                        </div>
+                        
+                        
 
                     </div>
-                    
                     
 
                     
@@ -455,6 +462,7 @@ Cerebral Cortex is the big data companion of mCerebrum designed to support popul
 
                 </div>
                 
+
             </div>
             
         </div>

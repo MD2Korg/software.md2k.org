@@ -12,6 +12,29 @@
     
     
     <item>
+      <title>Cerebral Cortex::API</title>
+      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/api/</guid>
+      <description>Web API Auth Login Returns a json object containing the server&amp;rsquo;s response for an authentication request
+ URL
+/auth/login
+ Method:
+POST
+ URL Params
+Required:
+username=[string]
+password_hash=[string]
+ Data Params
+None
+ Success Response:
+ Code: 200 Content:  { token : auth_token }  Error Response:
+ Code: 401 UNAUTHORIZED Content: { error : &amp;quot;Invalid authentication&amp;quot; }  OR
+ Code: 422 UNPROCESSABLE ENTRY Content: { error : &amp;quot;Email Invalid&amp;quot; }  Sample Call:</description>
+    </item>
+    
+    <item>
       <title>Cerebral Cortex::Architecture</title>
       <link>http://software.md2k.org/under-the-hood/cerebral-cortex/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
