@@ -22,6 +22,6 @@
     "description": "Demonstrates how to link an external app via apk URL",
     "apk_url": "https://md2k.org/test/app/testapp.apk",
     "icon": "test.png"
-  },
+  }
 
 ]
