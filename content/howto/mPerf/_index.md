@@ -13,7 +13,7 @@ These instructions will guide you in downloading, installing, and configuring th
 ## Installation
 1. Download the [latest version of mCerebrum](https://github.com/MD2Korg/mCerebrum-Study/releases/latest) and install the APK file on an Android 5.0+ device.
 2. Follow the on-screen instructions on your Android device to complete the installation.
-3. When the installation is complete, open mCerebrum. You should see the home screen as shown here:
+3. When the installation is complete, open mCerebrum by tapping the mCerebrum app icon on your phone. You should see the home screen as shown here:
 
 {{< figure src="/img/howto/mCerebrumSplashDefault.png" title="mCerebrum Splash screen" caption="">}}
 
@@ -33,7 +33,7 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 2.	You will see a list of all the available sensors included with your phone (Battery, Location, Accelerometer, etc.). Tap to toggle on each sensor that you wish to use to collect data.
 3.	When you are finished, tap the *Save* button at the bottom of the screen.
 
-*Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum app).
+**USERS TO PERFORM THIS STEP?** *Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum app).
 
 ## Study Setup
 1.	From the main Settings screen, tap *Configure Study*.
@@ -66,26 +66,3 @@ Privacy Control allows users to turn off certain features for a limited period o
 4. Tap the *Start* button to begin the privacy timer.
 5. You will see a countdown timer under the Privacy Status heading to confirm the privacy settings are enabled. When you
 are finished, tap *Close*.
-
-## Export Data
-When you are ready to export the data you have collected, perform the following steps to save your data to a computer:
-#### Shut Down All Applications
-1.	Enter the main Settings screen by tapping the 3 dots in the upper-right-hand corner of the home screen, then tapping *Settings*.
-2.	Tap the *Running Apps* button. (*Note*: the study must be started to access running apps.)
-3.	Tap the *Stop All* button to stop all applications.
-4.	Return to the previous screen and tap *Stop Study*.
-5.	Restart the phone.
-6.	When the phone restarts, if the mCerebrum app opens, tap *Exit* to close it. (If mCerebrum does not open, skip this step.)
-7.	From the phone’s home screen, open the DataKit app and ensure it is INACTIVE.
-
-{{< figure src="/img/howto/DatakitINACTIVE.png" title="Datakit is inactive" caption="">}}
-
-#### Save Data to a Computer
-1.	Connect the smartphone to a PC using the charging cable.
-2.	Create a new folder on your computer. (It may be helpful to use the participant’s user ID as the new folder name.)
-3.	Using the computer, navigate to the phone’s org.md2k.datakit folder. *[Phone > Android > data > org.md2k.datakit]*
-4.	Copy the org.md2k.datakit folder and paste it to the new folder you created on your computer.
-5.	Navigate to the phone’s log folder. *[Phone > log]*
-6.	Copy the log folder and paste it to the new folder you created.
-
-All data is now exported to the computer.
