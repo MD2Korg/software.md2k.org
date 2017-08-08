@@ -210,6 +210,13 @@ paginate = 10
   url = "/howto/mPerf"
   weight = 200
 
+  [[menu.howto]]
+    name = "Sensors"
+    identifier = "howto-mPerf-sensors"
+    url = "/howto/mPerf/sensors"
+    parent = "howto-mPerf"
+    weight = 220
+
 
 
 
