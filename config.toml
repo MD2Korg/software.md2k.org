@@ -186,8 +186,8 @@ paginate = 10
 
 [[menu.howto]]
   name = "Supported Sensors"
-  url = "/howto/sensors"
   identifier = "howto-sensors"
+  url = "/howto/sensors"
   weight = 100
 
   [[menu.howto]]
@@ -203,6 +203,12 @@ paginate = 10
     url = "/howto/sensors/adding-sensors"
     parent = "howto-sensors"
     weight = 120
+
+[[menu.howto]]
+  name = "mPerf User Guide"
+  identifier = "howto-mPerf"
+  url = "/howto/mPerf"
+  weight = 200
 
 
 
