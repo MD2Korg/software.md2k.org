@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MD2K Software How-To</title>
+  <title>mPerf User Guide - Sensors Overview</title>
   <meta name="author" content="" />
 
   
@@ -14,7 +14,7 @@
   
 
   
-  <meta name="description" content="Software Platform">
+  <meta name="description" content="Overview of the mPerf sensors">
   
 
   <meta name="generator" content="Hugo 0.27-DEV" />
@@ -56,9 +56,9 @@
   <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
 
   
-  <meta property="og:title" content="MD2K Software How-To" />
+  <meta property="og:title" content="mPerf User Guide - Sensors Overview" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/howto//" />
+  <meta property="og:url" content="/howto/mperf/sensors//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -77,9 +77,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://software.md2k.org/">
-                    <img src="http://software.md2k.org/img/logo.png" alt="MD2K Software How-To logo" class="hidden-xs hidden-sm">
-                    <img src="http://software.md2k.org/img/logo-small.png" alt="MD2K Software How-To logo" class="visible-xs visible-sm">
-                    <span class="sr-only">MD2K Software How-To - go to homepage</span>
+                    <img src="http://software.md2k.org/img/logo.png" alt="mPerf User Guide - Sensors Overview logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="mPerf User Guide - Sensors Overview logo" class="visible-xs visible-sm">
+                    <span class="sr-only">mPerf User Guide - Sensors Overview - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -178,7 +178,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>MD2K Software How-To</h1>
+                <h1>mPerf User Guide - Sensors Overview</h1>
             </div>
         </div>
     </div>
@@ -187,57 +187,118 @@
 
         <div id="content">
             <div class="container">
+
                 <div class="row">
+
                     
 
-                    <div class="col-md-9">
+                    <div class="col-md-9" id="blog-post">
 
-                      
+                        
 
-<h1 id="md2k-software-platform">MD2K Software Platform</h1>
+                        <div id="post-content">
+                          
 
+<h1 id="sensors">Sensors</h1>
 
-<figure >
-    
-        <img src="../img/howto/bluemanGraphicSmall.png" />
-    
-    
-</figure>
+<p>The mCerebrum software platform is configurable for a wide variety of mobile and wearable sensors. This page shows an overview of the sensors currently integrated with the software for the mPerf project.</p>
 
-
-<p><strong>Please visit the <a href="http://software.md2k.org/howto/mcerebrum/getting-started/">Getting Started page</a> to learn how to download our smartphone software and collect data using phone sensors with our default configuration.</strong></p>
-
-<h2 id="introduction">Introduction</h2>
-
-<p>The MD2K software includes a smartphone platform called mCerebrum and a cloud counterpart called Cerebral Cortex.</p>
-
-<p><strong>mCerebrum is a configurable smartphone software platform for mobile and wearable sensors.</strong> It provides support for reliable data collection from mobile and wearable sensors, and real-time processing of these data for sensor-triggered just-in-time adaptive interventions.</p>
-
-<p><strong>Cerebral Cortex is the big data cloud companion</strong> of mCerebrum designed to support population-scale data analysis, visualization, model development, and intervention design for mobile sensor data. It provides the ability to do machine learning model development on population scale data sets and provides interoperable interfaces for aggregation of diverse data sources.</p>
-
-<p>While MD2K is not a recruitment tool nor a server host, our software can be installed and used by anyone who wishes to advance research in mobile health using cutting edge techniques in high-frequency data collection, real-time intervention, and all the other unique capabilities MD2K can offer.</p>
-
-<h2 id="high-frequency-data-in-real-time">High-Frequency Data in Real-Time</h2>
+<h2 id="motionsense-hrv-wrist-sensor">Motionsense HRV Wrist Sensor</h2>
 
 
 <figure >
     
-        <img src="../img/howto/gyroscopeGIF.gif" />
+        <img src="/img/howto/MotionSenseHRV.png" />
     
     
     <figcaption>
-        <h4>Wrist sensor gyroscope</h4>
+        <h4>Motionsense HRV Wrist Sensor</h4>
         
     </figcaption>
     
 </figure>
 
 
-<p>Mobile health data solutions are emerging and evolving every day. While most of these software platforms are primarily designed for low-frequency data collection, the <a href="https://www.github.com/MD2Korg/">MD2K platform</a> is designed from the ground up as a <strong>high-frequency</strong> data stream processing toolchain that provides flexible data types and custom object storage. It can collect and analyze data from tens of wearable sensors via a wide array of wireless radios (ANT, Bluetooth, Bluetooth LE, etc.). It also provides native support for triggering notifications, self-report prompts, and interventions based on <strong>real-time</strong> values of digital biomarkers derived from sensor data.</p>
+<p>Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth. This sensor also measures heart rate using signals that are detected and classified into different classes of reliability, resulting in estimates of heart rate variability (HRV) and respective confidence levels.</p>
 
+<h4 id="troubleshooting">Troubleshooting</h4>
+
+<p><center><iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center></p>
+
+<p>If you are experiencing poor data quality:</p>
+
+<ul>
+<li>Reset the application, wait 15 seconds and check again.</li>
+<li>Restart the phone, wait one minute and check again.</li>
+<li>Make sure the wrist sensor is charged.</li>
+</ul>
+
+<h2 id="autosense-chest-sensor">Autosense Chest Sensor</h2>
+
+
+<figure >
+    
+        <img src="/img/howto/AutoSenseChest2.png" />
+    
+    
+    <figcaption>
+        <h4>Autosense Chest Sensor</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>Autosense chest sensor is a wearable unit with an elastic chestband and connector cables. The sensor is designed to track respiration patterns by measuring lung volume and respiratory effort. These biomarkers can be used by the mCerebrum software to monitor and predict behaviors such as stress, eating, and speaking.</p>
+
+<h4 id="troubleshooting-1">Troubleshooting</h4>
+
+<p>If you are experiencing poor data quality:</p>
+
+<ul>
+<li>Make sure all cable connections are secure.</li>
+<li>Make sure the RIP connector is inserted into the correct port of the chest sensor.</li>
+<li>Tighten the chest band so it fits snugly under the armpits.</li>
+<li>Reset the application, wait 15 seconds and check again.</li>
+<li>Restart the phone, wait one minute and check again.</li>
+<li>Make sure the chest sensor is charged and powered ON.</li>
+</ul>
+
+<h2 id="phone-sensors">Phone Sensors</h2>
+
+
+<figure >
+    
+        <img src="/img/howto/mCerebrumOnPhone.png" />
+    
+    
+    <figcaption>
+        <h4>Phone Sensors</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p>In addition to the sensors listed above, the mCerebrum software also utilizies many different sensors including in a smartphone itself. Each smartphone can provide valuable information through various sensors such as accelerometer, gyroscope, GPS, battery, and activity tracking.</p>
+
+<h4 id="troubleshooting-2">Troubleshooting</h4>
+
+<p>If the mCerebrum app crashes perpetually:</p>
+
+<ul>
+<li>Clear all data from the DataKit app.</li>
+<li>Clear all data from the mCerebrum app.</li>
+<li>Delete the configuration folder located in the internal memory <code>/mCerebrum</code></li>
+<li>Make sure you have installed the proper update for each app.</li>
+<li>Delete the mCerebrum app from the phone and re-install it.</li>
+</ul>
+
+                        </div>
+                        
+                        
 
                     </div>
-                    
                     
 
                     
@@ -424,6 +485,7 @@
 
                 </div>
                 
+
             </div>
             
         </div>
