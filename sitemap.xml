@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://software.md2k.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/cerebral-cortex/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/cerebral-cortex/api/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/cerebral-cortex/architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/cerebral-cortex/docker/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/cerebral-cortex/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/cerebral-cortex/working-with-cerebral-cortex/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/contests/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/contributing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/contributors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/deployments/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/feedback/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/sensors/adding-sensors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/mcerebrum/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/sensors/sensors-ts/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/sensors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/mcerebrum/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/references/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/license/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/release-schedule/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/mcerebrum/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/under-the-hood/mcerebrum/architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/mperf/</loc>
+  </url>
+  
+</urlset>
