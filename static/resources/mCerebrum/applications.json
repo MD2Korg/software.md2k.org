@@ -12,16 +12,123 @@
     "icon": "datakit.png"
   },
   {
-    "app_name": "MotionSenseHRV",
+    "app_name": "Motion Sense",
     "description": "Captures accelerometer, gyroscope, and PPG data over a BLE connection",
     "github_project": "MD2KOrg/mCerebrum-MotionSense",
     "icon": "motionsense.png"
   },
   {
-    "app_name": "TestApp",
-    "description": "Demonstrates how to link an external app via apk URL",
-    "apk_url": "https://md2k.org/test/app/testapp.apk",
-    "icon": "test.png"
+    "app_name": "Headspace",
+    "description": "Headspace: Guided Meditation & Mindfulness",
+    "apk_url": "http://apk-dl.com/files/59918300cc74f841de109373",
+    "icon": "headspace.png"
+  },
+  {
+    "app_name": "EMA",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-EMA",
+    "icon": ""
+  },
+  {
+    "app_name": "Stream Processor",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-StreamProcessor",
+    "icon": ""
+  },
+  {
+    "app_name": "Phone Sensor",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-PhoneSensor",
+    "icon": ""
+  },
+  {
+    "app_name": "Thought Shakeup",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-ThoughtShakeup",
+    "icon": ""
+  },
+  {
+    "app_name": "Study",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-Study",
+    "icon": ""
+  },
+  {
+    "app_name": "OralB",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-OralB",
+    "icon": ""
+  },
+  {
+    "app_name": "Plotter",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-Plotter",
+    "icon": ""
+  },
+  {
+    "app_name": "Medication",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-Medication",
+    "icon": ""
+  },
+  {
+    "app_name": "EasySense",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-EasySense",
+    "icon": ""
+  },
+  {
+    "app_name": "EMA Scheduler",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-EMAScheduler",
+    "icon": ""
+  },
+  {
+    "app_name": "CHF Scheduler",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-CHFScheduler",
+    "icon": ""
+  },
+  {
+    "app_name": "Mood Surfing",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-MoodSurfing",
+    "icon": ""
+  },
+  {
+    "app_name": "Microsoft Band",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-MicrosoftBand",
+    "icon": ""
+  },
+  {
+    "app_name": "Notification Manager",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-NotificationManager",
+    "icon": ""
+  },
+  {
+    "app_name": "Mindfulness Strategy",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-MindfullnessStrategy",
+    "icon": ""
+  },
+  {
+    "app_name": "Omron",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-Omron",
+    "icon": ""
+  },
+  {
+    "app_name": "Self Report",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-SelfReport",
+    "icon": ""
+  },
+  {
+    "app_name": "Scheduler",
+    "description": "",
+    "github_project": "MD2KOrg/mCerebrum-Scheduler",
+    "icon": ""
   }
-
 ]
