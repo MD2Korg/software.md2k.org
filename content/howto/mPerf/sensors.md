@@ -27,9 +27,9 @@ If you are experiencing poor data quality:
 
 ## Autosense Chest Sensor
 
-{{< figure src="/img/howto/AutoSenseChest2.png" title="Autosense Chest Sensor" caption="">}}
+{{< figure src="/img/howto/mPerf/AutoSenseChest.png" title="Autosense Chest Sensor" caption="">}}
 
-Autosense chest sensor is a wearable unit with an elastic chestband and connector cables. The sensor is designed to track respiration patterns by measuring lung volume and respiratory effort. These biomarkers can be used by the mCerebrum software to monitor and predict behaviors such as stress, eating, and speaking.
+Autosense chest sensor is a wearable unit with an elastic chestband and a set of connector cables. The sensor is designed to track breathing patterns by measuring respiratory effort and lung volume. These biomarkers of respiration can be used by the mCerebrum software to assist in monitoring and predicting repeated human behaviors such as stress, eating, speaking, and smoking.
 
 #### Troubleshooting
 
@@ -51,7 +51,7 @@ In addition to the sensors listed above, the mCerebrum software also utilizies m
 
 #### Troubleshooting
 
-If the mCerebrum app crashes perpetually:
+If the mCerebrum app crashes perpetually (admin only):
 
 - Clear all data from the DataKit app.
 - Clear all data from the mCerebrum app.
