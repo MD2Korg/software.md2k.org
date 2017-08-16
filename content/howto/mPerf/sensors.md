@@ -19,7 +19,7 @@ Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyrosc
 
 Put the Motionsense wrist sensors on as you would wear a watch or FitBit. The sensor should be oriented with the buckle on the strap going over the top of your wrist as shown.
 
-{{< figure src="/img/howto/WearingHRVright.png" title=" " caption="">}}
+{{< figure src="/img/howto/WearingHRVright.jpg" title="" caption="">}}
 
 #### Troubleshooting
 <center><iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
