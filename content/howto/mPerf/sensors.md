@@ -22,7 +22,7 @@ Put the Motionsense wrist sensors on as you would wear a watch or FitBit. The se
 <img src="/img/howto/mPerf/WearingHRVright.jpg">
 
 #### Troubleshooting
-<center><iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
+<iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 
 If you are experiencing poor data quality:
