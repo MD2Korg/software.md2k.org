@@ -11,7 +11,7 @@ Below is a compilation of known sensor hardware issues and troubleshooting steps
 
 ## MotionSense Wrist
 
-<center><iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
+<center><iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 
 
 If you are experiencing poor data quality:
