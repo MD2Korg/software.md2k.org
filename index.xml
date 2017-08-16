@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MD2K::software</title>
+    <link>http://software.md2k.org/</link>
+    <description>Recent content on MD2K::software</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017, MD2K; all rights reserved.</copyright>
+    
+	<atom:link href="http://software.md2k.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cerebral Cortex::API</title>
+      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/api/</guid>
+      <description>Web API Auth Login Returns a json object containing the server&amp;rsquo;s response for an authentication request
+ URL
+/auth/login
+ Method:
+POST
+ URL Params
+Required:
+username=[string]
+password_hash=[string]
+ Data Params
+None
+ Success Response:
+ Code: 200 Content:  { token : auth_token }  Error Response:
+ Code: 401 UNAUTHORIZED Content: { error : &amp;quot;Invalid authentication&amp;quot; }  OR
+ Code: 422 UNPROCESSABLE ENTRY Content: { error : &amp;quot;Email Invalid&amp;quot; }  Sample Call:</description>
+    </item>
+    
+    <item>
+      <title>Cerebral Cortex::Architecture</title>
+      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/architecture/</guid>
+      <description> Overview  Architecture Overview   </description>
+    </item>
+    
+    <item>
+      <title>Cerebral Cortex::Docker</title>
+      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/docker/</guid>
+      <description>Docker Cerebral Cortex is built for development and production use based on Docker technologies.
+Container customizations and relevant docker-compose files are available in our GitHub repository. This repository contains configurations relevant for both development and production usage. As support is expanded for other cloud services, the GitHub page will reflect these additions.
+Installation Two things must be installed to utilize these Docker containers:
+ Docker Docker-compose  Once these dependencies have been installed, the commands on this page will function properly.</description>
+    </item>
+    
+    <item>
+      <title>Cerebral Cortex::Getting Started</title>
+      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/getting-started/</guid>
+      <description>In order to start utilizing Cerebral Cortex, some dependencies are necessary to install and configure. Docker containers are utilized to minimize installation efforts both for development and production usage.
+Prerequisites  Download and install Docker Install docker-compose Download Apache Spark 2.1.x Clone https://github.com/MD2Korg/CerebralCortex-DockerCompose Run docker-compose up to initialize the containers before proceeding with the next steps  Cerebral Cortex codebase  Clone https://github.com/MD2Korg/CerebralCortex (IntelliJ preferred) Follow README.md instructions to configure the project and get everything up and running.</description>
+    </item>
+    
+    <item>
+      <title>Cerebral Cortex::Working With the Tools</title>
+      <link>http://software.md2k.org/under-the-hood/cerebral-cortex/working-with-cerebral-cortex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/cerebral-cortex/working-with-cerebral-cortex/</guid>
+      <description>Jupyter Notebooks The main developer interface is based on a customizes Jupyter Notebooks that comes preinstalled with Apache Spark and Cerebral Cortex. The following configuration file and python3 code show how to initialize a Cerebral Cortex instance to begin working with it.
+cerebralcortex.yml
+cassandra: keyspace: cerebralcortex db_user: &amp;quot;&amp;quot; db_pass: &amp;quot;&amp;quot; datapoint_table: data mysql: database: cerebralcortex db_user: root db_pass: pass datastream_table: stream processing_module_table: processing_module user_table: user study_table: study  from cerebralcortex.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://software.md2k.org/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contests</title>
+      <link>http://software.md2k.org/contests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/contests/</guid>
+      <description>MD2K is
+Adopter Challenge How to compete Scoring Criteria Submission Overview Prize Up to one grand prize will be awarded each year (July 1 to June 30) valued at over $100,000 in services. MD2K will provide
+ Access to MD2K&amp;rsquo;s cloud servers to host and run your study ($20,000) Access to MD2K developers to support and modify our platform for your study ($50,000) Access to MD2K&amp;rsquo;s data management and study coordinator ($20,000) Mentoring by lead MD2K personel ($10,000) 10x of our MotionSenseHRV bands if applicable ($1,500)  Participant Eligibility The prize is open to research groups worldwide.</description>
+    </item>
+    
+    <item>
+      <title>Contributing to the Software</title>
+      <link>http://software.md2k.org/under-the-hood/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/contributing/</guid>
+      <description>Contributing guidelines Thank you for your interest in helping us with the MD2K software platforms. We always welcome new contributions in any form including:
+ Bug reports regarding the software, documentation, website, etc&amp;hellip; Documentation improvements, tutorials, examples Code patches and new features  Getting started Please join and explore our discussion board. This is all our discussions occur regarding the MD2K software projects.
+What can I help with We try to keep all open issues for MD2K software on Pivotal Tracker but please ask on the discussion board before starting work on any issues.</description>
+    </item>
+    
+    <item>
+      <title>Contributors</title>
+      <link>http://software.md2k.org/contributors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/contributors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deployments</title>
+      <link>http://software.md2k.org/deployments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/deployments/</guid>
+      <description>var diameter = 760, radius = diameter / 2, innerRadius = radius - 150; var cluster = d3.cluster() .size([360, innerRadius]); var line = d3.radialLine() .curve(d3.curveBundle.beta(0.85)) .radius(function(d) { return d.y; }) .angle(function(d) { return d.x / 180 * Math.PI; }); var svg = d3.select(&#34;#graph_svg&#34;).append(&#34;svg&#34;) .attr(&#34;width&#34;, diameter) .attr(&#34;height&#34;, diameter) .append(&#34;g&#34;) .attr(&#34;transform&#34;, &#34;translate(&#34; + radius + &#34;,&#34; + radius + &#34;)&#34;); var link = svg.append(&#34;g&#34;).selectAll(&#34;.link&#34;), node = svg.append(&#34;g&#34;).selectAll(&#34;.node&#34;); d3.json(&#34;/js/deployment_dependency.js&#34;, function(error, classes) { if (error) throw error; var root = packageHierarchy(classes) .</description>
+    </item>
+    
+    <item>
+      <title>Feature Requests and Bug Reports</title>
+      <link>http://software.md2k.org/under-the-hood/feedback/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/feedback/</guid>
+      <description>Please provide as many details as possible when reporting bugs or other feedback.
+For a list of current activities and all outstanding issues please see the issue tracker
+ Feedback Form Choose the type of feedback you are submitting Bug Report   Feature Request     Short Description   Details    Submitter    Submit Feedback     
+  $(document).</description>
+    </item>
+    
+    <item>
+      <title>MD2K Software How-To: Adding Sensors</title>
+      <link>http://software.md2k.org/howto/sensors/adding-sensors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/sensors/adding-sensors/</guid>
+      <description>Adding Sensors The MD2K software platform is open-source and welcomes contributions from anyone who is interested in improving mobile health. Developers are encouraged to add new sensors to our software platform. Please visit our MD2K GitHub organization and MD2K Under the Hood pages for more information.</description>
+    </item>
+    
+    <item>
+      <title>MD2K Software How-To: Getting Started</title>
+      <link>http://software.md2k.org/howto/mcerebrum/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mcerebrum/getting-started/</guid>
+      <description>Getting Started mCerebrum is a suite of several Android applications that are combined with a set of configuration files. All source code is available at MD2K&amp;rsquo;s GitHub organization.
+These instructions will guide you in downloading, installing, and configuring the mCerebrum software suite using the default configuration to collect phone sensor data.
+Installation  Download the latest version of mCerebrum and install the APK file on an Android 5.0+ device. Follow the on-screen instructions on your Android device to complete the installation.</description>
+    </item>
+    
+    <item>
+      <title>MD2K Software How-To: Sensors Troubleshooting</title>
+      <link>http://software.md2k.org/howto/sensors/sensors-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/sensors/sensors-ts/</guid>
+      <description>Troubleshooting Guide Below is a compilation of known sensor hardware issues and troubleshooting steps you may use to correct them.
+MotionSense Wrist 
+If you are experiencing poor data quality:
+ Reset the application, wait 15 seconds and check again. Restart the phone, wait one minute and check again. Make sure the wrist sensor is charged.  For admin access only:
+ Make sure the wrist sensor is paired to the phone with the correct ID number.</description>
+    </item>
+    
+    <item>
+      <title>Relevant Paper References</title>
+      <link>http://software.md2k.org/under-the-hood/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/references/</guid>
+      <description>References  Sarker, H., Tyburski, M., Rahman, M., Hovsepian, K., Sharmin, M., Epstein, D., Preston, K., Furr-Holden, D., Nahum-Shani, I., al’Absi, M., and Kumar, S. Finding Significant Stress Episodes in a Discontinuous Time-series of Rapidly Varying Mobile Sensor Data. ACM Conference on Human Computer Interaction (CHI 2016).
+ Moushumi Sharmin, Andrew Raij, David Epstein, Inbal Nahum-Shani, J Gayle Beck, Sudip Vhaduri, Kenzie Preston, and Santosh Kumar. Visualization of Time-Series Sensor Data to Inform the Design of Just-In-Time Adaptive Stress Interventions, ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2015).</description>
+    </item>
+    
+    <item>
+      <title>Software License: BSD 2-Clause</title>
+      <link>http://software.md2k.org/under-the-hood/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/license/</guid>
+      <description>Copyright 2017 MD2K Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</description>
+    </item>
+    
+    <item>
+      <title>Software Releases</title>
+      <link>http://software.md2k.org/under-the-hood/release-schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/release-schedule/</guid>
+      <description>Software Release Information Schedule MD2K software is released based on a monthly development and testing cycle. Typically, we allocate 3 1-week sprints for development activities followed by a single 1-week sprint dedicated towards testing.
+ Major X.0.0 software updates will occur approximately every year Minor/Feature 1.X.0 updates will occur each month on the 3rd Wednesday Critical bug fixes 1.2.X will be released immediately     Year Month Release Day     2016 September 2016/09/14 (Wed)   2016 October 2016/10/19 (Wed)   2016 November 2016/11/16 (Wed)   2016 December 2016/12/21 (Wed)   2017 January 2017/01/18 (Wed)   2017 February 2017/02/15 (Wed)   2017 March 2017/03/15 (Wed)   2017 April 2017/04/19 (Wed)   2017 May 2017/05/17 (Wed)    !</description>
+    </item>
+    
+    <item>
+      <title>mCerebrum::Architecture</title>
+      <link>http://software.md2k.org/under-the-hood/mcerebrum/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/under-the-hood/mcerebrum/architecture/</guid>
+      <description>To achieve our goal of high-rate streaming data collection, logging, real-time processing, and intervention, we built a flexible, layered architecture.
+  Architecture Overview  mCerebrum overview illustrating how high-frequency data, 800&amp;#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.   mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform.</description>
+    </item>
+    
+    <item>
+      <title>mPerf User Guide - Sensors Overview</title>
+      <link>http://software.md2k.org/howto/mperf/sensors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/sensors/</guid>
+      <description>Sensors The mCerebrum software platform is configurable for a wide variety of mobile and wearable sensors. This page shows an overview of the sensors currently integrated with the software for the mPerf project.
+Motionsense HRV Wrist Sensor  Motionsense HRV Wrist Sensor   Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth.</description>
+    </item>
+    
+  </channel>
+</rss>
