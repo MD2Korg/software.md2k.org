@@ -19,7 +19,6 @@ Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyrosc
 
 Put the Motionsense wrist sensors on as you would wear a watch or FitBit. The sensor should be oriented with the buckle on the strap going over the top of your wrist as shown.
 
-{{< figure src="/img/howto/mPerf/WearingHRVright.jpg" title="" caption="">}}
 
 #### Troubleshooting
 <center><iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
@@ -35,7 +34,7 @@ If you are experiencing poor data quality:
 
 {{< figure src="/img/howto/mPerf/AutoSenseChest.png" title="Autosense Chest Sensor" caption="">}}
 
-Autosense chest sensor is a wearable unit with an elastic chestband and a set of connector cables. The sensor is designed to track breathing patterns by measuring respiratory effort and lung volume. These biomarkers of respiration can be used by the mCerebrum software to assist in monitoring and predicting repeated human behaviors such as stress, eating, speaking, and smoking.
+Autosense chest sensor is a wearable unit with an elastic chestband and connector cables. The sensor is designed to track breathing patterns by measuring respiratory effort and lung volume. These biomarkers of respiration can be used by the mCerebrum software to assist in monitoring and predicting repeated human behaviors such as stress, eating, speaking, and smoking.
 
 #### Troubleshooting
 
