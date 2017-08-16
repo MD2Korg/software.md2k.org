@@ -15,6 +15,12 @@ The mCerebrum software platform is configurable for a wide variety of mobile and
 
 Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth. This sensor also measures heart rate using signals that are detected and classified into different classes of reliability, resulting in estimates of heart rate variability (HRV) and respective confidence levels.
 
+#### How to Wear the Wrist Sensors
+
+Put the Motionsense wrist sensors on as you would wear a watch or FitBit. The sensor should be oriented with the buckle on the strap going over the top of your wrist as shown.
+
+{{< figure src="/img/howto/WearingHRVright.png" title="" caption="">}}
+
 #### Troubleshooting
 <center><iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 
