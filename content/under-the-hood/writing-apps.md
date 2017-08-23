@@ -4,9 +4,7 @@ description = "Details about how developers can write a new mCerebrum applicatio
 keywords = []
 +++
 
-<h1 id="how-to-write-a-new-mcerebrum-application">How to Write a New mCerebrum Application</h1>
-
-<h4 id="to-collect-data-from-a-sensor-or-wearable">to Collect Data from a Sensor or Wearable</h4>
+## How to Write a New mCerebrum Application to Collect Data from a Sensor or Wearable
 
 With our open-source platform, you can add your own sensor as a built-in application for mCerebrum. This section describes how to develop and add your original sensor to our platform.
 
