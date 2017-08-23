@@ -5,6 +5,7 @@ keywords = []
 +++
 
 # How to Write a New mCerebrum Application
+
 ## to Collect Data from a Sensor or Wearable
 
 With our open-source platform, you can add your own sensor as a built-in application for mCerebrum. This section describes how to develop and add your original sensor to our platform.
