@@ -9,11 +9,15 @@ keywords = []
 
 ##	Wrist Sensors
 
+{{< figure src="/img/howto/MotionSenseHRV.png" title="Motionsense HRV Wrist Sensor" caption="">}}
+
 - These wrist sensors are very much like smart watches or FitBits. (You may still wear a FitBit or other activity trackers or watches alongside the study-provided sensors.) <br>
 - These wrist sensors gather data from your wrist/arm movements and transmit it via Bluetooth to the cell phone. <br>
 - If the wrist sensor is malfunctioning, please contact the Field Manager to get a replacement as soon as possible. One wrist sensor will be replaced if it is damaged or lost. However, if you lose or break a subsequent wrist sensor or lose or break both wrist sensors, you will be withdrawn from the study. In the event of lost, stolen, or broken device(s), you will not be held financially liable.
 
 ## Android Smartphone
+
+{{< figure src="/img/howto/mCerebrumOnPhone.png" title="Phone Sensors" caption="">}}
 
 - The cell phone is a fully-functional Android phone which operates generally as any other smartphone.  The phone has been set up with study apps and allows it to collect all data measured from the sensors via Bluetooth and store it.  Intermittently, the phone transmits this data to the databank (back-end computational hardware) at the University of Memphis.
 - The study apps also collect phone usage data such as number and types of apps used; number and length of calls made/received; amount of web browsing/usage.  However, the phone does not record conversations or identify who calls are made to/from.
@@ -23,12 +27,16 @@ keywords = []
 
 ## Chest Sensor (optional)
 
+{{< figure src="/img/howto/mPerf/AutoSenseChest.png" title="Autosense Chest Sensor" caption="">}}
+
 - You may be asked to wear a chest sensor for one week during the study.
 - The chest sensor records heart rate and infers respiration rhythm data and speed from by monitoring chest movement.
 - If the chest sensor is malfunctioning, please contact the Field Manager to get a replacement as soon as possible. If you lose or break the chest sensor, you will be not able to participate in this optional section of the study. In the event of a lost, stolen, or broken device, you will not be held financially liable.
 - The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit. To the immediate left and right of the buckle you should see two black holes where the black wires of chest mote connect.
 
 ## Location Tags/Beacons
+
+{{< figure src="/img/howto/mPerf/beacon.png" title="Location Tag/Beacon" caption="">}}
 
 - You will be given a number of beacons that use Bluetooth to connect to the study’s apps. Depending on the kind of job you have (i.e., have more than one place where you work, or are usually in one place), you will likely be given two or three beacons.
 - These beacons will let us know how much time you spend in certain locations.
