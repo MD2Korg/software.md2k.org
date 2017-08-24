@@ -9,8 +9,8 @@ keywords = []
 
 ##	Wrist Sensors
 
-- These wrist sensors are very much like smart watches or FitBits. (You may still wear a FitBit or other activity trackers or watches alongside the study-provided sensors.)
-- These wrist sensors gather data from your wrist/arm movements and transmit it via Bluetooth to the cell phone.
+- These wrist sensors are very much like smart watches or FitBits. (You may still wear a FitBit or other activity trackers or watches alongside the study-provided sensors.) <br>
+- These wrist sensors gather data from your wrist/arm movements and transmit it via Bluetooth to the cell phone. <br>
 - If the wrist sensor is malfunctioning, please contact the Field Manager to get a replacement as soon as possible. One wrist sensor will be replaced if it is damaged or lost. However, if you lose or break a subsequent wrist sensor or lose or break both wrist sensors, you will be withdrawn from the study. In the event of lost, stolen, or broken device(s), you will not be held financially liable.
 
 ## Android Smartphone
