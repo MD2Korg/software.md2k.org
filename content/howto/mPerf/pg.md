@@ -1,6 +1,6 @@
 +++
-title = "mPerf User Guide"
-description = "Details about using the mPerf smartphone software, sensors, and cloud"
+title = "mPerf Participant User Guide"
+description = "Instructions for users about using the mPerf smartphone software and sensors"
 keywords = []
 +++
 
