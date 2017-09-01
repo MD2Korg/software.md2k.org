@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mPerf User Guide</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="md2k, mHealth, mCerebrum, Cerebral Cortex">	
+  
+
+  
+  <meta name="description" content="Details about using the mPerf smartphone software, sensors, and cloud">
+  
+
+  <meta name="generator" content="Hugo 0.27-DEV" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="http://software.md2k.org/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="http://software.md2k.org/css/style.md2k.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="http://software.md2k.org/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="http://software.md2k.org/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="http://software.md2k.org/img/apple-touch-icon.png" />
+  
+
+  <link href="http://software.md2k.org/css/owl.carousel.css" rel="stylesheet">
+  <link href="http://software.md2k.org/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
+
+  
+  <meta property="og:title" content="mPerf User Guide" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/howto/mperf//" />
+  <meta property="og:image" content="img/logo.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="http://software.md2k.org/">
+                    <img src="http://software.md2k.org/img/logo.png" alt="mPerf User Guide logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="mPerf User Guide logo" class="visible-xs visible-sm">
+                    <span class="sr-only">mPerf User Guide - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Tour</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/under-the-hood/">Under the Hood</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/howto/">How-to</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/deployments/">Deployments</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contributors/">Contributors</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="https://md2k.org/">MD2K</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+<div class="affix feedback">
+  <a href="https://discuss.md2k.org/">Feedback and Questions</a>
+</div>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>mPerf User Guide</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    
+
+                    <div class="col-md-9">
+
+                      
+
+<h1 id="getting-started">Getting Started</h1>
+
+<p>mCerebrum is a suite of several Android applications that are combined with a set of configuration files. All source code is available at <a href="https://github.com/MD2Korg">MD2K&rsquo;s GitHub organization</a>.</p>
+
+<p>These instructions will guide you in downloading, installing, and configuring the mCerebrum software suite using the default configuration to <strong>collect phone sensor data</strong>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<ol>
+<li>Download the <a href="https://github.com/MD2Korg/mCerebrum-Study/releases/latest">latest version of mCerebrum</a> and install the APK file on an Android 5.0+ device.</li>
+<li>Follow the on-screen instructions on your Android device to complete the installation.</li>
+<li>When the installation is complete, open mCerebrum by tapping the mCerebrum app icon on your phone. You should see the home screen as shown here:</li>
+</ol>
+
+
+<figure >
+    
+        <img src="/img/howto/mCerebrumSplashDefault.png" />
+    
+    
+    <figcaption>
+        <h4>mCerebrum Splash screen</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<h2 id="configuration">Configuration</h2>
+
+<ol>
+<li>Tap the Settings button (highlighted in red) to begin the setup process.</li>
+<li>If prompted to download a configuration file, enter “default” and tap OK to use the default mCerebrum configuration file. If you are not prompted, skip this step.</li>
+</ol>
+
+<h2 id="install-update-apps">Install/Update Apps</h2>
+
+<p>mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.</p>
+
+<ol>
+<li>From the main Settings screen, tap <em>Configure Applications &gt; Applications</em> then tap the Check Updates button at the bottom of the screen.</li>
+<li>If any apps listed show a red X icon <img src="/img/howto/redX.jpg" alt="red X icon" />, tap the app in the list then tap <em>Install</em>. If any apps listed show a yellow caution icon <img src="/img/howto/yellowcaution.jpg" alt="yellow caution icon" />, tap the app in the list then tap <em>Update</em>. (Alternatively, you may tap the <em>Fix All</em> button at the bottom of the screen to begin the installation of all updates at once.)</li>
+<li>When every app shows a green check mark <img src="/img/howto/greencheckmark.jpg" alt="green checkmark icon" />, all apps are installed and up-to-date. Tap the <em>Close</em> button.</li>
+</ol>
+
+<h2 id="sensors-setup">Sensors Setup</h2>
+
+<ol>
+<li>From the main Settings screen, tap <em>Configure Applications &gt; Settings &gt; PhoneSensor</em>.</li>
+<li>You will see a list of all the available sensors included with your phone (Battery, Location, Accelerometer, etc.). Tap to toggle on each sensor that you wish to use to collect data.</li>
+<li>When you are finished, tap the <em>Save</em> button at the bottom of the screen.</li>
+</ol>
+
+<p><strong>USERS TO PERFORM THIS STEP?</strong> <em>Note</em>: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum app).</p>
+
+<h2 id="study-setup">Study Setup</h2>
+
+<ol>
+<li>From the main Settings screen, tap <em>Configure Study</em>.</li>
+<li>Tap <em>User ID</em> and set your desired unique user ID for the participant.</li>
+<li>Tap <em>Wakeup Time</em> and select the time you expect data collection to begin each morning. The participant will receive a prompt to “start the day” at the time you select.</li>
+<li>Tap <em>Sleep Time</em> and select the time you expect data collection to conclude each day.</li>
+<li>If all items on the Study Settings screen show a green check mark beside them, study setup is complete.  Tap the <em>Save</em> button at the bottom of the screen.</li>
+</ol>
+
+<h2 id="start-study">Start Study</h2>
+
+<ol>
+<li>From the main Settings screen, once Configure Applications and Configure Study show a green checkmark, tap the <em>Start Study</em> button to begin the study.</li>
+<li>If prompted to start the day, tap the <em>Start</em> button to begin data collection.</li>
+<li>Tap <em>Close</em> to exit the Settings screen. You should see the mCerebrum home screen below. Once you have tapped to start the day, data collection has begun.</li>
+</ol>
+
+
+<figure >
+    
+        <img src="/img/howto/mCerebrumHome.png" />
+    
+    
+    <figcaption>
+        <h4>mCerebrum Home screen</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<h2 id="visualize-real-time-data">Visualize Real-Time Data</h2>
+
+<ol>
+<li>From the mCerebrum home screen, tap the <em>Plotter</em> button.</li>
+<li>Select from the list of available sensors to visualize each set of data in real-time.</li>
+</ol>
+
+
+<figure >
+    
+        <img src="/img/howto/plotterButton.png" />
+    
+    
+    <figcaption>
+        <h4>mCerebrum plotter button</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<h2 id="privacy">Privacy</h2>
+
+<p>Privacy Control allows users to turn off certain features for a limited period of time.</p>
+
+
+<figure >
+    
+        <img src="/img/howto/privacyActivate.png" />
+    
+    
+    <figcaption>
+        <h4>mCerebrum privacy on</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<ol>
+<li>From the mCerebrum home screen, tap the <em>Turn On</em> button under the Privacy heading.</li>
+<li>On the Privacy Control Settings screen, tap <em>Set Privacy Duration</em>. Select the amount of time for which you wish to disable the feature(s).</li>
+<li>Next, tap <em>Set Privacy Type</em>. Select each of the features you would like to temporarily disable. You will see a check mark appear to confirm the feature is selected. Tap <em>OK</em> when finished.</li>
+<li>Tap the <em>Start</em> button to begin the privacy timer.</li>
+<li>You will see a countdown timer under the Privacy Status heading to confirm the privacy settings are enabled. When you
+are finished, tap <em>Close</em>.</li>
+</ol>
+
+
+                    </div>
+                    
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
+                <input type="hidden" name="q" value="site:http://software.md2k.org/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Menu</h3>
+    </div>
+
+    
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/howto" class="">How-to Homepage</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/howto/mcerebrum" class="">
+        Smartphone Software
+        
+        »
+      </a>
+      
+      
+        
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/howto/mcerebrum/getting-started" class="">Getting Started</a>
+    </li>
+  
+
+</ul>
+
+      
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/howto/sensors" class="">
+        Supported Sensors
+        
+        »
+      </a>
+      
+      
+        
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/howto/sensors/sensors-ts" class="">Sensors Troubleshooting</a>
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/howto/sensors/adding-sensors" class="">Adding Sensors</a>
+    </li>
+  
+
+</ul>
+
+      
+    </li>
+  
+
+  
+  
+  
+    <li>
+      <a href="/howto/mperf" class="">
+        mPerf User Guide
+        
+        »
+      </a>
+      
+      
+        
+
+
+<ul>
+
+
+  
+  
+  
+    <li>
+      <a href="/howto/mperf/sensors" class="">Sensors</a>
+    </li>
+  
+
+</ul>
+
+      
+    </li>
+  
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            MD2K is supported by the National Institutes of Health Big Data to Knowledge Initiative Grant #1U54EB020404<br><br>Team: Cornell Tech, GA Tech, U Memphis, Northwestern, Ohio State, Open mHealth, UCLA, UCSD, UCSF, Harvard, U Mass, U Michigan, Utah, WVU
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+              
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong>MD2K Center</strong>
+        <br>Fedex Institute of Technology
+        <br>Suite 335
+        <br>University of Memphis
+        <br>365 Innovation Drive
+        <br>Memphis, TN  38152-3115
+        <br>
+        <strong>United States</strong>
+      </p>
+      
+
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2017, MD2K; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100215287-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="http://software.md2k.org/js/hpneo.gmaps.js"></script>
+<script src="http://software.md2k.org/js/gmaps.init.js"></script>
+<script src="http://software.md2k.org/js/front.js"></script>
+
+
+<script src="http://software.md2k.org/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>
