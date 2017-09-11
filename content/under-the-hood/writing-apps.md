@@ -34,86 +34,22 @@ mCerebrum is primarily configured and controlled by a set of JSON configuration 
 #### <a name="head1"></a>Download the latest version of mCerebrum
 Download mCerebrum (http://mCerebrum.md2k.org) from GitHub and unzip the file folder. You can install the APK file on most Android devices.
 
-.
-
-.
-
-
-.
-
-
-.
-
-
-.
-
-
-.
-
 #### <a name="head2"></a>Prepare the Environment for Adding a New Sensor
-
-.
-
 .
 
 
-.
-
-
-.
-
-
-.
-
-
-.
 
 #### <a name="head3"></a>Create a New Sensor Subclass
 .
 
-.
 
-
-.
-
-
-.
-
-
-.
-
-
-.
 #### <a name="head4"></a>Implement the Methods File
 .
 
-.
 
-
-.
-
-
-.
-
-
-.
-
-
-.
 #### <a name="head5"></a>Insert Code for Required Methods
 .
 
-.
 
-
-.
-
-
-.
-
-
-.
-
-
-.
 #### <a name="head6"></a>Register the Sensor to the Sensor Manager
+.
