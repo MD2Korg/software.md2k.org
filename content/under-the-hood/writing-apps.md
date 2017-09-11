@@ -13,17 +13,17 @@ The MD2K software platform is open-source and welcomes contributions from anyone
 
 **Table of Contents:**
 
-1. Download the latest version of mCerebrum
+1. [Download the latest version of mCerebrum](#head1)
 
-2. Prepare the Environment for Adding a New Sensor
+2. [Prepare the Environment for Adding a New Sensor](#head2)
 
-3. Create a New Sensor Subclass
+3. [Create a New Sensor Subclass](#head3)
 
-4. Implement the Methods File
+4. [Implement the Methods File](#head4)
 
-5. Insert Code for Required Methods
+5. [Insert Code for Required Methods](#head5)
 
-6. Register the Sensor to the Sensor Manager
+6. [Register the Sensor to the Sensor Manager](#head6)
 
 With our open-source platform, you can add your own sensor as a built-in application for mCerebrum. This section describes how to develop and add your original sensor to our platform.
 
@@ -31,15 +31,89 @@ mCerebrum is a configurable software platform for mobile and wearable devices. T
 
 mCerebrum is primarily configured and controlled by a set of JSON configuration files. The configuration files inform the mCerebrum application how to handle data sources, notifications, conditions, and other various functions.
 
-#### Download the latest version of mCerebrum
+#### <a name="head1"></a>Download the latest version of mCerebrum
 Download mCerebrum (http://mCerebrum.md2k.org) from GitHub and unzip the file folder. You can install the APK file on most Android devices.
 
-#### Prepare the Environment for Adding a New Sensor
+.
 
-#### Create a New Sensor Subclass
+.
 
-#### Implement the Methods File
 
-#### Insert Code for Required Methods
+.
 
-#### Register the Sensor to the Sensor Manager
+
+.
+
+
+.
+
+
+.
+
+#### <a name="head2"></a>Prepare the Environment for Adding a New Sensor
+
+.
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+#### <a name="head3"></a>Create a New Sensor Subclass
+.
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+#### <a name="head4"></a>Implement the Methods File
+.
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+#### <a name="head5"></a>Insert Code for Required Methods
+.
+
+.
+
+
+.
+
+
+.
+
+
+.
+
+
+.
+#### <a name="head6"></a>Register the Sensor to the Sensor Manager
