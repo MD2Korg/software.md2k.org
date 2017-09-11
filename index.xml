@@ -153,7 +153,7 @@ For a list of current activities and all outstanding issues please see the issue
       
       <guid>http://software.md2k.org/under-the-hood/writing-apps/</guid>
       <description>Adding New Sensors The MD2K software platform is open-source and welcomes contributions from anyone who is interested in improving mobile health. Developers are encouraged to add new sensors to our software platform. Please see below and visit our MD2K GitHub organization and MD2K Under the Hood pages for more information.
-How to Write a New mCerebrum Application to Collect Data from a Sensor or Wearable With our open-source platform, you can add your own sensor as a built-in application for mCerebrum.</description>
+How to Write a New mCerebrum Application to Collect Data from a Sensor or Wearable Table of Contents: 1. Download the latest version of mCerebrum 2.</description>
     </item>
     
     <item>
