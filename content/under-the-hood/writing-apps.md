@@ -11,6 +11,14 @@ The MD2K software platform is open-source and welcomes contributions from anyone
 
 ## How to Write a New mCerebrum Application to Collect Data from a Sensor or Wearable
 
+**Table of Contents:**
+1. Download the latest version of mCerebrum
+2. Prepare the Environment for Adding a New Sensor
+3. Create a New Sensor Subclass
+4. Implement the Methods File
+5. Insert Code for Required Methods
+6. Register the Sensor to the Sensor Manager
+
 With our open-source platform, you can add your own sensor as a built-in application for mCerebrum. This section describes how to develop and add your original sensor to our platform.
 
 mCerebrum is a configurable software platform for mobile and wearable devices. The mCerebrum platform is divided into functional layers so that each component is flexible and can be adapted and extended without adversely affecting the other components. Two components – an access controller and data router – links each layer. The access controller is responsible to ensuring that pairs of components within the system have appropriate credentials to communicate with each other through the data router, which is responsible for routing data objects throughout the platform.
