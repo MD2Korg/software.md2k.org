@@ -1,4 +1,0 @@
-weight: 3
-name: "Real-time data quality monitoring"
-icon: "fa fa-clock-o"
-description: "mCerebrum supports real-time assessment of data quality to ensure data fidelity which is couple with Cerebral Cortex real-time montoring capabilities."
