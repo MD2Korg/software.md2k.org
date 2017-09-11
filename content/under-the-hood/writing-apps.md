@@ -31,15 +31,15 @@ mCerebrum is a configurable software platform for mobile and wearable devices. T
 
 mCerebrum is primarily configured and controlled by a set of JSON configuration files. The configuration files inform the mCerebrum application how to handle data sources, notifications, conditions, and other various functions.
 
-##### Download the latest version of mCerebrum
+#### Download the latest version of mCerebrum
 Download mCerebrum (http://mCerebrum.md2k.org) from GitHub and unzip the file folder. You can install the APK file on most Android devices.
 
-##### Prepare the Environment for Adding a New Sensor
+#### Prepare the Environment for Adding a New Sensor
 
-##### Create a New Sensor Subclass
+#### Create a New Sensor Subclass
 
-##### Implement the Methods File
+#### Implement the Methods File
 
-##### Insert Code for Required Methods
+#### Insert Code for Required Methods
 
-##### Register the Sensor to the Sensor Manager
+#### Register the Sensor to the Sensor Manager
