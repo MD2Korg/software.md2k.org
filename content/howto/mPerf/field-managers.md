@@ -35,3 +35,5 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 <img src="/img/howto/doneUpdate.png">
 
 Repeat these steps to install each available update. When finished, scroll through the entire list of applications and ensure the install and update icons below each app are now colored white & gray. If so, all applications are now up-to-date.
+
+<img src="/img/howto/appNoUpdates.png">
