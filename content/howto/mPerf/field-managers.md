@@ -8,7 +8,7 @@ keywords = []
 ## Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.
 
-<center><iframe src="https://www.youtube.com/watch?v=7kaM9G_fxxg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
+<center><iframe src="https://www.youtube.com/embed/7kaM9G_fxxg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 
 1. From the mCerebrum home screen, tap *Application Install*.
 2. On the installation menu, tap the *Check Updates* button in the top-right of the screen. If updates are available, the update or install icon below each affected application will be highlighted.
