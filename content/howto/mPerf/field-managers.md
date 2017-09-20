@@ -10,27 +10,27 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 
 <center><iframe src="https://www.youtube.com/embed/7kaM9G_fxxg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 
-1. Tap the icon to open the mCerebrum app.
+1) Tap the icon to open the mCerebrum app.
 
 <img src="/img/howto/mcerebrumAppIcon.jpg">
 
-2. From the mCerebrum home screen, tap *Application Install*.
+2) From the mCerebrum home screen, tap *Application Install*.
 
 <img src="/img/howto/applicationInstall50.png">
 
-3. On the installation menu, tap the *Check Updates* button in the top-right of the screen.
+3) On the installation menu, tap the *Check Updates* button in the top-right of the screen.
 
 <img src="/img/howto/checkUpdates50.png">
 
-4. If updates are available, the update or install icon below each affected application will be highlighted. To install or update all applications, tap the green *Install All* button at the top-left of the screen, or tap the appropriate icon to install each app individually.
+4) If updates are available, the update or install icon below each affected application will be highlighted. To install or update all applications, tap the green *Install All* button at the top-left of the screen, or tap the appropriate icon to install each app individually.
 
 <img src="/img/howto/installAll50.png"> OR <img src="/img/howto/applicationUpdateIcon50.png">
 
-5. After each update is fully downloaded, tap  *Install* at the bottom of the screen.
+5) After each update is fully downloaded, tap  *Install* at the bottom of the screen.
 
 <img src="/img/howto/installUpdate.png">
 
-6. When installation is complete, tap *Done*.
+6) When installation is complete, tap *Done*.
 
 <img src="/img/howto/doneUpdate.png">
 
