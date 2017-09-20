@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>mPerf Software How-To: Admins &amp; Field Managers</title>
+      <link>http://software.md2k.org/howto/mperf/field-managers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/field-managers/</guid>
+      <description>Install/Update Apps mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.
+
+ From the mCerebrum home screen, tap Application Install. On the installation menu, tap the Check Updates button in the top-right of the screen. If updates are available, the update or install icon below each affected application will be highlighted.</description>
+    </item>
+    
+    <item>
       <title>mPerf User Guide - Sensors Overview</title>
       <link>http://software.md2k.org/howto/mperf/sensors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
