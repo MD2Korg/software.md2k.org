@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mPerf User Guide on MD2K::software</title>
+    <link>http://software.md2k.org/howto/mperf/</link>
+    <description>Recent content in mPerf User Guide on MD2K::software</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017, MD2K; all rights reserved.</copyright>
+    
+	<atom:link href="http://software.md2k.org/howto/mperf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mPerf Participant User Guide</title>
+      <link>http://software.md2k.org/howto/mperf/pg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/pg/</guid>
+      <description>Devices You Will Wear and Carry Wrist Sensors  Motionsense HRV Wrist Sensor    These wrist sensors are very much like smart watches or FitBits. (You may still wear a FitBit or other activity trackers or watches alongside the study-provided sensors.) These wrist sensors gather data from your wrist/arm movements and transmit it via Bluetooth to the cell phone. If the wrist sensor is malfunctioning, please contact the Field Manager to get a replacement as soon as possible.</description>
+    </item>
+    
+    <item>
+      <title>mPerf Software How-To: Admins &amp; Field Managers</title>
+      <link>http://software.md2k.org/howto/mperf/field-managers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/field-managers/</guid>
+      <description>Install/Update Apps mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.
+
+ From the mCerebrum home screen, tap Application Install. On the installation menu, tap the Check Updates button in the top-right of the screen. If updates are available, the update or install icon below each affected application will be highlighted.</description>
+    </item>
+    
+    <item>
+      <title>mPerf User Guide - Sensors Overview</title>
+      <link>http://software.md2k.org/howto/mperf/sensors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/sensors/</guid>
+      <description>Sensors The mCerebrum software platform is configurable for a wide variety of mobile and wearable sensors. This page shows an overview of the sensors currently integrated with the software for the mPerf project.
+Motionsense HRV Wrist Sensor  Motionsense HRV Wrist Sensor   Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth.</description>
+    </item>
+    
+  </channel>
+</rss>
