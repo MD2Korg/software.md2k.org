@@ -10,8 +10,8 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 
 <center><iframe src="https://www.youtube.com/embed/7kaM9G_fxxg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
 
-1. Tap the icon to open the mCerebrum app. 
-{{< figure src="/img/howto/mcerebrumAppIcon.jpg" title="mCerebrum app icon" caption="">}}
+1. Tap the icon to open the mCerebrum app.
+<img src="/img/howto/mPerf/mcerebrumAppIcon.jpg">
 1. From the mCerebrum home screen, tap *Application Install*.
 1. On the installation menu, tap the *Check Updates* button in the top-right of the screen. If updates are available, the update or install icon below each affected application will be highlighted.
 1. To install or update all applications, tap the green *Install All* button at the top-left of the screen, or tap the appropriate icon to install each app individually.
