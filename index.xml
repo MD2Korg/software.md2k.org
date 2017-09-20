@@ -235,11 +235,12 @@ If you are experiencing poor data quality:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/howto/mperf/field-managers/</guid>
-      <description>Install/Update Apps mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.
+      <description>Install/Update Apps mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your mCerebrum suite.
 
 1) Tap the icon to open the mCerebrum app.
 2) From the mCerebrum home screen, tap Application Install.
-3) On the installation menu, tap the Check Updates button in the top-right of the screen.</description>
+3) On the installation menu, tap the Check Updates button in the top-right of the screen.
+4) If updates are available, the update or install icon below each affected application will be highlighted.</description>
     </item>
     
     <item>
