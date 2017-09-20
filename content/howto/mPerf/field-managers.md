@@ -24,7 +24,7 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 
 1. If updates are available, the update or install icon below each affected application will be highlighted. To install or update all applications, tap the green *Install All* button at the top-left of the screen, or tap the appropriate icon to install each app individually.
 
-<img src="/img/howto/installAll.png"> OR <img src="/img/howto/checkUpdates.png">
+<img src="/img/howto/installAll.png"> OR <img src="/img/howto/applicationUpdateIcon.png">
 
 1. After each update is fully downloaded, tap  *Install* at the bottom of the screen.
 1. When installation is complete, tap *Done*.
