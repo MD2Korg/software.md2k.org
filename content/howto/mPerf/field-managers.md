@@ -37,3 +37,16 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 Repeat these steps to install each available update. When finished, scroll through the entire list of applications and ensure the install and update icons below each app are now colored white & gray. If so, all applications are now up-to-date.
 
 <img src="/img/howto/appNoUpdates.png">
+
+
+
+## Pair a Sensor
+
+If you need to pair or re-pair a sensor to the phone, follow the step below using the wrist sensor as an example.
+
+1)	From the main screen of the mCerebrum app, tap *Application Setup*.
+2)	Find *MotionSenseHRV* in the list of applications, and tap the *settings/gear icon* under MotionSenseHRV. This will access the Settings screen for the wrist sensors.
+3)	On the Settings screen, the wrist sensor should automatically appear in the list of Available Devices as a 12-digit alphanumberic ID. Tap the wrist sensor ID to pair it to the phone.
+*Note: If you do not see any IDs listed, make sure the sensor is charged and within range of the phone. If you see multiple IDs listed, try moving to another location so the phone is out of range of any wrist sensors other than the one you are pairing.*
+4)	Once you tap the wrist sensor ID, select *Left Wrist* or *Right Wrist* (if unsure, find the L or R letter on the buckle on the wristband).
+5)	After selecting left or right placement, the wrist sensor ID should then appear under Configured Devices list to confirm the sensor is paired. Use the back button to return to the app.
