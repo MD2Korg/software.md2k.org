@@ -217,6 +217,12 @@ paginate = 10
     parent = "howto-mPerf"
     weight = 220
 
+[[menu.howto]]
+  name = "mPerf Field Managers"
+  identifier = "howto-mPerf-fm"
+  url = "/howto/mPerf/field-managers"
+  weight = 300
+
 
 
 

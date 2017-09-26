@@ -5,7 +5,7 @@ keywords = []
 +++
 
 
-## Install/Update Apps
+## How to Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your mCerebrum suite.
 
 <center><iframe src="https://www.youtube.com/embed/7kaM9G_fxxg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
@@ -40,7 +40,7 @@ Repeat these steps to install each available update. When finished, scroll throu
 
 
 
-## Pair a Sensor
+## How to Pair a Sensor
 
 If you need to pair or re-pair a sensor to the phone, follow the step below using the wrist sensor as an example.
 
