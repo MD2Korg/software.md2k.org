@@ -4,15 +4,12 @@ description = "Instructions for users about using the mPerf smartphone software 
 keywords = []
 +++
 
-# What to Do Each Day
-
-...
 
 # How to Wear/Use the Devices
 
 ## Wrist Sensors
 
-Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm so that the charging port is pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist. 
+Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm so that the charging port is pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist.
 
 <img src="/img/howto/mPerf/MSHRVwearingL.png">
 
@@ -29,9 +26,9 @@ If you are experiencing poor data quality:
 
 ## Location Beacons
 
-<img src="/img/howto/mPerf/Beacon.png">
-
 To power the beacons on/off, press the button in the top center of the location beacon. You will see a green LED light flash to indicate power is ON or a red LED light flash to indiciate power is OFF.
+
+<img src="/img/howto/mPerf/Beacon.png">
 
 Set the location beacon labelled *Home* anywhere in your home. Set the location beacon labelled *Work* anywhere at your workplace.
 
@@ -39,8 +36,16 @@ Once the location becaons are set in place, they can stay powered ON and remain 
 
 ## Chest Belt (optional)
 
+You may be asked to wear a chest belt for one week during the study. The chest belt records respiration data by monitoring chest movement.
 
-# How to Charge the Devices
+
+# What to Do Each Day
+
+- Wear the wrist sensors
+- Confirm the phone is collecting data
+- Charge phone and sensors every night
+
+## How to Charge the Devices
 
 At the end of each day, charge all devices overnight (excluding the location beacons, which do not require charging).
 
