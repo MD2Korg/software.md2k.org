@@ -6,15 +6,17 @@ keywords = []
 
 # What to Do Each Day
 
-
+...
 
 # How to Wear/Use the Devices
 
 ## Wrist Sensors
 
-Put the wrist sensors on as you would wear a watch or FitBit. The sensors should be worn on each arm so that the charging port is pointed away from your hand as shown.
+Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm so that the charging port is pointed away from your hand as shown.
 
-<img src="/img/howto/mPerf/WearingHRVright.jpg">
+<img src="/img/howto/mPerf/MSHRVwearingL.jpg">
+
+<img src="/img/howto/mPerf/MSHRVwearingR.jpg">
 
 #### Troubleshooting
 <iframe src="https://www.youtube.com/embed/e_CtHfjG_iQ" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
