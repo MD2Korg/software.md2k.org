@@ -9,7 +9,7 @@ keywords = []
 
 ## Wrist Sensors
 
-Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm so that the charging port is pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist.
+Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm with the charging port pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist.
 
 <img src="/img/howto/mPerf/MSHRVwearingL.png">
 
@@ -36,11 +36,13 @@ Once the location becaons are set in place, they can stay powered ON and remain 
 
 ## Chest Belt (optional)
 
-You may be asked to wear a chest belt under your clothing for one week during the study. The chest belt records respiration data by monitoring chest movement.
+You may be asked to wear a chest belt under your clothing for one week during the study. The chest belt records respiration data by monitoring chest movement. The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit.
 
 <img src="/img/howto/mPerf/AutoSenseChest.png">
 
-The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit. To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the ports face down towards your feet as shown.
+To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the backle is at the front of your chest and the cables face down towards your feet as shown above. The other end of the cable should be inserted into the outer-most port on the device.
+
+<img src="/img/howto/mPerf/ASchestRIPplug.png">
 
 # What to Do Each Day
 
