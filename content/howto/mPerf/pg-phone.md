@@ -28,7 +28,7 @@ If you are experiencing poor data quality:
 
 To power the beacons on/off, press the button in the top center of the location beacon. You will see a green LED light flash to indicate power is ON or a red LED light flash to indiciate power is OFF.
 
-<img src="/img/howto/mPerf/Beacon.png">
+<img src="/img/howto/mPerf/Beacon2.png">
 
 Set the location beacon labelled *Home* anywhere in your home. Set the location beacon labelled *Work* anywhere at your workplace.
 
