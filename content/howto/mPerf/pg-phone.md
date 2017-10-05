@@ -4,6 +4,9 @@ description = "Instructions for users about using the mPerf smartphone software 
 keywords = []
 +++
 
+# What to Do Each Day
+
+
 
 # How to Wear/Use the Devices
 
@@ -14,13 +17,13 @@ Put the wrist sensors on as you would wear a watch or FitBit. The sensors should
 <img src="/img/howto/mPerf/WearingHRVright.jpg">
 
 #### Troubleshooting
-<iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/e_CtHfjG_iQ" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 If you are experiencing poor data quality:
 
-- Close the application, wait 15 seconds, then reopen the application and check again.
+- In the menu, tap Reset Application, wait 15 seconds and check again.
 - Restart the phone, wait one minute and check again.
-- Make sure the wrist sensor is charged.
+- Make sure the wrist sensor is charged and LED lights are on.
 
 ## Location Beacons
 
@@ -31,3 +34,10 @@ Set the location beacon labelled *Home* anywhere in your home. Set the location 
 Once the location becaons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
 
 ## Chest Belt (optional)
+
+
+# How to Charge the Devices
+
+At the end of each day, charge all devices overnight (excluding the location beacons, which do not require charging).
+
+Remove the two wrist sensors and plug them into the charger as shown. The charging port can be found on the side of wrist sensor.
