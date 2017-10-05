@@ -4,19 +4,13 @@ description = "Instructions for users about using the mPerf smartphone software 
 keywords = []
 +++
 
-## Phone App
 
-<img src="/img/howto/mPerf/mPerfStudyIcon.png">
+## What to Do Each Day
 
-#### Data Collection
-
-You can confirm that data is being collected by viewing the mPerf message in your phone notifications. You should see "Data Collection - ON."
-
-<img src="/img/howto/mPerf/mPerfNotificationON.png">
-
-If data collection is off, you can turn it on by tapping *Start Data Collection* in the mPerf Study App menu (found in the top-left corner).
-
-<img src="/img/howto/mPerf/StartDataButton.png">
+- Wear the wrist sensors and carry the smartphone with you.
+- Every 2-3 hours, check to confirm the phone is collecting data.
+- Try to achieve at least 12 hours of data collection each day.
+- Charge phone and wrist sensors every night.
 
 ## Wrist Sensors
 
@@ -57,6 +51,43 @@ Once the location becaons are set in place, they can stay powered ON and remain 
 
 You may clean the beacons by hand using disinfecting wipes. DO NOT submerge the beacons in water.
 
+## Phone App
+
+<img src="/img/howto/mPerf/mPerfStudyIcon.png">
+
+#### Data Collection
+
+You can confirm that data is being collected by viewing the mPerf message in your phone notifications. You should see "Data Collection - ON."
+
+<img src="/img/howto/mPerf/mPerfNotificationON.png">
+
+If data collection is off, you can turn it on by tapping *Start Data Collection* in the mPerf Study App menu (found in the top-left corner).
+
+<img src="/img/howto/mPerf/StartDataButton.png">
+
+If you wish to pause data collection for your privacy at any point during the day, tap the pause button.  On the *Privacy Control Settings* screen, tap to set the Privacy Duration (how long data collection will be paused) and Privacy Type (which sensors will be paused). When finished, tap *Start* to pause. Data collection will automatically resume when the time has expired.
+
+#### Data Quality
+
+...
+
+#### Data Collection duration
+
+...
+
+#### Step Count
+
+...
+
+#### Work Duration
+
+...
+
+#### Workplace Annotation
+
+...
+
+
 ## Chest Belt (optional)
 
 #### How to Use
@@ -82,15 +113,14 @@ If you are experiencing poor data quality:
 Detach the sensor device from the blue band. The device may be cleaned by hand using disinfecting wipes. Hand wash the blue belt using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
 
 
-## What to Do Each Day
-
-- Wear the wrist sensors and carry the smartphone with you.
-- Every 2-3 hours, check to confirm the phone is collecting data.
-- Try to achieve at least 12 hours of data collection each day.
-- Charge phone and wrist sensors every night.
-
 ## How to Charge the Devices
 
-At the end of each day, charge all devices overnight (excluding the location beacons, which do not require charging).
+At the end of each day, charge all devices overnight (excluding the location beacons, which do not require charging). Do not force the chargers, look for matching ends and try to connect them carefully since these are delicate devices.
 
-Remove the two wrist sensors and plug them into the charger as shown. The charging port can be found on the side of wrist sensor.
+Take off the two wrist sensors and plug them into the charger as shown. The charging port can be found on the side of wrist sensor.
+
+
+The charging port for the smartphone can be found on the bottom of the phone.
+
+
+The charging port for the chest band (optional) can be found on the side of the sensor.
