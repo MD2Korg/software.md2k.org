@@ -12,7 +12,7 @@ keywords = []
 
 ## Wrist Sensors
 
-Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm so that the charging port is pointed away from your hand as shown.
+Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm so that the charging port is pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist. 
 
 <img src="/img/howto/mPerf/MSHRVwearingL.png">
 
