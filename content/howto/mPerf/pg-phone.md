@@ -4,6 +4,20 @@ description = "Instructions for users about using the mPerf smartphone software 
 keywords = []
 +++
 
+## Phone App
+
+<img src="/img/howto/mPerf/mPerfStudyIcon.png">
+
+#### Data Collection
+
+You can confirm that data is being collected by viewing the mPerf message in your phone notifications. You should see "Data Collection - ON."
+
+<img src="/img/howto/mPerf/mPerfNotificationON.png">
+
+If data collection is off, you can turn it on by tapping *Start Data Collection* in the mPerf Study App menu (found in the top-left corner).
+
+<img src="/img/howto/mPerf/StartDataButton.png">
+
 ## Wrist Sensors
 
 #### How to Use
@@ -68,11 +82,12 @@ If you are experiencing poor data quality:
 Detach the sensor device from the blue band. The device may be cleaned by hand using disinfecting wipes. Hand wash the blue belt using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
 
 
-# What to Do Each Day
+## What to Do Each Day
 
 - Wear the wrist sensors and carry the smartphone with you.
 - Every 2-3 hours, check to confirm the phone is collecting data.
-- Charge phone and sensors every night.
+- Try to achieve at least 12 hours of data collection each day.
+- Charge phone and wrist sensors every night.
 
 ## How to Charge the Devices
 
