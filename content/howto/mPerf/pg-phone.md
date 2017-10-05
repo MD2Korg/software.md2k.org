@@ -40,13 +40,13 @@ You may be asked to wear a chest belt under your clothing for one week during th
 
 <img src="/img/howto/mPerf/AutoSenseChest.png">
 
-The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit. To the immediate left and right of the buckle you should see two black ports where the black wires can be plugged in as shown.
+The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit. To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the ports face down towards your feet as shown.
 
 # What to Do Each Day
 
-- Wear the wrist sensors
-- Confirm the phone is collecting data
-- Charge phone and sensors every night
+- Wear the wrist sensors and carry the smartphone with you.
+- Every 2-3 hours, check to confirm the phone is collecting data.
+- Charge phone and sensors every night.
 
 ## How to Charge the Devices
 
