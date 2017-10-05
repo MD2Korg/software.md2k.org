@@ -36,8 +36,11 @@ Once the location becaons are set in place, they can stay powered ON and remain 
 
 ## Chest Belt (optional)
 
-You may be asked to wear a chest belt for one week during the study. The chest belt records respiration data by monitoring chest movement.
+You may be asked to wear a chest belt under your clothing for one week during the study. The chest belt records respiration data by monitoring chest movement.
 
+<img src="/img/howto/mPerf/AutoSenseChest.png">
+
+The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit. To the immediate left and right of the buckle you should see two black ports where the black wires can be plugged in as shown.
 
 # What to Do Each Day
 
