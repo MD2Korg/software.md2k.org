@@ -28,6 +28,10 @@ Each participant should wear the wrist sensors for at least 12 hours each day. T
 
 Each participant should carry their phone with them each day and keep the phone charged and powered on.
 
+Participants will interact with the **mPerf Study app** to perform certain activities such as viewing data quality, pausing data collection, and viewing data such as Step Count or Work Duration.
+
+<img src="/img/howto/mPerf/mPerfStudyIcon.png">
+
 Participants can view the message below in the phone notifications to quickly confirm that data collection is on.
 
 <img src="/img/howto/mPerf/mPerfNotificationON.png">
@@ -72,7 +76,7 @@ Wrist sensors should be charged overnight each day. The expected battery life is
 
 Location beacons are battery poewred and do not require charging. The expected battery like is 3-6 months.
 
-Smartphones should be charged overnight each day and throughout the day as needed. 
+Smartphones should be charged overnight each day and throughout the day as needed.
 
 
 ## How to Install/Update Apps
