@@ -4,7 +4,16 @@ description = "Details for mPerf Admins and Field Managers about the using the m
 keywords = []
 +++
 
-## Hardware Suite
+## Contents
+
+- [Hardware Suite](#suite)
+- [How to Charge the Hardware](#charge)
+- [How to Clean the Hardware](#clean)
+- [How to Install/Update Apps](#updateapps)
+- [How to Pair/Unpair a Wrist Sensor](#pairwrist)
+
+
+## <a name="suite"></a>Hardware Suite
 
 - 2 Wrist Sensors
 - 1 Smartphone (mCerebrum software installed)
@@ -75,7 +84,7 @@ The beacon labelled **H** should be placed in the participant's home. The beacon
 
 Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
 
-## How to Charge the Hardware
+## <a name="charge"></a>How to Charge the Hardware
 
 *Wrist sensors* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.  
 
@@ -85,13 +94,13 @@ Once the  beacons are set in place, they can stay powered ON and remain untouche
 
 *Chest bands (optional)* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.
 
-## How to Clean the Hardware
+## <a name="clean"></a>How to Clean the Hardware
 
 *Wrist sensors* and *location beacons* can be cleaned gently by hand using disinfecting wipes. DO NOT submerge the devices in water. If there is any damage or major spillage, participants should contact a field manager and swap out the device for a new one.
 
 *Chest bands (optional)* should be cleaned by detaching the white sensor box from the blue band. The sensor may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the sensor in water. The blue belt can be washed using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
 
-## How to Install/Update Apps
+## <a name="updateapps"></a>How to Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your mCerebrum suite.
 
 <center><iframe src="https://www.youtube.com/embed/7kaM9G_fxxg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></center>
@@ -126,9 +135,9 @@ Repeat these steps to install each available update. When finished, scroll throu
 
 
 
-## How to Pair/Unpair a Sensor
+## <a name="pairwrist"></a>How to Pair/Unpair a Wrist Sensor
 
-If you need to pair or re-pair a sensor to the phone, follow the step below using the wrist sensor as an example.
+If you need to pair or re-pair a wrist sensor to the phone:
 
 1)	From the main screen of the mCerebrum app, tap *Application Setup*.
 
