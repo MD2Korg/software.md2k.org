@@ -75,13 +75,15 @@ The beacon labelled **H** should be placed in the participant's home. The beacon
 
 Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
 
-#### Charging
+## How to Charge the Hardware
 
 Wrist sensors should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.  
 
-Location beacons are battery poewred and do not require charging. The expected battery like is 3-6 months.
+Location beacons are battery-powered and do not require charging. The expected battery like is 3-6 months.
 
 Smartphones should be charged overnight each day and throughout the day as needed.
+
+Chest bands (optional) should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.
 
 
 ## How to Install/Update Apps
