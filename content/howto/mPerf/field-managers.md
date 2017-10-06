@@ -4,6 +4,36 @@ description = "Details for mPerf Admins and Field Managers about the using the m
 keywords = []
 +++
 
+## Hardware Suite
+
+- 2 Wrist Sensors
+- 1 Smartphone (mCerebrum software installed)
+- 2 Location Beacons
+- 1 Multi-Device Charger
+- 2 Wrist Sensor Charging Cables
+- 1 Smartphone Charging Cable
+
+
+#### Wrist Sensors
+
+Each participant should wear the wrist sensors for at least 12 hours each day. The sensors should be worn like a watch on each arm with the charging port pointed away from the hand as shown. The buckle is marked L or R to indicate left wrist or right wrist.
+
+<img src="/img/howto/mPerf/MSHRVwearingL.png">
+
+<img src="/img/howto/mPerf/MSHRVwearingR.png">
+
+#### Smartphone
+
+<img src="/img/howto/mPerf/SamsungS8.png">
+
+Each participant should carry their phone with them each day and keep the phone charged and powered on.
+
+Participants can view the phone notification from the mPerf app to quickly confirm that data collection is on.
+
+<img src="/img/howto/mPerf/mPerfNotificationON.png">
+
+Participants can view the *Sensor Data Quality* icons in the mPerf app to check data quality. If data quality is poor, troubleshooting tips can be found on the phone by tapping the data quality icons in the app.
+
 
 ## How to Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your mCerebrum suite.
