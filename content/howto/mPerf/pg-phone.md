@@ -33,7 +33,7 @@ If you are experiencing poor data quality:
 
 #### How to Clean
 
-You may clean the wrist sensors by hand using disinfecting wipes. DO NOT submerge the wrist sensors in water.
+You may clean the wrist sensors gently by hand using disinfecting wipes. DO NOT submerge the wrist sensors in water.
 
 ## Location Beacons
 
@@ -49,7 +49,7 @@ Once the location becaons are set in place, they can stay powered ON and remain 
 
 #### How to Clean
 
-You may clean the beacons by hand using disinfecting wipes. DO NOT submerge the beacons in water.
+You may clean the beacons gently by hand using disinfecting wipes. DO NOT submerge the beacons in water.
 
 ## Phone App
 
@@ -110,7 +110,7 @@ If you are experiencing poor data quality:
 
 #### How to Clean (if necessary)
 
-Detach the sensor device from the blue band. The device may be cleaned by hand using disinfecting wipes. Hand wash the blue belt using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
+Detach the white sensor device from the blue band. The device may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the white sensor device in water. Hand wash the blue belt using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
 
 
 ## How to Charge the Devices
