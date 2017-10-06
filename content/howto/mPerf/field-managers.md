@@ -77,14 +77,19 @@ Once the  beacons are set in place, they can stay powered ON and remain untouche
 
 ## How to Charge the Hardware
 
-Wrist sensors should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.  
+*Wrist sensors* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.  
 
-Location beacons are battery-powered and do not require charging. The expected battery like is 3-6 months.
+*Location beacons* are battery-powered and do not require charging. The expected battery like is 3-6 months.
 
-Smartphones should be charged overnight each day and throughout the day as needed.
+*Smartphones* should be charged overnight each day and throughout the day as needed.
 
-Chest bands (optional) should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.
+*Chest bands (optional)* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.
 
+## How to Clean the Hardware
+
+*Wrist sensors* and *location beacons* can be cleaned gently by hand using disinfecting wipes. DO NOT submerge the devices in water. If there is any damage or major spillage, participants should contact a field manager and swap out the device for a new one.
+
+*Chest bands (optional)* should be cleaned by detaching the white sensor box from the blue band. The sensor may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the sensor in water. The blue belt can be washed using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
 
 ## How to Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your mCerebrum suite.
@@ -121,7 +126,7 @@ Repeat these steps to install each available update. When finished, scroll throu
 
 
 
-## How to Pair a Sensor
+## How to Pair/Unpair a Sensor
 
 If you need to pair or re-pair a sensor to the phone, follow the step below using the wrist sensor as an example.
 

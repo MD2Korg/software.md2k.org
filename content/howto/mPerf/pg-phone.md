@@ -113,9 +113,9 @@ If you are experiencing poor data quality:
 - Restart the phone, wait one minute and check again.
 - Make sure the wrist sensor is charged.
 
-#### How to Clean (if necessary)
+#### How to Clean
 
-Detach the white sensor device from the blue band. The device may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the white sensor device in water. Hand wash the blue belt using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
+You may clean the chest band gently by hand using disinfecting wipes. DO NOT submerge the chest band in water.
 
 
 ## How to Charge the Devices
