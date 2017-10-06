@@ -4,7 +4,7 @@ description = "Details for mPerf Admins and Field Managers about the using the m
 keywords = []
 +++
 
-## Contents
+# Contents
 
 - [Hardware Suite](#suite)
 - [How to Charge the Hardware](#charge)
