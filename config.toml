@@ -204,24 +204,24 @@ paginate = 10
     parent = "howto-sensors"
     weight = 120
 
-[[menu.howto]]
-  name = "mPerf User Guide"
-  identifier = "howto-mPerf"
-  url = "/howto/mPerf"
-  weight = 200
+# [[menu.howto]]
+#  name = "mPerf User Guide"
+#  identifier = "howto-mPerf"
+#  url = "/howto/mPerf"
+#  weight = 200
 
-  [[menu.howto]]
-    name = "Sensors"
-    identifier = "howto-mPerf-sensors"
-    url = "/howto/mPerf/sensors"
-    parent = "howto-mPerf"
-    weight = 220
+#  [[menu.howto]]
+#    name = "Sensors"
+#    identifier = "howto-mPerf-sensors"
+#    url = "/howto/mPerf/sensors"
+#    parent = "howto-mPerf"
+#    weight = 220
 
-[[menu.howto]]
-  name = "mPerf Field Managers"
-  identifier = "howto-mPerf-fm"
-  url = "/howto/mPerf/field-managers"
-  weight = 300
+#[[menu.howto]]
+#  name = "mPerf Field Managers"
+#  identifier = "howto-mPerf-fm"
+#  url = "/howto/mPerf/field-managers"
+#  weight = 300
 
 
 

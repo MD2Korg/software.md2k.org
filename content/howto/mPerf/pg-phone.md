@@ -10,6 +10,7 @@ keywords = []
 - Wear the wrist sensors and carry the smartphone with you.
 - Every 2-3 hours, check to confirm the phone is collecting data.
 - Try to achieve at least 12 hours of data collection each day.
+- Complete surveys on the phone when prompted.
 - Charge phone and wrist sensors every night.
 
 ## Wrist Sensors
@@ -45,7 +46,7 @@ To power the beacons on/off, press the button in the top center of the location 
 
 Set the location beacon labelled *Home* anywhere in your home. Set the location beacon labelled *Work* anywhere at your workplace.
 
-Once the location becaons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
+Once the location beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
 
 #### How to Clean
 
