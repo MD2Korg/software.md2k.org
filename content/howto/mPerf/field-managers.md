@@ -13,6 +13,12 @@ keywords = []
 - 2 Wrist Sensor Charging Cables
 - 1 Smartphone Charging Cable
 
+<img src="/img/howto/mPerf/mPerfHardwareSuite.png">
+
+Phone carrier and Participant ID can be found written on the outside of the envelope.
+
+<img src="/img/howto/mPerf/mPerfEnvelope.png">
+
 #### Wrist Sensors
 
 Each participant should wear the wrist sensors for at least 12 hours each day. The sensors should be worn like a watch on each arm with the charging port pointed away from the hand as shown. The buckle is marked L or R to indicate left wrist or right wrist.
