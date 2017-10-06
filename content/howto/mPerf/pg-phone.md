@@ -72,6 +72,10 @@ If you wish to pause data collection for your privacy at any point during the da
 
 ...
 
+#### Pause Data Collection
+
+...
+
 #### Data Collection Duration
 
 ...

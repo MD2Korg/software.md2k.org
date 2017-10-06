@@ -28,11 +28,51 @@ Each participant should wear the wrist sensors for at least 12 hours each day. T
 
 Each participant should carry their phone with them each day and keep the phone charged and powered on.
 
-Participants can view the phone notification from the mPerf app to quickly confirm that data collection is on.
+Participants can view the message below in the phone notifications to quickly confirm that data collection is on.
 
 <img src="/img/howto/mPerf/mPerfNotificationON.png">
 
 Participants can view the *Sensor Data Quality* icons in the mPerf app to check data quality. If data quality is poor, troubleshooting tips can be found on the phone by tapping the data quality icons in the app.
+
+**<img src="/data quality section of app">**
+
+Pause Data Collection
+
+...
+
+Data Collection Duration
+
+...
+
+Step Count
+
+...
+
+Work Duration
+
+...
+
+Workplace Annotation
+
+...
+
+#### Location Beacons
+
+To power the beacons on/off, press down on the top of the beacon like a button. You will see a green LED light flash to indicate power is ON or a red LED light flash to indiciate power is OFF.
+
+<img src="/img/howto/mPerf/Beacon2.png">
+
+The beacon labelled **H** should be placed in the participant's home. The beacon labelled **W** should be placed in the participant's workplace.
+
+Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
+
+#### Charging
+
+Wrist sensors should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.  
+
+Location beacons are battery poewred and do not require charging. The expected battery like is 3-6 months.
+
+Smartphones should be charged overnight each day and throughout the day as needed. 
 
 
 ## How to Install/Update Apps
