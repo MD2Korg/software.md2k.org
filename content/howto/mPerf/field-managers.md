@@ -7,8 +7,12 @@ keywords = []
 # Contents
 
 - [Hardware Suite](#suite)
+    - [Wrist Sensors](#wristsensors)
+    - [Smartphone](#smartphone)
+    - [Location Beacons](#beacons)
 - [How to Charge the Hardware](#charge)
 - [How to Clean the Hardware](#clean)
+- [mPerf Study App Overview](#mperf)
 - [How to Install/Update Apps](#updateapps)
 - [How to Pair/Unpair a Wrist Sensor](#pairwrist)
 
@@ -28,7 +32,7 @@ Phone carrier and Participant ID can be found written on the outside of the enve
 
 <img src="/img/howto/mPerf/mPerfEnvelope.png">
 
-#### Wrist Sensors
+#### <a name="wristsensors"></a>Wrist Sensors
 
 Each participant should wear the wrist sensors for at least 12 hours each day. The sensors should be worn like a watch on each arm with the charging port pointed away from the hand as shown. The buckle is marked L or R to indicate left wrist or right wrist.
 
@@ -36,11 +40,42 @@ Each participant should wear the wrist sensors for at least 12 hours each day. T
 
 <img src="/img/howto/mPerf/MSHRVwearingR.png">
 
-#### Smartphone
+
+#### <a name="smartphone"></a>Smartphone
 
 <img src="/img/howto/mPerf/SamsungS8.png">
 
 Each participant should carry their phone with them each day and keep the phone charged and powered on.
+
+
+#### <a name="beacons"></a>Location Beacons
+
+To power the beacons on/off, press down on the top of the beacon like a button. You will see a green LED light flash to indicate power is ON or a red LED light flash to indiciate power is OFF.
+
+<img src="/img/howto/mPerf/Beacon2.png">
+
+The beacon labelled **H** should be placed in the participant's home. The beacon labelled **W** should be placed in the participant's workplace.
+
+Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
+
+## <a name="charge"></a>How to Charge the Hardware
+
+*Wrist sensors* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.  
+
+*Location beacons* are battery-powered and do not require charging. The expected battery like is 3-6 months.
+
+*Smartphones* should be charged overnight each day and throughout the day as needed.
+
+*Chest bands (optional)* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.
+
+## <a name="clean"></a>How to Clean the Hardware
+
+*Wrist sensors* and *location beacons* can be cleaned gently by hand using disinfecting wipes. DO NOT submerge the devices in water. If there is any damage or major spillage, participants should contact a field manager and swap out the device for a new one.
+
+*Chest bands (optional)* should be cleaned by detaching the white sensor box from the blue band. The sensor may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the sensor in water. The blue belt can be washed using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
+
+
+## <a name="mperf"></a>mPerf Study App Overview
 
 Participants will interact with the **mPerf Study app** to perform certain activities such as viewing data quality, pausing data collection, and viewing data such as Step Count or Work Duration.
 
@@ -73,32 +108,6 @@ Work Duration
 Workplace Annotation
 
 ...
-
-#### Location Beacons
-
-To power the beacons on/off, press down on the top of the beacon like a button. You will see a green LED light flash to indicate power is ON or a red LED light flash to indiciate power is OFF.
-
-<img src="/img/howto/mPerf/Beacon2.png">
-
-The beacon labelled **H** should be placed in the participant's home. The beacon labelled **W** should be placed in the participant's workplace.
-
-Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
-
-## <a name="charge"></a>How to Charge the Hardware
-
-*Wrist sensors* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.  
-
-*Location beacons* are battery-powered and do not require charging. The expected battery like is 3-6 months.
-
-*Smartphones* should be charged overnight each day and throughout the day as needed.
-
-*Chest bands (optional)* should be charged overnight each day. The expected battery life is approximately 24 hours with a full charge.
-
-## <a name="clean"></a>How to Clean the Hardware
-
-*Wrist sensors* and *location beacons* can be cleaned gently by hand using disinfecting wipes. DO NOT submerge the devices in water. If there is any damage or major spillage, participants should contact a field manager and swap out the device for a new one.
-
-*Chest bands (optional)* should be cleaned by detaching the white sensor box from the blue band. The sensor may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the sensor in water. The blue belt can be washed using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
 
 ## <a name="updateapps"></a>How to Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your mCerebrum suite.
