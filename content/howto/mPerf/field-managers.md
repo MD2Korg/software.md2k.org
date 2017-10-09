@@ -16,6 +16,7 @@ keywords = []
 - [How to Install/Update Apps](#updateapps)
 - [How to Add/Remove a Wrist Sensor](#pairwrist)
 
+[Submit bug reports and feature requests](http://software.md2k.org/under-the-hood/feedback/)
 
 ## <a name="suite"></a>Hardware Suite
 
