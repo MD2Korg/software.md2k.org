@@ -14,7 +14,7 @@ keywords = []
 - [How to Clean the Hardware](#clean)
 - [mPerf Study App Overview](#mperf)
 - [How to Install/Update Apps](#updateapps)
-- [How to Pair/Unpair a Wrist Sensor](#pairwrist)
+- [How to Add/Remove a Wrist Sensor](#pairwrist)
 
 
 ## <a name="suite"></a>Hardware Suite
@@ -144,7 +144,7 @@ Repeat these steps to install each available update. When finished, scroll throu
 
 
 
-## <a name="pairwrist"></a>How to Pair/Unpair a Wrist Sensor
+## <a name="pairwrist"></a>How to Add/Remove a Wrist Sensor
 
 If you need to pair or re-pair a wrist sensor to the phone:
 
@@ -152,7 +152,13 @@ If you need to pair or re-pair a wrist sensor to the phone:
 
 2)	Find *MotionSenseHRV* in the list of applications, and tap the *settings/gear icon* under MotionSenseHRV. This will access the Settings screen for the wrist sensors.
 
-3)	On the Settings screen, the wrist sensor should automatically appear in the list of Available Devices as a 12-digit alphanumberic ID. Tap the wrist sensor ID to pair it to the phone.
+**To Remove a Sensor:**
+
+3) On the Settings screen, the paired wrist sensor should automatically appear in the list of Configured Devices. Tap *LEFT_WRIST* or *RIGHT_WRIST* to select the sensor, then tap *Delete* to unpair the sensor from the phone.
+
+**To Add a Sensor:**
+
+3)	On the Settings screen, the wrist sensor you wish to pair should automatically appear in the list of Available Devices as a 12-digit alphanumberic ID. Tap the wrist sensor ID to pair it to the phone.
 *Note: If you do not see any IDs listed, make sure the sensor is charged and within range of the phone. If you see multiple IDs listed, try moving to another location so the phone is out of range of any wrist sensors other than the one you are pairing.*
 
 4)	Once you tap the wrist sensor ID, select *Left Wrist* or *Right Wrist* (if unsure, find the L or R letter on the buckle on the wristband).
