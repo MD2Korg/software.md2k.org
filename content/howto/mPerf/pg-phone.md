@@ -9,7 +9,7 @@ keywords = []
 
 - Wear the wrist sensors and carry the smartphone with you.
 - Every 2-3 hours, check to confirm the phone is collecting data.
-- Try to achieve at least 12 hours of data collection each day.
+- Try to achieve an average of at least 8 hours of data collection each day.
 - Complete surveys on the phone when prompted.
 - Charge phone and wrist sensors every night.
 
