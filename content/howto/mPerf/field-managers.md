@@ -34,7 +34,7 @@ Phone carrier and Participant ID can be found written on the outside of the enve
 
 #### <a name="wristsensors"></a>Wrist Sensors
 
-Each participant should wear the wrist sensors for at least 12 hours each day. The sensors should be worn like a watch on each arm with the charging port pointed away from the hand as shown. The buckle is marked L or R to indicate left wrist or right wrist.
+Each participant should wear the wrist sensors for an average of 8 hours a day. The sensors should be worn like a watch on each arm with the charging port pointed away from the hand as shown. The buckle is marked L or R to indicate left wrist or right wrist.
 
 <img src="/img/howto/mPerf/MSHRVwearingL.png">
 
@@ -72,7 +72,7 @@ Once the  beacons are set in place, they can stay powered ON and remain untouche
 
 *Wrist sensors* and *location beacons* can be cleaned gently by hand using disinfecting wipes. DO NOT submerge the devices in water. If there is any damage or major spillage, participants should contact a field manager and swap out the device for a new one.
 
-*Chest bands (optional)* should be cleaned by detaching the white sensor box from the blue band. The sensor may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the sensor in water. The blue belt can be washed using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
+*Chest bands (optional)* should be cleaned by first detaching the white sensor box from the blue band. The sensor may be cleaned gently by hand using disinfecting wipes. DO NOT submerge the sensor in water. The blue belt can be washed using gloved hands in soapy water for several minutes to ensure removal of soilage. Run the belt under running tap water until fully rinsed of all detergent. Dry the belt by firmly pressing it with a towel to remove excess water, followed by a complete air dry.
 
 
 ## <a name="mperf"></a>mPerf Study App Overview
