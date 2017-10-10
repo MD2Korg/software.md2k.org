@@ -29,7 +29,7 @@ keywords = []
 
 <img src="/img/howto/mPerf/mPerfHardwareSuite.png">
 
-Phone carrier and Participant ID can be found written on the outside of the envelope.
+Phone carrier and Site ID can be found written on the outside of the envelope.
 
 <img src="/img/howto/mPerf/mPerfEnvelope.png">
 
