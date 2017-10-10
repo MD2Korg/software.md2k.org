@@ -55,7 +55,7 @@ To power the beacons on/off, press down on the top of the beacon like a button. 
 
 <img src="/img/howto/mPerf/Beacon2.png">
 
-The beacon labelled **H** should be placed in the participant's home. The beacon labelled **W** should be placed in the participant's workplace.
+The beacon labelled **W** should be placed in the participant's workplace. The beacon labelled **H** should be placed in the participant's home office (or wherever they are most likely to be working at home). 
 
 Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
 
