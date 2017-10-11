@@ -48,7 +48,7 @@ Each participant should wear the wrist sensors for an average of 8 hours a day. 
 
 <img src="/img/howto/mPerf/SamsungS8.png">
 
-Each participant should carry their phone with them each day and keep the phone charged and powered on.
+Each participant should carry their phone with them each day and keep the phone charged and powered on. There is an extra charging cable provided in the suite so the participant can have one charging cable at work and one at home.
 
 
 #### <a name="beacons"></a>Location Beacons
@@ -149,7 +149,7 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 
 <img src="/img/howto/checkUpdates50.png">
 
-4) If updates are available, the update or install icon below each affected application will be highlighted. To install or update all applications, tap the green *Install All* button at the top-left of the screen, or tap the appropriate icon to install each app individually.
+4) If updates are available, the update or install icon below each affected application will be highlighted. To install or update all applications, tap the *Install All* button, or tap the appropriate icon to install each app individually.
 
 <img src="/img/howto/installAll50.png"> OR <img src="/img/howto/applicationUpdateIcon50.png">
 
@@ -181,8 +181,9 @@ If you need to pair or re-pair a wrist sensor to the phone:
 
 **To Add a Sensor:**
 
-3)	On the Settings screen, the wrist sensor you wish to pair should automatically appear in the list of Available Devices as a 12-digit alphanumberic ID. Tap the wrist sensor ID to pair it to the phone.
-*Note: If you do not see any IDs listed, make sure the sensor is charged and within range of the phone. If you see multiple IDs listed, try moving to another location so the phone is out of range of any wrist sensors other than the one you are pairing.*
+3)	On the Settings screen, the wrist sensor you wish to pair should automatically appear in the list of Available Devices as a 12-digit alphanumberic ID. Tap the ID that corresponds to the ID printed on the wrist sensor (found on a white label under the wrist strap).
+
+*Note: If you do not see the ID listed under Available Devices, make sure the sensor is charged and within range of the phone. If the sensor is charged and still not appearing in the list, try restarting the phone.*
 
 4)	Once you tap the wrist sensor ID, select *Left Wrist* or *Right Wrist* (if unsure, find the L or R letter on the buckle on the wristband).
 
