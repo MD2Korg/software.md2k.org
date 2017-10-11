@@ -13,6 +13,8 @@ keywords = []
 - [How to Charge the Hardware](#charge)
 - [How to Clean the Hardware](#clean)
 - [mPerf Study App Overview](#mperf)
+- [How to Leave a Study](#leavestudy)
+- [How to Join a Study](#joinstudy)
 - [How to Install/Update Apps](#updateapps)
 - [How to Add/Remove a Wrist Sensor](#pairwrist)
 
@@ -55,7 +57,7 @@ To power the beacons on/off, press down on the top of the beacon like a button. 
 
 <img src="/img/howto/mPerf/Beacon2.png">
 
-The beacon labelled **W** should be placed in the participant's workplace. The beacon labelled **H** should be placed in the participant's home office (or wherever they are most likely to be working at home). 
+The beacon labelled **W** should be placed in the participant's workplace. The beacon labelled **H** should be placed in the participant's home office (or wherever they are most likely to be working at home).
 
 Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
 
@@ -109,6 +111,24 @@ Work Duration
 Workplace Annotation
 
 ...
+
+## <a name="leavestudy"></a>How to Leave a Study
+
+1) First open the mCerebrum app by tapping *Settings* in the mPerf app menu (found in the upper-left corner).
+
+2) In the mCerebrum app, open the menu (found in the upper-left corner).
+
+3) Tap the User ID at the top of the menu next to the mCerebrum logo, then tap *Leave Study* to confirm and leave the study.
+
+
+## <a name="joinstudy"></a>How to Join a Study
+
+1) On the mCerebrum settings screen, tap *General Use (click to join study)*.
+
+2) When prompted, enter the appropraite User ID and password for the user and tap *Login*.
+
+3) After logging in, check to make sure all apps are installed and up-to-date by following the steps below.
+
 
 ## <a name="updateapps"></a>How to Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your mCerebrum suite.
