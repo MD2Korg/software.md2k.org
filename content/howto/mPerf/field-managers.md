@@ -112,7 +112,7 @@ Workplace Annotation
 
 ...
 
-## <a name="leavestudy"></a>How to Leave a Study
+## <a name="leavestudy"></a>How to Leave/Join a Study
 
 1) First open the mCerebrum app by tapping *Settings* in the mPerf app menu (found in the upper-left corner).
 
@@ -122,6 +122,8 @@ Workplace Annotation
 
 
 ## <a name="joinstudy"></a>How to Join a Study
+
+Note: If you are currently logged into a study, you must first leave the study by following the steps above.
 
 1) On the mCerebrum settings screen, tap *General Use (click to join study)*.
 
