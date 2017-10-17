@@ -56,6 +56,8 @@ You may clean the beacons gently by hand using disinfecting wipes. DO NOT submer
 
 <img src="/img/howto/mPerf/mPerfStudyIcon.png">
 
+<img src="/img/howto/mPerf/mPerfStudyHome.png">
+
 #### Data Collection
 
 You can confirm that data is being collected by viewing the mPerf message in your phone notifications. You should see "Data Collection - ON."
@@ -66,15 +68,30 @@ If data collection is off, you can turn it on by tapping *Start Data Collection*
 
 <img src="/img/howto/mPerf/StartDataButton.png">
 
-If you wish to pause data collection for your privacy at any point during the day, tap the pause button.  On the *Privacy Control Settings* screen, tap to set the Privacy Duration (how long data collection will be paused) and Privacy Type (which sensors will be paused). When finished, tap *Start* to pause. Data collection will automatically resume when the time has expired.
 
-#### Data Quality
+#### Sensor Data Quality
 
-...
+<img src="/img/howto/mPerf/mPerfSensorDataQuality.png">
+
+Use the Sensor Data Quality icons to determine if your wrist sensors are collecting good data.
+
+<img src="/img/howto/mPerf/greencheck2.png"> Green checkmark means good data quality.
+
+<img src="/img/howto/mPerf/yellowcaution2.png"> Yellow caution icon means bad data quality.
+
+<img src="/img/howto/mPerf/redX2.png"> Red X means no data is being collected.
+
+If you see a yellow caution icon or a red X icon, tap the icon to view a list of simple troubleshooting steps.
+
+1. In the menu (found in the upper-left corner of the app's home screen), tap *Reset Application*, wait 15 seconds and check again.
+2. Restart the phone, wait one minute and check again.
+3. Make sure the wrist sensor is charged and LED lights are on.
+
+You may also tap the *Graph* button to view the wrist sensor data on a plotter in real-time, or tap the *Tutorial* video link to view a video with detailed troubleshooting instructions.  
 
 #### Pause Data Collection
 
-...
+If you wish to pause data collection for your privacy at any point during the day, tap the pause button.  On the *Privacy Control Settings* screen, tap to set the Privacy Duration (how long data collection will be paused) and Privacy Type (which sensors will be paused). When finished, tap *Start* to pause. Data collection will automatically resume when the time has expired.
 
 #### Data Collection Duration
 
