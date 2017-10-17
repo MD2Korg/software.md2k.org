@@ -71,9 +71,9 @@ If data collection is off, you can turn it on by tapping *Start Data Collection*
 
 #### Sensor Data Quality
 
-<img src="/img/howto/mPerf/mPerfSensorDataQuality.png">
-
 Use the Sensor Data Quality icons to determine if your wrist sensors are collecting good data.
+
+<img src="/img/howto/mPerf/mPerfSensorDataQuality.png">
 
 <img src="/img/howto/mPerf/greencheck2.png"> Green checkmark means good data quality.
 
@@ -93,9 +93,9 @@ You may also tap the *Graph* button to view the wrist sensor data on a plotter i
 
 #### Pause Data Collection
 
-<img src="/img/howto/mPerf/mPerfPause.png">
-
 If you wish to pause data collection for your privacy at any point during the day, follow the steps below.
+
+<img src="/img/howto/mPerf/mPerfPause.png">
 
 1) Tap the pause button shown above.
 
@@ -109,7 +109,11 @@ If you wish to pause data collection for your privacy at any point during the da
 
 #### Data Collection Duration
 
-...
+The *Data Collection Duration* timer shows how long you have been collecting good data from wrist sensors each day.
+
+<img src="/img/howto/mPerf/mPerfDataDuration.png">
+
+You can tap the timer to view more details or change your target goal for each day.
 
 #### Step Count
 
