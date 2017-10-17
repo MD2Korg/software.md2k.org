@@ -115,11 +115,21 @@ The *Data Collection Duration* timer shows how long you have been collecting goo
 
 You can tap the timer to view more details or change your target goal for each day.
 
-#### Step Count
+<img src="/img/howto/mPerf/mPerfDurationScreen.png">
 
-...
+#### Fitness and Work Duration Tracking
 
-#### Work Duration
+Use the *Fitness and Work Duration Tracking* buttons to monitor your Step Count and Work Duration.
+
+<img src="/img/howto/mPerf/mPerfFitnessTracking.png">
+
+##### Step Count
+
+Tap the *Step Count* button to view the number of step you have taken today or change your target goal for each day.
+
+<img src="/img/howto/mPerf/mPerfStepCount.png">
+
+##### Work Duration
 
 ...
 
