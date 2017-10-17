@@ -131,11 +131,45 @@ Tap the *Step Count* button to view the number of step you have taken today or c
 
 ##### Work Duration
 
-...
+Tap the *Work Duration* button to view the amount of time you have spent at work or your home office each day.
+
+**For first-time use only, you will need to use the Set Location button to set the GPS coordinates for your work and home office.** Follow the steps below to complete this process.
+
+When you are currently at work or at your home office:
+
+1) Tap the Work Duration button on the mPerf home screen.
+
+2) Tap the *Set Location* button.
+
+<img src="/img/howto/mPerf/SetLocationButton.png">
+
+3) On the *Location Settings* screen, tap *Add Current Location*.
+
+<img src="/img/howto/mPerf/AddLocation.png">
+
+4) Tap *Work*, *Home*, or *Other* to select your current location.
+
+<img src="/img/howto/mPerf/SetCurrentLocation.png">
+
+5) The app will add your current GPS location and track the amount of time you spend in the vicinity each day. Results can be viewed each day by tapping the *Work Duration* button.
+
+<img src="/img/howto/mPerf/mPerfDuration.png">
 
 #### Workplace Annotation
 
-...
+Tap the Workplace Annotation button (found in the mPerf menu in the top-left corner of the home screen) to report certain activities you are performing throughout the day.
+
+<img src="/img/howto/mPerf/mPerfAnnotationButton.png">
+
+1) Under the *Work Activity* heading, tap the *Select* button and select the type of activity you are performing.
+
+2) Under the *Work Context* heading, tap the *Select* button and select the context of the activity.
+
+3) Once the activity and context are set, tap the *Start* button just before the activity begins.
+
+4) When the activity ends, return to this screen and tap the *Finish* button. You may then press *Close* to return to the app. 
+
+<img src="/img/howto/mPerf/mPerfAnnotationScreen.png">
 
 
 ## Chest Belt (optional)
