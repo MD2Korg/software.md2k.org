@@ -145,7 +145,7 @@ Use the *Fitness and Work Duration Tracking* buttons to monitor your Step Count 
 
 ##### Step Count
 
-Tap the *Step Count* button to view the number of step you have taken today or change your target goal for each day.
+Tap the *Step Count* button to view the number of steps you have taken today or change your target goal for each day.
 
 <img src="/img/howto/mPerf/mPerfStepCount.png">
 
