@@ -89,6 +89,8 @@ If you see a yellow caution icon or a red X icon, tap the icon to view a list of
 
 You may also tap the *Graph* button to view the wrist sensor data on a plotter in real-time, or tap the *Tutorial* video link to view a video with detailed troubleshooting instructions.  
 
+<img src="/img/howto/mPerf/GraphTutorialButtons.png">
+
 #### Pause Data Collection
 
 <img src="/img/howto/mPerf/mPerfPause.png">
