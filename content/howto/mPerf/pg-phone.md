@@ -23,7 +23,7 @@ keywords = []
 
 - Wear the wrist sensors and carry the smartphone with you.
 - Every 2-3 hours, check to confirm the phone is collecting data.
-- Try to achieve an average of at least 8 hours of data collection each day.
+- Try to wear the sensors during all waking hours, except when there is risk of the sensors getting wet.
 - Complete surveys on the phone when prompted.
 - Charge phone and wrist sensors every night.
 
@@ -89,13 +89,19 @@ Use the Sensor Data Quality icons to determine if your wrist sensors are collect
 
 <img src="/img/howto/mPerf/mPerfSensorDataQuality.png">
 
-<img src="/img/howto/mPerf/greencheck2.png"> Green checkmark means good data quality.
+<img src="/img/howto/mPerf/greencheck2.png">
 
-<img src="/img/howto/mPerf/yellowcaution2.png"> Yellow caution icon means bad data quality.
+Green checkmark means good data quality.
 
-<img src="/img/howto/mPerf/redX2.png"> Red X means no data is being collected.
+<img src="/img/howto/mPerf/yellowcaution2.png">
 
-If you see a yellow caution icon or a red X icon, tap the icon to view a list of simple troubleshooting steps.
+Yellow caution icon means bad data quality.
+
+<img src="/img/howto/mPerf/redX2.png">
+
+Red X means no data is being collected.
+
+If you see a yellow caution icon or a red X icon, tap the icon to view a list of simple troubleshooting options:
 
 1. In the menu (found in the upper-left corner of the app's home screen), tap *Reset Application*, wait 15 seconds and check again.
 2. Restart the phone, wait one minute and check again.
@@ -167,7 +173,7 @@ When you are currently at work or at your home office:
 
 5) The app will add your current GPS location and track the amount of time you spend in the vicinity each day. Results can be viewed each day by tapping the *Work Duration* button.
 
-<img src="/img/howto/mPerf/mPerfDuration.png">
+<img src="/img/howto/mPerf/mPerfWorkDuration.png">
 
 #### <a name="annotation"></a>Workplace Annotation
 
