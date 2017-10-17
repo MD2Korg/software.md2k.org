@@ -4,8 +4,22 @@ description = "Instructions for users about using the mPerf smartphone software 
 keywords = []
 +++
 
+# Contents
 
-## What to Do Each Day
+- [What to Do Each Day](#whattodo)
+- [Wrist Sensors](#wristsensors)
+- [Location Beacons](#beacons)
+- [Phone App](#phoneapp)
+    - [Data Collection](#datacollection)
+    - [Sensor Data Quality](#dtaquality)
+    - [Pause Data Collection](#privacy)
+    - [Data Collection Duration](#dataduration)
+    - [Fitness and Work Duration Tracking](#fitnessandwork)
+    - [Workplace Annotation](#annotation)
+- [Chest Belt (optional)](#chestbelt)
+- [How to Charge the Devices](#charging)
+
+## <a name="whattodo"></a>What to Do Each Day
 
 - Wear the wrist sensors and carry the smartphone with you.
 - Every 2-3 hours, check to confirm the phone is collecting data.
@@ -13,7 +27,7 @@ keywords = []
 - Complete surveys on the phone when prompted.
 - Charge phone and wrist sensors every night.
 
-## Wrist Sensors
+## <a name="wristsensors"></a>Wrist Sensors
 
 #### How to Use
 
@@ -36,7 +50,7 @@ If you are experiencing poor data quality:
 
 You may clean the wrist sensors gently by hand using disinfecting wipes. DO NOT submerge the wrist sensors in water.
 
-## Location Beacons
+## <a name="beacons"></a>Location Beacons
 
 #### How to Use
 
@@ -52,13 +66,13 @@ Once the location beacons are set in place, they can stay powered ON and remain 
 
 You may clean the beacons gently by hand using disinfecting wipes. DO NOT submerge the beacons in water.
 
-## Phone App
+## <a name="phoneapp"></a>Phone App
 
 <img src="/img/howto/mPerf/mPerfStudyIcon.png">
 
 <img src="/img/howto/mPerf/mPerfStudyHome.png">
 
-#### Data Collection
+#### <a name="datacollection"></a>Data Collection
 
 You can confirm that data is being collected by viewing the mPerf message in your phone notifications. You should see "Data Collection - ON."
 
@@ -69,7 +83,7 @@ If data collection is off, you can turn it on by tapping *Start Data Collection*
 <img src="/img/howto/mPerf/StartDataButton.png">
 
 
-#### Sensor Data Quality
+#### <a name="dataquality"></a>Sensor Data Quality
 
 Use the Sensor Data Quality icons to determine if your wrist sensors are collecting good data.
 
@@ -91,7 +105,7 @@ You may also tap the *Graph* button to view the wrist sensor data on a plotter i
 
 <img src="/img/howto/mPerf/GraphTutorialButtons.png">
 
-#### Pause Data Collection
+#### <a name="privacy"></a>Pause Data Collection
 
 If you wish to pause data collection for your privacy at any point during the day, follow the steps below.
 
@@ -107,7 +121,7 @@ If you wish to pause data collection for your privacy at any point during the da
 
 <img src="/img/howto/mPerf/PrivacyControlSettings.png">
 
-#### Data Collection Duration
+#### <a name="dataduration"></a>Data Collection Duration
 
 The *Data Collection Duration* timer shows how long you have been collecting good data from wrist sensors each day.
 
@@ -117,7 +131,7 @@ You can tap the timer to view more details or change your target goal for each d
 
 <img src="/img/howto/mPerf/mPerfDurationScreen.png">
 
-#### Fitness and Work Duration Tracking
+#### <a name="fitnessandwork"></a>Fitness and Work Duration Tracking
 
 Use the *Fitness and Work Duration Tracking* buttons to monitor your Step Count and Work Duration.
 
@@ -155,7 +169,7 @@ When you are currently at work or at your home office:
 
 <img src="/img/howto/mPerf/mPerfDuration.png">
 
-#### Workplace Annotation
+#### <a name="annotation"></a>Workplace Annotation
 
 Tap the Workplace Annotation button (found in the mPerf menu in the top-left corner of the home screen) to report certain activities you are performing throughout the day.
 
@@ -167,12 +181,12 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 
 3) Once the activity and context are set, tap the *Start* button just before the activity begins.
 
-4) When the activity ends, return to this screen and tap the *Finish* button. You may then press *Close* to return to the app. 
+4) When the activity ends, return to this screen and tap the *Finish* button. You may then press *Close* to return to the app.
 
 <img src="/img/howto/mPerf/mPerfAnnotationScreen.png">
 
 
-## Chest Belt (optional)
+## <a name="chestbelt"></a>Chest Belt (optional)
 
 #### How to Use
 
@@ -197,7 +211,7 @@ If you are experiencing poor data quality:
 You may clean the chest band gently by hand using disinfecting wipes. DO NOT submerge the chest band in water.
 
 
-## How to Charge the Devices
+## <a name="charging"></a>How to Charge the Devices
 
 At the end of each day, charge all devices overnight (excluding the location beacons, which do not require charging). Do not force the chargers, look for matching ends and try to connect them carefully since these are delicate devices.
 
