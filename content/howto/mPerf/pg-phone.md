@@ -91,7 +91,19 @@ You may also tap the *Graph* button to view the wrist sensor data on a plotter i
 
 #### Pause Data Collection
 
-If you wish to pause data collection for your privacy at any point during the day, tap the pause button.  On the *Privacy Control Settings* screen, tap to set the Privacy Duration (how long data collection will be paused) and Privacy Type (which sensors will be paused). When finished, tap *Start* to pause. Data collection will automatically resume when the time has expired.
+<img src="/img/howto/mPerf/mPerfPause.png">
+
+If you wish to pause data collection for your privacy at any point during the day, follow the steps below.
+
+1) Tap the pause button shown above.
+
+2) On the *Privacy Control Settings* screen, tap to *Set Privacy Duration* and select how long you would like data collection to be paused.
+
+3) Tap *Set Privacy Type* to select which sensors will be paused.
+
+4) When finished, tap *Start* to begin the pause session. Data collection will automatically resume when the time has expired.
+
+<img src="/img/howto/mPerf/PrivacyControlSettings.png">
 
 #### Data Collection Duration
 
