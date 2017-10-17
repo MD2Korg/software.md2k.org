@@ -11,7 +11,7 @@ keywords = []
 - [Location Beacons](#beacons)
 - [Phone App](#phoneapp)
     - [Data Collection](#datacollection)
-    - [Sensor Data Quality](#dtaquality)
+    - [Sensor Data Quality](#dataquality)
     - [Pause Data Collection](#privacy)
     - [Data Collection Duration](#dataduration)
     - [Fitness and Work Duration Tracking](#fitnessandwork)
