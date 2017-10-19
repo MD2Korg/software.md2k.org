@@ -10,6 +10,7 @@ keywords = []
 - [Changing the Default Language](#lang)
 - [Setting Up Your Google Account](#googleaccount)
 - [Setting Up Your Work or Personal Email](#email)
+- [Adjusting Date and Time](#timezone)
 - [Which Apps Are Needed?](#whichapps)
 - [Which Utilities Are Needed?](#utilities)
 
@@ -83,6 +84,23 @@ To connect your Google account to your phone (in order to download apps, music, 
 <img src="/img/howto/mPerf/emailType.png">
 
 4) Follow the on-screen instructions to complete setup.
+
+
+## <a name="timezone"></a>Adjusting Date and Time
+
+To adjust the date and time on your phone:
+
+1) Open the Settings app by tapping the Settings icon.
+
+<img src="/img/howto/mPerf/phoneSettingsIcon.png">
+
+2) Tap *General management* in the list of menu options.
+
+<img src="/img/howto/mPerf/genMgmtButton.png">
+
+3) Tap *Date and time*.
+
+4) On the next screen, select *Automatic date and time* if you wish to use the date and time provided by your network. Turn off *Automatic date and time* if you wish to set the date and time manually.
 
 
 ## <a name="whichapps"></a>Which Apps Are Needed?
