@@ -9,6 +9,7 @@ keywords = []
 - [Connecting to a WiFi Network](#wifi)
 - [Changing the Default Language](#lang)
 - [Setting Up Your Google Account](#googleaccount)
+- [Setting Up Your Email](#email)
 - [Which Apps Are Needed?](#whichapps)
 
 
@@ -35,7 +36,7 @@ To change the default language on your phone:
 
 2) Under the *Personal* header, tap *Language and input*.
 
-4) On the next screen, tap *Language*, then tap *Add language* to choose a new langugae for your phone.
+3) On the next screen, tap *Language*, then tap *Add language* to choose a new langugae for your phone.
 
 <img src="/img/howto/mPerf/addLangButton.png">
 
@@ -57,6 +58,25 @@ To connect your Google account to your phone (in order to download apps, music, 
 4) Select *Google* from the list of options.
 
 5) Enter your Google email address and password, then follow the on-screen instructions to complete the process.
+
+
+## <a name="email"></a>Setting Up Your Email
+
+1) Open the Email app by tapping the Email icon.
+
+<img src="/img/howto/mPerf/emailIcon.png">
+
+2) Select the type of account (Corporate, Gmail, AOL, etc.) you wish to set up.
+
+3) Enter your email address and password in the blank fields , then tap *Sign In*.
+
+<img src="/img/howto/mPerf/enterEmail.png">
+
+4) Select the appropriate account type from the list.
+
+<img src="/img/howto/mPerf/emailType.png">
+
+5) Follow the on-screen instructions to complete setup.
 
 
 ## <a name="whichapps"></a>Which Apps Are Needed?

@@ -9,6 +9,7 @@ keywords = []
 - [Connecting to a WiFi Network](#wifi)
 - [Changing the Default Language](#lang)
 - [Setting Up Your Google Account](#googleaccount)
+- [Setting Up Your Email](#email)
 - [Which Apps Are Needed?](#whichapps)
 
 ## <a name="wifi"></a>Connecting to a WiFi Network
@@ -64,6 +65,23 @@ To connect your Google account to your phone (in order to download apps, music, 
 4) Select *Google* from the list of options.
 
 5) Enter your Google email address and password, then follow the on-screen instructions to complete the process.
+
+
+## <a name="email"></a>Setting Up Your Email
+
+1) Open the Email app by tapping the Email icon.
+
+<img src="/img/howto/mPerf/emailIcon.png">
+
+2) Enter your email address and password in the blank fields , then tap *Sign In*.
+
+<img src="/img/howto/mPerf/enterEmail.png">
+
+3) Select the appropriate account type from the list.
+
+<img src="/img/howto/mPerf/emailType.png">
+
+4) Follow the on-screen instructions to complete setup.
 
 
 ## <a name="whichapps"></a>Which Apps Are Needed?
