@@ -9,7 +9,7 @@ keywords = []
 - [Connecting to a WiFi Network](#wifi)
 - [Changing the Default Language](#lang)
 - [Setting Up Your Google Account](#googleaccount)
-- [Setting Up Your Email](#email)
+- [Setting Up Your Work or Personal Email](#email)
 - [Which Apps Are Needed?](#whichapps)
 
 ## <a name="wifi"></a>Connecting to a WiFi Network
@@ -67,7 +67,7 @@ To connect your Google account to your phone (in order to download apps, music, 
 5) Enter your Google email address and password, then follow the on-screen instructions to complete the process.
 
 
-## <a name="email"></a>Setting Up Your Email
+## <a name="email"></a>Setting Up Your Work or Personal Email
 
 1) Open the Email app by tapping the Email icon.
 
