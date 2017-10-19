@@ -222,14 +222,26 @@ If you are experiencing poor data quality:
     
     <item>
       <title>mPerf Participant Phone Setup</title>
-      <link>http://software.md2k.org/howto/mperf/phone-setup/</link>
+      <link>http://software.md2k.org/howto/mperf/phone-setups8a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://software.md2k.org/howto/mperf/phone-setup/</guid>
+      <guid>http://software.md2k.org/howto/mperf/phone-setups8a/</guid>
       <description>Contents  Connect to a WiFi Network  Connect to a WiFi Network To access WiFi settings:
 1) Open the Settings app by tapping the Settings icon.
 2) Tap Connections in the list of menu options.
 3) Tap Wi-Fi, then select a network from the list and enter the network password if required.</description>
+    </item>
+    
+    <item>
+      <title>mPerf Participant Phone Setup</title>
+      <link>http://software.md2k.org/howto/mperf/phone-setups8v/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/phone-setups8v/</guid>
+      <description>Contents  Connect to a WiFi Network  Connect to a WiFi Network To access WiFi settings:
+1) Open the Settings app by tapping the Settings icon.
+2) Under the Wireless and Network header, tap Wi-Fi.
+3) Select a network from the list and enter the network password if required.</description>
     </item>
     
     <item>
