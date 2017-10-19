@@ -7,6 +7,7 @@ keywords = []
 # Contents
 
 - [Connecting to a WiFi Network](#wifi)
+- [Migrating From Your Old Phone](#migrating)
 - [Changing the Default Language](#lang)
 - [Setting Up Your Google Account](#googleaccount)
 - [Setting Up Your Work or Personal Email](#email)
@@ -26,6 +27,15 @@ To access WiFi settings:
 2) Under the *Wireless and Networks* header, tap *Wi-Fi*.
 
 3) Select a network from the list and enter the network password if required.
+
+
+## <a name="migrating"></a>Migrating From Your Old Phone
+
+These online guides may assist you in migrating all your information from your old phone to your new one.
+
+[iOS to Android](https://www.android.com/switch/)
+
+[Android to Android](https://www.greenbot.com/article/2989988/android/how-to-get-everything-off-your-old-android-phone-and-onto-your-new-one.html)
 
 
 ## <a name="lang"></a>Changing the Default Language
