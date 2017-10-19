@@ -15,6 +15,7 @@ keywords = []
 - [Adjusting Device Protection Features](#protection)
 - [Which Apps Are Needed?](#whichapps)
 - [Which Utilities Are Needed?](#utilities)
+- [Backing Up Files on a Computer](#backup)
 
 
 ## <a name="wifi"></a>Connecting to a WiFi Network
@@ -162,3 +163,20 @@ The following utilities have been turned ON for data collection purposes. Please
 - WiFi
 - Mobile Data
 - Location Services
+
+
+## <a name="backup"></a>Backing Up Files on a Computer
+
+1) First connect your phone to your laptop or desktop using the phone charging cable and a USB port on the computer.
+
+<img src="/img/howto/mPerf/phone2computer.png">
+
+2) When you connect the devices, the phone will prompt you to allow the computer to access phone data. Tap *Allow*.
+
+<img src="/img/howto/mPerf/allowAccess.png">
+
+3) Use the file explorer on your computer to access the various file folders on your phone.
+
+4) Select the desired folders and files from your phone. (Music, Pictures, Downloads, etc.)
+
+5) To back up files, copy and paste your selections to the desired location on your computer. (Desktop, C drive, etc.)
