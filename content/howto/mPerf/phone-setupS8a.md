@@ -56,7 +56,7 @@ To change the default language on your phone:
 
 3) Tap *Language and input*.
 
-4) On the next screen, tap *Language*, then tap *Add language* to choose a new langugae for your phone.
+4) On the next screen, tap *Language*, then tap *Add language* to choose a new language for your phone.
 
 <img src="/img/howto/mPerf/addLangButton.png">
 
@@ -88,7 +88,7 @@ To connect your Google account to your phone (in order to download apps, music, 
 
 <img src="/img/howto/mPerf/emailIcon.png">
 
-2) Enter your email address and password in the blank fields , then tap *Sign In*.
+2) Enter your email address and password in the blank fields, then tap *Sign In*.
 
 <img src="/img/howto/mPerf/enterEmail.png">
 

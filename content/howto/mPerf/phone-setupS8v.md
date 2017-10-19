@@ -54,7 +54,7 @@ To change the default language on your phone:
 
 <img src="/img/howto/mPerf/languageButton.png">
 
-3) On the next screen, tap *Language*, then tap *Add language* to choose a new langugae for your phone.
+3) On the next screen, tap *Language*, then tap *Add language* to choose a new language for your phone.
 
 <img src="/img/howto/mPerf/addLangButton.png">
 
@@ -88,7 +88,7 @@ To connect your Google account to your phone (in order to download apps, music, 
 
 2) Select the type of account (Corporate, Gmail, AOL, etc.) you wish to set up.
 
-3) Enter your email address and password in the blank fields , then tap *Sign In*.
+3) Enter your email address and password in the blank fields, then tap *Sign In*.
 
 <img src="/img/howto/mPerf/enterEmail.png">
 
