@@ -7,8 +7,10 @@ keywords = []
 # Contents
 
 - [Connect to a WiFi Network](#wifi)
+- [Set Up Your Google Account](#googleaccount)
+- [Which Apps Are Needed?](#whichapps)
 
-## Connect to a WiFi Network
+## <a name="wifi"></a>Connect to a WiFi Network
 
 To access WiFi settings:
 
@@ -18,4 +20,51 @@ To access WiFi settings:
 
 2) Tap *Connections* in the list of menu options.
 
+<img src="/img/howto/mPerf/connectionsButton.png">
+
 3) Tap *Wi-Fi*, then select a network from the list and enter the network password if required.
+
+
+## <a name="googleaccount"></a>Set Up Your Google Account
+
+To connect your Google account to your phone (in order to download apps, music, etc. from Google Play):
+
+1) Open the Settings app by tapping the Settings icon.
+
+<img src="/img/howto/mPerf/phoneSettingsIcon.png">
+
+2) Tap *Cloud and accounts* in the list of menu options.
+
+<img src="/img/howto/mPerf/cloudAccountsButton.png">
+
+3) On the next screen, tap *Accounts*, then tap *Add account*.
+
+<img src="/img/howto/mPerf/addAccountButton.png">
+
+4) Select *Google* from the list of options.
+
+5) Enter your Google email address and password, then follow the on-screen instructions to complete the process.
+
+
+## <a name="whichapps"></a>Which Apps Are Needed?
+
+**DO NOT** disable or uninstall any of the following apps:
+
+- Alertness Sensing Framework
+- AutoSense
+- Beacon
+- DataKit
+- mCerebrum
+- MotionSense
+- mPerf Study
+- PhoneSensor
+
+Any of the following apps may be disabled or uninstalled if you wish:
+
+- Amazon Shopping
+- Amazon Video
+- any T-Mobile apps
+- Empire
+- Final Fantasy XV
+- StubHub
+- Uber
