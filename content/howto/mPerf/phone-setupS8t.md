@@ -14,6 +14,8 @@ To access WiFi settings:
 
 1) Open the Settings app by tapping the Settings icon.
 
+<img src="/img/howto/mPerf/phoneSettingsIcon.png">
+
 2) Tap *Connections* in the list of menu options.
 
 3) Tap *Wi-Fi*, then select a network from the list and enter the network password if required.
