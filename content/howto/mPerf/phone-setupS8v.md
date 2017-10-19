@@ -11,6 +11,7 @@ keywords = []
 - [Setting Up Your Google Account](#googleaccount)
 - [Setting Up Your Work or Personal Email](#email)
 - [Which Apps Are Needed?](#whichapps)
+- [Which Utilities Are Needed?](#utilities)
 
 
 ## <a name="wifi"></a>Connecting to a WiFi Network
@@ -101,3 +102,13 @@ Any of the following apps may be disabled or uninstalled if you wish:
 - Final Fantasy XV
 - StubHub
 - Uber
+
+
+## <a name="utilities"></a>Which Utilities Are Needed?
+
+The following utilities have been turned ON for data collection purposes. Please do not turn them off at any time during the study.
+
+- Bluetooth
+- WiFi
+- Mobile Data
+- Location Services
