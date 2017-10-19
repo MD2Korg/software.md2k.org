@@ -1,5 +1,5 @@
 +++
-title = "mPerf Participant Phone Setup"
+title = "mPerf AT&T Phone Setup"
 description = "Instructions for users about setting up their new phones"
 keywords = []
 +++
