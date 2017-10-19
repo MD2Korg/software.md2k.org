@@ -7,6 +7,9 @@ keywords = []
 # Contents
 
 - [Connect to a WiFi Network](#wifi)
+- [Set Up Your Google Account](#googleaccount)
+- [Changing the Default Language](#lang)
+- [Which Apps Are Needed?](#whichapps)
 
 
 ## <a name="wifi"></a>Connect to a WiFi Network
@@ -39,6 +42,21 @@ To connect your Google account to your phone (in order to download apps, music, 
 4) Select *Google* from the list of options.
 
 5) Enter your Google email address and password, then follow the on-screen instructions to complete the process.
+
+
+## <a name="lang"></a>Changing the Default Language
+
+To change the default language on your phone:
+
+1) Open the Settings app by tapping the Settings icon.
+
+<img src="/img/howto/mPerf/phoneSettingsIcon.png">
+
+2) Under the *Personal* header, tap *Language and input*.
+
+4) On the next screen, tap *Language*, then tap *Add language* to choose a new langugae for your phone.
+
+<img src="/img/howto/mPerf/addLangButton.png">
 
 
 ## <a name="whichapps"></a>Which Apps Are Needed?
