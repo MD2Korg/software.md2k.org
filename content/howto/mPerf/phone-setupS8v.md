@@ -28,6 +28,8 @@ To access WiFi settings:
 
 2) Under the *Wireless and Networks* header, tap *Wi-Fi*.
 
+<img src="/img/howto/mPerf/wifiButton.png">
+
 3) Select a network from the list and enter the network password if required.
 
 
@@ -50,6 +52,8 @@ To change the default language on your phone:
 
 2) Under the *Personal* header, tap *Language and input*.
 
+<img src="/img/howto/mPerf/languageButton.png">
+
 3) On the next screen, tap *Language*, then tap *Add language* to choose a new langugae for your phone.
 
 <img src="/img/howto/mPerf/addLangButton.png">
@@ -64,6 +68,8 @@ To connect your Google account to your phone (in order to download apps, music, 
 <img src="/img/howto/mPerf/phoneSettingsIcon.png">
 
 2) Under the *Personal* header, tap *Accounts*.
+
+<img src="/img/howto/mPerf/accountsButton.png">
 
 3) On the next screen, tap *Add account*.
 
@@ -103,6 +109,8 @@ To adjust the date and time on your phone:
 
 2) Under the *System* header, tap *Date and time*.
 
+<img src="/img/howto/mPerf/dateTimeButton.png">
+
 3) On the next screen, select *Automatic date and time* if you wish to use the date and time provided by your network. Turn off *Automatic date and time* if you wish to set the date and time manually.
 
 
@@ -115,6 +123,8 @@ To adjust the device protection features on your phone:
 <img src="/img/howto/mPerf/phoneSettingsIcon.png">
 
 2) Under the *Personal* header, tap *Lock screen and security*.
+
+<img src="/img/howto/mPerf/lockSecurityButton.png">
 
 3) On the next screen, select from the list of security options for locking and unlocking your phone. Tap your selection and follow the on-screen instructions to complete setup.
 
