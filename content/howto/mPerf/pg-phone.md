@@ -101,11 +101,12 @@ Yellow caution icon means bad data quality.
 
 Red X means no data is being collected.
 
-If you see a yellow caution icon or a red X icon, tap the icon to view a list of simple troubleshooting options:
+If you see a yellow caution icon or a red X icon for an extended period of time, you may tap the icon to view a list of simple troubleshooting options:
 
 1. In the menu (found in the upper-left corner of the app's home screen), tap *Reset Application*, wait 15 seconds and check again.
 2. Restart the phone, wait one minute and check again.
 3. Make sure the wrist sensor is charged and LED lights are on.
+4. If these steps do not fix the problem, please contact a staff member. 
 
 You may also tap the *Graph* button to view the wrist sensor data on a plotter in real-time, or tap the *Tutorial* video link to view a video with detailed troubleshooting instructions.  
 
