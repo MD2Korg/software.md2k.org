@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>mPerf Participant Phone Setup</title>
+      <title>mPerf AT&amp;T Phone Setup</title>
       <link>http://software.md2k.org/howto/mperf/phone-setups8a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -21,18 +21,6 @@
 1) Open the Settings app by tapping the Settings icon.
 2) Tap Connections in the list of menu options.
 3) Tap Wi-Fi, then select a network from the list and enter the network password if required.</description>
-    </item>
-    
-    <item>
-      <title>mPerf Participant Phone Setup</title>
-      <link>http://software.md2k.org/howto/mperf/phone-setups8v/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://software.md2k.org/howto/mperf/phone-setups8v/</guid>
-      <description>Contents  Connect to a WiFi Network  Connect to a WiFi Network To access WiFi settings:
-1) Open the Settings app by tapping the Settings icon.
-2) Under the Wireless and Network header, tap Wi-Fi.
-3) Select a network from the list and enter the network password if required.</description>
     </item>
     
     <item>
@@ -64,6 +52,18 @@ Hardware Suite  2 Wrist Sensors 1 Smartphone (mCerebrum software installed) 2 Lo
     </item>
     
     <item>
+      <title>mPerf T-Mobile Phone Setup</title>
+      <link>http://software.md2k.org/howto/mperf/phone-setups8t/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/phone-setups8t/</guid>
+      <description>Contents  Connect to a WiFi Network  Connect to a WiFi Network To access WiFi settings:
+1) Open the Settings app by tapping the Settings icon.
+2) Tap Connections in the list of menu options.
+3) Tap Wi-Fi, then select a network from the list and enter the network password if required.</description>
+    </item>
+    
+    <item>
       <title>mPerf User Guide - Sensors Overview</title>
       <link>http://software.md2k.org/howto/mperf/sensors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -71,6 +71,18 @@ Hardware Suite  2 Wrist Sensors 1 Smartphone (mCerebrum software installed) 2 Lo
       <guid>http://software.md2k.org/howto/mperf/sensors/</guid>
       <description>Sensors The mCerebrum software platform is configurable for a wide variety of mobile and wearable sensors. This page shows an overview of the sensors currently integrated with the software for the mPerf project.
 Motionsense HRV Wrist Sensor  Motionsense HRV Wrist Sensor   Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth.</description>
+    </item>
+    
+    <item>
+      <title>mPerf Verizon Phone Setup</title>
+      <link>http://software.md2k.org/howto/mperf/phone-setups8v/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/phone-setups8v/</guid>
+      <description>Contents  Connect to a WiFi Network  Connect to a WiFi Network To access WiFi settings:
+1) Open the Settings app by tapping the Settings icon.
+2) Under the Wireless and Network header, tap Wi-Fi.
+3) Select a network from the list and enter the network password if required.</description>
     </item>
     
   </channel>

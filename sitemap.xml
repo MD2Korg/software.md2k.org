@@ -122,10 +122,6 @@
   </url>
   
   <url>
-    <loc>http://software.md2k.org/howto/mperf/phone-setups8v/</loc>
-  </url>
-  
-  <url>
     <loc>http://software.md2k.org/howto/mperf/pg-phone/</loc>
   </url>
   
@@ -138,11 +134,19 @@
   </url>
   
   <url>
+    <loc>http://software.md2k.org/howto/mperf/phone-setups8t/</loc>
+  </url>
+  
+  <url>
     <loc>http://software.md2k.org/howto/mperf/</loc>
   </url>
   
   <url>
     <loc>http://software.md2k.org/howto/mperf/sensors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://software.md2k.org/howto/mperf/phone-setups8v/</loc>
   </url>
   
 </urlset>
