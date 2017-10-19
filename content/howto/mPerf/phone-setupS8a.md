@@ -12,6 +12,7 @@ keywords = []
 - [Setting Up Your Google Account](#googleaccount)
 - [Setting Up Your Work or Personal Email](#email)
 - [Adjusting Date and Time](#timezone)
+- [Adjusting Device Protection Features](#protection)
 - [Which Apps Are Needed?](#whichapps)
 - [Which Utilities Are Needed?](#utilities)
 
@@ -33,7 +34,7 @@ To access WiFi settings:
 
 ## <a name="migrating"></a>Migrating From Your Old Phone
 
-These online guides may assist you in migrating all your information from your old phone to your new one. 
+These online guides may assist you in migrating all your information from your old phone to your new one.
 
 [iOS to Android](https://www.android.com/switch/)
 
@@ -77,7 +78,7 @@ To connect your Google account to your phone (in order to download apps, music, 
 
 4) Select *Google* from the list of options.
 
-5) Enter your Google email address and password, then follow the on-screen instructions to complete the process.
+5) Enter your Google email address and password, then follow the on-screen instructions to complete setup.
 
 
 ## <a name="email"></a>Setting Up Your Work or Personal Email
@@ -112,6 +113,21 @@ To adjust the date and time on your phone:
 3) Tap *Date and time*.
 
 4) On the next screen, select *Automatic date and time* if you wish to use the date and time provided by your network. Turn off *Automatic date and time* if you wish to set the date and time manually.
+
+
+## <a name="protection"></a>Adjusting Device Protection Features
+
+To adjust the device protection features on your phone:
+
+1) Open the Settings app by tapping the Settings icon.
+
+<img src="/img/howto/mPerf/phoneSettingsIcon.png">
+
+2) Tap *Lock screen and security* in the list of menu options.
+
+<img src="/img/howto/mPerf/securityButton.png">
+
+3) On the next screen, select from the list of security options for locking and unlocking your phone. Tap your selection and follow the on-screen instructions to complete setup.
 
 
 ## <a name="whichapps"></a>Which Apps Are Needed?
