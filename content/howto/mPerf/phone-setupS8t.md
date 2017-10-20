@@ -113,7 +113,7 @@ To adjust the device protection features on your phone:
 
 3) On the next screen, select from the list of security options for locking and unlocking your phone. Tap your selection and follow the on-screen instructions to complete setup.
 
-*Note*: We recommend using a *Password* (found by tapping *Screen lock type*) and/or the *Fingerprint Scanner* to ensure your collected data and information is secure.
+**Note**: We recommend using a *Password* (found by tapping *Screen lock type*) and/or the *Fingerprint Scanner* to ensure your collected data and information is secure.
 
 
 ## <a name="whichapps"></a>Which Apps Are Needed?
