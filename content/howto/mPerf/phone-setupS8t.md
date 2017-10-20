@@ -14,7 +14,7 @@ keywords = []
 - [Adjusting Device Protection Features](#protection)
 - [Which Apps Are Needed?](#whichapps)
 - [Which Utilities Are Needed?](#utilities)
-- [Backing Up Files on a Computer](#backup)
+- [Backing Up Files From Your Phone](#backup)
 - [Adjusting Date and Time](#timezone)
 
 
@@ -113,6 +113,8 @@ To adjust the device protection features on your phone:
 
 3) On the next screen, select from the list of security options for locking and unlocking your phone. Tap your selection and follow the on-screen instructions to complete setup.
 
+*Note*: We recommend using a *Password* (found by tapping *Screen lock type*) and/or the *Fingerprint Scanner* to ensure your collected data and information is secure.
+
 
 ## <a name="whichapps"></a>Which Apps Are Needed?
 
@@ -144,7 +146,11 @@ The following utilities have been turned ON for data collection purposes. Please
 - Location Services
 
 
-## <a name="backup"></a>Backing Up Files on a Computer
+## <a name="backup"></a>Backing Up Files From Your Phone
+
+You can backup files from your smartphone using [Google Drive](https://www.att.com/devicehowto/tutorial.html#!/interactive/id/interactive_1500010997?make=Samsung&model=SamsungG935A) or your preferred cloud service.
+
+If you do not have access to a cloud service, you may follow the steps below to back up files to a computer.
 
 1) First connect your phone to your laptop or desktop using the phone charging cable and a USB port on the computer.
 
