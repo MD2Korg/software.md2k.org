@@ -50,6 +50,16 @@ Hardware Suite  2 Wrist Sensors 1 Smartphone (mCerebrum software installed) 2 Lo
     </item>
     
     <item>
+      <title>mPerf Study: iOS to Android Migration</title>
+      <link>http://software.md2k.org/howto/mperf/phone-ios2android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/phone-ios2android/</guid>
+      <description>Tips for Switching from iOS to Android Best Method Use Smart Switch (app already installed on Study Phone)
+If Smart Switch is unavailable, follow these steps:  If you use Gmail, Google Calendar, Google Photos, Google Drive, and Google Maps, install those apps on Android and sign in using Google account. Use Google Drive to copy over contacts, photos, videos, and calendars.  Contact and calendars  Install Google Drive on iOS device.</description>
+    </item>
+    
+    <item>
       <title>mPerf T-Mobile Phone Setup</title>
       <link>http://software.md2k.org/howto/mperf/phone-setups8t/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
