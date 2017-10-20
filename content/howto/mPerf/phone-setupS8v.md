@@ -11,11 +11,11 @@ keywords = []
 - [Changing the Default Language](#lang)
 - [Setting Up Your Google Account](#googleaccount)
 - [Setting Up Your Work or Personal Email](#email)
-- [Adjusting Date and Time](#timezone)
 - [Adjusting Device Protection Features](#protection)
 - [Which Apps Are Needed?](#whichapps)
 - [Which Utilities Are Needed?](#utilities)
 - [Backing Up Files on a Computer](#backup)
+- [Adjusting Date and Time](#timezone)
 
 
 ## <a name="wifi"></a>Connecting to a WiFi Network
@@ -99,21 +99,6 @@ To connect your Google account to your phone (in order to download apps, music, 
 5) Follow the on-screen instructions to complete setup.
 
 
-## <a name="timezone"></a>Adjusting Date and Time
-
-To adjust the date and time on your phone:
-
-1) Open the Settings app by tapping the Settings icon.
-
-<img src="/img/howto/mPerf/phoneSettingsIcon.png">
-
-2) Under the *System* header, tap *Date and time*.
-
-<img src="/img/howto/mPerf/dateTimeButton.png">
-
-3) On the next screen, select *Automatic date and time* if you wish to use the date and time provided by your network. Turn off *Automatic date and time* if you wish to set the date and time manually.
-
-
 ## <a name="protection"></a>Adjusting Device Protection Features
 
 To adjust the device protection features on your phone:
@@ -147,15 +132,11 @@ Any of the following apps may be disabled or uninstalled if you wish:
 - Amazon Shopping
 - Amazon Video
 - any Verizon apps
-- Empire
-- Final Fantasy XV
-- StubHub
-- Uber
 
 
 ## <a name="utilities"></a>Which Utilities Are Needed?
 
-The following utilities have been turned ON for data collection purposes. Please do not turn them off at any time during the study.
+The following utilities have been turned ON for data collection purposes. Please do not turn them off (e.g., via the pull-down menu from the top of the screen) at any time during the study.
 
 - Bluetooth
 - WiFi
@@ -178,3 +159,18 @@ The following utilities have been turned ON for data collection purposes. Please
 4) Select the desired folders and files from your phone. (Music, Pictures, Downloads, etc.)
 
 5) To back up files, copy and paste your selections to the desired location on your computer. (Desktop, C drive, etc.)
+
+
+## <a name="timezone"></a>Adjusting Date and Time
+
+To adjust the date and time on your phone:
+
+1) Open the Settings app by tapping the Settings icon.
+
+<img src="/img/howto/mPerf/phoneSettingsIcon.png">
+
+2) Under the *System* header, tap *Date and time*.
+
+<img src="/img/howto/mPerf/dateTimeButton.png">
+
+3) On the next screen, select *Automatic date and time* if you wish to use the date and time provided by your network. Turn off *Automatic date and time* if you wish to set the date and time manually.
