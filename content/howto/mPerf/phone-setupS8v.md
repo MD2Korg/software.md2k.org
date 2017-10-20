@@ -37,7 +37,7 @@ To access WiFi settings:
 
 These online guides may assist you in migrating all your information from your old phone to your new one.
 
-[iOS to Android](https://www.android.com/switch/)
+[iOS to Android](http://software.md2k.org/howto/mperf/phone-ios2android/)
 
 [Android to Android](https://www.greenbot.com/article/2989988/android/how-to-get-everything-off-your-old-android-phone-and-onto-your-new-one.html)
 
