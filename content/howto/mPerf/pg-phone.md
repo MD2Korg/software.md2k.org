@@ -31,7 +31,7 @@ keywords = []
 
 #### How to Use
 
-Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn on each arm with the charging port pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist.
+Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn snuggly on each wrist with the charging port pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist.
 
 <img src="/img/howto/mPerf/MSHRVwearingL.png">
 
@@ -106,7 +106,7 @@ If you see a yellow caution icon or a red X icon for an extended period of time,
 1. In the menu (found in the upper-left corner of the app's home screen), tap *Reset Application*, wait 15 seconds and check again.
 2. Restart the phone, wait one minute and check again.
 3. Make sure the wrist sensor is charged and LED lights are on.
-4. If these steps do not fix the problem, please contact a staff member. 
+4. If these steps do not fix the problem, please contact a staff member.
 
 You may also tap the *Graph* button to view the wrist sensor data on a plotter in real-time, or tap the *Tutorial* video link to view a video with detailed troubleshooting instructions.  
 
@@ -122,9 +122,13 @@ If you wish to pause data collection for your privacy at any point during the da
 
 2) On the *Privacy Control Settings* screen, tap to *Set Privacy Duration* and select how long you would like data collection to be paused.
 
-3) Tap *Set Privacy Type* to select which sensors will be paused.
+<img src="/img/howto/mPerf/privacyDuration.png">
 
-4) When finished, tap *Start* to begin the pause session. Data collection will automatically resume when the time has expired.
+3) Tap *Set Privacy Type* to select which type(s) of data collection will be paused.
+
+<img src="/img/howto/mPerf/privacyType.png">
+
+4) When finished, tap *Start* to begin the pause session. Data collection will automatically resume when the time has expired, or you may return to this screen and tap *Stop* to resume data collection at any time.
 
 <img src="/img/howto/mPerf/PrivacyControlSettings.png">
 
@@ -222,10 +226,15 @@ You may clean the chest band gently by hand using disinfecting wipes. DO NOT sub
 
 At the end of each day, charge all devices overnight (excluding the location beacons, which do not require charging). Do not force the chargers, look for matching ends and try to connect them carefully since these are delicate devices.
 
+
 Take off the two wrist sensors and plug them into the charger as shown. The charging port can be found on the side of wrist sensor.
 
+<img src="/img/howto/mPerf/chargingWrist.jpg">
 
-The charging port for the smartphone can be found on the bottom of the phone.
+The charging port for the smartphone can be found on the bottom of the phone. We recommend using the Samsung adapter and charging cable included with the phone for fast charging.
 
+<img src="/img/howto/mPerf/chargingPhone.jpg">
 
 The charging port for the chest band (optional) can be found on the side of the sensor.
+
+<img src="/img/howto/mPerf/chargingChest.jpg">
