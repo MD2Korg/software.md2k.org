@@ -1,5 +1,5 @@
 +++
-title = "mPerf Lab Study: Syncing and Saving Data"
+title = "mPerf Lab Study: Admin"
 description = "Details for mPerf Admins and Field Managers about saving participants' data from a lab study"
 keywords = []
 +++
