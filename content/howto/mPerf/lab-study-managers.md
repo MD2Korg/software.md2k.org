@@ -7,7 +7,7 @@ keywords = []
 # Contents
 
 - [Syncing Data to the Cloud](#syncing)
-- [Shutting Down All applications](#shutting)
+- [Shutting Down All Applications](#shutting)
 - [Backing Up Data on a Computer](#backing)
 - [Preparing the Phone for the Next Participant](#preparing)
 
@@ -32,7 +32,7 @@ When a participant is finished with the lab study, please complete the following
 <img src="/img/howto/mPerf/DatakitUploadComplete.png">
 
 
-## <a name="shutting"></a>Shutting Down All applications
+## <a name="shutting"></a>Shutting Down All Applications
 
 
 ## <a name="backing"></a>Backing Up Data on a Computer
