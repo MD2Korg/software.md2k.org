@@ -19,9 +19,17 @@ When a participant is finished with the lab study, please complete the following
 
 ## <a name="syncing"></a>Syncing Data to the Cloud
 
-1) Open the DataKit app from the phone's 
+1) Open the DataKit app from the phone's home screen.
 
-<img src="/img/howto/mPerf/mPerfEnvelope.png">
+<img src="/img/howto/mPerf/DatakitAppIcon.png">
+
+2) Under the *Cerebral Cortex* header, tap the *Toggle* button to sync data to the cloud.
+
+<img src="/img/howto/mPerf/DatakitToggle.png">
+
+3) When you see the "Upload Complete" message, data syncing is now complete.
+
+<img src="/img/howto/mPerf/DatakitUploadComplete.png">
 
 
 ## <a name="shutting"></a>Shutting Down All applications
