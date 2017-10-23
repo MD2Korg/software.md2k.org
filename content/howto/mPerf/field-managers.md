@@ -238,7 +238,9 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 
 Note: If you are currently logged into a study, you must first leave the study by following the steps above.
 
-1) On the mCerebrum settings screen, tap *General Use (click to join study)*.
+1) On the mCerebrum settings screen, tap *mCerebrum (click to join study)*.
+
+<img src="/img/howto/mPerf/click2join.png">
 
 2) When prompted, enter the appropraite User ID and password for the user and tap *Login*.
 
