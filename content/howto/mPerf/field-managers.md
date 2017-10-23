@@ -114,11 +114,21 @@ Workplace Annotation
 
 ## <a name="leavestudy"></a>How to Leave/Join a Study
 
-1) First open the mCerebrum app by tapping *Settings* in the mPerf app menu (found in the upper-left corner).
+1) First open the mCerebrum app (by tapping the mCerebrum icon on the home screen or by tapping *Settings* in the mPerf app menu found in the upper-left corner).
 
-2) In the mCerebrum app, open the menu (found in the upper-left corner).
+<img src="/img/howto/mPerf/mCerebrumAppHome.png">
 
-3) Tap the User ID at the top of the menu next to the mCerebrum logo, then tap *Leave Study* to confirm and leave the study.
+2) In the mCerebrum app, open the menu found in the upper-left corner.
+
+<img src="/img/howto/mPerf/menuIcon.png">
+
+3) Tap the User ID at the top of the menu next to the mCerebrum logo, then tap *Leave Study*.
+
+<img src="/img/howto/mPerf/leaveStudyButton.png">
+
+4) Tap *Yes* to confirm and leave the study.
+
+<img src="/img/howto/mPerf/leaveStudyConfirm.png">
 
 
 ## <a name="joinstudy"></a>How to Join a Study
@@ -129,7 +139,9 @@ Note: If you are currently logged into a study, you must first leave the study b
 
 2) When prompted, enter the appropraite User ID and password for the user and tap *Login*.
 
-3) After logging in, check to make sure all apps are installed and up-to-date by following the steps below.
+3) Select the appropriate config file from the list.
+
+4) After logging in, check to make sure all apps are installed and up-to-date by following the steps below.
 
 
 ## <a name="updateapps"></a>How to Install/Update Apps
