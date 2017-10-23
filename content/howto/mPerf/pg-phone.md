@@ -78,7 +78,7 @@ You can confirm that data is being collected by viewing the mPerf message in you
 
 <img src="/img/howto/mPerf/mPerfNotificationON.png">
 
-If data collection is off, you can turn it on by tapping *Start Data Collection* in the mPerf Study App menu (found in the top-left corner).
+If you do not see the mPerf notification, or if it says data collection is off, you can turn data collection on by tapping *Start Data Collection* in the mPerf Study App menu (found in the top-left corner).
 
 <img src="/img/howto/mPerf/StartDataButton.png">
 
