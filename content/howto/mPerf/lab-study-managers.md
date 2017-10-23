@@ -13,16 +13,16 @@ When a participant is finished with the lab study, please complete the following
 
 # Contents
 
-- [Syncing Data to the Cloud](#syncing)
-- [Stopping Data Collection](#stopping)
-- [Backing Up Data on a Computer](#backing)
-- [Preparing the Phone for the Next Participant](#preparing)
+- [Sync Data to the Cloud](#syncing)
+- [Stop Data Collection](#stopping)
+- [Back Up Data on a Computer](#backing)
+- [Prepare the Phone for the Next Participant](#preparing)
 
 
 [Submit bug reports and feature requests](http://software.md2k.org/under-the-hood/feedback/)
 
 
-## <a name="syncing"></a>Syncing Data to the Cloud
+## <a name="syncing"></a>Sync Data to the Cloud
 
 1) Open the DataKit app from the phone's home screen.
 
@@ -37,7 +37,7 @@ When a participant is finished with the lab study, please complete the following
 <img src="/img/howto/mPerf/DatakitUploadComplete.png">
 
 
-## <a name="stopping"></a>Stopping Data Collection
+## <a name="stopping"></a>Stop Data Collection
 
 1) Open the mPerf Study app.
 
@@ -56,7 +56,7 @@ When a participant is finished with the lab study, please complete the following
 <img src="/img/howto/mPerf/stopDataConfirm.png">
 
 
-## <a name="backing"></a>Backing Up Data on a Computer
+## <a name="backing"></a>Back Up Data on a Computer
 
 1) Connect the smartphone to a PC using the charging cable.
 
@@ -73,7 +73,7 @@ When a participant is finished with the lab study, please complete the following
 6) Copy the log folder and paste it to the new folder you created. All study data is now saved to the computer.
 
 
-## <a name="preparing"></a>Preparing the Phone for the Next Participant
+## <a name="preparing"></a>Prepare the Phone for the Next Participant
 
 #### Leave the study:
 
