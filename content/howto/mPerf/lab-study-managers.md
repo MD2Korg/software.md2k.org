@@ -37,6 +37,8 @@ When a participant is finished with the lab study, please complete the following
 
 ## <a name="shutting"></a>Shutting Down All Applications
 
+...
+
 
 ## <a name="backing"></a>Backing Up Data on a Computer
 
