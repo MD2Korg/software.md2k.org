@@ -231,13 +231,13 @@ If you are experiencing poor data quality:
     </item>
     
     <item>
-      <title>mPerf Lab Study: Syncing and Saving Data</title>
+      <title>mPerf Lab Study: Admin</title>
       <link>http://software.md2k.org/howto/mperf/lab-study-managers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/howto/mperf/lab-study-managers/</guid>
-      <description>Contents  Syncing Data to the Cloud Shutting Down All applications Backing Up Data on a Computer Preparing the Phone for the Next Participant  Submit bug reports and feature requests
-When a participant is finished with the lab study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.</description>
+      <description>Contents When a participant is finished with the lab study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
+IMPORTANT NOTE: The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour.</description>
     </item>
     
     <item>
