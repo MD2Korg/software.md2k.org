@@ -13,6 +13,12 @@ keywords = []
 - [How to Charge the Hardware](#charge)
 - [How to Clean the Hardware](#clean)
 - [mPerf Study App Overview](#mperf)
+      - [Data Collection](#datacollection)
+      - [Sensor Data Quality](#dataquality)
+      - [Pause Data Collection](#privacy)
+      - [Data Collection Duration](#dataduration)
+      - [Fitness and Work Duration Tracking](#fitnessandwork)
+      - [Workplace Annotation](#annotation)
 - [How to Leave a Study](#leavestudy)
 - [How to Join a Study](#joinstudy)
 - [How to Install/Update Apps](#updateapps)
@@ -90,27 +96,124 @@ Participants can view the message below in the phone notifications to quickly co
 
 Participants can view the *Sensor Data Quality* icons in the mPerf app to check data quality. If data quality is poor, troubleshooting tips can be found on the phone by tapping the data quality icons in the app.
 
-**<img src="/data quality section of app">**
+If you do not see the mPerf notification, or if it says data collection is off, you can turn data collection on by tapping *Start Data Collection* in the mPerf Study App menu (found in the top-left corner).
 
-Pause Data Collection
+<img src="/img/howto/mPerf/StartDataButton.png">
 
-...
 
-Data Collection Duration
+#### <a name="dataquality"></a>Sensor Data Quality
 
-...
+Use the Sensor Data Quality icons to determine if your wrist sensors are collecting good data.
 
-Step Count
+<img src="/img/howto/mPerf/mPerfSensorDataQuality.png">
 
-...
+<img src="/img/howto/mPerf/greencheck2.png">
 
-Work Duration
+Green checkmark means good data quality.
 
-...
+<img src="/img/howto/mPerf/yellowcaution2.png">
 
-Workplace Annotation
+Yellow caution icon means bad data quality.
 
-...
+<img src="/img/howto/mPerf/redX2.png">
+
+Red X means no data is being collected.
+
+If you see a yellow caution icon or a red X icon for an extended period of time, you may tap the icon to view a list of simple troubleshooting options:
+
+1. In the menu (found in the upper-left corner of the app's home screen), tap *Reset Application*, wait 15 seconds and check again.
+2. Restart the phone, wait one minute and check again.
+3. Make sure the wrist sensor is charged and LED lights are on.
+4. If these steps do not fix the problem, please contact a staff member.
+
+You may also tap the *Graph* button to view the wrist sensor data on a plotter in real-time, or tap the *Tutorial* video link to view a video with detailed troubleshooting instructions.  
+
+<img src="/img/howto/mPerf/GraphTutorialButtons.png">
+
+#### <a name="privacy"></a>Pause Data Collection
+
+If you wish to pause data collection for your privacy at any point during the day, follow the steps below.
+
+<img src="/img/howto/mPerf/mPerfPause.png">
+
+1) Tap the pause button shown above.
+
+2) On the *Privacy Control Settings* screen, tap to *Set Privacy Duration* and select how long you would like data collection to be paused.
+
+<img src="/img/howto/mPerf/privacyDuration.png">
+
+3) Tap *Set Privacy Type* to select which type(s) of data collection will be paused.
+
+<img src="/img/howto/mPerf/privacyType.png">
+
+4) When finished, tap *Start* to begin the pause session. Data collection will automatically resume when the time has expired, or you may return to this screen and tap *Stop* to resume data collection at any time.
+
+<img src="/img/howto/mPerf/PrivacyControlSettings.png">
+
+#### <a name="dataduration"></a>Data Collection Duration
+
+The *Data Collection Duration* timer shows how long you have been collecting good data from wrist sensors each day.
+
+<img src="/img/howto/mPerf/mPerfDataDuration.png">
+
+You can tap the timer to view more details or change your target goal for each day.
+
+<img src="/img/howto/mPerf/mPerfDurationScreen.png">
+
+#### <a name="fitnessandwork"></a>Fitness and Work Duration Tracking
+
+Use the *Fitness and Work Duration Tracking* buttons to monitor your Step Count and Work Duration.
+
+<img src="/img/howto/mPerf/mPerfFitnessTracking.png">
+
+##### Step Count
+
+Tap the *Step Count* button to view the number of steps you have taken today or change your target goal for each day.
+
+<img src="/img/howto/mPerf/mPerfStepCount.png">
+
+##### Work Duration
+
+Tap the *Work Duration* button to view the amount of time you have spent at work or your home office each day.
+
+**For first-time use only, you will need to use the Set Location button to set the GPS coordinates for your work and home office.** Follow the steps below to complete this process.
+
+When you are currently at work or at your home office:
+
+1) Tap the Work Duration button on the mPerf home screen.
+
+2) Tap the *Set Location* button.
+
+<img src="/img/howto/mPerf/SetLocationButton.png">
+
+3) On the *Location Settings* screen, tap *Add Current Location*.
+
+<img src="/img/howto/mPerf/AddLocation.png">
+
+4) Tap *Work*, *Home*, or *Other* to select your current location.
+
+<img src="/img/howto/mPerf/SetCurrentLocation.png">
+
+5) The app will add your current GPS location and track the amount of time you spend in the vicinity each day. Results can be viewed each day by tapping the *Work Duration* button.
+
+<img src="/img/howto/mPerf/mPerfWorkDuration.png">
+
+#### <a name="annotation"></a>Workplace Annotation
+
+Tap the Workplace Annotation button (found in the mPerf menu in the top-left corner of the home screen) to report certain activities you are performing throughout the day.
+
+<img src="/img/howto/mPerf/mPerfAnnotationButton.png">
+
+1) Under the *Work Activity* heading, tap the *Select* button and select the type of activity you are performing.
+
+2) Under the *Work Context* heading, tap the *Select* button and select the context of the activity.
+
+3) Once the activity and context are set, tap the *Start* button just before the activity begins.
+
+4) When the activity ends, return to this screen and tap the *Finish* button. You may then press *Close* to return to the app.
+
+<img src="/img/howto/mPerf/mPerfAnnotationScreen.png">
+
 
 ## <a name="leavestudy"></a>How to Leave/Join a Study
 

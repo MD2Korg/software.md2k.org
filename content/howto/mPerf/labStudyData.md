@@ -69,3 +69,21 @@ When a participant is finished with the lab study, please complete the following
 4) Tap *Yes* to confirm and leave the study.
 
 <img src="/img/howto/mPerf/leaveStudyConfirm.png">
+
+
+#### Delete the Database Storage:
+
+1) From the mCerebrum app home screen, tap *Application Setup*.
+
+2) Find the Storage app in the list, and tap the Clear logo (red minus sign) to clear all data from Storage.
+
+
+#### Join the Study with a New Participant:
+
+1) On the mCerebrum home screen, tap *General Use (click to join study)*.
+
+2) When prompted, enter the appropraite User ID and password for the user and tap *Login*.
+
+3) Select the appropriate config file from the list.
+
+4) After logging in, check to make sure all apps are installed and up-to-date (tap *Application Install* from the mCerebrum home screen, then tap the *Check Updates* button).
