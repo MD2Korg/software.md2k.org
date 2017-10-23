@@ -93,8 +93,8 @@ When a participant is finished with the lab study, please complete the following
 
 <img src="/img/howto/mPerf/click2join.png">
 
-2) When prompted, enter the appropraite User ID and password for the user and tap *Login*.
+2) On the next screen, enter the appropraite User ID and password for the user and tap *Login*.
 
-3) Select the appropriate config file from the list.
+3) When prompted, select the appropriate config file from the list.
 
 4) After logging in, check to make sure all apps are installed and up-to-date (tap *Application Install* from the mCerebrum home screen, then tap the *Check Updates* button).
