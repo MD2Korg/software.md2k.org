@@ -74,7 +74,7 @@ When a participant is finished with the lab study, please complete the following
 #### Delete the Database Storage:
 
 1) From the mCerebrum app home screen, tap *Application Setup*.
-
+ 
 2) Find the Storage app in the list, and tap the Clear logo (red minus sign) to clear all data from Storage.
 
 
