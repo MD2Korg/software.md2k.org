@@ -14,7 +14,7 @@ When a participant is finished with the lab study, please complete the following
 # Contents
 
 - [Syncing Data to the Cloud](#syncing)
-- [Shutting Down All Applications](#shutting)
+- [Stopping Data Collection](#stopping)
 - [Backing Up Data on a Computer](#backing)
 - [Preparing the Phone for the Next Participant](#preparing)
 
@@ -37,9 +37,23 @@ When a participant is finished with the lab study, please complete the following
 <img src="/img/howto/mPerf/DatakitUploadComplete.png">
 
 
-## <a name="shutting"></a>Shutting Down All Applications
+## <a name="stopping"></a>Stopping Data Collection
 
-...
+1) Open the mPerf Study app.
+
+<img src="/img/howto/mPerf/mPerfStudyIcon.png">
+
+2) In the mPerf Study app, open the menu found in the upper-left corner.
+
+<img src="/img/howto/mPerf/menuIcon.png">
+
+3) Tap *Stop Data Collection*.
+
+<img src="/img/howto/mPerf/stopDataCollection.png">
+
+4) Tap *Yes* to confirm.
+
+<img src="/img/howto/mPerf/stopDataConfirm.png">
 
 
 ## <a name="backing"></a>Backing Up Data on a Computer
