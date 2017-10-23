@@ -4,7 +4,10 @@ description = "Details for mPerf Admins and Field Managers about saving particip
 keywords = []
 +++
 
+
 # Contents
+
+When a participant is finished with the lab study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
 
 - [Syncing Data to the Cloud](#syncing)
 - [Shutting Down All Applications](#shutting)
@@ -13,8 +16,6 @@ keywords = []
 
 
 [Submit bug reports and feature requests](http://software.md2k.org/under-the-hood/feedback/)
-
-When a participant is finished with the lab study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
 
 
 ## <a name="syncing"></a>Syncing Data to the Cloud
