@@ -9,7 +9,7 @@ keywords = []
 
 When a participant is finished with the lab study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
 
-**IMPORTANT NOTE:** The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour. (E.g., midnight, 1:00, 2:00—22:00, 23:00, etc.). This means the lab team will have to wait until the top of the hour AFTER completing a participant (e.g., regardless if they are done at 14:01, 14:30, or 14:59, they must wait until 15:00 to sync data to the cloud).
+**IMPORTANT NOTE:** The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour. (E.g., midnight, 1:00, 2:00—22:00, 23:00, etc.). This means the lab team will have to **wait until the top of the hour AFTER completing a participant** (e.g., regardless if they are done at 14:01, 14:30, or 14:59, they must wait until 15:00 to sync data to the cloud).
 
 # Contents
 
