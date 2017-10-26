@@ -286,7 +286,7 @@ Repeat these steps to install each available update. When finished, scroll throu
 
 ## <a name="pairwrist"></a>How to Add/Remove a Wrist Sensor
 
-If you need to pair or re-pair a wrist sensor to the phone:
+If you need to pair, re-pair, or unpair a wrist sensor and phone:
 
 1)	From the main screen of the mCerebrum app, tap *Application Setup*.
 
