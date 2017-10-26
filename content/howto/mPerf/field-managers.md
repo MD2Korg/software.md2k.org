@@ -290,18 +290,32 @@ If you need to pair or re-pair a wrist sensor to the phone:
 
 1)	From the main screen of the mCerebrum app, tap *Application Setup*.
 
-2)	Find *MotionSenseHRV* in the list of applications, and tap the *settings/gear icon* under MotionSenseHRV. This will access the Settings screen for the wrist sensors.
+<img src="/img/howto/applicationSetup.png">
+
+2)	Find *Wrist Sensor* in the list of applications, and tap the *settings/gear icon* under Wrist Sensor. This will access the Settings screen for the wrist sensors.
+
+<img src="/img/howto/wristGearIcon.png">
 
 **To Remove a Sensor:**
 
 3) On the Settings screen, the paired wrist sensor should automatically appear in the list of Configured Devices. Tap *LEFT_WRIST* or *RIGHT_WRIST* to select the sensor, then tap *Delete* to unpair the sensor from the phone.
 
+<img src="/img/howto/configuredWristDevices.png">
+
 **To Add a Sensor:**
 
 3)	On the Settings screen, the wrist sensor you wish to pair should automatically appear in the list of Available Devices as a 12-digit alphanumberic ID. Tap the ID that corresponds to the ID printed on the wrist sensor (found on a white label under the wrist strap).
 
+<img src="/img/howto/availableWristDevices.png">
+
+The wrist sensor ID is printed on a label found under the strap:
+
+<img src="/img/howto/wristMAC.jpg">
+
 *Note: If you do not see the ID listed under Available Devices, make sure the sensor is charged and within range of the phone. If the sensor is charged and still not appearing in the list, try restarting the phone.*
 
 4)	Once you tap the wrist sensor ID, select *Left Wrist* or *Right Wrist* (if unsure, find the L or R letter on the buckle on the wristband).
+
+<img src="/img/howto/leftOrRightWrist.png">
 
 5)	After selecting left or right placement, the wrist sensor ID should then appear under Configured Devices list to confirm the sensor is paired. Use the back button to return to the app.
