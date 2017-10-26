@@ -59,13 +59,13 @@ Each participant should carry their phone with them each day and keep the phone 
 
 #### <a name="beacons"></a>Location Beacons
 
-To power the beacons on/off, press down on the top of the beacon like a button. You will see a green LED light flash to indicate power is ON or a red LED light flash to indiciate power is OFF.
+To power the beacons on/off, press down on the top of the beacon like a button. You will see a green LED light flash to indicate power is ON or a red LED light flash to indicate power is OFF. Please ensure the beacons are powered ON before giving them to participants.
 
 <img src="/img/howto/mPerf/Beacon2.png">
 
 The beacon labelled **W** should be placed in the participant's workplace. The beacon labelled **H** should be placed in the participant's home office (or wherever they are most likely to be working at home).
 
-Once the  beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
+Once the beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
 
 ## <a name="charge"></a>How to Charge the Hardware
 
