@@ -138,6 +138,6 @@ mCerebrum stores data in a hybrid data store with the bulk of the high-frequency
 
 3)Files are named according to some metadata about each data stream within the system, making it easier to identify which stream(s) you are wanting to see.
 
-For more information abou the data exporter, please see https://github.com/MD2Korg/DataExporter.
+For more information about the data exporter, please see https://github.com/MD2Korg/DataExporter.
 
-You may use MATLAB or your preferred software environment to analyze your data.
+You may use MATLAB or your preferred environment to analyze your data.
