@@ -11,7 +11,18 @@ mCerebrum is a suite of several Android applications that are combined with a se
 These instructions will guide you in downloading, installing, and configuring the mCerebrum software suite using the default configuration to collect phone sensor data.
 
 
-## Installation
+## Contents
+
+- [Install mCerebrum](#installmc)
+- [Install/Update Apps](#installapps)
+- [Sensors Setup](#setup)
+- [Start/Stop Data Collection](#startstop)
+- [Visualize Real-Time Data](#visual)
+- [Back Up Data on a Computer](#backup)
+- [Extract Data from the Database](#extract)
+
+
+## <a name="installmc"></a>Install mCerebrum
 1) Download the [latest version of mCerebrum](https://github.com/MD2Korg/mCerebrum-releases/raw/master/2.0/org.md2k.mcerebrum/mcerebrum.apk)
 (found at this link or by using the QR code below) and install the APK file on an Android 5.0+ device.
 
@@ -24,7 +35,7 @@ These instructions will guide you in downloading, installing, and configuring th
 <img src="/img/howto/mC2DefaultHome.png">
 
 
-## Install/Update Apps
+## <a name="installapps"></a>Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of the apps in your mCerebrum suite.
 
 You will need to download the **Storage** and **PhoneSensor** applications.
@@ -47,7 +58,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 
 
-## Sensors Setup
+## <a name="setup"></a>Sensors Setup
 
 1)	Open the *PhoneSensor* app.
 
@@ -64,7 +75,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 *Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum apps).
 
 
-## <a name="startstop">Start/Stop Data Collection
+## <a name="startstop"></a>Start/Stop Data Collection
 
 1)	Open the *PhoneSensor* app.
 
@@ -79,7 +90,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 <img src="/img/howto/phoneSensorStop.png">
 
 
-## Visualize Real-Time Data
+## <a name="visual"></a>Visualize Real-Time Data
 
 1)	Open the *PhoneSensor* app.
 
@@ -117,7 +128,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 7) Copy the log folder and paste it to the new folder you created. All sensor data is now saved to the computer.
 
 
-## Extract Data from the Database
+## <a name="extract"></a>Extract Data from the Database
 
 mCerebrum stores data in a hybrid data store with the bulk of the high-frequency data being located in the /Android/data/org.md2k.datakit/files/raw folder and the low-frequency and metadata located in the SQLite database /Android/data/org.md2k.datakit/files/database.db. Once you copy this database from the phone, here, the following instructions can be utilized to extract all relevant information from the DB and save them as either CSV or JSON files.
 
