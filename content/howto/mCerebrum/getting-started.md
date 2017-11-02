@@ -121,11 +121,11 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 mCerebrum stores data in a hybrid data store with the bulk of the high-frequency data being located in the /Android/data/org.md2k.datakit/files/raw folder and the low-frequency and metadata located in the SQLite database /Android/data/org.md2k.datakit/files/database.db. Once you copy this database from the phone, here, the following instructions can be utilized to extract all relevant information from the DB and save them as either CSV or JSON files.
 
-1)Download the latest release from here: https://github.com/MD2Korg/DataExporter/releases/latest
+1)Download the [latest release of DataExporter](https://github.com/MD2Korg/DataExporter/releases/latest).
 
 2) Run java -jar DataExporter-all-1.X.X.jar -c -d database.db to export the database to CSV files or java -jar DataExporter-all-1.X.X.jar -j -d database.db for the JSON format.
 
-3)Files are named according to some metadata about each data stream within the system and make it easy to identify which stream(s) you are wanting to see.
+3)Files are named according to some metadata about each data stream within the system, making it easier to identify which stream(s) you are wanting to see.
 
 For more information abou the data exporter, please see https://github.com/MD2Korg/DataExporter.
 
