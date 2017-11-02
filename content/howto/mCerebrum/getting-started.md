@@ -17,13 +17,11 @@ These instructions will guide you in downloading, installing, and configuring th
 <img src="/img/howto/mcerebrumQRcode.png">
 
 2) Follow the on-screen instructions on your Android device to complete the installation.
+
 3) When the installation is complete, open mCerebrum. You should see the home screen as shown here:
 
-{{< figure src="/img/howto/mCerebrumSplashDefault.png" title="mCerebrum Splash screen" caption="">}}
+<img src="/img/howto/mC2DefaultHome.png">
 
-## Configuration
-1. Tap the Settings button (highlighted in red) to begin the setup process.
-2. If prompted to download a configuration file, enter “default” and tap OK to use the default mCerebrum configuration file. If you are not prompted, skip this step.
 
 ## Install/Update Apps
 mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.
