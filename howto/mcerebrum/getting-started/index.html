@@ -205,7 +205,19 @@
 
 <p>These instructions will guide you in downloading, installing, and configuring the mCerebrum software suite using the default configuration to collect phone sensor data.</p>
 
-<h2 id="installation">Installation</h2>
+<h2 id="contents">Contents</h2>
+
+<ul>
+<li><a href="#installmc">Install mCerebrum</a></li>
+<li><a href="#installapps">Install/Update Apps</a></li>
+<li><a href="#setup">Sensors Setup</a></li>
+<li><a href="#startstop">Start/Stop Data Collection</a></li>
+<li><a href="#visual">Visualize Real-Time Data</a></li>
+<li><a href="#backup">Back Up Data on a Computer</a></li>
+<li><a href="#extract">Extract Data from the Database</a></li>
+</ul>
+
+<h2 id="a-name-installmc-a-install-mcerebrum"><a name="installmc"></a>Install mCerebrum</h2>
 
 <p>1) Download the <a href="https://github.com/MD2Korg/mCerebrum-releases/raw/master/2.0/org.md2k.mcerebrum/mcerebrum.apk">latest version of mCerebrum</a>
 (found at this link or by using the QR code below) and install the APK file on an Android 5.0+ device.</p>
@@ -218,7 +230,7 @@
 
 <p><img src="/img/howto/mC2DefaultHome.png"></p>
 
-<h2 id="install-update-apps">Install/Update Apps</h2>
+<h2 id="a-name-installapps-a-install-update-apps"><a name="installapps"></a>Install/Update Apps</h2>
 
 <p>mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of the apps in your mCerebrum suite.</p>
 
@@ -240,7 +252,7 @@
 
 <p><img src="/img/howto/phoneSensorDownload.png"></p>
 
-<h2 id="sensors-setup">Sensors Setup</h2>
+<h2 id="a-name-setup-a-sensors-setup"><a name="setup"></a>Sensors Setup</h2>
 
 <p>1)  Open the <em>PhoneSensor</em> app.</p>
 
@@ -256,7 +268,7 @@
 
 <p><em>Note</em>: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum apps).</p>
 
-<h2 id="a-name-startstop-start-stop-data-collection"><a name="startstop">Start/Stop Data Collection</h2>
+<h2 id="a-name-startstop-a-start-stop-data-collection"><a name="startstop"></a>Start/Stop Data Collection</h2>
 
 <p>1)  Open the <em>PhoneSensor</em> app.</p>
 
@@ -270,7 +282,7 @@
 
 <p><img src="/img/howto/phoneSensorStop.png"></p>
 
-<h2 id="visualize-real-time-data">Visualize Real-Time Data</h2>
+<h2 id="a-name-visual-a-visualize-real-time-data"><a name="visual"></a>Visualize Real-Time Data</h2>
 
 <p>1)  Open the <em>PhoneSensor</em> app.</p>
 
@@ -306,7 +318,7 @@
 
 <p>7) Copy the log folder and paste it to the new folder you created. All sensor data is now saved to the computer.</p>
 
-<h2 id="extract-data-from-the-database">Extract Data from the Database</h2>
+<h2 id="a-name-extract-a-extract-data-from-the-database"><a name="extract"></a>Extract Data from the Database</h2>
 
 <p>mCerebrum stores data in a hybrid data store with the bulk of the high-frequency data being located in the /Android/data/org.md2k.datakit/files/raw folder and the low-frequency and metadata located in the SQLite database /Android/data/org.md2k.datakit/files/database.db. Once you copy this database from the phone, here, the following instructions can be utilized to extract all relevant information from the DB and save them as either CSV or JSON files.</p>
 
