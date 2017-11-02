@@ -111,7 +111,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 ## <a name="backup"></a>Back Up Data on a Computer
 
-1) **Important:** You must first stop data collection before transferring data to a computer. Open the PhoneSensor app and tap the button to stop data collection. See instructions [here]](#startstop) if you need more details.
+1) **Important:** You must first stop data collection before transferring data to a computer. Open the PhoneSensor app and tap the button to stop data collection. See instructions [here](#startstop) if you need more details.
 
 2) Connect the smartphone to a PC using the charging cable.
 
