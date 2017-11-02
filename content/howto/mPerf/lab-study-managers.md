@@ -64,11 +64,11 @@ When a participant is finished with the lab study, please complete the following
 
 2) Create a new folder on your computer. (It may be helpful to use the participant’s user ID as the new folder name.)
 
-3) Using the computer, navigate to the phone’s org.md2k.datakit folder. [Phone > Android > data > org.md2k.datakit]
+3) Using the computer, navigate to the phone’s org.md2k.datakit folder. *[Phone > Android > data > org.md2k.datakit]*
 
 4) Copy the org.md2k.datakit folder and paste it to the new folder you created.
 
-5) Navigate to the phone’s log folder. [Phone > log]
+5) Navigate to the phone’s log folder. *[Phone > log]*
 
 6) Copy the log folder and paste it to the new folder you created. All study data is now saved to the computer.
 

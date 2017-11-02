@@ -45,9 +45,6 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 <img src="/img/howto/phoneSensorDownload.png">
 
-5) When installation is complete, tap *Done*.
-
-<img src="/img/howto/doneUpdate.png">
 
 
 ## Sensors Setup
@@ -67,7 +64,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 *Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum apps).
 
 
-## Start/Stop Data Collection
+## <a name="startstop">Start/Stop Data Collection
 
 1)	Open the *PhoneSensor* app.
 
@@ -101,28 +98,20 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 <img src="/img/howto/plotAccelData.png">
 
 
+## <a name="backing"></a>Back Up Data on a Computer
 
+1) **Important:** You must first stop data collection before transferring data to a computer. Open the PhoneSensor app and tap the button to stop data collection. See instructions [here]](#startstop) if you need more details.
 
-## Export Data
-When you are ready to export the data you have collected, perform the following steps to save your data to a computer:
+2) Connect the smartphone to a PC using the charging cable.
 
-#### Shut Down All Applications
-1.	Enter the main Settings screen by tapping the 3 dots in the upper-right-hand corner of the home screen, then tapping *Settings*.
-2.	Tap the *Running Apps* button. (*Note*: the study must be started to access running apps.)
-3.	Tap the *Stop All* button to stop all applications.
-4.	Return to the previous screen and tap *Stop Study*.
-5.	Restart the phone.
-6.	When the phone restarts, if the mCerebrum app opens, tap *Exit* to close it. (If mCerebrum does not open, skip this step.)
-7.	From the phone’s home screen, open the DataKit app and ensure it is INACTIVE.
+<img src="/img/howto/mPerf/phone2computer.png">
 
-{{< figure src="/img/howto/DatakitINACTIVE.png" title="Datakit is inactive" caption="">}}
+3) Create a new folder on your computer where you would like to store the data.
 
-#### Save Data to a Computer
-1.	Connect the smartphone to a PC using the charging cable.
-2.	Create a new folder on your computer. (It may be helpful to use the participant’s user ID as the new folder name.)
-3.	Using the computer, navigate to the phone’s org.md2k.datakit folder. *[Phone > Android > data > org.md2k.datakit]*
-4.	Copy the org.md2k.datakit folder and paste it to the new folder you created on your computer.
-5.	Navigate to the phone’s log folder. *[Phone > log]*
-6.	Copy the log folder and paste it to the new folder you created.
+4) Using the computer, navigate to the phone’s org.md2k.datakit folder. *[Phone > Android > data > org.md2k.datakit]*
 
-All data is now exported to the computer.
+5) Copy the org.md2k.datakit folder and paste it to the new folder you created.
+
+6) Navigate to the phone’s log folder. *[Phone > log]*
+
+7) Copy the log folder and paste it to the new folder you created. All sensor data is now saved to the computer.
