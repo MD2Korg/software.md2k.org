@@ -84,11 +84,21 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 ## Visualize Real-Time Data
 
-1)
+1)	Open the *PhoneSensor* app.
 
+<img src="/img/howto/phoneSensorIcon.png">
 
+2) From the PhoneSensor home screen, tap the visualization icon to open the Sensors screen.
 
-2)	Select from the list of available sensors to visualize each set of data in real-time.
+<img src="/img/howto/visualIcon1.png">
+
+3)	Select from the list of available sensors to visualize each set of data in real-time.
+
+<img src="/img/howto/phoneVisualSensors.png">
+
+4) Data will appear in a real-time plotter. Below is an example of the phone accelerometer data.
+
+<img src="/img/howto/plotAccelData.png">
 
 
 
