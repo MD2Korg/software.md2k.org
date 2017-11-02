@@ -10,6 +10,7 @@ mCerebrum is a suite of several Android applications that are combined with a se
 
 These instructions will guide you in downloading, installing, and configuring the mCerebrum software suite using the default configuration to collect phone sensor data.
 
+
 ## Installation
 1) Download the [latest version of mCerebrum](https://github.com/MD2Korg/mCerebrum-releases/raw/master/2.0/org.md2k.mcerebrum/mcerebrum.apk)
 (found at this link or by using the QR code below) and install the APK file on an Android 5.0+ device.
@@ -77,40 +78,36 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 *Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum apps).
 
-## Study Setup
-1.	From the main Settings screen, tap *Configure Study*.
-2.	Tap *User ID* and set your desired unique user ID for the participant.
-3.	Tap *Wakeup Time* and select the time you expect data collection to begin each morning. The participant will receive a prompt to “start the day” at the time you select.
-4.	Tap *Sleep Time* and select the time you expect data collection to conclude each day.
-5.	If all items on the Study Settings screen show a green check mark beside them, study setup is complete.  Tap the *Save* button at the bottom of the screen.
 
-## Start Study
-1.	From the main Settings screen, once Configure Applications and Configure Study show a green checkmark, tap the *Start Study* button to begin the study.
-2.	If prompted to start the day, tap the *Start* button to begin data collection.
-3.	Tap *Close* to exit the Settings screen. You should see the mCerebrum home screen below. Once you have tapped to start the day, data collection has begun.
+## Start/Stop Data collection
 
-{{< figure src="/img/howto/mCerebrumHome.png" title="mCerebrum Home screen" caption="">}}
+1)	Open the *PhoneSensor* app.
+
+<img src="/img/howto/phoneSensorIcon.png">
+
+2) Tap the *START* button to begin data collection.
+
+
+
+3) The button will now show a data collection timer. Tap the button again when you are ready to stop data collection.
+
+
+
 
 ## Visualize Real-Time Data
-1.	From the mCerebrum home screen, tap the *Plotter* button.
-2.	Select from the list of available sensors to visualize each set of data in real-time.
 
-{{< figure src="/img/howto/plotterButton.png" title="mCerebrum plotter button" caption="">}}
+1)
 
-## Privacy
-Privacy Control allows users to turn off certain features for a limited period of time.
 
-{{< figure src="/img/howto/privacyActivate.png" title="mCerebrum privacy on" caption="">}}
 
-1. From the mCerebrum home screen, tap the *Turn On* button under the Privacy heading.
-2. On the Privacy Control Settings screen, tap *Set Privacy Duration*. Select the amount of time for which you wish to disable the feature(s).
-3. Next, tap *Set Privacy Type*. Select each of the features you would like to temporarily disable. You will see a check mark appear to confirm the feature is selected. Tap *OK* when finished.
-4. Tap the *Start* button to begin the privacy timer.
-5. You will see a countdown timer under the Privacy Status heading to confirm the privacy settings are enabled. When you
-are finished, tap *Close*.
+2)	Select from the list of available sensors to visualize each set of data in real-time.
+
+
+
 
 ## Export Data
 When you are ready to export the data you have collected, perform the following steps to save your data to a computer:
+
 #### Shut Down All Applications
 1.	Enter the main Settings screen by tapping the 3 dots in the upper-right-hand corner of the home screen, then tapping *Settings*.
 2.	Tap the *Running Apps* button. (*Note*: the study must be started to access running apps.)
