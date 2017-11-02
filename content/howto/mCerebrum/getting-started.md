@@ -24,13 +24,49 @@ These instructions will guide you in downloading, installing, and configuring th
 
 
 ## Install/Update Apps
-mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of all the apps in your configuration of the mCerebrum suite.
+mCerebrum uses a suite of software applications in conjunction with the main mCerebrum interface app. Follow these steps to download the latest versions of the apps in your mCerebrum suite.
 
-1.	From the main Settings screen, tap *Configure Applications > Applications* then tap the Check Updates button at the bottom of the screen.
-2.	If any apps listed show a red X icon ![red X icon](/img/howto/redX.jpg), tap the app in the list then tap *Install*. If any apps listed show a yellow caution icon ![yellow caution icon](/img/howto/yellowcaution.jpg), tap the app in the list then tap *Update*. (Alternatively, you may tap the *Fix All* button at the bottom of the screen to begin the installation of all updates at once.)
-3.	When every app shows a green check mark ![green checkmark icon](/img/howto/greencheckmark.jpg), all apps are installed and up-to-date. Tap the *Close* button.
+You will need to download the **Storage** and **PhoneSensor** applications.
+
+1) Tap the icon to open the mCerebrum app.
+
+<img src="/img/howto/mcerebrumAppIcon.jpg">
+
+2) From the mCerebrum home screen, tap *Application Install*.
+
+<img src="/img/howto/applicationInstall50.png">
+
+3) In the menu, find the *Storage* app and tap the green download button to download it. Follow the on-screen instructions to complete the installation.
+
+<img src="/img/howto/storageDownload.png">
+
+4) When prompted, tap *Install* at the bottom of the screen.
+
+<img src="/img/howto/installUpdate.png">
+
+5) When installation is complete, tap *Done*.
+
+<img src="/img/howto/doneUpdate.png">
+
+6) Return to the mCerebrum Application Install menu, find the *PhoneSensor* app and tap the green download button to download it. Follow the on-screen instructions to complete the installation.
+
+<img src="/img/howto/phoneSensorDownload.png">
+
+7) When prompted, tap *Install* at the bottom of the screen.
+
+<img src="/img/howto/installUpdate.png">
+
+8) When installation is complete, tap *Done*.
+
+<img src="/img/howto/doneUpdate.png">
+
 
 ## Sensors Setup
+
+1)	From the main screen of the mCerebrum app, tap *Application Setup*.
+
+<img src="/img/howto/mPerf/applicationSetup.png">
+
 1.	From the main Settings screen, tap *Configure Applications > Settings > PhoneSensor*.
 2.	You will see a list of all the available sensors included with your phone (Battery, Location, Accelerometer, etc.). Tap to toggle on each sensor that you wish to use to collect data.
 3.	When you are finished, tap the *Save* button at the bottom of the screen.
