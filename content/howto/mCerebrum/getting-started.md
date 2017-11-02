@@ -67,7 +67,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 *Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum apps).
 
 
-## Start/Stop Data collection
+## Start/Stop Data Collection
 
 1)	Open the *PhoneSensor* app.
 
@@ -75,11 +75,11 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 2) Tap the *START* button to begin data collection.
 
-
+<img src="/img/howto/phoneSensorStart.png">
 
 3) The button will now show a data collection timer. Tap the button again when you are ready to stop data collection.
 
-
+<img src="/img/howto/phoneSensorStop.png">
 
 
 ## Visualize Real-Time Data
