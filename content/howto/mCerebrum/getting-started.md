@@ -28,7 +28,7 @@ mCerebrum uses a suite of software applications in conjunction with the main mCe
 
 You will need to download the **Storage** and **PhoneSensor** applications.
 
-1) Tap the icon to open the mCerebrum app.
+1) Open the *mCerebrum* app.
 
 <img src="/img/howto/mcerebrumAppIcon.jpg">
 
@@ -63,15 +63,19 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 ## Sensors Setup
 
-1)	From the main screen of the mCerebrum app, tap *Application Setup*.
+1)	Open the *PhoneSensor* app.
 
-<img src="/img/howto/mPerf/applicationSetup.png">
+<img src="/img/howto/phoneSensorIcon.png">
 
-1.	From the main Settings screen, tap *Configure Applications > Settings > PhoneSensor*.
-2.	You will see a list of all the available sensors included with your phone (Battery, Location, Accelerometer, etc.). Tap to toggle on each sensor that you wish to use to collect data.
-3.	When you are finished, tap the *Save* button at the bottom of the screen.
+2) From the PhoneSensor home screen, tap the gear icon to open the Settings screen.
 
-*Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum app).
+<img src="/img/howto/gearIcon1.png">
+
+3) Use the Settings screen to select which phone sensors you would like to turn on/off. Tap the back button when finished.
+
+<img src="/img/howto/phoneSensorSettings.png">
+
+*Note*: To ensure high-quality data collection, the GPS feature of the smartphone must be set to High Accuracy Mode in your phone’s main settings (outside of the mCerebrum apps).
 
 ## Study Setup
 1.	From the main Settings screen, tap *Configure Study*.
