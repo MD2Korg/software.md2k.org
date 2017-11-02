@@ -288,7 +288,7 @@
 
 <p><img src="/img/howto/plotAccelData.png"></p>
 
-<h2 id="a-name-backing-a-back-up-data-on-a-computer"><a name="backing"></a>Back Up Data on a Computer</h2>
+<h2 id="a-name-backup-a-back-up-data-on-a-computer"><a name="backup"></a>Back Up Data on a Computer</h2>
 
 <p>1) <strong>Important:</strong> You must first stop data collection before transferring data to a computer. Open the PhoneSensor app and tap the button to stop data collection. See instructions [here]](#startstop) if you need more details.</p>
 
@@ -305,6 +305,20 @@
 <p>6) Navigate to the phone’s log folder. <em>[Phone &gt; log]</em></p>
 
 <p>7) Copy the log folder and paste it to the new folder you created. All sensor data is now saved to the computer.</p>
+
+<h2 id="extract-data-from-the-database">Extract Data from the Database</h2>
+
+<p>mCerebrum stores data in a hybrid data store with the bulk of the high-frequency data being located in the /Android/data/org.md2k.datakit/files/raw folder and the low-frequency and metadata located in the SQLite database /Android/data/org.md2k.datakit/files/database.db. Once you copy this database from the phone, here, the following instructions can be utilized to extract all relevant information from the DB and save them as either CSV or JSON files.</p>
+
+<p>1)Download the latest release from here: <a href="https://github.com/MD2Korg/DataExporter/releases/latest">https://github.com/MD2Korg/DataExporter/releases/latest</a></p>
+
+<p>2) Run java -jar DataExporter-all-1.X.X.jar -c -d database.db to export the database to CSV files or java -jar DataExporter-all-1.X.X.jar -j -d database.db for the JSON format.</p>
+
+<p>3)Files are named according to some metadata about each data stream within the system and make it easy to identify which stream(s) you are wanting to see.</p>
+
+<p>For more information abou the data exporter, please see <a href="https://github.com/MD2Korg/DataExporter">https://github.com/MD2Korg/DataExporter</a>.</p>
+
+<p>You may use MATLAB or your preferred software environment to analyze your data.</p>
 
                         </div>
                         
