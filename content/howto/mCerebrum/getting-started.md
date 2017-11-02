@@ -98,7 +98,7 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 <img src="/img/howto/plotAccelData.png">
 
 
-## <a name="backing"></a>Back Up Data on a Computer
+## <a name="backup"></a>Back Up Data on a Computer
 
 1) **Important:** You must first stop data collection before transferring data to a computer. Open the PhoneSensor app and tap the button to stop data collection. See instructions [here]](#startstop) if you need more details.
 
@@ -115,3 +115,18 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 6) Navigate to the phone’s log folder. *[Phone > log]*
 
 7) Copy the log folder and paste it to the new folder you created. All sensor data is now saved to the computer.
+
+
+## Extract Data from the Database
+
+mCerebrum stores data in a hybrid data store with the bulk of the high-frequency data being located in the /Android/data/org.md2k.datakit/files/raw folder and the low-frequency and metadata located in the SQLite database /Android/data/org.md2k.datakit/files/database.db. Once you copy this database from the phone, here, the following instructions can be utilized to extract all relevant information from the DB and save them as either CSV or JSON files.
+
+1)Download the latest release from here: https://github.com/MD2Korg/DataExporter/releases/latest
+
+2) Run java -jar DataExporter-all-1.X.X.jar -c -d database.db to export the database to CSV files or java -jar DataExporter-all-1.X.X.jar -j -d database.db for the JSON format.
+
+3)Files are named according to some metadata about each data stream within the system and make it easy to identify which stream(s) you are wanting to see.
+
+For more information abou the data exporter, please see https://github.com/MD2Korg/DataExporter.
+
+You may use MATLAB or your preferred software environment to analyze your data.
