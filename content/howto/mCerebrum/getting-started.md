@@ -41,23 +41,11 @@ You will need to download the **Storage** and **PhoneSensor** applications.
 
 <img src="/img/howto/storageDownload.png">
 
-4) When prompted, tap *Install* at the bottom of the screen.
-
-<img src="/img/howto/installUpdate.png">
-
-5) When installation is complete, tap *Done*.
-
-<img src="/img/howto/doneUpdate.png">
-
-6) Return to the mCerebrum Application Install menu, find the *PhoneSensor* app and tap the green download button to download it. Follow the on-screen instructions to complete the installation.
+4) Return to the mCerebrum Application Install menu, find the *PhoneSensor* app and tap the green download button to download it. Follow the on-screen instructions to complete the installation.
 
 <img src="/img/howto/phoneSensorDownload.png">
 
-7) When prompted, tap *Install* at the bottom of the screen.
-
-<img src="/img/howto/installUpdate.png">
-
-8) When installation is complete, tap *Done*.
+5) When installation is complete, tap *Done*.
 
 <img src="/img/howto/doneUpdate.png">
 
