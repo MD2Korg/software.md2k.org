@@ -10,6 +10,7 @@ keywords = []
     - [Wrist Sensors](#wristsensors)
     - [Smartphone](#smartphone)
     - [Location Beacons](#beacons)
+    - [Chest Belt (optional)](#chest1)
 - [How to Charge the Hardware](#charge)
 - [How to Clean the Hardware](#clean)
 - [mPerf Study App Overview](#mperf)
@@ -22,7 +23,7 @@ keywords = []
 - [How to Leave a Study](#leavestudy)
 - [How to Join a Study](#joinstudy)
 - [How to Install/Update Apps](#updateapps)
-- [How to Add/Remove a Wrist Sensor](#pairwrist)
+- [How to Add/Remove a Sensor](#pairwrist)
 
 [Submit bug reports and feature requests](http://software.md2k.org/under-the-hood/feedback/)
 
@@ -66,6 +67,26 @@ To power the beacons on/off, press down on the top of the beacon like a button. 
 The beacon labelled **W** should be placed in the participant's workplace. The beacon labelled **H** should be placed in the participant's home office (or wherever they are most likely to be working at home).
 
 Once the beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.
+
+#### <a name="chest1"></a>Chest Belt (optional)
+
+#### How to Use
+
+The chest belt records respiration data by monitoring chest movement. The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit.
+
+<img src="/img/howto/mPerf/AutoSenseChest.png">
+
+To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the backle is at the front of your chest and the cables face down towards your feet as shown above. The other end of the cable should be inserted into the outer-most port on the device.
+
+<img src="/img/howto/mPerf/ASchestRIPplug.png">
+
+#### Troubleshooting
+
+If you are experiencing poor data quality:
+
+- In the menu, tap Reset Application, wait 15 seconds and check again.
+- Restart the phone, wait one minute and check again.
+- Make sure the wrist sensor is charged.
 
 ## <a name="charge"></a>How to Charge the Hardware
 
@@ -284,9 +305,11 @@ Repeat these steps to install each available update. When finished, scroll throu
 
 
 
-## <a name="pairwrist"></a>How to Add/Remove a Wrist Sensor
+## <a name="pairwrist"></a>How to Add/Remove a Sensor
 
-If you need to pair, re-pair, or unpair a wrist sensor and phone:
+If you need to pair, re-pair, or unpair a sensor and phone, follow the steps below using the wrist sensor as an example.
+
+**Note:** The chest sensor works the same way, only you will open the *Chest Sensor* app instead of the *Wrist Sensor* app in step 2, and you will not select Left Wrist or Right Wrist.
 
 1)	From the main screen of the mCerebrum app, tap *Application Setup*.
 
