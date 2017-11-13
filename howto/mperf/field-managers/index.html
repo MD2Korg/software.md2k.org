@@ -208,6 +208,7 @@
 <li><a href="#wristsensors">Wrist Sensors</a></li>
 <li><a href="#smartphone">Smartphone</a></li>
 <li><a href="#beacons">Location Beacons</a></li>
+<li><a href="#chest1">Chest Belt (optional)</a></li>
 </ul></li>
 <li><a href="#charge">How to Charge the Hardware</a></li>
 <li><a href="#clean">How to Clean the Hardware</a></li>
@@ -224,7 +225,7 @@
 <li><a href="#leavestudy">How to Leave a Study</a></li>
 <li><a href="#joinstudy">How to Join a Study</a></li>
 <li><a href="#updateapps">How to Install/Update Apps</a></li>
-<li><a href="#pairwrist">How to Add/Remove a Wrist Sensor</a></li>
+<li><a href="#pairwrist">How to Add/Remove a Sensor</a></li>
 </ul>
 
 <p><a href="http://software.md2k.org/under-the-hood/feedback/">Submit bug reports and feature requests</a></p>
@@ -269,6 +270,28 @@
 <p>The beacon labelled <strong>W</strong> should be placed in the participant&rsquo;s workplace. The beacon labelled <strong>H</strong> should be placed in the participant&rsquo;s home office (or wherever they are most likely to be working at home).</p>
 
 <p>Once the beacons are set in place, they can stay powered ON and remain untouched for the duration of the study. The expected battery life is 3 to 6 months.</p>
+
+<h4 id="a-name-chest1-a-chest-belt-optional"><a name="chest1"></a>Chest Belt (optional)</h4>
+
+<h4 id="how-to-use">How to Use</h4>
+
+<p>The chest belt records respiration data by monitoring chest movement. The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit.</p>
+
+<p><img src="/img/howto/mPerf/AutoSenseChest.png"></p>
+
+<p>To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the backle is at the front of your chest and the cables face down towards your feet as shown above. The other end of the cable should be inserted into the outer-most port on the device.</p>
+
+<p><img src="/img/howto/mPerf/ASchestRIPplug.png"></p>
+
+<h4 id="troubleshooting">Troubleshooting</h4>
+
+<p>If you are experiencing poor data quality:</p>
+
+<ul>
+<li>In the menu, tap Reset Application, wait 15 seconds and check again.</li>
+<li>Restart the phone, wait one minute and check again.</li>
+<li>Make sure the wrist sensor is charged.</li>
+</ul>
 
 <h2 id="a-name-charge-a-how-to-charge-the-hardware"><a name="charge"></a>How to Charge the Hardware</h2>
 
@@ -483,9 +506,11 @@
 
 <p><img src="/img/howto/appNoUpdates.png"></p>
 
-<h2 id="a-name-pairwrist-a-how-to-add-remove-a-wrist-sensor"><a name="pairwrist"></a>How to Add/Remove a Wrist Sensor</h2>
+<h2 id="a-name-pairwrist-a-how-to-add-remove-a-sensor"><a name="pairwrist"></a>How to Add/Remove a Sensor</h2>
 
-<p>If you need to pair, re-pair, or unpair a wrist sensor and phone:</p>
+<p>If you need to pair, re-pair, or unpair a sensor and phone, follow the steps below using the wrist sensor as an example.</p>
+
+<p><strong>Note:</strong> The chest sensor works the same way, only you will open the <em>Chest Sensor</em> app instead of the <em>Wrist Sensor</em> app in step 2, and you will not select Left Wrist or Right Wrist.</p>
 
 <p>1)  From the main screen of the mCerebrum app, tap <em>Application Setup</em>.</p>
 
@@ -545,8 +570,8 @@
     <div class="panel-body">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
             <div class="input-group">
-                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
-                <input type="hidden" name="q" value="site:http://software.md2k.org/">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="http://software.md2k.org/">
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
                 </span>
