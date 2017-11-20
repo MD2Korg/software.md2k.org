@@ -6,7 +6,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>mPerf User Guide - Sensors Overview</title>
+  <title>How-To: Cerebral Cortex Setup</title>
   <meta name="author" content="" />
 
   
@@ -14,7 +14,7 @@
   
 
   
-  <meta name="description" content="Overview of the mPerf sensors">
+  <meta name="description" content="Details about the using Cerebral Cortex">
   
 
   <meta name="generator" content="Hugo 0.32-DEV" />
@@ -56,9 +56,9 @@
   <link rel="alternate" href="http://software.md2k.org/index.xml" type="application/rss+xml" title="MD2K::software">
 
   
-  <meta property="og:title" content="mPerf User Guide - Sensors Overview" />
+  <meta property="og:title" content="How-To: Cerebral Cortex Setup" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/howto/mperf/sensors//" />
+  <meta property="og:url" content="/howto/cerebral-cortex//" />
   <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -77,9 +77,9 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="http://software.md2k.org/">
-                    <img src="http://software.md2k.org/img/logo.png" alt="mPerf User Guide - Sensors Overview logo" class="hidden-xs hidden-sm">
-                    <img src="http://software.md2k.org/img/logo-small.png" alt="mPerf User Guide - Sensors Overview logo" class="visible-xs visible-sm">
-                    <span class="sr-only">mPerf User Guide - Sensors Overview - go to homepage</span>
+                    <img src="http://software.md2k.org/img/logo.png" alt="How-To: Cerebral Cortex Setup logo" class="hidden-xs hidden-sm">
+                    <img src="http://software.md2k.org/img/logo-small.png" alt="How-To: Cerebral Cortex Setup logo" class="visible-xs visible-sm">
+                    <span class="sr-only">How-To: Cerebral Cortex Setup - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
@@ -178,7 +178,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>mPerf User Guide - Sensors Overview</h1>
+                <h1>How-To: Cerebral Cortex Setup</h1>
             </div>
         </div>
     </div>
@@ -187,124 +187,50 @@
 
         <div id="content">
             <div class="container">
-
                 <div class="row">
-
                     
 
-                    <div class="col-md-9" id="blog-post">
+                    <div class="col-md-9">
 
-                        
+                      
 
-                        <div id="post-content">
-                          
-
-<h1 id="sensors">Sensors</h1>
-
-<p>The mCerebrum software platform is configurable for a wide variety of mobile and wearable sensors. This page shows an overview of the sensors currently integrated with the software for the mPerf project.</p>
-
-<h2 id="motionsense-hrv-wrist-sensor">Motionsense HRV Wrist Sensor</h2>
-
-
-<figure >
-    
-        <img src="/img/howto/MotionSenseHRV.png" />
-    
-    
-    <figcaption>
-        <h4>Motionsense HRV Wrist Sensor</h4>
-        
-    </figcaption>
-    
-</figure>
-
-
-<p>Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth. This sensor also measures heart rate using signals that are detected and classified into different classes of reliability, resulting in estimates of heart rate variability (HRV) and respective confidence levels.</p>
-
-<h4 id="how-to-wear-the-wrist-sensors">How to Wear the Wrist Sensors</h4>
-
-<p>Put the Motionsense wrist sensors on as you would wear a watch or FitBit. The sensor should be oriented with the buckle on the strap going over the top of your wrist as shown.</p>
-
-<p><img src="/img/howto/mPerf/WearingHRVright.jpg"></p>
-
-<h4 id="troubleshooting">Troubleshooting</h4>
-
-<iframe src="https://www.youtube.com/embed/2n7HwLWlgtQ" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-<p>If you are experiencing poor data quality:</p>
+<h1 id="contents">Contents</h1>
 
 <ul>
-<li>Reset the application, wait 15 seconds and check again.</li>
-<li>Restart the phone, wait one minute and check again.</li>
-<li>Make sure the wrist sensor is charged.</li>
+<li><a href="#req">Requirements</a></li>
+<li><a href="#install">Installation Instructions</a></li>
+<li><a href="#perform">Expected performance</a></li>
 </ul>
 
-<h2 id="autosense-chest-sensor">Autosense Chest Sensor</h2>
+<h2 id="a-name-req-a-requirements"><a name="req"></a>Requirements</h2>
 
+<p>Linux node(s) running CentOS 7.2+</p>
 
-<figure >
-    
-        <img src="/img/howto/mPerf/AutoSenseChest.png" />
-    
-    
-    <figcaption>
-        <h4>Autosense Chest Sensor</h4>
-        
-    </figcaption>
-    
-</figure>
+<h2 id="a-name-install-a-installation-instructions"><a name="install"></a>Installation Instructions</h2>
 
+<p>Install CentOS 7.2 on all systems
+Install mysql on the head node
+Create a dedicated user and associated password
+Install influxdb on the head node
+Install cassandra on all nodes
+Modify the configuration to tell Cassandra to utilize appropriate storage mounts
+Increase cassandra batch_size_fail_threshold_in_kb: to 1024 and batch-size_warn_threshold_in_kb: to 512
+Install Apache Spark 2.2.0 on all nodes
+Configuration spark to run as as a standalone cluster
+Export share RAID array from head node to worker nodes as /cerebralcortex
+Install Docker on head node
+Configure firewall to allow flexible Docker container communications (See docker-compose.yml)
+Docker images
+Clone
+CerebralCortex-DockerCompose
+CerebralCortex-APIServer
+CerebralCortex-KafkaSparkStreaming</p>
 
-<p>Autosense chest sensor is a wearable unit with an elastic chestband and connector cables. The sensor is designed to track breathing patterns by measuring respiratory effort and lung volume. These biomarkers of respiration can be used by the mCerebrum software to assist in monitoring and predicting repeated human behaviors such as stress, eating, speaking, and smoking.</p>
+<h2 id="a-name-perform-a-performance"><a name="perform"></a>Performance</h2>
 
-<h4 id="troubleshooting-1">Troubleshooting</h4>
-
-<p>If you are experiencing poor data quality:</p>
-
-<ul>
-<li>Make sure all cable connections are secure.</li>
-<li>Make sure the RIP connector is inserted into the correct port of the chest sensor.</li>
-<li>Tighten the chest band so it fits snugly under the armpits.</li>
-<li>Reset the application, wait 15 seconds and check again.</li>
-<li>Restart the phone, wait one minute and check again.</li>
-<li>Make sure the chest sensor is charged and powered ON.</li>
-</ul>
-
-<h2 id="phone-sensors">Phone Sensors</h2>
-
-
-<figure >
-    
-        <img src="/img/howto/mCerebrumOnPhone.png" />
-    
-    
-    <figcaption>
-        <h4>Phone Sensors</h4>
-        
-    </figcaption>
-    
-</figure>
-
-
-<p>In addition to the sensors listed above, the mCerebrum software also utilizies many different sensors including in a smartphone itself. Each smartphone can provide valuable information through various sensors such as accelerometer, gyroscope, GPS, battery, and activity tracking.</p>
-
-<h4 id="troubleshooting-2">Troubleshooting</h4>
-
-<p>If the mCerebrum app crashes perpetually (admin only):</p>
-
-<ul>
-<li>Clear all data from the DataKit app.</li>
-<li>Clear all data from the mCerebrum app.</li>
-<li>Delete the configuration folder located in the internal memory <code>/mCerebrum</code></li>
-<li>Make sure you have installed the proper update for each app.</li>
-<li>Delete the mCerebrum app from the phone and re-install it.</li>
-</ul>
-
-                        </div>
-                        
-                        
 
                     </div>
+                    
                     
 
                     
@@ -460,7 +386,6 @@
 
                 </div>
                 
-
             </div>
             
         </div>
