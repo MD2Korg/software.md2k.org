@@ -208,23 +208,39 @@
 
 <h2 id="a-name-install-a-installation-instructions"><a name="install"></a>Installation Instructions</h2>
 
-<p>Install CentOS 7.2 on all systems
-Install mysql on the head node
-Create a dedicated user and associated password
-Install influxdb on the head node
-Install cassandra on all nodes
-Modify the configuration to tell Cassandra to utilize appropriate storage mounts
-Increase cassandra batch_size_fail_threshold_in_kb: to 1024 and batch-size_warn_threshold_in_kb: to 512
-Install Apache Spark 2.2.0 on all nodes
-Configuration spark to run as as a standalone cluster
-Export share RAID array from head node to worker nodes as /cerebralcortex
-Install Docker on head node
-Configure firewall to allow flexible Docker container communications (See docker-compose.yml)
-Docker images
-Clone
-CerebralCortex-DockerCompose
-CerebralCortex-APIServer
-CerebralCortex-KafkaSparkStreaming</p>
+<p>Install CentOS 7.2 on all systems</p>
+
+<p>Install mysql on the head node</p>
+
+<p>Create a dedicated user and associated password</p>
+
+<p>Install influxdb on the head node</p>
+
+<p>Install cassandra on all nodes</p>
+
+<p>Modify the configuration to tell Cassandra to utilize appropriate storage mounts</p>
+
+<p>Increase cassandra batch_size_fail_threshold_in_kb: to 1024 and batch-size_warn_threshold_in_kb: to 512</p>
+
+<p>Install Apache Spark 2.2.0 on all nodes</p>
+
+<p>Configuration spark to run as as a standalone cluster</p>
+
+<p>Export share RAID array from head node to worker nodes as /cerebralcortex</p>
+
+<p>Install Docker on head node</p>
+
+<p>Configure firewall to allow flexible Docker container communications (See docker-compose.yml)</p>
+
+<p>Docker images</p>
+
+<p>Clone</p>
+
+<p>CerebralCortex-DockerCompose</p>
+
+<p>CerebralCortex-APIServer</p>
+
+<p>CerebralCortex-KafkaSparkStreaming</p>
 
 <h2 id="a-name-perform-a-expected-performance"><a name="perform"></a>Expected Performance</h2>
 
