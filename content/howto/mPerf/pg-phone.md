@@ -203,11 +203,13 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 
 You may be asked to wear a chest belt under your clothing for one week during the study. The chest belt records respiration data by monitoring chest movement. The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit.
 
-<img src="/img/howto/mPerf/AutoSenseChest.png">
+<img src="/img/howto/mPerf/AutoSenseBLEchest.png">
 
-To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the backle is at the front of your chest and the cables face down towards your feet as shown above. The other end of the cable should be inserted into the outer-most port on the device.
+To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the buckle is at the front of your chest and the cables face down towards your feet as shown above.
 
-<img src="/img/howto/mPerf/ASchestRIPplug.png">
+The other end of the cable should be inserted into the outer-most port on the device. The other port will not be used.
+
+<img src="/img/howto/mPerf/ASBLEplugRIP.png">
 
 #### Troubleshooting
 
