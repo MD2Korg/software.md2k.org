@@ -23,7 +23,8 @@ keywords = []
 - [How to Leave a Study](#leavestudy)
 - [How to Join a Study](#joinstudy)
 - [How to Install/Update Apps](#updateapps)
-- [How to Add/Remove a Sensor](#pairwrist)
+- [How to Add/Remove a Wrist Sensor](#pairwrist)
+- [How to Add/Remove a Chest Sensor](#pairchest)
 
 [Submit bug reports and feature requests](http://software.md2k.org/under-the-hood/feedback/)
 
@@ -305,11 +306,9 @@ Repeat these steps to install each available update. When finished, scroll throu
 
 
 
-## <a name="pairwrist"></a>How to Add/Remove a Sensor
+## <a name="pairwrist"></a>How to Add/Remove a Wrist Sensor
 
-If you need to pair, re-pair, or unpair a sensor and phone, follow the steps below using the wrist sensor as an example.
-
-**Note:** The chest sensor works the same way, only you will open the *Chest Sensor* app instead of the *Wrist Sensor* app in step 2, and you will not select Left Wrist or Right Wrist.
+If you need to pair, re-pair, or unpair a wrist sensor to the phone, follow the steps below.
 
 1)	From the main screen of the mCerebrum app, tap *Application Setup*.
 
@@ -342,3 +341,40 @@ The wrist sensor ID is printed on a label found under the strap:
 <img src="/img/howto/mPerf/leftOrRightWrist.png">
 
 5)	After selecting left or right placement, the wrist sensor ID should then appear under Configured Devices list to confirm the sensor is paired. Use the back button to return to the app.
+
+
+## <a name="pairchest"></a>How to Add/Remove a Chest Sensor
+
+If you need to pair, re-pair, or unpair a chest sensor to the phone, follow the steps below.
+
+1)	From the main screen of the mCerebrum app, tap *Application Setup*.
+
+<img src="/img/howto/mPerf/applicationSetup.png">
+
+2)	Find *Chest Sensor* in the list of applications, and tap the *settings/gear icon* under Chest Sensor. This will access the Settings screen for the chest sensor app.
+
+<img src="/img/howto/mPerf/chestGearIcon.png">
+
+**To Remove a Sensor:**
+
+3) On the Settings screen, the paired chest sensor should automatically appear in the list of Configured Devices. Tap *CHEST* to select the sensor, then tap *Delete* to unpair the sensor from the phone.
+
+<img src="/img/howto/mPerf/configuredChestDevices.png">
+
+**To Add a Sensor:**
+
+3)	On the Settings screen, the wrist sensor you wish to pair should automatically appear in the list of Available Devices as a 12-digit alphanumberic ID. Tap the ID that corresponds to the ID printed on the chest sensor.
+
+<img src="/img/howto/mPerf/availableChestDevices.png">
+
+The chest sensor ID is printed on a label found on the device:
+
+<img src="/img/howto/mPerf/wristMAC.jpg">
+
+*Note: If you do not see the ID listed under Available Devices, make sure the sensor is charged and within range of the phone. If the sensor is charged and still not appearing in the list, try restarting the phone.*
+
+4)	Once you tap the wrist sensor ID, select *Chest*.
+
+<img src="/img/howto/mPerf/selectChest.png">
+
+5)	After making the selection, the chest sensor ID should then appear under Configured Devices list to confirm the sensor is paired. Use the back button to return to the app.
