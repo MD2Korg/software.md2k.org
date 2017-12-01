@@ -237,6 +237,6 @@ The charging port for the smartphone can be found on the bottom of the phone. We
 
 <img src="/img/howto/mPerf/chargingPhone.jpg">
 
-The charging port for the chest band (optional) can be found on the side of the sensor.
+To charge the chest band (optional), place the device face down on the wireless charger. You will see blue LED lights appear around the ring of the charger to confirm the chest band is charging. 
 
-<img src="/img/howto/mPerf/chargingChest.jpg">
+<img src="/img/howto/mPerf/chargingASBLE.png">
