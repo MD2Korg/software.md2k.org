@@ -371,7 +371,7 @@ If you need to pair, re-pair, or unpair a chest sensor to the phone, follow the 
 
 The chest sensor ID is printed on a label found on the device:
 
-<img src="/img/howto/mPerf/chestMAC.jpg">
+<img src="/img/howto/mPerf/chestMAC.png">
 
 *Note: If you do not see the ID listed under Available Devices, make sure the sensor is charged and within range of the phone. If the sensor is charged and still not appearing in the list, try restarting the phone.*
 
