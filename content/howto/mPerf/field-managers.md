@@ -79,7 +79,7 @@ The chest belt records respiration data by monitoring chest movement. The blue c
 
 To the immediate left and right of the buckle you should see two black ports where the black cables can be plugged in. Position the belt so that the buckle is at the front of your chest and the cables face down towards your feet as shown above.
 
-The other end of the cable should be inserted into the outer-most port on the device. The other port will not be used. 
+The other end of the cable should be inserted into the outer-most port on the device. The other port will not be used.
 
 <img src="/img/howto/mPerf/ASBLEplugRIP.png">
 
@@ -334,7 +334,7 @@ If you need to pair, re-pair, or unpair a wrist sensor to the phone, follow the 
 
 The wrist sensor ID is printed on a label found under the strap:
 
-<img src="/img/howto/mPerf/chestMAC.jpg">
+<img src="/img/howto/mPerf/wristMAC.jpg">
 
 *Note: If you do not see the ID listed under Available Devices, make sure the sensor is charged and within range of the phone. If the sensor is charged and still not appearing in the list, try restarting the phone.*
 
@@ -371,7 +371,7 @@ If you need to pair, re-pair, or unpair a chest sensor to the phone, follow the 
 
 The chest sensor ID is printed on a label found on the device:
 
-<img src="/img/howto/mPerf/wristMAC.jpg">
+<img src="/img/howto/mPerf/chestMAC.jpg">
 
 *Note: If you do not see the ID listed under Available Devices, make sure the sensor is charged and within range of the phone. If the sensor is charged and still not appearing in the list, try restarting the phone.*
 
