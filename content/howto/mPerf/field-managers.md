@@ -239,7 +239,7 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 <img src="/img/howto/mPerf/mPerfAnnotationScreen.png">
 
 
-## <a name="leavestudy"></a>How to Leave/Join a Study
+## <a name="leavestudy"></a>How to Leave a Study
 
 1) First open the mCerebrum app (by tapping the mCerebrum icon on the home screen or by tapping *Settings* in the mPerf app menu found in the upper-left corner).
 
