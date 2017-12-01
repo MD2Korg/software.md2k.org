@@ -332,7 +332,7 @@ If you need to pair, re-pair, or unpair a wrist sensor to the phone, follow the 
 
 The wrist sensor ID is printed on a label found under the strap:
 
-<img src="/img/howto/mPerf/wristMAC.jpg">
+<img src="/img/howto/mPerf/chestMAC.jpg">
 
 *Note: If you do not see the ID listed under Available Devices, make sure the sensor is charged and within range of the phone. If the sensor is charged and still not appearing in the list, try restarting the phone.*
 
