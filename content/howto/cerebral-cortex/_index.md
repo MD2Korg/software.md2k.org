@@ -10,44 +10,101 @@ keywords = []
  - [Installation Instructions](#install)
  - [Expected performance](#perform)
 
+## Option 1: Virtual machine
+
+* Download and install [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
+* Download the Cerebral Cortex virtual machine image: [here](http://)
+
+The virtual machine exposes port 80/443 to the outside world you will need your
+machines IP address or dns name before proceeding
+
+
+### Accounts and Passwords
+* root/cerebralcortex
+* cerebralcortex/md2k
 
 ## <a name="req"></a>Requirements
-Linux node(s) running CentOS 7.2+
+* Linux platform (CentOS 7.2+ or Ubuntu 17.04+)
+
+## <a name="install"></a>Testing out Cerebral Cortex
+
+### Docker
+* Install [Docker](https://docs.docker.com/engine/installation/) and
+[Docker-Compose](https://docs.docker.com/compose/install/)
 
 
-## <a name="install"></a>Installation Instructions
-Install CentOS 7.2 on all systems
+### Code Repositories
+Create a folder `cerebralcortex` in you user directory and clone the following repositories into it
 
-Install mysql on the head node
+```
+git clone https://github.com/MD2Korg/CerebralCortex-DockerCompose
+git clone https://github.com/MD2Korg/CerebralCortex-2.0
+git clone https://github.com/MD2Korg/CerebralCortex-APIServer
+```
 
-Create a dedicated user and associated password
+### Modifying the configuration for your machines
+Docker-Compose does not provide a good way to abstract away the configuration of
+IP addresses and the files must be modified based on your machine.
 
-Install influxdb on the head node
+* foo
+* bar
+* ...
 
-Install cassandra on all nodes
 
-Modify the configuration to tell Cassandra to utilize appropriate storage mounts
+### Building Docker Images
+Docker will download and build a number of images that Cerebral Cortex leverages.  To do this:
 
-Increase cassandra batch_size_fail_threshold_in_kb: to 1024 and batch-size_warn_threshold_in_kb: to 512
+```
+cd CerebralCortex-DockerCompose
+docker-compose pull
+docker-compose build
+```
 
-Install Apache Spark 2.2.0 on all nodes
+Once this process completes, all the containers are ready to go for testing the system.
 
-Configuration spark to run as as a standalone cluster
+### Running a Docker-based system
+To startup Cerebral Cortex and see all the system logs.
+```
+docker-compose up
+```
 
-Export share RAID array from head node to worker nodes as /cerebralcortex
+If you want to run the system in the background so that you can logout of a session or terminal.
+```
+docker-compose up -d
+```
 
-Install Docker on head node
+and to see the logs as necessary
+```
+docker-compose logs -f
 
-Configure firewall to allow flexible Docker container communications (See docker-compose.yml)
+...
+SOMETHING HERE
+...
+```
 
-Docker images
+### Ensuring Cerebral Cortex is functional
 
-Clone
+```
+docker-compose ps
 
-CerebralCortex-DockerCompose
+Name                    Command               State                                      Ports
+---------------------------------------------------------------------------------------------------------------------------------------
+md2k-api-server   /entrypoint.sh /usr/bin/su ...   Up      443/tcp, 80/tcp
+md2k-cassandra    /bootstrap.sh cassandra -f       Up      7000/tcp, 7001/tcp, 7199/tcp, 0.0.0.0:9042->9042/tcp, 0.0.0.0:9160->9160/tcp
+md2k-grafana      /run.sh                          Up      0.0.0.0:3000->3000/tcp
+md2k-influxdb     /entrypoint.sh influxd           Up      0.0.0.0:8086->8086/tcp
+md2k-jupyterhub   jupyterhub --no-ssl --conf ...   Up
+md2k-kafka        start-kafka.sh                   Up      0.0.0.0:9092->9092/tcp
+md2k-minio        /usr/bin/docker-entrypoint ...   Up      0.0.0.0:9000->9000/tcp
+md2k-mysql        docker-entrypoint.sh mysqld      Up      0.0.0.0:3306->3306/tcp
+md2k-nginx        nginx -g daemon off;             Up      0.0.0.0:443->443/tcp, 0.0.0.0:80->80/tcp
+md2k-zookeeper    /bin/sh -c /usr/sbin/sshd  ...   Up      0.0.0.0:2181->2181/tcp, 22/tcp, 2888/tcp, 3888/tcp
+```
+This command shows the status of the currently running containers and how each
+exposes ports, which are configured for a develoment and testing setup and not
+production enviornments.
 
-CerebralCortex-APIServer
 
-CerebralCortex-KafkaSparkStreaming
+
 
 ## <a name="perform"></a>Expected Performance
