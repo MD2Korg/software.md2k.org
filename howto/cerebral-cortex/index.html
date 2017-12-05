@@ -202,45 +202,111 @@
 <li><a href="#perform">Expected performance</a></li>
 </ul>
 
+<h2 id="option-1-virtual-machine">Option 1: Virtual machine</h2>
+
+<ul>
+<li>Download and install <a href="https://www.virtualbox.org/wiki/Downloads">Virtual Box</a></li>
+<li>Download the Cerebral Cortex virtual machine image: <a href="http://">here</a></li>
+</ul>
+
+<p>The virtual machine exposes port <sup>80</sup>&frasl;<sub>443</sub> to the outside world you will need your
+machines IP address or dns name before proceeding</p>
+
+<h3 id="accounts-and-passwords">Accounts and Passwords</h3>
+
+<ul>
+<li>root/cerebralcortex</li>
+<li>cerebralcortex/md2k</li>
+</ul>
+
 <h2 id="a-name-req-a-requirements"><a name="req"></a>Requirements</h2>
 
-<p>Linux node(s) running CentOS 7.2+</p>
+<ul>
+<li>Linux platform (CentOS 7.2+ or Ubuntu 17.04+)</li>
+</ul>
 
-<h2 id="a-name-install-a-installation-instructions"><a name="install"></a>Installation Instructions</h2>
+<h2 id="a-name-install-a-testing-out-cerebral-cortex"><a name="install"></a>Testing out Cerebral Cortex</h2>
 
-<p>Install CentOS 7.2 on all systems</p>
+<h3 id="docker">Docker</h3>
 
-<p>Install mysql on the head node</p>
+<ul>
+<li>Install <a href="https://docs.docker.com/engine/installation/">Docker</a> and
+<a href="https://docs.docker.com/compose/install/">Docker-Compose</a></li>
+</ul>
 
-<p>Create a dedicated user and associated password</p>
+<h3 id="code-repositories">Code Repositories</h3>
 
-<p>Install influxdb on the head node</p>
+<p>Create a folder <code>cerebralcortex</code> in you user directory and clone the following repositories into it</p>
 
-<p>Install cassandra on all nodes</p>
+<pre><code>git clone https://github.com/MD2Korg/CerebralCortex-DockerCompose
+git clone https://github.com/MD2Korg/CerebralCortex-2.0
+git clone https://github.com/MD2Korg/CerebralCortex-APIServer
+</code></pre>
 
-<p>Modify the configuration to tell Cassandra to utilize appropriate storage mounts</p>
+<h3 id="modifying-the-configuration-for-your-machines">Modifying the configuration for your machines</h3>
 
-<p>Increase cassandra batch_size_fail_threshold_in_kb: to 1024 and batch-size_warn_threshold_in_kb: to 512</p>
+<p>Docker-Compose does not provide a good way to abstract away the configuration of
+IP addresses and the files must be modified based on your machine.</p>
 
-<p>Install Apache Spark 2.2.0 on all nodes</p>
+<ul>
+<li>foo</li>
+<li>bar</li>
+<li>&hellip;</li>
+</ul>
 
-<p>Configuration spark to run as as a standalone cluster</p>
+<h3 id="building-docker-images">Building Docker Images</h3>
 
-<p>Export share RAID array from head node to worker nodes as /cerebralcortex</p>
+<p>Docker will download and build a number of images that Cerebral Cortex leverages.  To do this:</p>
 
-<p>Install Docker on head node</p>
+<pre><code>cd CerebralCortex-DockerCompose
+docker-compose pull
+docker-compose build
+</code></pre>
 
-<p>Configure firewall to allow flexible Docker container communications (See docker-compose.yml)</p>
+<p>Once this process completes, all the containers are ready to go for testing the system.</p>
 
-<p>Docker images</p>
+<h3 id="running-a-docker-based-system">Running a Docker-based system</h3>
 
-<p>Clone</p>
+<p>To startup Cerebral Cortex and see all the system logs.</p>
 
-<p>CerebralCortex-DockerCompose</p>
+<pre><code>docker-compose up
+</code></pre>
 
-<p>CerebralCortex-APIServer</p>
+<p>If you want to run the system in the background so that you can logout of a session or terminal.</p>
 
-<p>CerebralCortex-KafkaSparkStreaming</p>
+<pre><code>docker-compose up -d
+</code></pre>
+
+<p>and to see the logs as necessary</p>
+
+<pre><code>docker-compose logs -f
+
+...
+SOMETHING HERE
+...
+</code></pre>
+
+<h3 id="ensuring-cerebral-cortex-is-functional">Ensuring Cerebral Cortex is functional</h3>
+
+<pre><code>docker-compose ps
+
+Name                    Command               State                                      Ports
+---------------------------------------------------------------------------------------------------------------------------------------
+md2k-api-server   /entrypoint.sh /usr/bin/su ...   Up      443/tcp, 80/tcp
+md2k-cassandra    /bootstrap.sh cassandra -f       Up      7000/tcp, 7001/tcp, 7199/tcp, 0.0.0.0:9042-&gt;9042/tcp, 0.0.0.0:9160-&gt;9160/tcp
+md2k-grafana      /run.sh                          Up      0.0.0.0:3000-&gt;3000/tcp
+md2k-influxdb     /entrypoint.sh influxd           Up      0.0.0.0:8086-&gt;8086/tcp
+md2k-jupyterhub   jupyterhub --no-ssl --conf ...   Up
+md2k-kafka        start-kafka.sh                   Up      0.0.0.0:9092-&gt;9092/tcp
+md2k-minio        /usr/bin/docker-entrypoint ...   Up      0.0.0.0:9000-&gt;9000/tcp
+md2k-mysql        docker-entrypoint.sh mysqld      Up      0.0.0.0:3306-&gt;3306/tcp
+md2k-nginx        nginx -g daemon off;             Up      0.0.0.0:443-&gt;443/tcp, 0.0.0.0:80-&gt;80/tcp
+md2k-zookeeper    /bin/sh -c /usr/sbin/sshd  ...   Up      0.0.0.0:2181-&gt;2181/tcp, 22/tcp, 2888/tcp, 3888/tcp
+</code></pre>
+
+<p>This command shows the status of the currently running containers and how each
+exposes ports, which are configured for a develoment and testing setup and not
+production enviornments.</p>
 
 <h2 id="a-name-perform-a-expected-performance"><a name="perform"></a>Expected Performance</h2>
 
