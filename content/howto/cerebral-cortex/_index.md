@@ -23,8 +23,13 @@ machines IP address or dns name before proceeding
 * root/cerebralcortex
 * cerebralcortex/md2k
 
+
+
 ## <a name="req"></a>Requirements
 * Linux platform (CentOS 7.2+ or Ubuntu 17.04+)
+* 16+ GB of RAM
+* ??? CPU
+
 
 ## <a name="install"></a>Testing out Cerebral Cortex
 
@@ -37,6 +42,8 @@ machines IP address or dns name before proceeding
 Create a folder `cerebralcortex` in you user directory and clone the following repositories into it
 
 ```
+cd cerebralcortex
+
 git clone https://github.com/MD2Korg/CerebralCortex-DockerCompose
 git clone https://github.com/MD2Korg/CerebralCortex-2.0
 git clone https://github.com/MD2Korg/CerebralCortex-APIServer
