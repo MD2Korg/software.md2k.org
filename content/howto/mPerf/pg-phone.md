@@ -18,6 +18,7 @@ keywords = []
     - [Workplace Annotation](#annotation)
 - [Chest Belt (optional)](#chestbelt)
 - [How to Charge the Devices](#charging)
+- [How to Uninstall Apps After Completing the Study](#uninstall)
 
 ## <a name="whattodo"></a>What to Do Each Day
 
@@ -237,6 +238,32 @@ The charging port for the smartphone can be found on the bottom of the phone. We
 
 <img src="/img/howto/mPerf/chargingPhone.jpg">
 
-To charge the chest band (optional), place the device face down on the wireless charger. You will see blue LED lights appear around the ring of the charger to confirm the chest band is charging. 
+To charge the chest band (optional), place the device face down on the wireless charger. You will see blue LED lights appear around the ring of the charger to confirm the chest band is charging.
 
 <img src="/img/howto/mPerf/chargingASBLE.png">
+
+
+## <a name="uninstall"></a>How to Uninstall Apps After Completing the Study
+
+**NOTE: Only perform these steps once you have completed the study. This will permanently remove all mPerf applications from your phone.**
+
+Once you are finished collecting data and ready to leave the study, you may uninstall the following apps from your phone:
+
+- Alertness Sensing Framework
+- AutoSenseBLE
+- Beacon
+- DataKit
+- mCerebrum
+- MotionSense
+- mPerf Study
+- PhoneSensor
+
+<img src="/img/howto/mPerf/mPerfAppIcons.png">
+
+To uninstall each app, follow the steps below:
+
+<img src="/img/howto/mPerf/uninstallApp.gif">
+
+1) *Tap and hold* the app icon.
+
+2) When the drop-down menu appears, tap the *Uninstall* button. 
