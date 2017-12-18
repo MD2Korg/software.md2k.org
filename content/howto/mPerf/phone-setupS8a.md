@@ -121,7 +121,7 @@ To adjust the device protection features on your phone:
 **DO NOT** disable or uninstall any of the following apps:
 
 - Alertness Sensing Framework
-- AutoSense
+- AutoSenseBLE
 - Beacon
 - DataKit
 - mCerebrum
