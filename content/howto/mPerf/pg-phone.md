@@ -266,4 +266,12 @@ To uninstall each app, follow the steps below:
 
 1) *Tap and hold* the app icon.
 
-2) When the drop-down menu appears, tap the *Uninstall* button. 
+2) When the drop-down menu appears, tap the *Uninstall* button.
+
+3) Tap *OK* to confirm.
+
+4) When the app is uninstalled, the icon will be removed and this notifcation will appear to confirm the uninstallation is complete.
+
+<img src="/img/howto/mPerf/uninstallFinished.png">
+
+5) Repeat these steps for each app until all mPerf applications are removed from the phone.
