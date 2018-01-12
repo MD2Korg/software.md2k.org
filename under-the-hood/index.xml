@@ -28,10 +28,9 @@ What can I help with We try to keep all open issues for MD2K software on Pivotal
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/under-the-hood/feedback/</guid>
-      <description>Please provide as many details as possible when reporting bugs or other feedback.
-For a list of current activities and all outstanding issues please see the issue tracker
- Feedback Form Choose the type of feedback you are submitting Bug Report   Feature Request     Short Description   Details    Submitter    Submit Feedback     
-  $(document).</description>
+      <description>For support requests, please email support@md2korg.atlassian.net
+If you want to report a bug, submit a feature request, or comment on ongoing issues, please sign up or login here.
+For a list of current activities and all outstanding issues please see the mCerebrum Issue Tracker or Cerebral Cortex Issue Tracker</description>
     </item>
     
     <item>
