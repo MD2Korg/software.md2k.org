@@ -31,6 +31,7 @@ keywords = []
 ## <a name="wristsensors"></a>Wrist Sensors
 
 #### How to Use
+<iframe src="https://www.youtube.com/embed/cGplgQocoJw" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Wear the wrist sensors as you would wear a watch or FitBit. The sensors should be worn snuggly on each wrist with the charging port pointed away from your hand as shown. The buckle is marked L or R to indicate left wrist or right wrist. Please be sure to wear each sensor on the correct wrist.
 
@@ -201,6 +202,7 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 ## <a name="chestbelt"></a>Chest Belt (optional)
 
 #### How to Use
+<iframe src="https://www.youtube.com/embed/7t95LN0sHVE" width="280" height="157" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 You may be asked to wear a chest belt under your clothing for one week during the study. The chest belt records respiration data by monitoring chest movement. The blue chest band has a buckle that snaps together and holds it to your chest. It can be adjusted to fit your body for a pretty snug fit.
 
