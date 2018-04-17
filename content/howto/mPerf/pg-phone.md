@@ -217,13 +217,13 @@ The other end of the cable should be inserted into the outer-most port on the de
 
 <img src="/img/howto/mPerf/ASBLEplugRIP.png">
 
-<img src="/img/howto/mPerf/chestMP1.png">
+<img src="/img/howto/mPerf/chestMP1.jpg">
 
-<img src="/img/howto/mPerf/chestMP2.png">
+<img src="/img/howto/mPerf/chestMP2.jpg">
 
-<img src="/img/howto/mPerf/chestMP3.png">
+<img src="/img/howto/mPerf/chestMP3.jpg">
 
-<img src="/img/howto/mPerf/chestMP4.png">
+<img src="/img/howto/mPerf/chestMP4.jpg">
 
 #### Troubleshooting
 
