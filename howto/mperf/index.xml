@@ -45,7 +45,7 @@ IMPORTANT NOTE: The data files that are recorded by the phone are one hour in le
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/howto/mperf/pg/</guid>
-      <description>Devices You Will Wear and Carry Wrist Sensors  Motionsense HRV Wrist Sensor    These wrist sensors are very much like smart watches or FitBits. (You may still wear a FitBit or other activity trackers or watches alongside the study-provided sensors.) These wrist sensors gather data from your wrist/arm movements and transmit it via Bluetooth to the cell phone. If the wrist sensor is malfunctioning, please contact the Field Manager to get a replacement as soon as possible.</description>
+      <description>Devices You Will Wear and Carry Wrist Sensors   Motionsense HRV Wrist Sensor    These wrist sensors are very much like smart watches or FitBits. (You may still wear a FitBit or other activity trackers or watches alongside the study-provided sensors.) These wrist sensors gather data from your wrist/arm movements and transmit it via Bluetooth to the cell phone. If the wrist sensor is malfunctioning, please contact the Field Manager to get a replacement as soon as possible.</description>
     </item>
     
     <item>
@@ -84,7 +84,7 @@ If Smart Switch is unavailable, follow these steps:  If you use Gmail, Google Ca
       
       <guid>http://software.md2k.org/howto/mperf/sensors/</guid>
       <description>Sensors The mCerebrum software platform is configurable for a wide variety of mobile and wearable sensors. This page shows an overview of the sensors currently integrated with the software for the mPerf project.
-Motionsense HRV Wrist Sensor  Motionsense HRV Wrist Sensor   Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth.</description>
+Motionsense HRV Wrist Sensor   Motionsense HRV Wrist Sensor   Motionsense HRV is a wearable wrist sensor that integrates accelerometer, gyroscope, and magnetometer measurements. This can be used to track hand gestures and monitor activities such as smoking, eating, and brushing teeth.</description>
     </item>
     
     <item>

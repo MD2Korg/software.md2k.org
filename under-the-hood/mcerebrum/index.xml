@@ -17,7 +17,7 @@
       
       <guid>http://software.md2k.org/under-the-hood/mcerebrum/architecture/</guid>
       <description>To achieve our goal of high-rate streaming data collection, logging, real-time processing, and intervention, we built a flexible, layered architecture.
-  Architecture Overview  mCerebrum overview illustrating how high-frequency data, 800&amp;#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.   mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform.</description>
+   Architecture Overview  mCerebrum overview illustrating how high-frequency data, 800&amp;#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement.   mCerebrum supports high-frequency raw sensor data collection in excess of 800 Hz or 70+ million samples/day, along with their curation, analysis, storage (2GB/day), and secure uploads to a cloud platform.</description>
     </item>
     
   </channel>

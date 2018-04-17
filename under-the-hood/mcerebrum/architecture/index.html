@@ -17,7 +17,7 @@
   <meta name="description" content="Details about the software architecture, design, and developer-oriented interfaces">
   
 
-  <meta name="generator" content="Hugo 0.37-DEV" />
+  <meta name="generator" content="Hugo 0.40-DEV" />
 
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
 
@@ -202,7 +202,7 @@
 <p>To achieve our goal of high-rate streaming data collection, logging, real-time processing, and intervention, we built a flexible, layered architecture.</p>
 
 <p>
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/mc_overview.png" alt="mCerebrum overview illustrating how high-frequency data, 800&#43; Hz, is processed and includes components for real-time data quality assessment, privacy, model evaluation, biomarker computation, and triggered user engagement." />
     
@@ -246,7 +246,7 @@ Reliable storage of quickly growing volume of sensor data, whose archival is cri
 </ol>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/mCerebrum_paper.png" alt="mCerebrum&#39;s architecture consists of 5 layers: (1) Communication, (2) Data Sources, (3) Storage, (4) Signal Processing, and (4) Participant Interaction, all connected through a data router. The colors indicate different categorizations of applications with red for high-rate and orange for low-rate sensors, blue indicates core components of mSense, cyan for system services, and green represents participant-centric applications." />
     
@@ -415,7 +415,7 @@ A data point value can be composed of any of the following: <em>boolean</em>, <e
 <p>Smartphone resource constraints make communication efficiency crucial to handling high-frequency data.  Android runs applications as separate processes for security and quality-of-service reasons; however, this introduces the need for inter-process communication (IPC) which is provided through three different mechanisms: <em>Intents</em>, which are implemented as a message forwarding system but suffers from performance issues with high-frequency data due to high resource utilization and latency; <em>anonymous shared memory</em>, is only suitable for sharing small amounts of data due to its dependence on mutually accessible RAM; and <em>Binder</em>, is a Remote Procedure Call (RPC) mechanism that allows for callback methods to be defined and is utilized by mCerebrum.  The Binder mechanism has a shared system transaction buffer of 1MB and it is critical that serialization, processing, and communications related to the Binder mechanism be as efficient as possible to ensure the buffer does not overflow.  An initial attempt at utilizing RPC to route data through the system resulted in an overflow of this buffer due to too many outstanding transactions when we sent unique requests for each data point. To resolve this overflow, a data buffer was introduced for high-frequency data streams inside DataKitAPI to ensure that each application receives data in the correct order and it automatically buffers data as appropriate to meet performance requirements.</p>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/flexibility.png" alt="Each platform is represented by an arrow illustrating the bandwidth of the platform and extending right showing flexibility of data representation starting at the number of core data types supported." />
     
@@ -445,7 +445,7 @@ In summary, mCerebrum provides data representations that result in both high-thr
 <p>Wearable sensors are still in early stages of data standardization. Some commercial devices such as Microsoft Band or Zephyr Bioharness provide APIs to send and receive data in well-understood formats. However, in other cases, devices send raw data directly from the sensors and require further interpretation based on their specifications. Depending upon the radio technology and API implementation, data could arrive in blocks associated with a single timestamp or samples cold be timestamped individually.</p>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/Data_Sources_paper.png" alt="mCerebrum supports sensors ranging from 2 samples/day to 300 Hz per device including: BLE (green), Bluetooth 4.0 (red), ANT&#43; (orange), and internal (yellow).  Additionally, it support short audio and video clips with a high data rate storage mechanism." />
     
@@ -518,7 +518,7 @@ mCerebrum supports a variety of external and internal sensors including:</p>
 <p>To address the specific requirements of mobile sensor data workloads, we have developed a custom log-structured storage layer called <em>Pebbles</em>, which is optimized for high-frequency append-only writes of data arriving in batch or record streams. Pebbles also provides transparent data sync, allowing applications to offload data to the cloud for further processing and data archive. On the mobile device, data is stored in a circular log to maximize the throughput of flash memory. To support fast queries, Pebbles maintains a lightweight index on a logical timestamp and topic, which is used to identify data streams.</p>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/pebbles.png" alt="Maximum write throughput of SQLite and Pebbles when varying the write size." />
     
@@ -572,7 +572,7 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 <p>Sharing and processing data as they arrive in real-time increases both the system and communication load due to the maximum bandwidth and maximum buffer size limits for Inter-Process Communication (IPC) that are used to share data and intermediate results among the data sources and requesting applications.</p>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/freq_cpu_new.png" alt="The effect of micro-batch latency on DataKit&#39;s communication bandwidth and CPU usage. We observe that with no latency, communication bandwidth is limited by bandwidth limits of IPC, while at higher latency, bandwidth is limited by the buffer size limits of IPC." />
     
@@ -597,7 +597,7 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 <h4 id="effects-of-buffer-size-on-system-load">Effects of Buffer Size on System Load</h4>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/table_batch_size.png" alt="Measurements (seconds) normalized to  60 second iterations for CPU time decrease as the buffer size is increased from 30 to 300 seconds.  0.34 seconds (17%) can be saved through buffering; however, it comes with an increase in memory load (156%). " />
     
@@ -634,7 +634,7 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 <h3 id="quantifying-the-benefits-of-computation-reuse-a-case-study">Quantifying the Benefits of Computation Reuse &mdash; A Case Study</h3>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/Venn.png" alt="Features are shared among various biomarker computation algorithms, allowing for computation reuse." />
     
@@ -655,7 +655,7 @@ Due to the QoS constraints from the OS, we find that our applications are the ty
 <p>To analyze the effect of computation reuse, we created a single app for detecting smoking, stress, activity, and eating, and additional apps isolating the individual biomarker computations. The applications were run simultaneously to measure CPU and memory load and once again with computation sharing enabled. This figure shows the features that are shared among these four biomarker computations. For example, respiration data is used for both smoking detection and stress detection, allowing preprocessing and many feature calculations to be shared resulting in lower CPU and memory utilization.</p>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/time_mem.png" alt="The effects of computation reuse on CPU and memory efficiency.  The first columns show the CPU time and memory usage when computing four biomarkers, Smoking, Stress, Eating, and Activity, independently without sharing computation between the algorithms. For this example, a reduction of 27% CPU time and 47% memory is achieved through this reuse, as shown in the second columns." />
     
@@ -708,7 +708,7 @@ Of these, prompted inputs and interventions represent interruptions to the parti
 <h3 id="burden-and-context-aware-ema-emi-scheduling">Burden- and Context-aware EMA/EMI Scheduling</h3>
 
 
-<figure >
+<figure>
     
         <img src="/img/under-the-hood/mcerebrum/Bipartite.png" alt="A bipartite graph design of EMA/EMI scheduler. Boxes on left side show the inputs to the actions/controllers on the right, which prompt the participants. Feedback is accomplished by examining the conditions surrounding the participant response and passed back to key input blocks." />
     
