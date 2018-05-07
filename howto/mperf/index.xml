@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Study: Admin</title>
+      <link>http://software.md2k.org/howto/mperf/lab-study-managers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://software.md2k.org/howto/mperf/lab-study-managers/</guid>
+      <description>Overview When a participant is finished with the study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
+IMPORTANT NOTE: The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour.</description>
+    </item>
+    
+    <item>
       <title>mPerf AT&amp;T Phone Setup</title>
       <link>http://software.md2k.org/howto/mperf/phone-setups8a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -18,16 +28,6 @@
       <guid>http://software.md2k.org/howto/mperf/phone-setups8a/</guid>
       <description>Contents  Connecting to a WiFi Network Migrating From Your Old Phone Changing the Default Language Setting Up Your Google Account Setting Up Your Work or Personal Email Adjusting Device Protection Features Which Apps Are Needed? Which Utilities Are Needed? Backing Up Files From Your Phone Adjusting Date and Time  Connecting to a WiFi Network To access WiFi settings:
 1) Open the Settings app by tapping the Settings icon.</description>
-    </item>
-    
-    <item>
-      <title>mPerf Lab Study: Admin</title>
-      <link>http://software.md2k.org/howto/mperf/lab-study-managers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://software.md2k.org/howto/mperf/lab-study-managers/</guid>
-      <description>Overview When a participant is finished with the lab study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
-IMPORTANT NOTE: The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour.</description>
     </item>
     
     <item>
