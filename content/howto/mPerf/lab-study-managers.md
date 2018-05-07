@@ -28,11 +28,11 @@ When a participant is finished with the study, please complete the following ste
 
 <img src="/img/howto/mPerf/applicationSetup.png">
 
-2) Find *Storage* in the list of applications, and tap the green *play* button to open the Storage/DataKit app. 
+2) Find *Storage* in the list of applications, and tap the green *play* button to open the Storage/DataKit app.
 
 <img src="/img/howto/mPerf/clearStorage.png">
 
-**NOTE:** If applicable to your study, you will need to remove the GPS restrictions from the data stream before uploading. Do do this, tap the settings gear icon found in the upper-right corner of the app. Select *Upload Data* to open the Upload Data menu, then uncheck the *Location* box under *Restricted Data Stream*.
+**NOTE:** If applicable to your study, you will need to remove the GPS restrictions from the data stream before uploading. Do do this, tap the settings gear icon found in the upper-right corner of the app. Select *Upload Data* to open the Upload Data menu, then uncheck the *Location* box under *Restricted Data Stream*. Then tap *Save* to save your changes, then *Close* to return to the app.
 
 <img src="/img/howto/mPerf/restrictedDataUncheck.png">
 
@@ -44,7 +44,7 @@ When a participant is finished with the study, please complete the following ste
 
 <img src="/img/howto/mPerf/DatakitUploadComplete.png">
 
-**NOTE:** If applicable to your study, be sure to access the settings menu and re-check the *Location* box under *Restricted Data Stream* to enable GPS restrictions. This should be done after data upload is complete.
+**NOTE:** If applicable to your study, be sure to access the settings menu and re-check the *Location* box under *Restricted Data Stream* to enable GPS restrictions. Then tap *Save* to save your changes. This should be done after data upload is complete.
 
 <img src="/img/howto/mPerf/restrictedDataChecked.png">
 
