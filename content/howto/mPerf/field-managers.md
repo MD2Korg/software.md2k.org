@@ -21,6 +21,7 @@ keywords = []
       - [Fitness and Work Duration Tracking](#fitnessandwork)
       - [Workplace Annotation](#annotation)
 - [How to Leave a Study](#leavestudy)
+- [How to Clear the Database](#clearDB)
 - [How to Join a Study](#joinstudy)
 - [How to Install/Update Apps](#updateapps)
 - [How to Add/Remove a Wrist Sensor](#pairwrist)
@@ -249,7 +250,7 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 
 ## <a name="leavestudy"></a>How to Leave a Study
 
-1) First open the mCerebrum app (by tapping the mCerebrum icon on the home screen or by tapping *Settings* in the mPerf app menu found in the upper-left corner).
+1) First open the mCerebrum app (by tapping the mCerebrum icon on the home screen or by tapping *Settings* in the study app menu found in the upper-left corner).
 
 <img src="/img/howto/mPerf/mCerebrumAppHome.png">
 
@@ -265,6 +266,22 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 
 <img src="/img/howto/mPerf/leaveStudyConfirm.png">
 
+## <a name="clearDB"></a>How to Clear the Database
+
+Once you have left the study, ensure all participant data is deleted by clearing the database storage.
+
+1) From the main screen of the mCerebrum app, tap *Application Setup*.
+
+<img src="/img/howto/mPerf/applicationSetup.png">
+
+2) Find *Storage* in the list of applications, and tap the red *delete* button.
+
+<img src="/img/howto/mPerf/clearStorage.png">
+
+3) Tap *Yes* to confirm.
+
+<img src="/img/howto/mPerf/clearStorage2.png">
+
 
 ## <a name="joinstudy"></a>How to Join a Study
 
@@ -274,7 +291,7 @@ Note: If you are currently logged into a study, you must first leave the study b
 
 <img src="/img/howto/mPerf/click2join.png">
 
-2) When prompted, enter the appropraite User ID and password for the user and tap *Login*.
+2) When prompted, enter the appropriate User ID and password for the user and tap *Login*.
 
 3) Select the appropriate config file from the list.
 
