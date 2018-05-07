@@ -110,7 +110,7 @@ When a participant is finished with the study, please complete the following ste
 
 <img src="/img/howto/mPerf/applicationSetup.png">
 
-2) Find the Storage app in the list, and tap the Clear logo (red minus sign) to clear all data from Storage.
+2) Find the Storage app in the list, and tap the *Delete* icon (red minus sign) to clear all data from Storage.
 
 <img src="/img/howto/mPerf/storageMinus.png">
 
