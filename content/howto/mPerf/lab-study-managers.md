@@ -51,11 +51,9 @@ When a participant is finished with the study, please complete the following ste
 
 ## <a name="stopping"></a>Stop Data Collection
 
-1) Open the mPerf Study app.
+1) Open the mCerebrum Study app.
 
-<img src="/img/howto/mPerf/mPerfStudyIcon.png">
-
-2) In the mPerf Study app, open the menu found in the upper-left corner.
+2) In the Study app, open the menu found in the upper-left corner.
 
 <img src="/img/howto/mPerf/menuIcon.png">
 
@@ -89,7 +87,7 @@ When a participant is finished with the study, please complete the following ste
 
 #### Leave the study:
 
-1) First open the mCerebrum app (by tapping the mCerebrum icon on the home screen or by tapping *Settings* in the mPerf app menu found in the upper-left corner).
+1) First open the mCerebrum app (by tapping the mCerebrum icon on the home screen or by tapping *Settings* in the Study app menu found in the upper-left corner).
 
 <img src="/img/howto/mPerf/mCerebrumAppHome.png">
 
