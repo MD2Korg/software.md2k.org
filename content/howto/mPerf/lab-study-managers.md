@@ -28,7 +28,7 @@ When a participant is finished with the study, please complete the following ste
 
 <img src="/img/howto/mPerf/applicationSetup.png">
 
-2) Find *Storage* in the list of applications, and tap the green *play* button to open the Storage/DataKit app.
+2) Find *Storage* in the list of applications, and tap the green *play* button to open the Storage/DataKit app. 
 
 <img src="/img/howto/mPerf/clearStorage.png">
 
