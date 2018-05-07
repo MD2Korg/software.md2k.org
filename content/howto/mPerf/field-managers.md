@@ -266,6 +266,7 @@ Tap the Workplace Annotation button (found in the mPerf menu in the top-left cor
 
 <img src="/img/howto/mPerf/leaveStudyConfirm.png">
 
+
 ## <a name="clearDB"></a>How to Clear the Database
 
 Once you have left the study, ensure all participant data is deleted by clearing the database storage.

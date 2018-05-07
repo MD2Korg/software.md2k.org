@@ -1,15 +1,15 @@
 +++
-title = "mPerf Lab Study: Admin"
-description = "Details for mPerf Admins and Field Managers about saving participants' data from a lab study"
+title = "Study: Admin"
+description = "Details about saving participants' data from a study"
 keywords = []
 +++
 
 
 # Overview
 
-When a participant is finished with the lab study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
+When a participant is finished with the study, please complete the following steps to sync the data to the cloud, shut down all applications, back up the data on a computer, and prepare the phone for the next participant.
 
-**IMPORTANT NOTE:** The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour. (E.g., midnight, 1:00, 2:00—22:00, 23:00, etc.). This means the lab team will have to **wait until the top of the hour AFTER completing a participant** (e.g., regardless if they are done at 14:01, 14:30, or 14:59, they must wait until 15:00 to sync data to the cloud).
+**IMPORTANT NOTE:** The data files that are recorded by the phone are one hour in length before they are completed and a new file is started. This takes place at the top of every hour. (E.g., midnight, 1:00, 2:00—22:00, 23:00, etc.). This means you should **wait until the top of the hour AFTER completing a participant** (e.g., regardless if they are done at 14:01, 14:30, or 14:59, they must wait until 15:00 to sync data to the cloud).
 
 # Contents
 
@@ -24,17 +24,29 @@ When a participant is finished with the lab study, please complete the following
 
 ## <a name="syncing"></a>Sync Data to the Cloud
 
-1) Open the DataKit app from the phone's home screen.
+1) From the main screen of the mCerebrum app, tap *Application Setup*.
 
-<img src="/img/howto/mPerf/DatakitAppIcon.png">
+<img src="/img/howto/mPerf/applicationSetup.png">
 
-2) Under the *Cerebral Cortex* header, tap the *Toggle* button to sync data to the cloud.
+2) Find *Storage* in the list of applications, and tap the green *play* button to open the Storage/DataKit app.
+
+<img src="/img/howto/mPerf/clearStorage.png">
+
+**NOTE:** If applicable to your study, you will need to remove the GPS restrictions from the data stream before uploading. Do do this, tap the settings gear icon found in the upper-right corner of the app. Select *Upload Data* to open the Upload Data menu, then uncheck the *Location* box under *Restricted Data Stream*.
+
+<img src="/img/howto/mPerf/restrictedDataUncheck.png">
+
+3) Under the *Cerebral Cortex* header, tap the *Toggle* button to sync data to the cloud.
 
 <img src="/img/howto/mPerf/DatakitToggle.png">
 
-3) When you see the "Upload Complete" message, data syncing is now complete.
+4) When you see the "Upload Complete" message, data syncing is now complete.
 
 <img src="/img/howto/mPerf/DatakitUploadComplete.png">
+
+**NOTE:** If applicable to your study, be sure to access the settings menu and re-check the *Location* box under *Restricted Data Stream* to enable GPS restrictions. This should be done after data upload is complete.
+
+<img src="/img/howto/mPerf/restrictedDataChecked.png">
 
 
 ## <a name="stopping"></a>Stop Data Collection
