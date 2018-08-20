@@ -24,23 +24,27 @@ When a participant is finished with the study, please complete the following ste
 
 ## <a name="syncing"></a>Sync Data to the Cloud
 
-1) From the main screen of the mCerebrum app, tap *Application Setup*.
+1) First, make sure the study is running. (If necessary, tap *Start Study* in the mCerebrum app.)
 
-<img src="/img/howto/mPerf/applicationSetup.png">
+<img src="/img/howto/mPerf/startStudyButton.png">
 
-2) Find *Storage* in the list of applications, and tap the green *play* button to open the Storage/DataKit app.
+2) Open DataKit using the app icon on the phone's apps screen. If applicable, this may require exiting the mobile device management software (ie, AirWatch).
 
-<img src="/img/howto/mPerf/clearStorage.png">
+<img src="/img/howto/mPerf/DatakitAppIcon.png">
 
 **NOTE:** If applicable to your study, you will need to remove the GPS restrictions from the data stream before uploading. To do this, tap the settings gear icon found in the upper-right corner of the Storage/DataKit app, select *Upload Data* to open the Upload Data menu, then uncheck the *Location* box under *Restricted Data Stream*. Tap *Save* to save your changes, then *Close* to return to the app.
 
 <img src="/img/howto/mPerf/restrictedDataUncheck.png">
 
-3) Under the *Cerebral Cortex* header, tap the *Toggle* button to sync data to the cloud.
+3) On the DataKit homescreen, make sure the timer is running to show data is being collected. If the timer says INACTIVE, you may need to start the study as described in step 1.
+
+<img src="/img/howto/mPerf/DatakitRunning.png">
+
+4) Under the *Cerebral Cortex* header, tap the *Toggle* button to sync data to the cloud.
 
 <img src="/img/howto/mPerf/DatakitToggle.png">
 
-4) When you see the "Upload Complete" message, data syncing is now complete.
+5) When you see the "Upload Complete" message, data syncing is now complete.
 
 <img src="/img/howto/mPerf/DatakitUploadComplete.png">
 
