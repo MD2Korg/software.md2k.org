@@ -28,9 +28,10 @@ password_hash=[string]
  Data Params
 None
  Success Response:
- Code: 200 Content:  { token : auth_token }  Error Response:
- Code: 401 UNAUTHORIZED Content: { error : &amp;quot;Invalid authentication&amp;quot; }  OR
- Code: 422 UNPROCESSABLE ENTRY Content: { error : &amp;quot;Email Invalid&amp;quot; }  Sample Call:</description>
+ Code: 200 Content:  { token : auth_token }   Error Response:
+ Code: 401 UNAUTHORIZED Content: { error : &amp;quot;Invalid authentication&amp;quot; }
+  OR
+ Code: 422 UNPROCESSABLE ENTRY Content: { error : &amp;quot;Email Invalid&amp;quot; }</description>
     </item>
     
     <item>
