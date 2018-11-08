@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/howto/sensors/adding-sensors/</guid>
-      <description>Adding New Sensors The MD2K software platform is open-source and welcomes contributions from anyone who is interested in improving mobile health. Developers are encouraged to add new sensors to our software platform. Please see below and visit our MD2K GitHub organization and MD2K Under the Hood pages for more information.</description>
+      <description></description>
     </item>
     
     <item>
@@ -25,11 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/howto/sensors/sensors-ts/</guid>
-      <description>Troubleshooting Guide Below is a compilation of known sensor hardware issues and troubleshooting steps you may use to correct them.
-MotionSense Wrist 
-If you are experiencing poor data quality:
- Reset the application, wait 15 seconds and check again. Restart the phone, wait one minute and check again. Make sure the wrist sensor is charged.  For admin access only:
- Make sure the wrist sensor is paired to the phone with the correct ID number.</description>
+      <description></description>
     </item>
     
   </channel>
