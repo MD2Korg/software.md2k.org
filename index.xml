@@ -91,9 +91,7 @@ cassandra: keyspace: cerebralcortex db_user: &amp;quot;&amp;quot; db_pass: &amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/contests/</guid>
-      <description>MD2K is
-Adopter Challenge How to compete Scoring Criteria Submission Overview Prize Up to one grand prize will be awarded each year (July 1 to June 30) valued at over $100,000 in services. MD2K will provide
- Access to MD2K&amp;rsquo;s cloud servers to host and run your study ($20,000) Access to MD2K developers to support and modify our platform for your study ($50,000) Access to MD2K&amp;rsquo;s data management and study coordinator ($20,000) Mentoring by lead MD2K personel ($10,000) 10x of our MotionSenseHRV bands if applicable ($1,500)  Participant Eligibility The prize is open to research groups worldwide.</description>
+      <description></description>
     </item>
     
     <item>
@@ -122,7 +120,7 @@ What can I help with We try to keep all open issues for MD2K software on Pivotal
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://software.md2k.org/deployments/</guid>
-      <description>var diameter = 760, radius = diameter / 2, innerRadius = radius - 150; var cluster = d3.cluster() .size([360, innerRadius]); var line = d3.radialLine() .curve(d3.curveBundle.beta(0.85)) .radius(function(d) { return d.y; }) .angle(function(d) { return d.x / 180 * Math.PI; }); var svg = d3.select(&#34;#graph_svg&#34;).append(&#34;svg&#34;) .attr(&#34;width&#34;, diameter) .attr(&#34;height&#34;, diameter) .append(&#34;g&#34;) .attr(&#34;transform&#34;, &#34;translate(&#34; + radius + &#34;,&#34; + radius + &#34;)&#34;); var link = svg.append(&#34;g&#34;).selectAll(&#34;.link&#34;), node = svg.append(&#34;g&#34;).selectAll(&#34;.node&#34;); d3.json(&#34;/js/deployment_dependency.js&#34;, function(error, classes) { if (error) throw error; var root = packageHierarchy(classes) .</description>
+      <description></description>
     </item>
     
     <item>
