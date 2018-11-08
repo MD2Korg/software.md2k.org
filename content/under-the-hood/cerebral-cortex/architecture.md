@@ -4,6 +4,4 @@ description = "Details about the software architecture, design, and developer-or
 keywords = []
 +++
 
-# Overview
-
-{{< figure src="/img/under-the-hood/cerebralcortex/cc_architecture.png" title="Architecture Overview" caption="">}}
+<meta http-equiv="refresh" content="0; url=https://md2k.org/software-under-the-hood/software-uth-cc.html" />
